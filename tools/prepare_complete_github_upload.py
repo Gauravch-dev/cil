@@ -21,10 +21,18 @@ def digest(path):
 def main():
     originals = []
     nested = []
+    ignore_file = ROOT / ".gitignore"
+    excluded_roots = set()
+    if ignore_file.exists():
+        excluded_roots = {
+            line.strip("/")
+            for line in ignore_file.read_text(encoding="utf-8").splitlines()
+            if line.startswith("/") and line.endswith("/") and line.count("/") == 2
+        }
     for base, dirs, files in os.walk(ROOT):
         base = Path(base)
         if base == ROOT:
-            dirs[:] = [d for d in dirs if d not in (".git", "repository_metadata")]
+            dirs[:] = [d for d in dirs if d not in {".git", "repository_metadata", *excluded_roots}]
         for dirname in dirs:
             if dirname == ".git":
                 nested.append(base / dirname)
