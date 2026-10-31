@@ -1,0 +1,47 @@
+Model,Input_group,Mean_absolute_attribution_kW
+LSTM,History: power scaled,0.24292507767677307
+LSTM,History: observed,8.04522414910025e-07
+LSTM,History: hour sin,0.5461214184761047
+LSTM,History: hour cos,0.5892492532730103
+LSTM,History: dow sin,0.37048178911209106
+LSTM,History: dow cos,0.1619831770658493
+LSTM,latest kw,0.11679143458604813
+LSTM,one hour before origin kw,0.026536105200648308
+LSTM,two hours before origin kw,0.03114909864962101
+LSTM,target slot previous day kw,0.06514525413513184
+LSTM,target slot previous week kw,0.09162037819623947
+LSTM,mean previous hour kw,0.13945071399211884
+LSTM,mean previous 4hours kw,0.01833146996796131
+LSTM,mean previous day kw,0.03249866142868996
+LSTM,std previous day kw,0.06664781272411346
+LSTM,observed fraction previous day,0.005177692510187626
+LSTM,target hour sin,0.13242898881435394
+LSTM,target hour cos,0.11498460918664932
+LSTM,target dow sin,0.05714811012148857
+LSTM,target dow cos,0.021456070244312286
+LSTM,target month sin,0.062432873994112015
+LSTM,target month cos,0.06774905323982239
+LSTM,target weekend,0.10276041179895401
+Basic neural network,History: power scaled,0.6838247179985046
+Basic neural network,History: observed,4.2471830965951085e-05
+Basic neural network,History: hour sin,0.4683336615562439
+Basic neural network,History: hour cos,0.48192963004112244
+Basic neural network,History: dow sin,0.46410539746284485
+Basic neural network,History: dow cos,0.5402090549468994
+Basic neural network,latest kw,0.0370854027569294
+Basic neural network,one hour before origin kw,0.004596189595758915
+Basic neural network,two hours before origin kw,0.0035801029298454523
+Basic neural network,target slot previous day kw,0.014633550308644772
+Basic neural network,target slot previous week kw,0.05849210172891617
+Basic neural network,mean previous hour kw,0.017401982098817825
+Basic neural network,mean previous 4hours kw,0.006312927231192589
+Basic neural network,mean previous day kw,0.0017185145989060402
+Basic neural network,std previous day kw,0.013536673970520496
+Basic neural network,observed fraction previous day,0.0004901114152744412
+Basic neural network,target hour sin,0.009167121723294258
+Basic neural network,target hour cos,0.009072032757103443
+Basic neural network,target dow sin,0.009342493489384651
+Basic neural network,target dow cos,0.0042580496519804
+Basic neural network,target month sin,0.017782224342226982
+Basic neural network,target month cos,0.02396368235349655
+Basic neural network,target weekend,0.017729613929986954

@@ -1,0 +1,4 @@
+-r requirements-local.txt
+# SMOTENC supports mixed numeric and categorical catchment inputs.
+imbalanced-learn==0.14.0
+catboost==1.2.10

@@ -1,0 +1,5 @@
+forecast_time_ist,input_current_level_m,label_source_future24h_max_level_m,future_observation_count,future_observed_hours,future_internal_max_gap_hours,provisional_future_danger_exceedance_label,note
+2019-08-04 12:00:00,536.505,537.205,24,24,1.0,1,"Illustrative only; future fields are label evidence, never predictors. Full datum/coverage audit pending."
+2018-07-15 12:00:00,531.705,531.745,24,24,1.0,0,"Illustrative only; future fields are label evidence, never predictors. Full datum/coverage audit pending."
+2021-07-23 15:00:00,535.375,537.385,24,24,1.0,1,"Illustrative only; future fields are label evidence, never predictors. Full datum/coverage audit pending."
+2023-07-15 12:00:00,523.955,524.035,24,24,1.0,0,"Illustrative only; future fields are label evidence, never predictors. Full datum/coverage audit pending."

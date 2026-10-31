@@ -1,0 +1,12 @@
+{
+  "fixture_results_are_project_results": false,
+  "checks": [
+    "All notebook analysis cells, multitask output, ZIP handling, SHAP, activations, reports",
+    "SHAP runtime on saved task7_lstm.keras; no retraining",
+    "SHAP runtime on saved task7_basic_mlp.keras; no retraining",
+    "Combined notebook syntax and structure; unchanged Task 7 executable AST",
+    "Direct folder handoff and repeated Task 8 execution without ZIP transfer"
+  ],
+  "synthetic_chart_count": 16,
+  "status": "passed"
+}

@@ -1,0 +1,4 @@
+# Preserve large files with Git LFS.
+".venv-task7/Lib/site-packages/clang/native/libclang.dll" filter=lfs diff=lfs merge=lfs -text
+".venv-task7/Lib/site-packages/llvmlite/binding/llvmlite.dll" filter=lfs diff=lfs merge=lfs -text
+".venv-task7/Lib/site-packages/tensorflow/python/_pywrap_tensorflow_common.dll" filter=lfs diff=lfs merge=lfs -text

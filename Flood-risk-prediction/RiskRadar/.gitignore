@@ -1,0 +1,29 @@
+venv/
+__pycache__/
+.env
+*.pyc
+.venv/
+.setup-temp/
+.run/
+/data/raw/
+/data/weather/
+/data/processed/recorded_peaks.csv
+
+# Keep the rainfall history required by the public dashboard.
+!/data/weather/
+/data/weather/*
+!/data/weather/IN_0000317_era5_2000_2025.json
+
+# Local credentials and generated working material.
+.env.*
+!.env.example
+.streamlit/secrets.toml
+.chart-data-*/
+/presentation/slide_images_work/
+/reports/*_work/
+/reports/report_work/
+
+# Keep experiment code and results, without bulky regenerated artifacts.
+/experiments/**/*.joblib
+/experiments/**/*.csv
+/evaluation/upstream_forensics/reconstructed_original_dataset.csv

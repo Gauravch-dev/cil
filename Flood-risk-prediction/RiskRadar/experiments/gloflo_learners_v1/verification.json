@@ -1,0 +1,7 @@
+{
+  "pipelines_verified": 38,
+  "candidate_selection_verified": 76,
+  "largest_saved_score_difference": 2.9750061081301737e-08,
+  "train_only_medians_verified": true,
+  "original_source_splits_prior_experiments_and_app_preserved": true
+}

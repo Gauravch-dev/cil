@@ -1,0 +1,318 @@
+{
+  "scope": "Read-only validation of the current application; no retraining or UI changes.",
+  "existing_integration_checks": {
+    "passed": 54,
+    "failed": 0
+  },
+  "unit_checks": {
+    "passed": 10,
+    "failed": 0,
+    "skipped": 0,
+    "output": "test_annual_monthly_and_daily_totals_agree (test_historical_data.HistoricalDataTests.test_annual_monthly_and_daily_totals_agree) ... ok\ntest_cached_history_works_offline (test_historical_data.HistoricalDataTests.test_cached_history_works_offline) ... ok\ntest_duplicate_dates_are_rejected (test_historical_data.HistoricalDataTests.test_duplicate_dates_are_rejected) ... ok\ntest_missing_dates_are_reindexed_as_missing (test_historical_data.HistoricalDataTests.test_missing_dates_are_reindexed_as_missing) ... ok\ntest_missing_day_invalidates_period_without_zero_filling (test_historical_data.HistoricalDataTests.test_missing_day_invalidates_period_without_zero_filling) ... ok\ntest_negative_and_non_numeric_rain_remain_missing (test_historical_data.HistoricalDataTests.test_negative_and_non_numeric_rain_remain_missing) ... ok\ntest_saved_real_archive_is_complete_and_dated (test_historical_data.HistoricalDataTests.test_saved_real_archive_is_complete_and_dated) ... ok\ntest_source_catalog_and_audit (test_historical_data.HistoricalDataTests.test_source_catalog_and_audit) ... ok\ntest_units_and_lengths_are_validated (test_historical_data.HistoricalDataTests.test_units_and_lengths_are_validated) ... ok\ntest_unknown_station_cannot_become_a_path (test_historical_data.HistoricalDataTests.test_unknown_station_cannot_become_a_path) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.649s\n\nOK\n"
+  },
+  "overall_software_validation": {
+    "passed": 73,
+    "failed": 5,
+    "status": "FAIL"
+  },
+  "artifact_and_consistency_checks": {
+    "published_source_checksum_matches": true,
+    "original_model_fingerprint_matches": true,
+    "model_feature_count_matches_schema": true,
+    "model_feature_order_matches_schema": true,
+    "binary_model_classes": true,
+    "identical_inputs_produce_identical_scores": true
+  },
+  "data": {
+    "raw_rows": 45932,
+    "columns": 93,
+    "stations": 9710,
+    "countries": 57,
+    "duplicate_rows": 0,
+    "invalid_year_rows": 22,
+    "fully_missing_columns": [
+      "Length of Overland Flow",
+      "Sixthorder Streamnumber",
+      "Seventhorder Streamnumber",
+      "Sixthorder Streamlength",
+      "Sixthorder Mean Streamlength",
+      "Seventhorder Mean Streamlength",
+      "fifthSixth Streamlengthratio",
+      "Sixthseventh StreamLengthratio",
+      "FifthSixth Bifurcationratio",
+      "Sixthseventh Bifurcationratio"
+    ],
+    "binary_target_columns_found": [],
+    "rainfall_series_days": 9497,
+    "missing_rainfall_days": 0,
+    "rainfall_coverage_percent": 100.0
+  },
+  "example_predictions": [
+    {
+      "name": "Typical conditions",
+      "inputs": {
+        "annual_precipitation": 1200,
+        "precipitation_of_wettest_month": 300,
+        "precipitation_seasonality": 50,
+        "drainage_density": 2.5,
+        "drainage_texture": 10.0,
+        "basin_relief": 500,
+        "annual_mean_temperature": 20,
+        "temperature_seasonality": 500,
+        "curve_number_amcii": 70.0,
+        "ruggedness_number": 0.5,
+        "infiltration_number": 5.0,
+        "climate_type": 2,
+        "landcover_type": 1,
+        "soil_type": 3
+      },
+      "score": 0.0779,
+      "risk_level": "LOW"
+    },
+    {
+      "name": "Drier landscape",
+      "inputs": {
+        "annual_precipitation": 400,
+        "precipitation_of_wettest_month": 120,
+        "precipitation_seasonality": 25,
+        "drainage_density": 1.0,
+        "drainage_texture": 10.0,
+        "basin_relief": 500,
+        "annual_mean_temperature": 20,
+        "temperature_seasonality": 500,
+        "curve_number_amcii": 50.0,
+        "ruggedness_number": 0.5,
+        "infiltration_number": 5.0,
+        "climate_type": 2,
+        "landcover_type": 1,
+        "soil_type": 3
+      },
+      "score": 0.0038,
+      "risk_level": "LOW"
+    },
+    {
+      "name": "Wetter landscape",
+      "inputs": {
+        "annual_precipitation": 2600,
+        "precipitation_of_wettest_month": 800,
+        "precipitation_seasonality": 85,
+        "drainage_density": 6.0,
+        "drainage_texture": 30.0,
+        "basin_relief": 2000,
+        "annual_mean_temperature": 27,
+        "temperature_seasonality": 500,
+        "curve_number_amcii": 90.0,
+        "ruggedness_number": 2.0,
+        "infiltration_number": 10.0,
+        "climate_type": 1,
+        "landcover_type": 0,
+        "soil_type": 9
+      },
+      "score": 0.784,
+      "risk_level": "HIGH"
+    }
+  ],
+  "repeat_request_median_ms": 5.050099978689104,
+  "timing_note": "Five sequential localhost requests; not a load/performance benchmark.",
+  "api_input_validation": [
+    {
+      "case": "Valid example",
+      "expected_status": 200,
+      "actual_status": 200,
+      "passed": true,
+      "returned_risk_score": 0.0779,
+      "request": {
+        "annual_precipitation": 1200,
+        "precipitation_of_wettest_month": 300,
+        "precipitation_seasonality": 50,
+        "drainage_density": 2.5,
+        "drainage_texture": 10.0,
+        "basin_relief": 500,
+        "annual_mean_temperature": 20,
+        "temperature_seasonality": 500,
+        "curve_number_amcii": 70.0,
+        "ruggedness_number": 0.5,
+        "infiltration_number": 5.0,
+        "climate_type": 2,
+        "landcover_type": 1,
+        "soil_type": 3
+      }
+    },
+    {
+      "case": "Missing required rainfall",
+      "expected_status": 422,
+      "actual_status": 422,
+      "passed": true,
+      "returned_risk_score": null,
+      "request": {
+        "precipitation_of_wettest_month": 300,
+        "precipitation_seasonality": 50,
+        "drainage_density": 2.5,
+        "drainage_texture": 10.0,
+        "basin_relief": 500,
+        "annual_mean_temperature": 20,
+        "temperature_seasonality": 500,
+        "curve_number_amcii": 70.0,
+        "ruggedness_number": 0.5,
+        "infiltration_number": 5.0,
+        "climate_type": 2,
+        "landcover_type": 1,
+        "soil_type": 3
+      }
+    },
+    {
+      "case": "Non-numeric rainfall",
+      "expected_status": 422,
+      "actual_status": 422,
+      "passed": true,
+      "returned_risk_score": null,
+      "request": {
+        "annual_precipitation": "invalid",
+        "precipitation_of_wettest_month": 300,
+        "precipitation_seasonality": 50,
+        "drainage_density": 2.5,
+        "drainage_texture": 10.0,
+        "basin_relief": 500,
+        "annual_mean_temperature": 20,
+        "temperature_seasonality": 500,
+        "curve_number_amcii": 70.0,
+        "ruggedness_number": 0.5,
+        "infiltration_number": 5.0,
+        "climate_type": 2,
+        "landcover_type": 1,
+        "soil_type": 3
+      }
+    },
+    {
+      "case": "Negative annual rainfall",
+      "expected_status": 422,
+      "actual_status": 200,
+      "passed": false,
+      "returned_risk_score": 0.0061,
+      "request": {
+        "annual_precipitation": -1,
+        "precipitation_of_wettest_month": 0,
+        "precipitation_seasonality": 50,
+        "drainage_density": 2.5,
+        "drainage_texture": 10.0,
+        "basin_relief": 500,
+        "annual_mean_temperature": 20,
+        "temperature_seasonality": 500,
+        "curve_number_amcii": 70.0,
+        "ruggedness_number": 0.5,
+        "infiltration_number": 5.0,
+        "climate_type": 2,
+        "landcover_type": 1,
+        "soil_type": 3
+      }
+    },
+    {
+      "case": "Wettest month exceeds annual rainfall",
+      "expected_status": 422,
+      "actual_status": 200,
+      "passed": false,
+      "returned_risk_score": 0.0061,
+      "request": {
+        "annual_precipitation": 100,
+        "precipitation_of_wettest_month": 300,
+        "precipitation_seasonality": 50,
+        "drainage_density": 2.5,
+        "drainage_texture": 10.0,
+        "basin_relief": 500,
+        "annual_mean_temperature": 20,
+        "temperature_seasonality": 500,
+        "curve_number_amcii": 70.0,
+        "ruggedness_number": 0.5,
+        "infiltration_number": 5.0,
+        "climate_type": 2,
+        "landcover_type": 1,
+        "soil_type": 3
+      }
+    },
+    {
+      "case": "Negative drainage density",
+      "expected_status": 422,
+      "actual_status": 200,
+      "passed": false,
+      "returned_risk_score": 0.0128,
+      "request": {
+        "annual_precipitation": 1200,
+        "precipitation_of_wettest_month": 300,
+        "precipitation_seasonality": 50,
+        "drainage_density": -0.1,
+        "drainage_texture": 10.0,
+        "basin_relief": 500,
+        "annual_mean_temperature": 20,
+        "temperature_seasonality": 500,
+        "curve_number_amcii": 70.0,
+        "ruggedness_number": 0.5,
+        "infiltration_number": 5.0,
+        "climate_type": 2,
+        "landcover_type": 1,
+        "soil_type": 3
+      }
+    },
+    {
+      "case": "Unknown climate code",
+      "expected_status": 422,
+      "actual_status": 200,
+      "passed": false,
+      "returned_risk_score": 0.0106,
+      "request": {
+        "annual_precipitation": 1200,
+        "precipitation_of_wettest_month": 300,
+        "precipitation_seasonality": 50,
+        "drainage_density": 2.5,
+        "drainage_texture": 10.0,
+        "basin_relief": 500,
+        "annual_mean_temperature": 20,
+        "temperature_seasonality": 500,
+        "curve_number_amcii": 70.0,
+        "ruggedness_number": 0.5,
+        "infiltration_number": 5.0,
+        "climate_type": 99,
+        "landcover_type": 1,
+        "soil_type": 3
+      }
+    },
+    {
+      "case": "Negative soil category",
+      "expected_status": 422,
+      "actual_status": 200,
+      "passed": false,
+      "returned_risk_score": 0.0677,
+      "request": {
+        "annual_precipitation": 1200,
+        "precipitation_of_wettest_month": 300,
+        "precipitation_seasonality": 50,
+        "drainage_density": 2.5,
+        "drainage_texture": 10.0,
+        "basin_relief": 500,
+        "annual_mean_temperature": 20,
+        "temperature_seasonality": 500,
+        "curve_number_amcii": 70.0,
+        "ruggedness_number": 0.5,
+        "infiltration_number": 5.0,
+        "climate_type": 2,
+        "landcover_type": 1,
+        "soil_type": -1
+      }
+    }
+  ],
+  "model_evaluation": {
+    "status": "NOT INDEPENDENTLY EVALUABLE",
+    "accuracy": null,
+    "precision": null,
+    "recall": null,
+    "f1": null,
+    "roc_auc": null,
+    "pr_auc": null,
+    "calibration": null,
+    "reason": "No verified binary flood/no-flood labels, original label-generation pipeline, or held-out split membership are available.",
+    "upstream_claims_unverified": {
+      "accuracy": 0.969,
+      "f1": 0.984,
+      "recall": 0.791
+    }
+  }
+}

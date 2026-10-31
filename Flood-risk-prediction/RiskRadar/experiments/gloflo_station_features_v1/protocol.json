@@ -1,0 +1,218 @@
+{
+  "task": "High annual peak discharge relative to training-source 95th percentile; not verified flood occurrence",
+  "cutoff": 1129.84,
+  "chronology": {
+    "train": "1900\u20131999",
+    "validation": "2000\u20132005",
+    "test": "2006\u20132015"
+  },
+  "source_sha256": "20a844f84f78729cf4361f3f13daa3a79626f67c2e96aeb0f1a3b872bfd1a45a",
+  "original_model_sha256": "aad88a12f4645f3703c996641a15ce40603f6d5a608918fad4f37496d2f89395",
+  "features": [
+    "precipitation_risk_index",
+    "drainage_risk_index",
+    "annual_mean_temperature",
+    "temperature_seasonality",
+    "annual_precipitation",
+    "curve_number_amcii",
+    "drainage_density",
+    "basin_relief",
+    "ruggedness_number",
+    "infiltration_number",
+    "climate_type",
+    "landcover_type",
+    "soil_type",
+    "drainage_area",
+    "basin_length",
+    "sinuosity_index",
+    "maximal_flow_length",
+    "downvalley_length",
+    "stream_order",
+    "overland_flow_length",
+    "basin_perimeter",
+    "bifurcation_ratio",
+    "form_factor",
+    "relief_ratio",
+    "elongation_ratio",
+    "circularity_ratio",
+    "lemniscates_value",
+    "drainage_texture",
+    "compactness_coefficient",
+    "wandering_ratio",
+    "fitness_ratio",
+    "basin_magnitude",
+    "channel_frequency",
+    "drainage_intensity",
+    "precipitation_wettest_month",
+    "precipitation_driest_month",
+    "precipitation_seasonality",
+    "precipitation_wettest_quarter",
+    "precipitation_driest_quarter",
+    "mean_diurnal_range",
+    "isothermality",
+    "temperature_annual_range",
+    "lithology_type"
+  ],
+  "categories": [
+    "climate_type",
+    "landcover_type",
+    "soil_type",
+    "lithology_type"
+  ],
+  "additional_source_columns": {
+    "drainage_area": "Drainage Area",
+    "basin_length": "Basin Length",
+    "sinuosity_index": "Sinuosity Index",
+    "maximal_flow_length": "Maximal Flow Length",
+    "downvalley_length": "Downvalley Length",
+    "stream_order": "Stream Order",
+    "overland_flow_length": "Length of Overland Flow",
+    "basin_perimeter": "Basin Perimeter",
+    "bifurcation_ratio": "Weighted Mean Bifurcationratio",
+    "form_factor": "Form Factor",
+    "relief_ratio": "Relief Ratio",
+    "elongation_ratio": "Elongation Ratio",
+    "circularity_ratio": "Circularity Ratio",
+    "lemniscates_value": "Lemniscates Value",
+    "drainage_texture": "Drainage Texture",
+    "compactness_coefficient": "Compactness Coefficient",
+    "wandering_ratio": "Wandering Ratio",
+    "fitness_ratio": "Fitness Ratio",
+    "basin_magnitude": "Basin Magnitude",
+    "channel_frequency": "Channel Frequency",
+    "drainage_intensity": "Drainage Intensity",
+    "precipitation_wettest_month": "Precipitation of Wettest Month",
+    "precipitation_driest_month": "Precipitation of Driest Month",
+    "precipitation_seasonality": "Precipitation Seasonality",
+    "precipitation_wettest_quarter": "Precipitation of Wettest Quarter",
+    "precipitation_driest_quarter": "Precipitation of Driest Quarter",
+    "mean_diurnal_range": "Mean Diurnal Range",
+    "isothermality": "Isothermality",
+    "temperature_annual_range": "Temperature Annual Range",
+    "lithology_type": "Lithology Type"
+  },
+  "feature_views": [
+    "legacy13",
+    "expanded",
+    "selected"
+  ],
+  "configs": {
+    "catboost": [
+      {
+        "iterations": 300,
+        "depth": 5,
+        "weight": "none"
+      },
+      {
+        "iterations": 500,
+        "depth": 6,
+        "weight": "sqrt"
+      }
+    ],
+    "hist_gradient_boosting": [
+      {
+        "max_iter": 300,
+        "max_leaf_nodes": 15,
+        "l2_regularization": 10.0,
+        "weight": "none"
+      },
+      {
+        "max_iter": 400,
+        "max_leaf_nodes": 31,
+        "l2_regularization": 5.0,
+        "weight": "sqrt"
+      }
+    ],
+    "random_forest": [
+      {
+        "n_estimators": 200,
+        "max_leaf_nodes": 512,
+        "min_samples_leaf": 5,
+        "weight": "none"
+      },
+      {
+        "n_estimators": 300,
+        "max_leaf_nodes": 1024,
+        "min_samples_leaf": 2,
+        "weight": "sqrt"
+      }
+    ]
+  },
+  "seed": 20261024,
+  "folds": [
+    {
+      "fold": 0,
+      "train_end": 1959,
+      "validation_start": 1960,
+      "validation_end": 1979,
+      "cutoff": 1147.9394999999981,
+      "train_rows": 6134,
+      "validation_rows": 4253,
+      "train_stations": 2461,
+      "validation_stations": 2190,
+      "positive_train": 307,
+      "positive_validation": 162
+    },
+    {
+      "fold": 1,
+      "train_end": 1979,
+      "validation_start": 1980,
+      "validation_end": 1989,
+      "cutoff": 1118.52,
+      "train_rows": 14798,
+      "validation_rows": 2427,
+      "train_stations": 4886,
+      "validation_stations": 1646,
+      "positive_train": 738,
+      "positive_validation": 105
+    },
+    {
+      "fold": 2,
+      "train_end": 1989,
+      "validation_start": 1990,
+      "validation_end": 1999,
+      "cutoff": 1096.7755,
+      "train_rows": 19336,
+      "validation_rows": 2627,
+      "train_stations": 5678,
+      "validation_stations": 1699,
+      "positive_train": 967,
+      "positive_validation": 174
+    }
+  ],
+  "fold_rule": "SHA256(station code) first 4 bytes modulo 3, with group i held out in forward-time fold i. All records from those stations are excluded from that fold training.",
+  "fold_labels": "Each fold derives the 95th percentile from its own training rows only. Final models use the unchanged full-training cutoff 1129.84.",
+  "feature_selection": "Within each training fold: exclude additions >40% missing, constant, or Pearson correlation >0.98 with retained numeric features. Retain legacy13. For selected view retain top 12 additions by training-only, station-balanced Random Forest grouped importance. Refit selector only on full training for final models.",
+  "excluded": {
+    "Annual peak discharge": "target source",
+    "Unit peak discharge": "derived from target",
+    "gsim_code/country/coordinates/year": "identifiers/location memorisation or split fields",
+    "Number of Dams": "historical commissioning/availability unknown"
+  },
+  "selection": "Maximum mean fold average precision on unseen stations; ties minimum fold AP then pooled OOF F2. Best configuration per learner/view and overall winner frozen before outer validation/test.",
+  "threshold": "From pooled station-disjoint forward OOF training predictions: maximise F2 subject to precision >=0.50 and recall >=0.75. If infeasible, maximise F2 and disclose failure. Scores rounded to 12 decimals for numerical stability. No outer validation/test threshold tuning.",
+  "candidate_count": 18,
+  "cv_fits": 54,
+  "final_pipelines": 9,
+  "split_hashes": {
+    "train": "41256c39ad353b0834fdde7573146ce24c79938dff79a0708b1d8b93542f04f7",
+    "validation": "d942fdb1ae01381f32845a5aea518ff3747a521dccbcc1c9aae82d0e9b8ff7d0",
+    "test": "501cf8fe9c769330547ef84176feb17155f133e478d2c4473030864f0a758be7"
+  },
+  "protected": {
+    "experiments\\gloflo_imbalance_v1\\protocol.json": "4917975aab08af8abc70f6d64161bbee918e5457d6cb0f7700dcfab4e705a9d3",
+    "experiments\\gloflo_imbalance_v1\\selection.json": "aa00366e0ff38e485f4820d7903f3c734d54a55283d03e21b9e1ca25e8b3cb4b",
+    "experiments\\gloflo_imbalance_v1\\final_results.json": "e931cf4f94ae7e15e2993036036e35f2fdd6b75e8761e2ed3ee5586888d4fa7a",
+    "experiments\\gloflo_learners_v1\\selection.json": "dc0cdd3517cf7094326843a6aa518c61698007ab7cb9a995f5c8131e7267bfdb",
+    "experiments\\gloflo_learners_v1\\final_results.json": "fd28ff648bb657b9e06cb14f92efaef8ffd61d0cb5d3cbf8f29f34c3e022a044"
+  },
+  "versions": {
+    "xgboost": "3.2.0",
+    "sklearn": "1.6.1",
+    "pandas": "3.0.6",
+    "numpy": "2.5.4",
+    "catboost": "1.2.10"
+  },
+  "limits": "Previously inspected validation/test: exploratory follow-up, not fresh independent confirmation. Contemporary static catchment/climate proxies are not historically issued weather forecasts. The label is high annual peak discharge, not verified flood occurrence. Unseen stations can remain spatially related to training catchments.",
+  "created_utc": "2026-10-24T16:17:21.499385+00:00"
+}

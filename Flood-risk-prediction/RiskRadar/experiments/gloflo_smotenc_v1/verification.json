@@ -1,0 +1,11 @@
+{
+  "saved_pipeline_replay": "passed",
+  "maximum_score_difference": 2.979431157346113e-08,
+  "synthetic_positive_rows": 15803,
+  "training_category_validity": "passed",
+  "original_row_preservation": "passed",
+  "training_only_imputation": "passed",
+  "frozen_source_splits_selection_and_previous_artifacts": "passed",
+  "candidate_validation_selection": "passed",
+  "application_model_unchanged": true
+}

@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "fixture_results_are_project_results": false,
+  "full_task7_retraining_performed": false,
+  "checks": [
+    "Notebook structure, exact embedded ontology/source and actual imported SWRL rules",
+    "Imported SWRL executes independently of asserted decisions; essential overrides flexible conflict",
+    "Forecast changes decisions; exact single-interval avoidance; tariff saving equals independent energy calculation",
+    "Comfort/occupancy priority, invalid inputs, infeasibility, bounded search and midnight tariffs",
+    "A* costs match independent exhaustive search across concurrency/forecast scenarios",
+    "Every Task 9 analysis cell and dashboard callback on a synthetic 96-step multitask fixture",
+    "Validation-selected hybrid ML, full-test comparisons, TreeSHAP reconstruction and temporal activations",
+    "Dashboard occupancy/input changes, error messages and saved JSON/CSV reports",
+    "Inference ignores held-out target values and future history rows; frozen LSTM file unchanged",
+    "Repeated setup reuses cached models without ML fitting",
+    "Already running flexible appliance is not interrupted; final notebook structure validated"
+  ],
+  "synthetic_chart_count": 6
+}

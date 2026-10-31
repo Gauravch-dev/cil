@@ -1,0 +1,102 @@
+{
+  "passed": 24,
+  "failed": 0,
+  "checks": [
+    {
+      "check": "Main app opens manual Prediction with preserved navigation",
+      "passed": true
+    },
+    {
+      "check": "Core matched-event charts map and export load",
+      "passed": true
+    },
+    {
+      "check": "Maharashtra: filters render safely",
+      "passed": true
+    },
+    {
+      "check": "Kerala: filters render safely",
+      "passed": true
+    },
+    {
+      "check": "Rajasthan: filters render safely",
+      "passed": true
+    },
+    {
+      "check": "All covered states: filters render safely",
+      "passed": true
+    },
+    {
+      "check": "Seasonal event counts render",
+      "passed": true
+    },
+    {
+      "check": "Rainfall window 7 days updates",
+      "passed": true
+    },
+    {
+      "check": "Rainfall window 10 days updates",
+      "passed": true
+    },
+    {
+      "check": "Rainfall window 3 days updates",
+      "passed": true
+    },
+    {
+      "check": "Held-out severity comparison is available",
+      "passed": true
+    },
+    {
+      "check": "Empty or sparse selections do not crash",
+      "passed": true
+    },
+    {
+      "check": "Flood inventory loads with chart and table",
+      "passed": true
+    },
+    {
+      "check": "Inventory state filter works",
+      "passed": true
+    },
+    {
+      "check": "Inventory year filter and export work",
+      "passed": true
+    },
+    {
+      "check": "Rainfall history includes monsoon and anomaly views",
+      "passed": true
+    },
+    {
+      "check": "Rainfall history is scoped to India",
+      "passed": true
+    },
+    {
+      "check": "Rainfall anomaly period and daily controls work",
+      "passed": true
+    },
+    {
+      "check": "Prediction is directly accessible with a visible run button",
+      "passed": true
+    },
+    {
+      "check": "Manual flood-stage ML prediction and export display",
+      "passed": true
+    },
+    {
+      "check": "Manual rainfall is accepted with recent river levels",
+      "passed": true
+    },
+    {
+      "check": "Changed input clears visible stale prediction",
+      "passed": true
+    },
+    {
+      "check": "Current danger-stage condition is identified separately",
+      "passed": true
+    },
+    {
+      "check": "Return to PS-aligned analysis works",
+      "passed": true
+    }
+  ]
+}

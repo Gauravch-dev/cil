@@ -1,0 +1,41 @@
+{
+  "smotenc_tomek": {
+    "removed_majority_rows": 3,
+    "retained_indices_sha256": "5560afb670666cc464e962b792267bafbdce5e228f44587ed3b7ef7c1b6f2c09",
+    "rows": 52984,
+    "positive": 17662,
+    "negative": 35322
+  },
+  "smotenc_enn": {
+    "removed_majority_rows": 1440,
+    "retained_indices_sha256": "b6785a39bf4e0881cbe337d5c842bfbf753d171bcdb9cea3554559e0e979e904",
+    "rows": 51547,
+    "positive": 17662,
+    "negative": 33885
+  },
+  "untreated": {
+    "rows": 37184,
+    "positive": 1859,
+    "negative": 35325
+  },
+  "class_weight": {
+    "rows": 37184,
+    "positive": 1859,
+    "negative": 35325
+  },
+  "random_oversampling": {
+    "rows": 70650,
+    "positive": 35325,
+    "negative": 35325
+  },
+  "random_undersampling": {
+    "rows": 9295,
+    "positive": 1859,
+    "negative": 7436
+  },
+  "smotenc": {
+    "rows": 52987,
+    "positive": 17662,
+    "negative": 35325
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "passed": 26,
+  "failed": 0,
+  "checks": [
+    {
+      "check": "Exactly two pages, Rainfall and Flood",
+      "passed": true
+    },
+    {
+      "check": "Rainfall opens with one chart and one download",
+      "passed": true
+    },
+    {
+      "check": "No model or evaluation panels on Rainfall",
+      "passed": true
+    },
+    {
+      "check": "Yearly chart matches actual saved rainfall",
+      "passed": true
+    },
+    {
+      "check": "Monthly view is one interactive heatmap",
+      "passed": true
+    },
+    {
+      "check": "Daily view preserves all 366 actual leap-year readings",
+      "passed": true
+    },
+    {
+      "check": "Unusually wet days are highlighted in the daily chart",
+      "passed": true
+    },
+    {
+      "check": "Monsoon view uses actual June\u2013September totals",
+      "passed": true
+    },
+    {
+      "check": "Period control changes the chart without extra panels",
+      "passed": true
+    },
+    {
+      "check": "Flood uses original rainfall/land inputs with no river-gauge fields",
+      "passed": true
+    },
+    {
+      "check": "No model names, metrics or evaluation panels on Flood",
+      "passed": true
+    },
+    {
+      "check": "Empty screen does not invent a risk assessment",
+      "passed": true
+    },
+    {
+      "check": "Full readable source categories are available",
+      "passed": true
+    },
+    {
+      "check": "Default result matches original RiskRadar exactly",
+      "passed": true
+    },
+    {
+      "check": "Wetter example populates all original input values",
+      "passed": true
+    },
+    {
+      "check": "Changed inputs hide the previous result and export",
+      "passed": true
+    },
+    {
+      "check": "Wetter example returns original High result",
+      "passed": true
+    },
+    {
+      "check": "Manual edits clear the preset label",
+      "passed": true
+    },
+    {
+      "check": "Inconsistent monthly/yearly rainfall is rejected without stale output",
+      "passed": true
+    },
+    {
+      "check": "Drier example returns original Low result",
+      "passed": true
+    },
+    {
+      "check": "A genuine original-model Medium scenario is displayed",
+      "passed": true
+    },
+    {
+      "check": "Realistic rainfall above old slider limits is accepted",
+      "passed": true
+    },
+    {
+      "check": "Only the user input details can be expanded",
+      "passed": true
+    },
+    {
+      "check": "Switching back restores the chosen rainfall view",
+      "passed": true
+    },
+    {
+      "check": "Area inputs and result survive page navigation",
+      "passed": true
+    },
+    {
+      "check": "No API connection is needed for either page",
+      "passed": true
+    }
+  ]
+}

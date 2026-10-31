@@ -1,0 +1,166 @@
+{
+  "retrieved_utc": "2026-10-24T17:11:39.042646+00:00",
+  "resources": {
+    "krishna_hourly_1991_2020": {
+      "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/9579b739-ccb3-4c5a-b571-e3720cef442d/download/rwl_tele_hr_cwc_007_1991_2020.csv",
+      "preview_only": true,
+      "byte_limit": 65536,
+      "http_status": 200,
+      "content_type": "text/csv",
+      "saved_bytes": 65482,
+      "first_lines": [
+        "SlNo,Station,Agency,State LGD Code,State,District LGD Code,District,Tehsil,Block,Village,River,Basin,Tributary,Subtributary,SubSubtributary,Local River,Latitude,Longitude,Is_DischargeDataAvailable,RL_of_zeroGauge,MeanSeaLevel,Data Acquisition Time,River Water Level Telemetry Hourly (meter)",
+        "1,Almatti Reservoir,CWC,29,Karnataka,524,Bagalkot,BAGALKOT,-,-,Krishna,Krishna,-,-,-,Krishna,16.33000000,75.88000000,No,0.0000,0,21-02-2020 12:00,515.058",
+        "2,Almatti Reservoir,CWC,29,Karnataka,524,Bagalkot,BAGALKOT,-,-,Krishna,Krishna,-,-,-,Krishna,16.33000000,75.88000000,No,0.0000,0,21-02-2020 14:00,515.067"
+      ]
+    },
+    "godavari_hourly_2021_2025": {
+      "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/4d139325-8371-422f-acef-d34ccec4300e/download/rwl_tel_hr_cwc_006_2021_2025.csv",
+      "preview_only": true,
+      "byte_limit": 65536,
+      "http_status": 200,
+      "content_type": "text/csv",
+      "saved_bytes": 65446,
+      "first_lines": [
+        "SlNo,Station,Agency,State LGD Code,State,District LGD Code,District,Tehsil,Block,Village,River,Basin,Tributary,Subtributary,SubSubtributary,Local River,Latitude,Longitude,Is_DischargeDataAvailable,RL_of_zeroGauge,MeanSeaLevel,Data Acquisition Time,River Water Level Telemetry Hourly (meter)",
+        "1,Ambabal (Narangi),CWC,22,Chhattisgarh,374,BASTAR,BASTAR,BASTAR,Bhanpuri,Godavari,Godavari,Indravathi,Narangi,-,Narangi,19.29666667,81.78888889,Yes,534.0000,0,10-01-2021 00:40,535.355",
+        "2,Ambabal (Narangi),CWC,22,Chhattisgarh,374,BASTAR,BASTAR,BASTAR,Bhanpuri,Godavari,Godavari,Indravathi,Narangi,-,Narangi,19.29666667,81.78888889,Yes,534.0000,0,12-02-2021 11:00,535.368"
+      ]
+    }
+  },
+  "resource_show": {
+    "http_status": 200,
+    "success": true
+  },
+  "datastore_search": {
+    "http_status": 200,
+    "success": true,
+    "total": 427080,
+    "fields": [
+      {
+        "id": "_id",
+        "type": "int"
+      },
+      {
+        "id": "SlNo",
+        "type": "text"
+      },
+      {
+        "id": "Station",
+        "type": "text"
+      },
+      {
+        "id": "Agency",
+        "type": "text"
+      },
+      {
+        "id": "State LGD Code",
+        "type": "text"
+      },
+      {
+        "id": "State",
+        "type": "text"
+      },
+      {
+        "id": "District LGD Code",
+        "type": "text"
+      },
+      {
+        "id": "District",
+        "type": "text"
+      },
+      {
+        "id": "Tehsil",
+        "type": "text"
+      },
+      {
+        "id": "Block",
+        "type": "text"
+      },
+      {
+        "id": "Village",
+        "type": "text"
+      },
+      {
+        "id": "River",
+        "type": "text"
+      },
+      {
+        "id": "Basin",
+        "type": "text"
+      },
+      {
+        "id": "Tributary",
+        "type": "text"
+      },
+      {
+        "id": "Subtributary",
+        "type": "text"
+      },
+      {
+        "id": "SubSubtributary",
+        "type": "text"
+      },
+      {
+        "id": "Local River",
+        "type": "text"
+      },
+      {
+        "id": "Latitude",
+        "type": "text"
+      },
+      {
+        "id": "Longitude",
+        "type": "text"
+      },
+      {
+        "id": "Is_DischargeDataAvailable",
+        "type": "text"
+      },
+      {
+        "id": "RL_of_zeroGauge",
+        "type": "text"
+      },
+      {
+        "id": "MeanSeaLevel",
+        "type": "text"
+      },
+      {
+        "id": "Data Acquisition Time",
+        "type": "text"
+      },
+      {
+        "id": "River Water Level Telemetry Hourly (meter)",
+        "type": "text"
+      }
+    ],
+    "sample": [
+      {
+        "_id": 1,
+        "SlNo": "1",
+        "Station": "Almatti Reservoir",
+        "Agency": "CWC",
+        "State LGD Code": "29",
+        "State": "Karnataka",
+        "District LGD Code": "524",
+        "District": "Bagalkot",
+        "Tehsil": "BAGALKOT",
+        "Block": "-",
+        "Village": "-",
+        "River": "Krishna",
+        "Basin": "Krishna",
+        "Tributary": "-",
+        "Subtributary": "-",
+        "SubSubtributary": "-",
+        "Local River": "Krishna",
+        "Latitude": "16.33000000",
+        "Longitude": "75.88000000",
+        "Is_DischargeDataAvailable": "No",
+        "RL_of_zeroGauge": "0.0000",
+        "MeanSeaLevel": "0",
+        "Data Acquisition Time": "21-02-2020 12:00",
+        "River Water Level Telemetry Hourly (meter)": "515.058"
+      }
+    ]
+  }
+}

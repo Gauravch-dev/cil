@@ -1,0 +1,302 @@
+{
+  "selected_model": "logistic",
+  "validation": {
+    "n": 305,
+    "positive": 10,
+    "accuracy": 0.9901639344262295,
+    "precision": 0.7692307692307693,
+    "recall": 1.0,
+    "f1": 0.8695652173913043,
+    "average_precision": 0.9430122655122654,
+    "roc_auc": 0.9983050847457627,
+    "confusion_matrix": [
+      [
+        292,
+        3
+      ],
+      [
+        0,
+        10
+      ]
+    ],
+    "threshold": 0.95,
+    "meets_75_percent_all": true
+  },
+  "test": {
+    "logistic": {
+      "n": 422,
+      "positive": 14,
+      "accuracy": 0.9928909952606635,
+      "precision": 0.8666666666666667,
+      "recall": 0.9285714285714286,
+      "f1": 0.896551724137931,
+      "average_precision": 0.9145211930926216,
+      "roc_auc": 0.9908963585434173,
+      "confusion_matrix": [
+        [
+          406,
+          2
+        ],
+        [
+          1,
+          13
+        ]
+      ],
+      "threshold": 0.95,
+      "meets_75_percent_all": true
+    },
+    "decision_tree": {
+      "n": 422,
+      "positive": 14,
+      "accuracy": 0.9786729857819905,
+      "precision": 0.631578947368421,
+      "recall": 0.8571428571428571,
+      "f1": 0.7272727272727273,
+      "average_precision": 0.5761679079214624,
+      "roc_auc": 0.9210434173669467,
+      "confusion_matrix": [
+        [
+          401,
+          7
+        ],
+        [
+          2,
+          12
+        ]
+      ],
+      "threshold": 0.5,
+      "meets_75_percent_all": false
+    },
+    "random_forest": {
+      "n": 422,
+      "positive": 14,
+      "accuracy": 0.9881516587677726,
+      "precision": 0.7368421052631579,
+      "recall": 1.0,
+      "f1": 0.8484848484848485,
+      "average_precision": 0.995238095238095,
+      "roc_auc": 0.9998249299719887,
+      "confusion_matrix": [
+        [
+          403,
+          5
+        ],
+        [
+          0,
+          14
+        ]
+      ],
+      "threshold": 0.33,
+      "meets_75_percent_all": false
+    },
+    "persistence": {
+      "n": 422,
+      "positive": 14,
+      "accuracy": 0.9976303317535545,
+      "precision": 1.0,
+      "recall": 0.9285714285714286,
+      "f1": 0.9629629629629629,
+      "average_precision": 1.0,
+      "roc_auc": 1.0,
+      "confusion_matrix": [
+        [
+          408,
+          0
+        ],
+        [
+          1,
+          13
+        ]
+      ],
+      "threshold": 535.64,
+      "meets_75_percent_all": true
+    },
+    "positive_trend": {
+      "n": 422,
+      "positive": 14,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "average_precision": 1.0,
+      "roc_auc": 0.9999999999999999,
+      "confusion_matrix": [
+        [
+          408,
+          0
+        ],
+        [
+          0,
+          14
+        ]
+      ],
+      "threshold": 535.64,
+      "meets_75_percent_all": true
+    },
+    "always_low": {
+      "n": 422,
+      "positive": 14,
+      "accuracy": 0.966824644549763,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.03317535545023697,
+      "roc_auc": 0.5,
+      "confusion_matrix": [
+        [
+          408,
+          0
+        ],
+        [
+          14,
+          0
+        ]
+      ],
+      "threshold": 0.5,
+      "meets_75_percent_all": false
+    }
+  },
+  "test_currently_below_warning": {
+    "logistic": {
+      "n": 409,
+      "positive": 1,
+      "accuracy": 0.9951100244498777,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "f1": 0.5,
+      "average_precision": 1.0,
+      "roc_auc": 1.0,
+      "confusion_matrix": [
+        [
+          406,
+          2
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "threshold": 0.95,
+      "meets_75_percent_all": false
+    },
+    "decision_tree": {
+      "n": 409,
+      "positive": 1,
+      "accuracy": 0.9828850855745721,
+      "precision": 0.125,
+      "recall": 1.0,
+      "f1": 0.2222222222222222,
+      "average_precision": 0.14285714285714285,
+      "roc_auc": 0.9926470588235293,
+      "confusion_matrix": [
+        [
+          401,
+          7
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "threshold": 0.5,
+      "meets_75_percent_all": false
+    },
+    "random_forest": {
+      "n": 409,
+      "positive": 1,
+      "accuracy": 0.9877750611246944,
+      "precision": 0.16666666666666666,
+      "recall": 1.0,
+      "f1": 0.2857142857142857,
+      "average_precision": 1.0,
+      "roc_auc": 1.0,
+      "confusion_matrix": [
+        [
+          403,
+          5
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "threshold": 0.33,
+      "meets_75_percent_all": false
+    },
+    "persistence": {
+      "n": 409,
+      "positive": 1,
+      "accuracy": 0.9975550122249389,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 1.0,
+      "roc_auc": 1.0,
+      "confusion_matrix": [
+        [
+          408,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "threshold": 535.64,
+      "meets_75_percent_all": false
+    },
+    "positive_trend": {
+      "n": 409,
+      "positive": 1,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "average_precision": 1.0,
+      "roc_auc": 1.0,
+      "confusion_matrix": [
+        [
+          408,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "threshold": 535.64,
+      "meets_75_percent_all": true
+    },
+    "always_low": {
+      "n": 409,
+      "positive": 1,
+      "accuracy": 0.9975550122249389,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.0024449877750611247,
+      "roc_auc": 0.5,
+      "confusion_matrix": [
+        [
+          408,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "threshold": 0.5,
+      "meets_75_percent_all": false
+    }
+  },
+  "source_scope": "Kurundwad, Kolhapur district, Maharashtra; CWC Krishna gauge",
+  "target": "Measured river level at or above official warning in next 24h; binary flood-stage risk, not district inundation",
+  "limits": [
+    "Retrospective follow-up on already inspected source years, not a fresh independent test.",
+    "Rainfall reports are sparse and nonzero-only; absent reports are unknown. Missingness may reflect observation practices.",
+    "Measured warning-stage exceedance is a physical flood-risk proxy, not observed inundation.",
+    "High-water days within a flood are dependent; separately report origins currently below warning.",
+    "No new datasets; this is a new direct classifier, distinct from previous river regression."
+  ]
+}

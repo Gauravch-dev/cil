@@ -1,0 +1,4541 @@
+{
+  "help": "https://nwdp.nwic.gov.in/api/3/action/help_show?name=package_search",
+  "success": true,
+  "result": {
+    "count": 183,
+    "facets": {},
+    "results": [
+      {
+        "author": "",
+        "author_email": "",
+        "creator_user_id": "f7c95d58-5b36-44c9-b8dd-e9f252c85e5d",
+        "id": "9380580f-9bf0-4708-9773-0cea3cbc595a",
+        "isopen": false,
+        "license_id": "",
+        "license_title": "",
+        "maintainer": "",
+        "maintainer_email": "",
+        "metadata_created": "2026-08-25T10:51:21.603439",
+        "metadata_modified": "2026-10-24T16:58:50.936329",
+        "name": "rainfall-daily-imd",
+        "notes": "IMD Rainfall Data contains observed rainfall measurements collected by the India Meteorological Department from stations across India. The data supports rainfall monitoring, weather and climate analysis, hydrological studies, water-resource planning, agriculture, and flood and drought assessment.",
+        "num_resources": 2,
+        "num_tags": 0,
+        "organization": {
+          "id": "220a550f-ff05-4700-a8f5-5a277e0f1523",
+          "name": "imd",
+          "title": "IMD",
+          "type": "organization",
+          "description": "India Meteorological Department was established in 1875. It is the National Meteorological Service of the country and the principal government agency in all matters relating to meteorology and allied subjects.\r\n\r\n1.  To take meteorological observations and to provide current and forecast meteorological information for optimum operation of weather-sensitive activities like agriculture, irrigation, shipping, aviation, offshore oil explorations, etc.\r\n2. To warn against severe weather phenomena like tropical cyclones, dust storms, heavy rains and snow, cold and heat waves etc. which cause destruction of life and property.\r\n3. To provide meteorological statistics required for agriculture, water resource management, industries, oil exploration and other nation-building activities.\r\n4. To conduct and promote research in meteorology and allied disciplines.",
+          "image_url": "2025-01-14-120551.504267Screenshot2-12-202418833th.bing.com.jpeg",
+          "created": "2025-01-14T12:05:51.510000",
+          "is_organization": true,
+          "approval_status": "approved",
+          "state": "active"
+        },
+        "owner_org": "220a550f-ff05-4700-a8f5-5a277e0f1523",
+        "private": false,
+        "state": "active",
+        "title": "Rainfall Daily IMD",
+        "type": "dataset",
+        "url": "",
+        "version": "",
+        "groups": [
+          {
+            "description": "Data describing long-term weather conditions such as precipitation, drought conditions, or evaporation data.",
+            "display_name": "Climate",
+            "id": "2730f91c-86d1-44b7-afb2-0fcd29430a5a",
+            "image_display_url": "https://nwdp.nwic.gov.in/uploads/group/2025-02-24-113032.358245Climate.png",
+            "name": "climate",
+            "title": "Climate"
+          }
+        ],
+        "resources": [
+          {
+            "cache_last_updated": null,
+            "cache_url": null,
+            "created": "2026-08-25T10:53:46.376445",
+            "datastore_active": true,
+            "datastore_contains_all_records_of_source_file": false,
+            "description": null,
+            "format": "CSV",
+            "hash": "cf9cf9efe8791c51717400b62a96d490",
+            "id": "8752174f-1d17-4aaf-8058-2eb396f50157",
+            "last_modified": "2026-10-24T16:58:50.924729",
+            "metadata_modified": "2026-10-24T16:58:50.941360",
+            "mimetype": "text/csv",
+            "mimetype_inner": null,
+            "name": "Rainfall DistrictWise Daily IMD",
+            "package_id": "9380580f-9bf0-4708-9773-0cea3cbc595a",
+            "position": 0,
+            "resource_type": null,
+            "size": 8023418,
+            "state": "active",
+            "url": "https://nwdp.nwic.gov.in/dataset/9380580f-9bf0-4708-9773-0cea3cbc595a/resource/8752174f-1d17-4aaf-8058-2eb396f50157/download/rainfall_districtwise_daily_imd.csv",
+            "url_type": "upload"
+          },
+          {
+            "cache_last_updated": null,
+            "cache_url": null,
+            "created": "2026-08-25T10:54:15.441481",
+            "datastore_active": true,
+            "datastore_contains_all_records_of_source_file": false,
+            "description": null,
+            "format": "CSV",
+            "hash": "001e87fc7eafdfe23066b949c7725016",
+            "id": "acd3023c-df96-4af8-8815-a7393cb80839",
+            "last_modified": "2026-10-24T16:58:49.890554",
+            "metadata_modified": "2026-10-24T16:58:50.941447",
+            "mimetype": "text/csv",
+            "mimetype_inner": null,
+            "name": "Rainfall StateWise Daily IMD",
+            "package_id": "9380580f-9bf0-4708-9773-0cea3cbc595a",
+            "position": 1,
+            "resource_type": null,
+            "size": 475537,
+            "state": "active",
+            "url": "https://nwdp.nwic.gov.in/dataset/9380580f-9bf0-4708-9773-0cea3cbc595a/resource/acd3023c-df96-4af8-8815-a7393cb80839/download/rainfall_statewise_daily_imd.csv",
+            "url_type": "upload"
+          }
+        ],
+        "tags": [],
+        "extras": [],
+        "relationships_as_subject": [],
+        "relationships_as_object": []
+      },
+      {
+        "author": "UPGW",
+        "author_email": "upgwd.in@gmail.com",
+        "creator_user_id": "66b36a1d-2b7c-48a6-acac-fb738ea93524",
+        "id": "9e9ce8da-2ab4-4d73-a9a7-d46c34f2eae3",
+        "isopen": true,
+        "license_id": "other-open",
+        "license_title": "Other (Open)",
+        "maintainer": "UPGW",
+        "maintainer_email": "upgwd.in@gmail.com",
+        "metadata_created": "2025-03-06T11:53:41.733879",
+        "metadata_modified": "2026-10-24T03:36:59.645251",
+        "name": "rainfall-telemetry-hourly-upgw",
+        "notes": "The Rainfall (Telemetry - Hourly) dataset, collected by the UPGW Department, contains hourly rainfall measurements from telemetry stations. Each record includes the timestamp, station identifier, geographic hierarchy, and recorded rainfall values, providing essential data for hydrological analysis, flood forecasting, and water resource management.",
+        "num_resources": 2,
+        "num_tags": 101,
+        "organization": {
+          "id": "0a1a2441-faf5-4a6a-94a0-e6203329dce7",
+          "name": "upgw",
+          "title": "UPGW",
+          "type": "organization",
+          "description": "In the year 1975 a separate department was established for the planned use, management, research and exploration of groundwater sources in Uttar Pradesh which later in year 1983 renamed to 'Ground Water Department'.\r\n\r\nThe main objective for establishing this department is to issue guidelines for research, management, planning related to Ground Water Resources of the state and conduct study, assessment, planning and development programs for Ground Water.",
+          "image_url": "2025-01-16-071626.924369UpGW.png",
+          "created": "2025-01-15T06:36:56.167000",
+          "is_organization": true,
+          "approval_status": "approved",
+          "state": "active"
+        },
+        "owner_org": "0a1a2441-faf5-4a6a-94a0-e6203329dce7",
+        "private": false,
+        "state": "active",
+        "title": "Rainfall (Telemetry - Hourly), UPGW",
+        "type": "dataset",
+        "url": "",
+        "version": "",
+        "extras": [
+          {
+            "key": "Citations",
+            "value": "-"
+          },
+          {
+            "key": "Data Access Control",
+            "value": "Public"
+          },
+          {
+            "key": "Data Error Handling",
+            "value": "-"
+          },
+          {
+            "key": "Data Format",
+            "value": "CSV, API"
+          },
+          {
+            "key": "Data Processing History",
+            "value": "-"
+          },
+          {
+            "key": "Data Quality Rating",
+            "value": "-"
+          },
+          {
+            "key": "Data Security Measures",
+            "value": "-"
+          },
+          {
+            "key": "Data Validation Method",
+            "value": "-"
+          },
+          {
+            "key": "Data Versioning",
+            "value": "v1"
+          },
+          {
+            "key": "Dataset Code",
+            "value": "WCL00027"
+          },
+          {
+            "key": "Dataset Type",
+            "value": "Time series"
+          },
+          {
+            "key": "Frequency",
+            "value": "Hourly"
+          },
+          {
+            "key": "Keywords",
+            "value": "Rainfall, Rainfall Time Series,  Rainfall Statistics, Rainfall Analysis , Rainfall and Climate "
+          },
+          {
+            "key": "LGD Compliance",
+            "value": "yes"
+          },
+          {
+            "key": "Location ",
+            "value": "yes"
+          },
+          {
+            "key": "Mode of Acquisition",
+            "value": "Telemetry "
+          },
+          {
+            "key": "Related Datasets",
+            "value": "-"
+          },
+          {
+            "key": "Unit",
+            "value": "mm"
+          },
+          {
+            "key": "Version",
+            "value": "v1"
+          }
+        ],
+        "groups": [
+          {
+            "description": "Data describing long-term weather conditions such as precipitation, drought conditions, or evaporation data.",
+            "display_name": "Climate",
+            "id": "2730f91c-86d1-44b7-afb2-0fcd29430a5a",
+            "image_display_url": "https://nwdp.nwic.gov.in/uploads/group/2025-02-24-113032.358245Climate.png",
+            "name": "climate",
+            "title": "Climate"
+          }
+        ],
+        "resources": [
+          {
+            "cache_last_updated": null,
+            "cache_url": null,
+            "created": "2025-03-06T11:54:10.466712",
+            "datastore_active": true,
+            "datastore_contains_all_records_of_source_file": false,
+            "description": null,
+            "format": "CSV",
+            "hash": "d0d483057a0b21cca23e8aca40088d2c",
+            "id": "34f1eae0-971f-4ba2-9aaa-b362fabd713c",
+            "last_modified": "2026-01-24T23:35:27.339387",
+            "metadata_modified": "2026-02-02T16:26:48.778867",
+            "mimetype": "text/csv",
+            "mimetype_inner": null,
+            "name": "Rainfall UPGW Uttar Pradesh (2021 - 2025) Telemetry Hourly",
+            "package_id": "9e9ce8da-2ab4-4d73-a9a7-d46c34f2eae3",
+            "position": 0,
+            "resource_type": null,
+            "size": 8441087,
+            "state": "active",
+            "url": "https://nwdp.nwic.gov.in/dataset/9e9ce8da-2ab4-4d73-a9a7-d46c34f2eae3/resource/34f1eae0-971f-4ba2-9aaa-b362fabd713c/download/rainfall_tel_hr_upgw_up_2021_2025.csv",
+            "url_type": "upload"
+          },
+          {
+            "cache_last_updated": null,
+            "cache_url": null,
+            "ckan_url": "https://nwdp.nwic.gov.in",
+            "created": "2026-02-02T16:26:48.923471",
+            "datastore_active": true,
+            "datastore_contains_all_records_of_source_file": true,
+            "description": null,
+            "format": "CSV",
+            "hash": "5d2c7096bd3869e9ab943610c38411c9",
+            "id": "7e9fd9b1-31e3-470f-a844-b3d5bca230d2",
+            "ignore_hash": false,
+            "last_modified": "2026-10-24T00:25:34.032500",
+            "metadata_modified": "2026-10-24T03:36:59.659250",
+            "mimetype": "text/csv",
+            "mimetype_inner": null,
+            "name": "Rainfall UPGW Uttar Pradesh (2026 - 2030) Telemetry Hourly",
+            "original_url": "https://nwdp.nwic.gov.in/dataset/9e9ce8da-2ab4-4d73-a9a7-d46c34f2eae3/resource/7e9fd9b1-31e3-470f-a844-b3d5bca230d2/download/rainfall_tel_hr_upgw_up_2026_2030.csv",
+            "package_id": "9e9ce8da-2ab4-4d73-a9a7-d46c34f2eae3",
+            "position": 1,
+            "resource_id": "7e9fd9b1-31e3-470f-a844-b3d5bca230d2",
+            "resource_type": null,
+            "set_url_type": false,
+            "size": 834440,
+            "state": "active",
+            "task_created": "2026-10-24 00:25:34.593690",
+            "url": "https://nwdp.nwic.gov.in/dataset/9e9ce8da-2ab4-4d73-a9a7-d46c34f2eae3/resource/7e9fd9b1-31e3-470f-a844-b3d5bca230d2/download/rainfall_tel_hr_upgw_up_2026_2030.csv",
+            "url_type": "upload"
+          }
+        ],
+        "tags": [
+          {
+            "display_name": "Annual Precipitation",
+            "id": "3db81227-662c-4e9a-ab0d-a87e5169822d",
+            "name": "Annual Precipitation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Annual Precipitation Trends",
+            "id": "65c4d05f-7f02-4a33-831d-6d12739cbbd1",
+            "name": "Annual Precipitation Trends",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Annual Rainfall Climatology",
+            "id": "60d77136-d297-40ab-b063-2a0b61a764bd",
+            "name": "Annual Rainfall Climatology",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Average Rainfall",
+            "id": "c4849689-e808-41a9-9cd0-4322bcbedea8",
+            "name": "Average Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Cumulative Precipitation",
+            "id": "187160d2-e12e-40c9-bada-20af32ddffbf",
+            "name": "Cumulative Precipitation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Cumulative Rainfall",
+            "id": "2d67061d-1e3a-4eb0-b122-7690b198f1d3",
+            "name": "Cumulative Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Daily Precipitation Measurements",
+            "id": "a8e5628d-0fc3-4e8e-be08-640b6a201553",
+            "name": "Daily Precipitation Measurements",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Daily Rainfall s",
+            "id": "832ba448-8659-4867-8457-828903298c3d",
+            "name": "Daily Rainfall s",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Extreme Rainfall Event",
+            "id": "03b2e4ac-19df-4345-b714-143d223bcd7a",
+            "name": "Extreme Rainfall Event",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Flooding and Rainfall",
+            "id": "b2122f0f-974c-4646-9fb7-091a0957f072",
+            "name": "Flooding and Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Geospatial Rainfall",
+            "id": "4962a693-d87a-4b80-a3b4-7a77bed02f0f",
+            "name": "Geospatial Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Historical Precipitation Extremes",
+            "id": "dfe98d8b-7533-4555-b425-188f57204ca7",
+            "name": "Historical Precipitation Extremes",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Historical Precipitation Time Series",
+            "id": "54fc0e8c-bd97-4ed8-9d1b-8caca44b3476",
+            "name": "Historical Precipitation Time Series",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Historical Rainfall",
+            "id": "0938f013-f218-4f7d-aafb-3b9f20fd64f0",
+            "name": "Historical Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Hourly Precipitation",
+            "id": "c2b27aa6-2e02-4022-849e-1152d4abf91d",
+            "name": "Hourly Precipitation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Hourly Rainfall",
+            "id": "251c7a51-b822-40bd-9810-28fb5a03f997",
+            "name": "Hourly Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Long-term Precipitation Trends",
+            "id": "fd0d7188-2bbc-4af0-acc4-6c5dbf984f6c",
+            "name": "Long-term Precipitation Trends",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Monthly Precipitation Patterns",
+            "id": "763da65b-d0d5-413c-9732-3471e8fa12e8",
+            "name": "Monthly Precipitation Patterns",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Monthly Rainfall",
+            "id": "c2c1362e-8049-4a5c-ab98-478c82aa46a9",
+            "name": "Monthly Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Monthly Rainfall Deviation",
+            "id": "a77cc8cc-d657-43e4-a4b6-b37679041576",
+            "name": "Monthly Rainfall Deviation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Monthly Rainfall Statistics",
+            "id": "d28ab3b3-aac9-4965-90af-0a8f35e0eadc",
+            "name": "Monthly Rainfall Statistics",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation",
+            "id": "2c43f788-7e8c-4468-be22-899f73d316f0",
+            "name": "Precipitation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Duration",
+            "id": "9c875a94-a638-4cae-a380-762db944d686",
+            "name": "Precipitation Duration",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Extremes",
+            "id": "dd65691d-2a1b-4eae-b422-c86fadfffd80",
+            "name": "Precipitation Extremes",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Frequency Analysis",
+            "id": "bbf03006-9c05-4961-b881-6c817731ad48",
+            "name": "Precipitation Frequency Analysis",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Index",
+            "id": "b5ed7ad2-8c55-4d54-8cc1-4c3f784a045d",
+            "name": "Precipitation Index",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Intensity",
+            "id": "cca369de-9b9b-41b7-afe9-ef9a0e52e2e6",
+            "name": "Precipitation Intensity",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Intensity and Duration",
+            "id": "8b3f5190-5319-4e56-b974-805ce00429e7",
+            "name": "Precipitation Intensity and Duration",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Mapping",
+            "id": "5c950820-27bf-46d2-af80-663bccd00770",
+            "name": "Precipitation Mapping",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Models and Predictions",
+            "id": "64361224-415b-4c5f-a4f0-bbc1d2539e5f",
+            "name": "Precipitation Models and Predictions",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Patterns",
+            "id": "2e8777c3-5e6b-41da-bbf2-0eac833adbba",
+            "name": "Precipitation Patterns",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Rate",
+            "id": "46047150-23c7-4b70-a802-82569a8426a7",
+            "name": "Precipitation Rate",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation and Evaporation",
+            "id": "769fbf2b-6027-45d3-8bef-e20c0d60c21b",
+            "name": "Precipitation and Evaporation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation and Water Availability",
+            "id": "f22a93c4-97da-4776-a6cf-147ed905bf6e",
+            "name": "Precipitation and Water Availability",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Radar Rainfall",
+            "id": "87d47b1e-8baf-4bb7-91e2-1022031cc16b",
+            "name": "Radar Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Radar and Satellite Rainfall",
+            "id": "94bdaef8-c4e2-4354-8a98-7bb7ec5d6ca8",
+            "name": "Radar and Satellite Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Radar-based Rainfall",
+            "id": "bb434e56-e7b5-4153-b118-472275e93da5",
+            "name": "Radar-based Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rain Gauge",
+            "id": "b0987444-5779-4fff-8cab-0815e882a0d4",
+            "name": "Rain Gauge",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rain Gauge Stations",
+            "id": "d098136b-33a4-49a1-bb1a-d6e8ecd81322",
+            "name": "Rain Gauge Stations",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall",
+            "id": "df147130-05a2-4ff0-9bd8-38125a7cdb72",
+            "name": "Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Accumulation",
+            "id": "82b762ed-0d2f-4b04-b35e-84f2547d5aa8",
+            "name": "Rainfall Accumulation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Accumulation Time Series",
+            "id": "f3420e38-0c7a-456c-a11c-1b19100c7762",
+            "name": "Rainfall Accumulation Time Series",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Analysis",
+            "id": "fe587d56-50d8-41b2-b82b-0891824ffa7a",
+            "name": "Rainfall Analysis",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Anomaly",
+            "id": "39965328-4bf4-4ee0-9559-8a328140d246",
+            "name": "Rainfall Anomaly",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Climatology",
+            "id": "04209424-38b6-4d41-9b95-c9f9832c83a2",
+            "name": "Rainfall Climatology",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Climatology by Location",
+            "id": "b5170db6-c9f0-4d79-baaa-4f5bc3f37198",
+            "name": "Rainfall Climatology by Location",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Climatology s",
+            "id": "1421f761-8983-42fe-8a32-ca02c9bec306",
+            "name": "Rainfall Climatology s",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Depth",
+            "id": "06654270-bd7b-4030-ba54-27eb9e45b33b",
+            "name": "Rainfall Depth",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Depth and Intensity",
+            "id": "e8e54c22-911b-48c5-be12-2311d2ae1696",
+            "name": "Rainfall Depth and Intensity",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Distribution",
+            "id": "73265b11-614f-4032-be71-2e156b8d2fdb",
+            "name": "Rainfall Distribution",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Distribution and Anomalies",
+            "id": "b071cebe-7583-4400-a40a-4ad9f7b84abf",
+            "name": "Rainfall Distribution and Anomalies",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Distribution and Intensity",
+            "id": "baf90bb2-5725-4ef9-a079-42da759ecad0",
+            "name": "Rainfall Distribution and Intensity",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Distribution by Region",
+            "id": "8d28d692-e855-43bf-a51c-1a3b81ceff9a",
+            "name": "Rainfall Distribution by Region",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Duration and Intensity",
+            "id": "b0b6973b-fdc9-4935-97b3-e4121084ae39",
+            "name": "Rainfall Duration and Intensity",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Estimation",
+            "id": "13e99ff3-abf7-4664-b3b4-f1ff6e9cf9a4",
+            "name": "Rainfall Estimation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Event",
+            "id": "32704f37-2185-410f-83bd-ba80cf493d05",
+            "name": "Rainfall Event",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Events and Impact",
+            "id": "4d617f7e-171e-45a9-ab34-b557c85dbfa6",
+            "name": "Rainfall Events and Impact",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Forecasting",
+            "id": "94ed39f7-cf3d-4c15-9733-8301254d760f",
+            "name": "Rainfall Forecasting",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Frequency",
+            "id": "4bdc0cef-fd79-425c-b558-5d80db05702e",
+            "name": "Rainfall Frequency",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Impact on Crop Yields",
+            "id": "1eba4130-c756-4c07-832c-f17b0b8942fb",
+            "name": "Rainfall Impact on Crop Yields",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Intensity",
+            "id": "bbb648f6-560d-46a9-9ddc-02d4085f8e1e",
+            "name": "Rainfall Intensity",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Measurement",
+            "id": "8c762d50-bbbc-40d7-a2c4-1ac2e56d373e",
+            "name": "Rainfall Measurement",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Monitoring",
+            "id": "14ff1654-a0ab-456f-979c-f520fecaf225",
+            "name": "Rainfall Monitoring",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Monitoring Systems",
+            "id": "b53ee76b-1961-4608-9638-a491c77329df",
+            "name": "Rainfall Monitoring Systems",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Patterns and Trends",
+            "id": "0c3c4d44-6809-434f-9fe4-f35cf671379c",
+            "name": "Rainfall Patterns and Trends",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Seasonality",
+            "id": "22c27c79-0aad-4733-b7ba-c98a5f73ccc6",
+            "name": "Rainfall Seasonality",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Stations",
+            "id": "2d22d408-d4e3-4220-8c6d-28bb582147c6",
+            "name": "Rainfall Stations",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Statistics",
+            "id": "b9fa26a9-e45b-4530-a31e-31ab0eb13c98",
+            "name": "Rainfall Statistics",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Time Series",
+            "id": "a6b926c0-e1f1-4721-bf8a-721ca370797a",
+            "name": "Rainfall Time Series",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Trends",
+            "id": "d3cdf876-c6d6-4ef9-8889-689ae6f0c777",
+            "name": "Rainfall Trends",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Variability",
+            "id": "34fc5b4b-34bc-49f0-b1f2-e0e49c279df1",
+            "name": "Rainfall Variability",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Variability and Trends",
+            "id": "094b6331-6d29-44cb-b3f7-29b33a44adcf",
+            "name": "Rainfall Variability and Trends",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and Climate",
+            "id": "d7416fe8-7529-471f-bda4-e099400a17d1",
+            "name": "Rainfall and Climate",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and Climate Change",
+            "id": "d0212239-c905-4192-81c9-da87a38a98ba",
+            "name": "Rainfall and Climate Change",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and Evapotranspiration",
+            "id": "35338eac-5b2e-4af3-bf86-71bf90365719",
+            "name": "Rainfall and Evapotranspiration",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and Groundwater Recharge",
+            "id": "b4177910-dfcd-4a6f-9155-93c782db075a",
+            "name": "Rainfall and Groundwater Recharge",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and River Discharge",
+            "id": "d2924543-56c6-470d-beff-8de0ca924025",
+            "name": "Rainfall and River Discharge",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and River Flow",
+            "id": "d80249d1-1c27-4289-b25f-d26d8f40cc23",
+            "name": "Rainfall and River Flow",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and Soil Erosion",
+            "id": "cc367bbd-662a-4532-82e5-f5e8cd325806",
+            "name": "Rainfall and Soil Erosion",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and Soil Moisture",
+            "id": "f1607f44-10ae-426c-aacb-0cd6b13f7dc1",
+            "name": "Rainfall and Soil Moisture",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and Storm",
+            "id": "3bef2ff1-dd26-4c0c-b3fa-129b555b0046",
+            "name": "Rainfall and Storm",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and Weather",
+            "id": "f1890983-1e25-44d2-a6f0-205aac0ca5b5",
+            "name": "Rainfall and Weather",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall for Agriculture",
+            "id": "513e8bc9-ce92-4870-a3da-fa976e6388ec",
+            "name": "Rainfall for Agriculture",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall for Flood Prediction",
+            "id": "39f1501a-322e-400a-bbe1-bb7ee0417d41",
+            "name": "Rainfall for Flood Prediction",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall for Hydrological Models",
+            "id": "946b9393-9a51-445c-a2cf-f973fd731d82",
+            "name": "Rainfall for Hydrological Models",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall for Water Resource Management",
+            "id": "3be882b4-4aa7-4af5-bc2a-5c348f50450b",
+            "name": "Rainfall for Water Resource Management",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall in Different Regions",
+            "id": "3ddbce3d-f2e1-42d8-83c5-0063545e4f80",
+            "name": "Rainfall in Different Regions",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall in Watershed Areas",
+            "id": "c1eae06b-87f4-4583-bfe5-66c8b1b4088a",
+            "name": "Rainfall in Watershed Areas",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall s",
+            "id": "f84e3bb8-2acb-4593-85dc-1babc0f8ff37",
+            "name": "Rainfall s",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Real-time Precipitation Measurement",
+            "id": "a6e28d88-0b47-4637-a33d-84034f6b06cd",
+            "name": "Real-time Precipitation Measurement",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Real-time Precipitation Monitoring",
+            "id": "dc1f28ec-a612-4eb3-9313-a4708fed0d07",
+            "name": "Real-time Precipitation Monitoring",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Real-time Rainfall",
+            "id": "0352d23c-5d64-4686-865e-62f742c3991e",
+            "name": "Real-time Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Regional Rainfall",
+            "id": "6ddcd952-d6d0-41b2-ad36-dc6399f9ec64",
+            "name": "Regional Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Seasonal Rainfall",
+            "id": "41c90031-fcb8-474a-9e8f-4d72c7066db2",
+            "name": "Seasonal Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Storm Event Precipitation",
+            "id": "cec46934-97b2-4f40-a4de-eb24c12a6b58",
+            "name": "Storm Event Precipitation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Storm Rainfall",
+            "id": "ba739af2-dd65-4620-9365-bdf96c4c0e60",
+            "name": "Storm Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Stormwater and Rainfall",
+            "id": "d6704fc3-7b31-41fd-9eed-e733b091f98c",
+            "name": "Stormwater and Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Weather Radar Rainfall",
+            "id": "50304b76-5bab-4d79-bb90-3a81e3cde942",
+            "name": "Weather Radar Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Weather Station Precipitation",
+            "id": "0cb9c48f-98db-47c1-9143-563361c1c49d",
+            "name": "Weather Station Precipitation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Weather Station Rainfall",
+            "id": "d244db34-2a61-4906-8613-7d4fecaa232a",
+            "name": "Weather Station Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Weather-related Rainfall Patterns",
+            "id": "74d3cfe2-1426-4fa4-af9a-8dbcbc1f207f",
+            "name": "Weather-related Rainfall Patterns",
+            "state": "active",
+            "vocabulary_id": null
+          }
+        ],
+        "relationships_as_subject": [],
+        "relationships_as_object": []
+      },
+      {
+        "author": "Tripura",
+        "author_email": "sewrpc@gmail.com",
+        "creator_user_id": "66b36a1d-2b7c-48a6-acac-fb738ea93524",
+        "id": "2e30862e-7b93-411b-a5ba-6f06576400b6",
+        "isopen": true,
+        "license_id": "other-open",
+        "license_title": "Other (Open)",
+        "maintainer": "Tripura",
+        "maintainer_email": "sewrpc@gmail.com",
+        "metadata_created": "2025-03-06T11:18:28.641256",
+        "metadata_modified": "2026-10-24T03:36:52.388154",
+        "name": "rainfall-telemetry-hourly-tripura",
+        "notes": "The Rainfall (Telemetry - Hourly) dataset, collected by the Tripura Department, contains hourly rainfall measurements from telemetry stations. Each record includes the timestamp, station identifier, geographic hierarchy, and recorded rainfall values, providing essential data for hydrological analysis, flood forecasting, and water resource management.",
+        "num_resources": 2,
+        "num_tags": 101,
+        "organization": {
+          "id": "209e4010-f2e7-431b-84ab-797c762cce9a",
+          "name": "tripura",
+          "title": "Tripura SW GW",
+          "type": "organization",
+          "description": "Tripura has both surface water and groundwater management entities overseeing water resources in the state.\r\n\r\nFor groundwater management, the Central Ground Water Board (CGWB) has assessed and managed Tripura's groundwater resources. The state experiences a varied hydrogeology, with aquifers mainly occurring within the Tipam and Dupitila formations. Groundwater is generally found under unconfined conditions in these formations, and deeper zones show semi-confined to confined characteristics. The state's overall groundwater extraction is low, with all 59 assessment units categorized as \"Safe,\" meaning extraction levels are sustainable.\r\n\r\nFor surface water, the Tripura Jal Board, established under the Tripura Jal Board Act, 2020, is responsible for water supply and sewerage systems, particularly in urban areas. The Board aims to streamline water supply services and control the wastage of water. As the state faces drinking water shortages, this body enforces regulations to ensure sustainable water use​.\r\n\r\nBoth agen",
+          "image_url": "2025-01-15-063752.701843Screenshot3-12-202415415th.bing.com.jpeg",
+          "created": "2025-01-15T06:37:52.708000",
+          "is_organization": true,
+          "approval_status": "approved",
+          "state": "active"
+        },
+        "owner_org": "209e4010-f2e7-431b-84ab-797c762cce9a",
+        "private": false,
+        "state": "active",
+        "title": "Rainfall (Telemetry - Hourly), Tripura",
+        "type": "dataset",
+        "url": "",
+        "version": "",
+        "extras": [
+          {
+            "key": "Citations",
+            "value": "-"
+          },
+          {
+            "key": "Data Access Control",
+            "value": "Public"
+          },
+          {
+            "key": "Data Error Handling",
+            "value": "-"
+          },
+          {
+            "key": "Data Format",
+            "value": "CSV, API"
+          },
+          {
+            "key": "Data Processing History",
+            "value": "-"
+          },
+          {
+            "key": "Data Quality Rating",
+            "value": "-"
+          },
+          {
+            "key": "Data Security Measures",
+            "value": "-"
+          },
+          {
+            "key": "Data Validation Method",
+            "value": "-"
+          },
+          {
+            "key": "Data Versioning",
+            "value": "v1"
+          },
+          {
+            "key": "Dataset Code",
+            "value": "WCL00027"
+          },
+          {
+            "key": "Dataset Type",
+            "value": "Time series"
+          },
+          {
+            "key": "Frequency",
+            "value": "Hourly"
+          },
+          {
+            "key": "Keywords",
+            "value": "Rainfall, Rainfall Time Series,  Rainfall Statistics, Rainfall Analysis , Rainfall and Climate "
+          },
+          {
+            "key": "LGD Compliance",
+            "value": "yes"
+          },
+          {
+            "key": "Location ",
+            "value": "yes"
+          },
+          {
+            "key": "Mode of Acquisition",
+            "value": "Telemetry "
+          },
+          {
+            "key": "Related Datasets",
+            "value": "-"
+          },
+          {
+            "key": "Unit",
+            "value": "mm"
+          },
+          {
+            "key": "Version",
+            "value": "v1"
+          }
+        ],
+        "groups": [
+          {
+            "description": "Data describing long-term weather conditions such as precipitation, drought conditions, or evaporation data.",
+            "display_name": "Climate",
+            "id": "2730f91c-86d1-44b7-afb2-0fcd29430a5a",
+            "image_display_url": "https://nwdp.nwic.gov.in/uploads/group/2025-02-24-113032.358245Climate.png",
+            "name": "climate",
+            "title": "Climate"
+          }
+        ],
+        "resources": [
+          {
+            "cache_last_updated": null,
+            "cache_url": null,
+            "created": "2025-03-06T11:19:00.315758",
+            "datastore_active": true,
+            "datastore_contains_all_records_of_source_file": false,
+            "description": null,
+            "format": "CSV",
+            "hash": "80c7127545b4af3957dc6501d404b426",
+            "id": "92440c57-eb5d-4ee3-b121-e2e30e0374d0",
+            "last_modified": "2026-01-24T23:35:26.332545",
+            "metadata_modified": "2026-02-02T16:26:47.231524",
+            "mimetype": "text/csv",
+            "mimetype_inner": null,
+            "name": "Rainfall Tripura Tripura (2021 - 2025) Telemetry Hourly",
+            "package_id": "2e30862e-7b93-411b-a5ba-6f06576400b6",
+            "position": 0,
+            "resource_type": null,
+            "size": 2733280,
+            "state": "active",
+            "url": "https://nwdp.nwic.gov.in/dataset/2e30862e-7b93-411b-a5ba-6f06576400b6/resource/92440c57-eb5d-4ee3-b121-e2e30e0374d0/download/rainfall_tel_hr_tripura_tr_2021_2025.csv",
+            "url_type": "upload"
+          },
+          {
+            "cache_last_updated": null,
+            "cache_url": null,
+            "ckan_url": "https://nwdp.nwic.gov.in",
+            "created": "2026-02-02T16:26:47.379201",
+            "datastore_active": true,
+            "datastore_contains_all_records_of_source_file": true,
+            "description": null,
+            "format": "CSV",
+            "hash": "0cbb0b58fdb69ae20f14044b1413e73e",
+            "id": "dcdaf4a1-08f0-47ec-a7e6-9475825a4957",
+            "ignore_hash": false,
+            "last_modified": "2026-10-24T00:25:32.853963",
+            "metadata_modified": "2026-10-24T03:36:52.397709",
+            "mimetype": "text/csv",
+            "mimetype_inner": null,
+            "name": "Rainfall Tripura Tripura (2026 - 2030) Telemetry Hourly",
+            "original_url": "https://nwdp.nwic.gov.in/dataset/2e30862e-7b93-411b-a5ba-6f06576400b6/resource/dcdaf4a1-08f0-47ec-a7e6-9475825a4957/download/rainfall_tel_hr_tripura_tr_2026_2030.csv",
+            "package_id": "2e30862e-7b93-411b-a5ba-6f06576400b6",
+            "position": 1,
+            "resource_id": "dcdaf4a1-08f0-47ec-a7e6-9475825a4957",
+            "resource_type": null,
+            "set_url_type": false,
+            "size": 637954,
+            "state": "active",
+            "task_created": "2026-10-24 00:25:33.292578",
+            "url": "https://nwdp.nwic.gov.in/dataset/2e30862e-7b93-411b-a5ba-6f06576400b6/resource/dcdaf4a1-08f0-47ec-a7e6-9475825a4957/download/rainfall_tel_hr_tripura_tr_2026_2030.csv",
+            "url_type": "upload"
+          }
+        ],
+        "tags": [
+          {
+            "display_name": "Annual Precipitation",
+            "id": "3db81227-662c-4e9a-ab0d-a87e5169822d",
+            "name": "Annual Precipitation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Annual Precipitation Trends",
+            "id": "65c4d05f-7f02-4a33-831d-6d12739cbbd1",
+            "name": "Annual Precipitation Trends",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Annual Rainfall Climatology",
+            "id": "60d77136-d297-40ab-b063-2a0b61a764bd",
+            "name": "Annual Rainfall Climatology",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Average Rainfall",
+            "id": "c4849689-e808-41a9-9cd0-4322bcbedea8",
+            "name": "Average Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Cumulative Precipitation",
+            "id": "187160d2-e12e-40c9-bada-20af32ddffbf",
+            "name": "Cumulative Precipitation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Cumulative Rainfall",
+            "id": "2d67061d-1e3a-4eb0-b122-7690b198f1d3",
+            "name": "Cumulative Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Daily Precipitation Measurements",
+            "id": "a8e5628d-0fc3-4e8e-be08-640b6a201553",
+            "name": "Daily Precipitation Measurements",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Daily Rainfall s",
+            "id": "832ba448-8659-4867-8457-828903298c3d",
+            "name": "Daily Rainfall s",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Extreme Rainfall Event",
+            "id": "03b2e4ac-19df-4345-b714-143d223bcd7a",
+            "name": "Extreme Rainfall Event",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Flooding and Rainfall",
+            "id": "b2122f0f-974c-4646-9fb7-091a0957f072",
+            "name": "Flooding and Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Geospatial Rainfall",
+            "id": "4962a693-d87a-4b80-a3b4-7a77bed02f0f",
+            "name": "Geospatial Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Historical Precipitation Extremes",
+            "id": "dfe98d8b-7533-4555-b425-188f57204ca7",
+            "name": "Historical Precipitation Extremes",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Historical Precipitation Time Series",
+            "id": "54fc0e8c-bd97-4ed8-9d1b-8caca44b3476",
+            "name": "Historical Precipitation Time Series",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Historical Rainfall",
+            "id": "0938f013-f218-4f7d-aafb-3b9f20fd64f0",
+            "name": "Historical Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Hourly Precipitation",
+            "id": "c2b27aa6-2e02-4022-849e-1152d4abf91d",
+            "name": "Hourly Precipitation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Hourly Rainfall",
+            "id": "251c7a51-b822-40bd-9810-28fb5a03f997",
+            "name": "Hourly Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Long-term Precipitation Trends",
+            "id": "fd0d7188-2bbc-4af0-acc4-6c5dbf984f6c",
+            "name": "Long-term Precipitation Trends",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Monthly Precipitation Patterns",
+            "id": "763da65b-d0d5-413c-9732-3471e8fa12e8",
+            "name": "Monthly Precipitation Patterns",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Monthly Rainfall",
+            "id": "c2c1362e-8049-4a5c-ab98-478c82aa46a9",
+            "name": "Monthly Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Monthly Rainfall Deviation",
+            "id": "a77cc8cc-d657-43e4-a4b6-b37679041576",
+            "name": "Monthly Rainfall Deviation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Monthly Rainfall Statistics",
+            "id": "d28ab3b3-aac9-4965-90af-0a8f35e0eadc",
+            "name": "Monthly Rainfall Statistics",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation",
+            "id": "2c43f788-7e8c-4468-be22-899f73d316f0",
+            "name": "Precipitation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Duration",
+            "id": "9c875a94-a638-4cae-a380-762db944d686",
+            "name": "Precipitation Duration",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Extremes",
+            "id": "dd65691d-2a1b-4eae-b422-c86fadfffd80",
+            "name": "Precipitation Extremes",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Frequency Analysis",
+            "id": "bbf03006-9c05-4961-b881-6c817731ad48",
+            "name": "Precipitation Frequency Analysis",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Index",
+            "id": "b5ed7ad2-8c55-4d54-8cc1-4c3f784a045d",
+            "name": "Precipitation Index",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Intensity",
+            "id": "cca369de-9b9b-41b7-afe9-ef9a0e52e2e6",
+            "name": "Precipitation Intensity",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Intensity and Duration",
+            "id": "8b3f5190-5319-4e56-b974-805ce00429e7",
+            "name": "Precipitation Intensity and Duration",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Mapping",
+            "id": "5c950820-27bf-46d2-af80-663bccd00770",
+            "name": "Precipitation Mapping",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Models and Predictions",
+            "id": "64361224-415b-4c5f-a4f0-bbc1d2539e5f",
+            "name": "Precipitation Models and Predictions",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Patterns",
+            "id": "2e8777c3-5e6b-41da-bbf2-0eac833adbba",
+            "name": "Precipitation Patterns",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Rate",
+            "id": "46047150-23c7-4b70-a802-82569a8426a7",
+            "name": "Precipitation Rate",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation and Evaporation",
+            "id": "769fbf2b-6027-45d3-8bef-e20c0d60c21b",
+            "name": "Precipitation and Evaporation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation and Water Availability",
+            "id": "f22a93c4-97da-4776-a6cf-147ed905bf6e",
+            "name": "Precipitation and Water Availability",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Radar Rainfall",
+            "id": "87d47b1e-8baf-4bb7-91e2-1022031cc16b",
+            "name": "Radar Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Radar and Satellite Rainfall",
+            "id": "94bdaef8-c4e2-4354-8a98-7bb7ec5d6ca8",
+            "name": "Radar and Satellite Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Radar-based Rainfall",
+            "id": "bb434e56-e7b5-4153-b118-472275e93da5",
+            "name": "Radar-based Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rain Gauge",
+            "id": "b0987444-5779-4fff-8cab-0815e882a0d4",
+            "name": "Rain Gauge",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rain Gauge Stations",
+            "id": "d098136b-33a4-49a1-bb1a-d6e8ecd81322",
+            "name": "Rain Gauge Stations",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall",
+            "id": "df147130-05a2-4ff0-9bd8-38125a7cdb72",
+            "name": "Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Accumulation",
+            "id": "82b762ed-0d2f-4b04-b35e-84f2547d5aa8",
+            "name": "Rainfall Accumulation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Accumulation Time Series",
+            "id": "f3420e38-0c7a-456c-a11c-1b19100c7762",
+            "name": "Rainfall Accumulation Time Series",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Analysis",
+            "id": "fe587d56-50d8-41b2-b82b-0891824ffa7a",
+            "name": "Rainfall Analysis",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Anomaly",
+            "id": "39965328-4bf4-4ee0-9559-8a328140d246",
+            "name": "Rainfall Anomaly",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Climatology",
+            "id": "04209424-38b6-4d41-9b95-c9f9832c83a2",
+            "name": "Rainfall Climatology",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Climatology by Location",
+            "id": "b5170db6-c9f0-4d79-baaa-4f5bc3f37198",
+            "name": "Rainfall Climatology by Location",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Climatology s",
+            "id": "1421f761-8983-42fe-8a32-ca02c9bec306",
+            "name": "Rainfall Climatology s",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Depth",
+            "id": "06654270-bd7b-4030-ba54-27eb9e45b33b",
+            "name": "Rainfall Depth",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Depth and Intensity",
+            "id": "e8e54c22-911b-48c5-be12-2311d2ae1696",
+            "name": "Rainfall Depth and Intensity",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Distribution",
+            "id": "73265b11-614f-4032-be71-2e156b8d2fdb",
+            "name": "Rainfall Distribution",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Distribution and Anomalies",
+            "id": "b071cebe-7583-4400-a40a-4ad9f7b84abf",
+            "name": "Rainfall Distribution and Anomalies",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Distribution and Intensity",
+            "id": "baf90bb2-5725-4ef9-a079-42da759ecad0",
+            "name": "Rainfall Distribution and Intensity",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Distribution by Region",
+            "id": "8d28d692-e855-43bf-a51c-1a3b81ceff9a",
+            "name": "Rainfall Distribution by Region",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Duration and Intensity",
+            "id": "b0b6973b-fdc9-4935-97b3-e4121084ae39",
+            "name": "Rainfall Duration and Intensity",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Estimation",
+            "id": "13e99ff3-abf7-4664-b3b4-f1ff6e9cf9a4",
+            "name": "Rainfall Estimation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Event",
+            "id": "32704f37-2185-410f-83bd-ba80cf493d05",
+            "name": "Rainfall Event",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Events and Impact",
+            "id": "4d617f7e-171e-45a9-ab34-b557c85dbfa6",
+            "name": "Rainfall Events and Impact",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Forecasting",
+            "id": "94ed39f7-cf3d-4c15-9733-8301254d760f",
+            "name": "Rainfall Forecasting",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Frequency",
+            "id": "4bdc0cef-fd79-425c-b558-5d80db05702e",
+            "name": "Rainfall Frequency",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Impact on Crop Yields",
+            "id": "1eba4130-c756-4c07-832c-f17b0b8942fb",
+            "name": "Rainfall Impact on Crop Yields",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Intensity",
+            "id": "bbb648f6-560d-46a9-9ddc-02d4085f8e1e",
+            "name": "Rainfall Intensity",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Measurement",
+            "id": "8c762d50-bbbc-40d7-a2c4-1ac2e56d373e",
+            "name": "Rainfall Measurement",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Monitoring",
+            "id": "14ff1654-a0ab-456f-979c-f520fecaf225",
+            "name": "Rainfall Monitoring",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Monitoring Systems",
+            "id": "b53ee76b-1961-4608-9638-a491c77329df",
+            "name": "Rainfall Monitoring Systems",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Patterns and Trends",
+            "id": "0c3c4d44-6809-434f-9fe4-f35cf671379c",
+            "name": "Rainfall Patterns and Trends",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Seasonality",
+            "id": "22c27c79-0aad-4733-b7ba-c98a5f73ccc6",
+            "name": "Rainfall Seasonality",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Stations",
+            "id": "2d22d408-d4e3-4220-8c6d-28bb582147c6",
+            "name": "Rainfall Stations",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Statistics",
+            "id": "b9fa26a9-e45b-4530-a31e-31ab0eb13c98",
+            "name": "Rainfall Statistics",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Time Series",
+            "id": "a6b926c0-e1f1-4721-bf8a-721ca370797a",
+            "name": "Rainfall Time Series",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Trends",
+            "id": "d3cdf876-c6d6-4ef9-8889-689ae6f0c777",
+            "name": "Rainfall Trends",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Variability",
+            "id": "34fc5b4b-34bc-49f0-b1f2-e0e49c279df1",
+            "name": "Rainfall Variability",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Variability and Trends",
+            "id": "094b6331-6d29-44cb-b3f7-29b33a44adcf",
+            "name": "Rainfall Variability and Trends",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and Climate",
+            "id": "d7416fe8-7529-471f-bda4-e099400a17d1",
+            "name": "Rainfall and Climate",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and Climate Change",
+            "id": "d0212239-c905-4192-81c9-da87a38a98ba",
+            "name": "Rainfall and Climate Change",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and Evapotranspiration",
+            "id": "35338eac-5b2e-4af3-bf86-71bf90365719",
+            "name": "Rainfall and Evapotranspiration",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and Groundwater Recharge",
+            "id": "b4177910-dfcd-4a6f-9155-93c782db075a",
+            "name": "Rainfall and Groundwater Recharge",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and River Discharge",
+            "id": "d2924543-56c6-470d-beff-8de0ca924025",
+            "name": "Rainfall and River Discharge",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and River Flow",
+            "id": "d80249d1-1c27-4289-b25f-d26d8f40cc23",
+            "name": "Rainfall and River Flow",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and Soil Erosion",
+            "id": "cc367bbd-662a-4532-82e5-f5e8cd325806",
+            "name": "Rainfall and Soil Erosion",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and Soil Moisture",
+            "id": "f1607f44-10ae-426c-aacb-0cd6b13f7dc1",
+            "name": "Rainfall and Soil Moisture",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and Storm",
+            "id": "3bef2ff1-dd26-4c0c-b3fa-129b555b0046",
+            "name": "Rainfall and Storm",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and Weather",
+            "id": "f1890983-1e25-44d2-a6f0-205aac0ca5b5",
+            "name": "Rainfall and Weather",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall for Agriculture",
+            "id": "513e8bc9-ce92-4870-a3da-fa976e6388ec",
+            "name": "Rainfall for Agriculture",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall for Flood Prediction",
+            "id": "39f1501a-322e-400a-bbe1-bb7ee0417d41",
+            "name": "Rainfall for Flood Prediction",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall for Hydrological Models",
+            "id": "946b9393-9a51-445c-a2cf-f973fd731d82",
+            "name": "Rainfall for Hydrological Models",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall for Water Resource Management",
+            "id": "3be882b4-4aa7-4af5-bc2a-5c348f50450b",
+            "name": "Rainfall for Water Resource Management",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall in Different Regions",
+            "id": "3ddbce3d-f2e1-42d8-83c5-0063545e4f80",
+            "name": "Rainfall in Different Regions",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall in Watershed Areas",
+            "id": "c1eae06b-87f4-4583-bfe5-66c8b1b4088a",
+            "name": "Rainfall in Watershed Areas",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall s",
+            "id": "f84e3bb8-2acb-4593-85dc-1babc0f8ff37",
+            "name": "Rainfall s",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Real-time Precipitation Measurement",
+            "id": "a6e28d88-0b47-4637-a33d-84034f6b06cd",
+            "name": "Real-time Precipitation Measurement",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Real-time Precipitation Monitoring",
+            "id": "dc1f28ec-a612-4eb3-9313-a4708fed0d07",
+            "name": "Real-time Precipitation Monitoring",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Real-time Rainfall",
+            "id": "0352d23c-5d64-4686-865e-62f742c3991e",
+            "name": "Real-time Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Regional Rainfall",
+            "id": "6ddcd952-d6d0-41b2-ad36-dc6399f9ec64",
+            "name": "Regional Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Seasonal Rainfall",
+            "id": "41c90031-fcb8-474a-9e8f-4d72c7066db2",
+            "name": "Seasonal Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Storm Event Precipitation",
+            "id": "cec46934-97b2-4f40-a4de-eb24c12a6b58",
+            "name": "Storm Event Precipitation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Storm Rainfall",
+            "id": "ba739af2-dd65-4620-9365-bdf96c4c0e60",
+            "name": "Storm Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Stormwater and Rainfall",
+            "id": "d6704fc3-7b31-41fd-9eed-e733b091f98c",
+            "name": "Stormwater and Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Weather Radar Rainfall",
+            "id": "50304b76-5bab-4d79-bb90-3a81e3cde942",
+            "name": "Weather Radar Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Weather Station Precipitation",
+            "id": "0cb9c48f-98db-47c1-9143-563361c1c49d",
+            "name": "Weather Station Precipitation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Weather Station Rainfall",
+            "id": "d244db34-2a61-4906-8613-7d4fecaa232a",
+            "name": "Weather Station Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Weather-related Rainfall Patterns",
+            "id": "74d3cfe2-1426-4fa4-af9a-8dbcbc1f207f",
+            "name": "Weather-related Rainfall Patterns",
+            "state": "active",
+            "vocabulary_id": null
+          }
+        ],
+        "relationships_as_subject": [],
+        "relationships_as_object": []
+      },
+      {
+        "author": "CWPRS",
+        "author_email": "cwprshp3@gmail.com",
+        "creator_user_id": "66b36a1d-2b7c-48a6-acac-fb738ea93524",
+        "id": "2f43d9da-02d2-4a61-aef3-cec40f62e63e",
+        "isopen": true,
+        "license_id": "other-open",
+        "license_title": "Other (Open)",
+        "maintainer": "CWPRS",
+        "maintainer_email": "cwprshp3@gmail.com",
+        "metadata_created": "2025-03-06T07:20:15.472004",
+        "metadata_modified": "2026-10-24T00:24:54.243212",
+        "name": "rainfall-telemetry-hourly-cwprs",
+        "notes": "The Rainfall (Telemetry - Hourly) dataset, collected by the CWPRS contains hourly rainfall measurements from telemetry stations. Each record includes the timestamp, station identifier, geographic hierarchy, and recorded rainfall values, supporting hydrological monitoring, flood risk assessment, and water resource planning.",
+        "num_resources": 2,
+        "num_tags": 99,
+        "organization": {
+          "id": "0dfdfe64-d654-4fd2-ab91-23f45bca9940",
+          "name": "cwprs",
+          "title": "CWPRS",
+          "type": "organization",
+          "description": "In the beginning of the 20th century, the need for small scale laboratory investigations to study the twin problems of irrigation and drainage was recognized by the Government. The Central Water and Power Research Station (CWPRS), Pune, as it is known today, was established in 1916 by the then Bombay Presidency as a \"Special Irrigation Cell\" with a limited mandate to modify irrigation practice to meet agricultural requirements. Recognizing its role in the systematic study of various phases of water flow, including floods, the institution was taken over by the Government of India in 1936. Due to considerable increase in its activities with development of water resources projects, the Research Station was shifted to Khadakwalsa, about 16 km southwest of Pune, with a larger campus in 1925. With the dawn of independence and launching of planned development of the nation's water resources, CWPRS became the principal central agency to cater to the R&D needs of projects in the fields of water and energy resources de",
+          "image_url": "2025-01-15-072720.900539Nwic.jpeg",
+          "created": "2025-01-15T07:26:48.068000",
+          "is_organization": true,
+          "approval_status": "approved",
+          "state": "active"
+        },
+        "owner_org": "0dfdfe64-d654-4fd2-ab91-23f45bca9940",
+        "private": false,
+        "state": "active",
+        "title": "Rainfall (Telemetry Hourly), CWPRS",
+        "type": "dataset",
+        "url": "",
+        "version": "",
+        "extras": [
+          {
+            "key": "Citations",
+            "value": "-"
+          },
+          {
+            "key": "Data Access Control",
+            "value": "Public"
+          },
+          {
+            "key": "Data Error Handling",
+            "value": "-"
+          },
+          {
+            "key": "Data Format",
+            "value": "CSV, API"
+          },
+          {
+            "key": "Data Processing History",
+            "value": "-"
+          },
+          {
+            "key": "Data Quality Rating",
+            "value": "-"
+          },
+          {
+            "key": "Data Security Measures",
+            "value": "-"
+          },
+          {
+            "key": "Data Validation Method",
+            "value": "-"
+          },
+          {
+            "key": "Data Versioning",
+            "value": "v1"
+          },
+          {
+            "key": "Dataset Code",
+            "value": "WCL00027"
+          },
+          {
+            "key": "Dataset Type",
+            "value": "Time series"
+          },
+          {
+            "key": "Frequency",
+            "value": "Hourly"
+          },
+          {
+            "key": "Keywords",
+            "value": "Rainfall, Rainfall Time Series,  Rainfall Statistics, Rainfall Analysis , Rainfall and Climate "
+          },
+          {
+            "key": "LGD Compliance",
+            "value": "Yes"
+          },
+          {
+            "key": "Location",
+            "value": "Yes"
+          },
+          {
+            "key": "Mode of Acquisition",
+            "value": "Telemetry"
+          },
+          {
+            "key": "Related Datasets",
+            "value": "-"
+          },
+          {
+            "key": "Unit",
+            "value": "mm"
+          },
+          {
+            "key": "Version",
+            "value": "v1"
+          }
+        ],
+        "groups": [
+          {
+            "description": "Data describing long-term weather conditions such as precipitation, drought conditions, or evaporation data.",
+            "display_name": "Climate",
+            "id": "2730f91c-86d1-44b7-afb2-0fcd29430a5a",
+            "image_display_url": "https://nwdp.nwic.gov.in/uploads/group/2025-02-24-113032.358245Climate.png",
+            "name": "climate",
+            "title": "Climate"
+          }
+        ],
+        "resources": [
+          {
+            "cache_last_updated": null,
+            "cache_url": null,
+            "created": "2025-03-06T07:24:46.196536",
+            "datastore_active": true,
+            "datastore_contains_all_records_of_source_file": false,
+            "description": null,
+            "format": "CSV",
+            "hash": "5d7519c5dc86194ed8915adcef7c903a",
+            "id": "7fde6691-8d28-4276-a1d3-ad568ad8b7cf",
+            "last_modified": "2026-01-24T23:34:44.134737",
+            "metadata_modified": "2026-02-02T16:26:01.014144",
+            "mimetype": "text/csv",
+            "mimetype_inner": null,
+            "name": "Rainfall CWPRS Maharashtra (2021 - 2025) Telemetry Hourly",
+            "package_id": "2f43d9da-02d2-4a61-aef3-cec40f62e63e",
+            "position": 0,
+            "resource_type": null,
+            "size": 3183202,
+            "state": "active",
+            "url": "https://nwdp.nwic.gov.in/dataset/2f43d9da-02d2-4a61-aef3-cec40f62e63e/resource/7fde6691-8d28-4276-a1d3-ad568ad8b7cf/download/rainfall_tel_hr_cwprs_mh_2021_2025.csv",
+            "url_type": "upload"
+          },
+          {
+            "cache_last_updated": null,
+            "cache_url": null,
+            "created": "2026-02-02T16:26:01.169026",
+            "datastore_active": true,
+            "datastore_contains_all_records_of_source_file": false,
+            "description": null,
+            "format": "CSV",
+            "hash": "12f0ab603cba675357293c7789e45de3",
+            "id": "78def6be-1e56-40c2-8ecb-cfedb353a93a",
+            "last_modified": "2026-10-24T00:24:54.212061",
+            "metadata_modified": "2026-10-24T00:24:54.250387",
+            "mimetype": "text/csv",
+            "mimetype_inner": null,
+            "name": "Rainfall CWPRS Maharashtra (2026 - 2030) Telemetry Hourly",
+            "package_id": "2f43d9da-02d2-4a61-aef3-cec40f62e63e",
+            "position": 1,
+            "resource_type": null,
+            "size": 93912,
+            "state": "active",
+            "url": "https://nwdp.nwic.gov.in/dataset/2f43d9da-02d2-4a61-aef3-cec40f62e63e/resource/78def6be-1e56-40c2-8ecb-cfedb353a93a/download/rainfall_tel_hr_cwprs_mh_2026_2030.csv",
+            "url_type": "upload"
+          }
+        ],
+        "tags": [
+          {
+            "display_name": "Annual Precipitation",
+            "id": "3db81227-662c-4e9a-ab0d-a87e5169822d",
+            "name": "Annual Precipitation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Annual Precipitation Trends",
+            "id": "65c4d05f-7f02-4a33-831d-6d12739cbbd1",
+            "name": "Annual Precipitation Trends",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Annual Rainfall Climatology",
+            "id": "60d77136-d297-40ab-b063-2a0b61a764bd",
+            "name": "Annual Rainfall Climatology",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Average Rainfall",
+            "id": "c4849689-e808-41a9-9cd0-4322bcbedea8",
+            "name": "Average Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Cumulative Precipitation",
+            "id": "187160d2-e12e-40c9-bada-20af32ddffbf",
+            "name": "Cumulative Precipitation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Cumulative Rainfall",
+            "id": "2d67061d-1e3a-4eb0-b122-7690b198f1d3",
+            "name": "Cumulative Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Daily Precipitation Measurements",
+            "id": "a8e5628d-0fc3-4e8e-be08-640b6a201553",
+            "name": "Daily Precipitation Measurements",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Daily Rainfall",
+            "id": "5e7adf85-073c-47e5-8a55-a63f7aa3fc8c",
+            "name": "Daily Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Extreme Rainfall Event",
+            "id": "03b2e4ac-19df-4345-b714-143d223bcd7a",
+            "name": "Extreme Rainfall Event",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Flooding and Rainfall",
+            "id": "b2122f0f-974c-4646-9fb7-091a0957f072",
+            "name": "Flooding and Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Geospatial Rainfall",
+            "id": "4962a693-d87a-4b80-a3b4-7a77bed02f0f",
+            "name": "Geospatial Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Historical Precipitation Extremes",
+            "id": "dfe98d8b-7533-4555-b425-188f57204ca7",
+            "name": "Historical Precipitation Extremes",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Historical Precipitation Time Series",
+            "id": "54fc0e8c-bd97-4ed8-9d1b-8caca44b3476",
+            "name": "Historical Precipitation Time Series",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Historical Rainfall",
+            "id": "0938f013-f218-4f7d-aafb-3b9f20fd64f0",
+            "name": "Historical Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Hourly Precipitation",
+            "id": "c2b27aa6-2e02-4022-849e-1152d4abf91d",
+            "name": "Hourly Precipitation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Hourly Rainfall",
+            "id": "251c7a51-b822-40bd-9810-28fb5a03f997",
+            "name": "Hourly Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Long-term Precipitation Trends",
+            "id": "fd0d7188-2bbc-4af0-acc4-6c5dbf984f6c",
+            "name": "Long-term Precipitation Trends",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Monthly Precipitation Patterns",
+            "id": "763da65b-d0d5-413c-9732-3471e8fa12e8",
+            "name": "Monthly Precipitation Patterns",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Monthly Rainfall",
+            "id": "c2c1362e-8049-4a5c-ab98-478c82aa46a9",
+            "name": "Monthly Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Monthly Rainfall Deviation",
+            "id": "a77cc8cc-d657-43e4-a4b6-b37679041576",
+            "name": "Monthly Rainfall Deviation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Monthly Rainfall Statistics",
+            "id": "d28ab3b3-aac9-4965-90af-0a8f35e0eadc",
+            "name": "Monthly Rainfall Statistics",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation",
+            "id": "2c43f788-7e8c-4468-be22-899f73d316f0",
+            "name": "Precipitation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Duration",
+            "id": "9c875a94-a638-4cae-a380-762db944d686",
+            "name": "Precipitation Duration",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Extremes",
+            "id": "dd65691d-2a1b-4eae-b422-c86fadfffd80",
+            "name": "Precipitation Extremes",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Frequency Analysis",
+            "id": "bbf03006-9c05-4961-b881-6c817731ad48",
+            "name": "Precipitation Frequency Analysis",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Index",
+            "id": "b5ed7ad2-8c55-4d54-8cc1-4c3f784a045d",
+            "name": "Precipitation Index",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Intensity",
+            "id": "cca369de-9b9b-41b7-afe9-ef9a0e52e2e6",
+            "name": "Precipitation Intensity",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Intensity and Duration",
+            "id": "8b3f5190-5319-4e56-b974-805ce00429e7",
+            "name": "Precipitation Intensity and Duration",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Mapping",
+            "id": "5c950820-27bf-46d2-af80-663bccd00770",
+            "name": "Precipitation Mapping",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Models and Predictions",
+            "id": "64361224-415b-4c5f-a4f0-bbc1d2539e5f",
+            "name": "Precipitation Models and Predictions",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Patterns",
+            "id": "2e8777c3-5e6b-41da-bbf2-0eac833adbba",
+            "name": "Precipitation Patterns",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Rate",
+            "id": "46047150-23c7-4b70-a802-82569a8426a7",
+            "name": "Precipitation Rate",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation and Evaporation",
+            "id": "769fbf2b-6027-45d3-8bef-e20c0d60c21b",
+            "name": "Precipitation and Evaporation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation and Water Availability",
+            "id": "f22a93c4-97da-4776-a6cf-147ed905bf6e",
+            "name": "Precipitation and Water Availability",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Radar Rainfall",
+            "id": "87d47b1e-8baf-4bb7-91e2-1022031cc16b",
+            "name": "Radar Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Radar and Satellite Rainfall",
+            "id": "94bdaef8-c4e2-4354-8a98-7bb7ec5d6ca8",
+            "name": "Radar and Satellite Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Radar-based Rainfall",
+            "id": "bb434e56-e7b5-4153-b118-472275e93da5",
+            "name": "Radar-based Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rain Gauge",
+            "id": "b0987444-5779-4fff-8cab-0815e882a0d4",
+            "name": "Rain Gauge",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rain Gauge Stations",
+            "id": "d098136b-33a4-49a1-bb1a-d6e8ecd81322",
+            "name": "Rain Gauge Stations",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall",
+            "id": "df147130-05a2-4ff0-9bd8-38125a7cdb72",
+            "name": "Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Accumulation",
+            "id": "82b762ed-0d2f-4b04-b35e-84f2547d5aa8",
+            "name": "Rainfall Accumulation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Accumulation Time Series",
+            "id": "f3420e38-0c7a-456c-a11c-1b19100c7762",
+            "name": "Rainfall Accumulation Time Series",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Analysis",
+            "id": "fe587d56-50d8-41b2-b82b-0891824ffa7a",
+            "name": "Rainfall Analysis",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Anomaly",
+            "id": "39965328-4bf4-4ee0-9559-8a328140d246",
+            "name": "Rainfall Anomaly",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Climatology",
+            "id": "04209424-38b6-4d41-9b95-c9f9832c83a2",
+            "name": "Rainfall Climatology",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Climatology by Location",
+            "id": "b5170db6-c9f0-4d79-baaa-4f5bc3f37198",
+            "name": "Rainfall Climatology by Location",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Depth",
+            "id": "06654270-bd7b-4030-ba54-27eb9e45b33b",
+            "name": "Rainfall Depth",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Depth and Intensity",
+            "id": "e8e54c22-911b-48c5-be12-2311d2ae1696",
+            "name": "Rainfall Depth and Intensity",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Distribution",
+            "id": "73265b11-614f-4032-be71-2e156b8d2fdb",
+            "name": "Rainfall Distribution",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Distribution and Anomalies",
+            "id": "b071cebe-7583-4400-a40a-4ad9f7b84abf",
+            "name": "Rainfall Distribution and Anomalies",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Distribution and Intensity",
+            "id": "baf90bb2-5725-4ef9-a079-42da759ecad0",
+            "name": "Rainfall Distribution and Intensity",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Distribution by Region",
+            "id": "8d28d692-e855-43bf-a51c-1a3b81ceff9a",
+            "name": "Rainfall Distribution by Region",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Duration and Intensity",
+            "id": "b0b6973b-fdc9-4935-97b3-e4121084ae39",
+            "name": "Rainfall Duration and Intensity",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Estimation",
+            "id": "13e99ff3-abf7-4664-b3b4-f1ff6e9cf9a4",
+            "name": "Rainfall Estimation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Event",
+            "id": "32704f37-2185-410f-83bd-ba80cf493d05",
+            "name": "Rainfall Event",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Events and Impact",
+            "id": "4d617f7e-171e-45a9-ab34-b557c85dbfa6",
+            "name": "Rainfall Events and Impact",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Forecasting",
+            "id": "94ed39f7-cf3d-4c15-9733-8301254d760f",
+            "name": "Rainfall Forecasting",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Frequency",
+            "id": "4bdc0cef-fd79-425c-b558-5d80db05702e",
+            "name": "Rainfall Frequency",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Impact on Crop Yields",
+            "id": "1eba4130-c756-4c07-832c-f17b0b8942fb",
+            "name": "Rainfall Impact on Crop Yields",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Intensity",
+            "id": "bbb648f6-560d-46a9-9ddc-02d4085f8e1e",
+            "name": "Rainfall Intensity",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Measurement",
+            "id": "8c762d50-bbbc-40d7-a2c4-1ac2e56d373e",
+            "name": "Rainfall Measurement",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Monitoring",
+            "id": "14ff1654-a0ab-456f-979c-f520fecaf225",
+            "name": "Rainfall Monitoring",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Monitoring Systems",
+            "id": "b53ee76b-1961-4608-9638-a491c77329df",
+            "name": "Rainfall Monitoring Systems",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Patterns and Trends",
+            "id": "0c3c4d44-6809-434f-9fe4-f35cf671379c",
+            "name": "Rainfall Patterns and Trends",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Seasonality",
+            "id": "22c27c79-0aad-4733-b7ba-c98a5f73ccc6",
+            "name": "Rainfall Seasonality",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Stations",
+            "id": "2d22d408-d4e3-4220-8c6d-28bb582147c6",
+            "name": "Rainfall Stations",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Statistics",
+            "id": "b9fa26a9-e45b-4530-a31e-31ab0eb13c98",
+            "name": "Rainfall Statistics",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Time Series",
+            "id": "a6b926c0-e1f1-4721-bf8a-721ca370797a",
+            "name": "Rainfall Time Series",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Trends",
+            "id": "d3cdf876-c6d6-4ef9-8889-689ae6f0c777",
+            "name": "Rainfall Trends",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Variability",
+            "id": "34fc5b4b-34bc-49f0-b1f2-e0e49c279df1",
+            "name": "Rainfall Variability",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Variability and Trends",
+            "id": "094b6331-6d29-44cb-b3f7-29b33a44adcf",
+            "name": "Rainfall Variability and Trends",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and Climate",
+            "id": "d7416fe8-7529-471f-bda4-e099400a17d1",
+            "name": "Rainfall and Climate",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and Climate Change",
+            "id": "d0212239-c905-4192-81c9-da87a38a98ba",
+            "name": "Rainfall and Climate Change",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and Evapotranspiration",
+            "id": "35338eac-5b2e-4af3-bf86-71bf90365719",
+            "name": "Rainfall and Evapotranspiration",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and Groundwater Recharge",
+            "id": "b4177910-dfcd-4a6f-9155-93c782db075a",
+            "name": "Rainfall and Groundwater Recharge",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and River Discharge",
+            "id": "d2924543-56c6-470d-beff-8de0ca924025",
+            "name": "Rainfall and River Discharge",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and River Flow",
+            "id": "d80249d1-1c27-4289-b25f-d26d8f40cc23",
+            "name": "Rainfall and River Flow",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and Soil Erosion",
+            "id": "cc367bbd-662a-4532-82e5-f5e8cd325806",
+            "name": "Rainfall and Soil Erosion",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and Soil Moisture",
+            "id": "f1607f44-10ae-426c-aacb-0cd6b13f7dc1",
+            "name": "Rainfall and Soil Moisture",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and Storm",
+            "id": "3bef2ff1-dd26-4c0c-b3fa-129b555b0046",
+            "name": "Rainfall and Storm",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and Weather",
+            "id": "f1890983-1e25-44d2-a6f0-205aac0ca5b5",
+            "name": "Rainfall and Weather",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall for Agriculture",
+            "id": "513e8bc9-ce92-4870-a3da-fa976e6388ec",
+            "name": "Rainfall for Agriculture",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall for Flood Prediction",
+            "id": "39f1501a-322e-400a-bbe1-bb7ee0417d41",
+            "name": "Rainfall for Flood Prediction",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall for Hydrological Models",
+            "id": "946b9393-9a51-445c-a2cf-f973fd731d82",
+            "name": "Rainfall for Hydrological Models",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall for Water Resource Management",
+            "id": "3be882b4-4aa7-4af5-bc2a-5c348f50450b",
+            "name": "Rainfall for Water Resource Management",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall in Different Regions",
+            "id": "3ddbce3d-f2e1-42d8-83c5-0063545e4f80",
+            "name": "Rainfall in Different Regions",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall in Watershed Areas",
+            "id": "c1eae06b-87f4-4583-bfe5-66c8b1b4088a",
+            "name": "Rainfall in Watershed Areas",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Real-time Precipitation Measurement",
+            "id": "a6e28d88-0b47-4637-a33d-84034f6b06cd",
+            "name": "Real-time Precipitation Measurement",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Real-time Precipitation Monitoring",
+            "id": "dc1f28ec-a612-4eb3-9313-a4708fed0d07",
+            "name": "Real-time Precipitation Monitoring",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Real-time Rainfall",
+            "id": "0352d23c-5d64-4686-865e-62f742c3991e",
+            "name": "Real-time Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Regional Rainfall",
+            "id": "6ddcd952-d6d0-41b2-ad36-dc6399f9ec64",
+            "name": "Regional Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Seasonal Rainfall",
+            "id": "41c90031-fcb8-474a-9e8f-4d72c7066db2",
+            "name": "Seasonal Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Storm Event Precipitation",
+            "id": "cec46934-97b2-4f40-a4de-eb24c12a6b58",
+            "name": "Storm Event Precipitation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Storm Rainfall",
+            "id": "ba739af2-dd65-4620-9365-bdf96c4c0e60",
+            "name": "Storm Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Stormwater and Rainfall",
+            "id": "d6704fc3-7b31-41fd-9eed-e733b091f98c",
+            "name": "Stormwater and Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Weather Radar Rainfall",
+            "id": "50304b76-5bab-4d79-bb90-3a81e3cde942",
+            "name": "Weather Radar Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Weather Station Precipitation",
+            "id": "0cb9c48f-98db-47c1-9143-563361c1c49d",
+            "name": "Weather Station Precipitation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Weather Station Rainfall",
+            "id": "d244db34-2a61-4906-8613-7d4fecaa232a",
+            "name": "Weather Station Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Weather-related Rainfall Patterns",
+            "id": "74d3cfe2-1426-4fa4-af9a-8dbcbc1f207f",
+            "name": "Weather-related Rainfall Patterns",
+            "state": "active",
+            "vocabulary_id": null
+          }
+        ],
+        "relationships_as_subject": [],
+        "relationships_as_object": []
+      },
+      {
+        "author": "Mizoram",
+        "author_email": "mizoramwrd@gmail.com",
+        "creator_user_id": "66b36a1d-2b7c-48a6-acac-fb738ea93524",
+        "id": "daa5989a-fd11-4ee3-a4ae-5a37aab585d5",
+        "isopen": true,
+        "license_id": "other-open",
+        "license_title": "Other (Open)",
+        "maintainer": "Mizoram",
+        "maintainer_email": "mizoramwrd@gmail.com",
+        "metadata_created": "2025-03-05T10:12:36.418150",
+        "metadata_modified": "2025-03-06T06:04:05.895500",
+        "name": "rainfall-manual-daily-mizoram",
+        "notes": "Dataset contains daily manual rainfall measurements collected from meteorological stations established by Mizoram Water Department. Each record includes the date, station identifier with geographic hierarchy, and the corresponding rainfall values in millimeter (mm).",
+        "num_resources": 1,
+        "num_tags": 101,
+        "organization": {
+          "id": "3ff0d969-b8f0-4232-827e-da5f0c6e1d76",
+          "name": "mizoram",
+          "title": "Mizoram SW GW",
+          "type": "organization",
+          "description": "In Mizoram, groundwater management and regulation are overseen by the Mizoram Ground Water Authority (MGWA), which was established under the Mizoram Ground Water (Control and Regulation) Act, 2023. This law mandates that any individual or entity wishing to extract groundwater must obtain permission from the state authorities. It aims to ensure sustainable groundwater use and prevent over-extraction, particularly in light of growing concerns about aquifer depletion and land subsidence. The Act also requires users to register existing wells and drilling agencies.\r\nIn addition, the law emphasizes rainwater harvesting and artificial recharge to groundwater through measures like check dams, weirs, and the development of springs. \r\nFor surface water, while specific details on a dedicated agency are scarce, the state's management of water resources likely integrates these regulations into broader water supply and management schemes. This includes utilizing the region's natural springs and riverbeds for water extractio",
+          "image_url": "2025-01-15-071532.318774Screenshot3-12-2024151557images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com.jpe",
+          "created": "2025-01-15T07:15:32.324000",
+          "is_organization": true,
+          "approval_status": "approved",
+          "state": "active"
+        },
+        "owner_org": "3ff0d969-b8f0-4232-827e-da5f0c6e1d76",
+        "private": false,
+        "state": "active",
+        "title": "Rainfall (Manual - Daily), Mizoram",
+        "type": "dataset",
+        "url": "",
+        "version": "",
+        "extras": [
+          {
+            "key": " Frequency",
+            "value": "Daily"
+          },
+          {
+            "key": "Citations",
+            "value": "-"
+          },
+          {
+            "key": "Data Access Control",
+            "value": "Public"
+          },
+          {
+            "key": "Data Error Handling",
+            "value": "-"
+          },
+          {
+            "key": "Data Format",
+            "value": "CSV, API"
+          },
+          {
+            "key": "Data Processing History",
+            "value": "-"
+          },
+          {
+            "key": "Data Quality Rating",
+            "value": "-"
+          },
+          {
+            "key": "Data Security Measures",
+            "value": "-"
+          },
+          {
+            "key": "Data Validation Method",
+            "value": "-"
+          },
+          {
+            "key": "Data Versioning",
+            "value": "v1"
+          },
+          {
+            "key": "Dataset Code",
+            "value": "WCL00028"
+          },
+          {
+            "key": "Dataset Type",
+            "value": "Time series"
+          },
+          {
+            "key": "Keywords",
+            "value": "Rainfall, Rainfall Time Series,  Rainfall Statistics, Rainfall Analysis , Rainfall and Climate "
+          },
+          {
+            "key": "LGD Compliance",
+            "value": "Yes"
+          },
+          {
+            "key": "Location ",
+            "value": "Yes"
+          },
+          {
+            "key": "Mode of Acquisition",
+            "value": "Manual"
+          },
+          {
+            "key": "Related Datasets",
+            "value": "-"
+          },
+          {
+            "key": "Unit",
+            "value": "mm"
+          },
+          {
+            "key": "Version",
+            "value": "v1"
+          }
+        ],
+        "groups": [
+          {
+            "description": "Data describing long-term weather conditions such as precipitation, drought conditions, or evaporation data.",
+            "display_name": "Climate",
+            "id": "2730f91c-86d1-44b7-afb2-0fcd29430a5a",
+            "image_display_url": "https://nwdp.nwic.gov.in/uploads/group/2025-02-24-113032.358245Climate.png",
+            "name": "climate",
+            "title": "Climate"
+          }
+        ],
+        "resources": [
+          {
+            "cache_last_updated": null,
+            "cache_url": null,
+            "ckan_url": "http://172.16.1.177:5000",
+            "created": "2025-03-05T10:16:40.324277",
+            "datastore_active": true,
+            "datastore_contains_all_records_of_source_file": true,
+            "description": "The dataset \"Rainfall Mizoram SW GW (1991 - 2020) Manual Daily\" provides manually recorded Daily Rainfall data measurements for various locations in Mizoram, collected by the Mizoram SW GW from 1991 to 2020. It provides detailed precipitation measurements, typically recorded in millimeters (mm). This dataset is valuable for meteorological studies, water resource management, agriculture, and climate change analysis.",
+            "format": "CSV",
+            "hash": "2bb296f1b3feaf9f8e95a0738b801bee",
+            "id": "16937b85-64cc-4291-8c14-11349628fd5b",
+            "ignore_hash": false,
+            "last_modified": "2025-03-05T10:16:40.175052",
+            "metadata_modified": "2025-03-06T06:04:05.902176",
+            "mimetype": "text/csv",
+            "mimetype_inner": null,
+            "name": "Rainfall Mizoram SW GW  (1991- 2020) Manual Daily",
+            "original_url": "http://172.16.1.177:5000/dataset/daa5989a-fd11-4ee3-a4ae-5a37aab585d5/resource/16937b85-64cc-4291-8c14-11349628fd5b/download/rainfall_manual_daily_mizoram_mz_1991_2020.csv",
+            "package_id": "daa5989a-fd11-4ee3-a4ae-5a37aab585d5",
+            "position": 0,
+            "resource_id": "16937b85-64cc-4291-8c14-11349628fd5b",
+            "resource_type": null,
+            "set_url_type": false,
+            "size": 33635,
+            "state": "active",
+            "task_created": "2025-03-05 10:16:41.785605",
+            "url": "https://nwdp.nwic.gov.in/dataset/daa5989a-fd11-4ee3-a4ae-5a37aab585d5/resource/16937b85-64cc-4291-8c14-11349628fd5b/download/rainfall_manual_daily_mizoram_mz_1991_2020.csv",
+            "url_type": "upload"
+          }
+        ],
+        "tags": [
+          {
+            "display_name": "Annual Precipitation",
+            "id": "3db81227-662c-4e9a-ab0d-a87e5169822d",
+            "name": "Annual Precipitation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Annual Precipitation Trends",
+            "id": "65c4d05f-7f02-4a33-831d-6d12739cbbd1",
+            "name": "Annual Precipitation Trends",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Annual Rainfall Climatology",
+            "id": "60d77136-d297-40ab-b063-2a0b61a764bd",
+            "name": "Annual Rainfall Climatology",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Average Rainfall",
+            "id": "c4849689-e808-41a9-9cd0-4322bcbedea8",
+            "name": "Average Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Cumulative Precipitation",
+            "id": "187160d2-e12e-40c9-bada-20af32ddffbf",
+            "name": "Cumulative Precipitation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Cumulative Rainfall",
+            "id": "2d67061d-1e3a-4eb0-b122-7690b198f1d3",
+            "name": "Cumulative Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Daily Precipitation Measurements",
+            "id": "a8e5628d-0fc3-4e8e-be08-640b6a201553",
+            "name": "Daily Precipitation Measurements",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Daily Rainfall s",
+            "id": "832ba448-8659-4867-8457-828903298c3d",
+            "name": "Daily Rainfall s",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Extreme Rainfall Event",
+            "id": "03b2e4ac-19df-4345-b714-143d223bcd7a",
+            "name": "Extreme Rainfall Event",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Flooding and Rainfall",
+            "id": "b2122f0f-974c-4646-9fb7-091a0957f072",
+            "name": "Flooding and Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Geospatial Rainfall",
+            "id": "4962a693-d87a-4b80-a3b4-7a77bed02f0f",
+            "name": "Geospatial Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Historical Precipitation Extremes",
+            "id": "dfe98d8b-7533-4555-b425-188f57204ca7",
+            "name": "Historical Precipitation Extremes",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Historical Precipitation Time Series",
+            "id": "54fc0e8c-bd97-4ed8-9d1b-8caca44b3476",
+            "name": "Historical Precipitation Time Series",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Historical Rainfall",
+            "id": "0938f013-f218-4f7d-aafb-3b9f20fd64f0",
+            "name": "Historical Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Hourly Precipitation",
+            "id": "c2b27aa6-2e02-4022-849e-1152d4abf91d",
+            "name": "Hourly Precipitation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Hourly Rainfall",
+            "id": "251c7a51-b822-40bd-9810-28fb5a03f997",
+            "name": "Hourly Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Long-term Precipitation Trends",
+            "id": "fd0d7188-2bbc-4af0-acc4-6c5dbf984f6c",
+            "name": "Long-term Precipitation Trends",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Monthly Precipitation Patterns",
+            "id": "763da65b-d0d5-413c-9732-3471e8fa12e8",
+            "name": "Monthly Precipitation Patterns",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Monthly Rainfall",
+            "id": "c2c1362e-8049-4a5c-ab98-478c82aa46a9",
+            "name": "Monthly Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Monthly Rainfall Deviation",
+            "id": "a77cc8cc-d657-43e4-a4b6-b37679041576",
+            "name": "Monthly Rainfall Deviation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Monthly Rainfall Statistics",
+            "id": "d28ab3b3-aac9-4965-90af-0a8f35e0eadc",
+            "name": "Monthly Rainfall Statistics",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation",
+            "id": "2c43f788-7e8c-4468-be22-899f73d316f0",
+            "name": "Precipitation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Duration",
+            "id": "9c875a94-a638-4cae-a380-762db944d686",
+            "name": "Precipitation Duration",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Extremes",
+            "id": "dd65691d-2a1b-4eae-b422-c86fadfffd80",
+            "name": "Precipitation Extremes",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Frequency Analysis",
+            "id": "bbf03006-9c05-4961-b881-6c817731ad48",
+            "name": "Precipitation Frequency Analysis",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Index",
+            "id": "b5ed7ad2-8c55-4d54-8cc1-4c3f784a045d",
+            "name": "Precipitation Index",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Intensity",
+            "id": "cca369de-9b9b-41b7-afe9-ef9a0e52e2e6",
+            "name": "Precipitation Intensity",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Intensity and Duration",
+            "id": "8b3f5190-5319-4e56-b974-805ce00429e7",
+            "name": "Precipitation Intensity and Duration",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Mapping",
+            "id": "5c950820-27bf-46d2-af80-663bccd00770",
+            "name": "Precipitation Mapping",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Models and Predictions",
+            "id": "64361224-415b-4c5f-a4f0-bbc1d2539e5f",
+            "name": "Precipitation Models and Predictions",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Patterns",
+            "id": "2e8777c3-5e6b-41da-bbf2-0eac833adbba",
+            "name": "Precipitation Patterns",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Rate",
+            "id": "46047150-23c7-4b70-a802-82569a8426a7",
+            "name": "Precipitation Rate",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation and Evaporation",
+            "id": "769fbf2b-6027-45d3-8bef-e20c0d60c21b",
+            "name": "Precipitation and Evaporation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation and Water Availability",
+            "id": "f22a93c4-97da-4776-a6cf-147ed905bf6e",
+            "name": "Precipitation and Water Availability",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Radar Rainfall",
+            "id": "87d47b1e-8baf-4bb7-91e2-1022031cc16b",
+            "name": "Radar Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Radar and Satellite Rainfall",
+            "id": "94bdaef8-c4e2-4354-8a98-7bb7ec5d6ca8",
+            "name": "Radar and Satellite Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Radar-based Rainfall",
+            "id": "bb434e56-e7b5-4153-b118-472275e93da5",
+            "name": "Radar-based Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rain Gauge",
+            "id": "b0987444-5779-4fff-8cab-0815e882a0d4",
+            "name": "Rain Gauge",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rain Gauge Stations",
+            "id": "d098136b-33a4-49a1-bb1a-d6e8ecd81322",
+            "name": "Rain Gauge Stations",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall",
+            "id": "df147130-05a2-4ff0-9bd8-38125a7cdb72",
+            "name": "Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Accumulation",
+            "id": "82b762ed-0d2f-4b04-b35e-84f2547d5aa8",
+            "name": "Rainfall Accumulation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Accumulation Time Series",
+            "id": "f3420e38-0c7a-456c-a11c-1b19100c7762",
+            "name": "Rainfall Accumulation Time Series",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Analysis",
+            "id": "fe587d56-50d8-41b2-b82b-0891824ffa7a",
+            "name": "Rainfall Analysis",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Anomaly",
+            "id": "39965328-4bf4-4ee0-9559-8a328140d246",
+            "name": "Rainfall Anomaly",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Climatology",
+            "id": "04209424-38b6-4d41-9b95-c9f9832c83a2",
+            "name": "Rainfall Climatology",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Climatology by Location",
+            "id": "b5170db6-c9f0-4d79-baaa-4f5bc3f37198",
+            "name": "Rainfall Climatology by Location",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Climatology s",
+            "id": "1421f761-8983-42fe-8a32-ca02c9bec306",
+            "name": "Rainfall Climatology s",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Depth",
+            "id": "06654270-bd7b-4030-ba54-27eb9e45b33b",
+            "name": "Rainfall Depth",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Depth and Intensity",
+            "id": "e8e54c22-911b-48c5-be12-2311d2ae1696",
+            "name": "Rainfall Depth and Intensity",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Distribution",
+            "id": "73265b11-614f-4032-be71-2e156b8d2fdb",
+            "name": "Rainfall Distribution",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Distribution and Anomalies",
+            "id": "b071cebe-7583-4400-a40a-4ad9f7b84abf",
+            "name": "Rainfall Distribution and Anomalies",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Distribution and Intensity",
+            "id": "baf90bb2-5725-4ef9-a079-42da759ecad0",
+            "name": "Rainfall Distribution and Intensity",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Distribution by Region",
+            "id": "8d28d692-e855-43bf-a51c-1a3b81ceff9a",
+            "name": "Rainfall Distribution by Region",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Duration and Intensity",
+            "id": "b0b6973b-fdc9-4935-97b3-e4121084ae39",
+            "name": "Rainfall Duration and Intensity",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Estimation",
+            "id": "13e99ff3-abf7-4664-b3b4-f1ff6e9cf9a4",
+            "name": "Rainfall Estimation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Event",
+            "id": "32704f37-2185-410f-83bd-ba80cf493d05",
+            "name": "Rainfall Event",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Events and Impact",
+            "id": "4d617f7e-171e-45a9-ab34-b557c85dbfa6",
+            "name": "Rainfall Events and Impact",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Forecasting",
+            "id": "94ed39f7-cf3d-4c15-9733-8301254d760f",
+            "name": "Rainfall Forecasting",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Frequency",
+            "id": "4bdc0cef-fd79-425c-b558-5d80db05702e",
+            "name": "Rainfall Frequency",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Impact on Crop Yields",
+            "id": "1eba4130-c756-4c07-832c-f17b0b8942fb",
+            "name": "Rainfall Impact on Crop Yields",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Intensity",
+            "id": "bbb648f6-560d-46a9-9ddc-02d4085f8e1e",
+            "name": "Rainfall Intensity",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Measurement",
+            "id": "8c762d50-bbbc-40d7-a2c4-1ac2e56d373e",
+            "name": "Rainfall Measurement",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Monitoring",
+            "id": "14ff1654-a0ab-456f-979c-f520fecaf225",
+            "name": "Rainfall Monitoring",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Monitoring Systems",
+            "id": "b53ee76b-1961-4608-9638-a491c77329df",
+            "name": "Rainfall Monitoring Systems",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Patterns and Trends",
+            "id": "0c3c4d44-6809-434f-9fe4-f35cf671379c",
+            "name": "Rainfall Patterns and Trends",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Seasonality",
+            "id": "22c27c79-0aad-4733-b7ba-c98a5f73ccc6",
+            "name": "Rainfall Seasonality",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Stations",
+            "id": "2d22d408-d4e3-4220-8c6d-28bb582147c6",
+            "name": "Rainfall Stations",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Statistics",
+            "id": "b9fa26a9-e45b-4530-a31e-31ab0eb13c98",
+            "name": "Rainfall Statistics",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Time Series",
+            "id": "a6b926c0-e1f1-4721-bf8a-721ca370797a",
+            "name": "Rainfall Time Series",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Trends",
+            "id": "d3cdf876-c6d6-4ef9-8889-689ae6f0c777",
+            "name": "Rainfall Trends",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Variability",
+            "id": "34fc5b4b-34bc-49f0-b1f2-e0e49c279df1",
+            "name": "Rainfall Variability",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Variability and Trends",
+            "id": "094b6331-6d29-44cb-b3f7-29b33a44adcf",
+            "name": "Rainfall Variability and Trends",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and Climate",
+            "id": "d7416fe8-7529-471f-bda4-e099400a17d1",
+            "name": "Rainfall and Climate",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and Climate Change",
+            "id": "d0212239-c905-4192-81c9-da87a38a98ba",
+            "name": "Rainfall and Climate Change",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and Evapotranspiration",
+            "id": "35338eac-5b2e-4af3-bf86-71bf90365719",
+            "name": "Rainfall and Evapotranspiration",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and Groundwater Recharge",
+            "id": "b4177910-dfcd-4a6f-9155-93c782db075a",
+            "name": "Rainfall and Groundwater Recharge",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and River Discharge",
+            "id": "d2924543-56c6-470d-beff-8de0ca924025",
+            "name": "Rainfall and River Discharge",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and River Flow",
+            "id": "d80249d1-1c27-4289-b25f-d26d8f40cc23",
+            "name": "Rainfall and River Flow",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and Soil Erosion",
+            "id": "cc367bbd-662a-4532-82e5-f5e8cd325806",
+            "name": "Rainfall and Soil Erosion",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and Soil Moisture",
+            "id": "f1607f44-10ae-426c-aacb-0cd6b13f7dc1",
+            "name": "Rainfall and Soil Moisture",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and Storm",
+            "id": "3bef2ff1-dd26-4c0c-b3fa-129b555b0046",
+            "name": "Rainfall and Storm",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and Weather",
+            "id": "f1890983-1e25-44d2-a6f0-205aac0ca5b5",
+            "name": "Rainfall and Weather",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall for Agriculture",
+            "id": "513e8bc9-ce92-4870-a3da-fa976e6388ec",
+            "name": "Rainfall for Agriculture",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall for Flood Prediction",
+            "id": "39f1501a-322e-400a-bbe1-bb7ee0417d41",
+            "name": "Rainfall for Flood Prediction",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall for Hydrological Models",
+            "id": "946b9393-9a51-445c-a2cf-f973fd731d82",
+            "name": "Rainfall for Hydrological Models",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall for Water Resource Management",
+            "id": "3be882b4-4aa7-4af5-bc2a-5c348f50450b",
+            "name": "Rainfall for Water Resource Management",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall in Different Regions",
+            "id": "3ddbce3d-f2e1-42d8-83c5-0063545e4f80",
+            "name": "Rainfall in Different Regions",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall in Watershed Areas",
+            "id": "c1eae06b-87f4-4583-bfe5-66c8b1b4088a",
+            "name": "Rainfall in Watershed Areas",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall s",
+            "id": "f84e3bb8-2acb-4593-85dc-1babc0f8ff37",
+            "name": "Rainfall s",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Real-time Precipitation Measurement",
+            "id": "a6e28d88-0b47-4637-a33d-84034f6b06cd",
+            "name": "Real-time Precipitation Measurement",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Real-time Precipitation Monitoring",
+            "id": "dc1f28ec-a612-4eb3-9313-a4708fed0d07",
+            "name": "Real-time Precipitation Monitoring",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Real-time Rainfall",
+            "id": "0352d23c-5d64-4686-865e-62f742c3991e",
+            "name": "Real-time Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Regional Rainfall",
+            "id": "6ddcd952-d6d0-41b2-ad36-dc6399f9ec64",
+            "name": "Regional Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Seasonal Rainfall",
+            "id": "41c90031-fcb8-474a-9e8f-4d72c7066db2",
+            "name": "Seasonal Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Storm Event Precipitation",
+            "id": "cec46934-97b2-4f40-a4de-eb24c12a6b58",
+            "name": "Storm Event Precipitation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Storm Rainfall",
+            "id": "ba739af2-dd65-4620-9365-bdf96c4c0e60",
+            "name": "Storm Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Stormwater and Rainfall",
+            "id": "d6704fc3-7b31-41fd-9eed-e733b091f98c",
+            "name": "Stormwater and Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Weather Radar Rainfall",
+            "id": "50304b76-5bab-4d79-bb90-3a81e3cde942",
+            "name": "Weather Radar Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Weather Station Precipitation",
+            "id": "0cb9c48f-98db-47c1-9143-563361c1c49d",
+            "name": "Weather Station Precipitation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Weather Station Rainfall",
+            "id": "d244db34-2a61-4906-8613-7d4fecaa232a",
+            "name": "Weather Station Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Weather-related Rainfall Patterns",
+            "id": "74d3cfe2-1426-4fa4-af9a-8dbcbc1f207f",
+            "name": "Weather-related Rainfall Patterns",
+            "state": "active",
+            "vocabulary_id": null
+          }
+        ],
+        "relationships_as_subject": [],
+        "relationships_as_object": []
+      },
+      {
+        "author": "Uttarakhand",
+        "author_email": "uttarkhandwrd@gmail.com",
+        "creator_user_id": "66b36a1d-2b7c-48a6-acac-fb738ea93524",
+        "id": "00f9007e-9b5a-4ce0-87e0-cee4ccd1a8e5",
+        "isopen": true,
+        "license_id": "other-open",
+        "license_title": "Other (Open)",
+        "maintainer": "Uttarakhand",
+        "maintainer_email": "uttarkhandwrd@gmail.com",
+        "metadata_created": "2025-03-06T11:10:55.724826",
+        "metadata_modified": "2026-10-24T03:37:43.165652",
+        "name": "rainfall-telemetry-hourly-uttarakhand",
+        "notes": "The Rainfall (Telemetry - Hourly) dataset, collected by the Uttarakhand Department, contains hourly rainfall measurements from telemetry stations. Each record includes the timestamp, station identifier, geographic hierarchy, and recorded rainfall values, providing essential data for hydrological analysis, flood forecasting, and water resource management.",
+        "num_resources": 3,
+        "num_tags": 101,
+        "organization": {
+          "id": "3f39763d-6037-4bf0-9017-23c7078a73e5",
+          "name": "uttarakhand",
+          "title": "Uttarakhand SW GW",
+          "type": "organization",
+          "description": "In Uttarakhand, surface and groundwater management is overseen by several key agencies. The State Water & Sanitation Mission (SWSM) plays a crucial role in managing water resources, especially in rural areas. The mission is responsible for providing clean drinking water and managing sanitation services across the state. It implements various programs to improve water supply infrastructure, promote sustainability, and enhance community participation in water management​.\r\n\r\nRegarding groundwater, the Central Ground Water Board (CGWB) collaborates with state authorities to assess and manage groundwater resources. Groundwater in Uttarakhand is primarily sourced from springs, especially in the mountainous regions, and is used extensively in agricultural and domestic applications. As of the latest assessments, the total annual groundwater recharge is estimated at 2.02 billion cubic meters, with an annual extraction of 0.95 billion cubic meters. The majority of the state is categorized as having \"Safe\" groundwater resources, with 22% of the state being in a \"Semi-Critical\" category​.",
+          "image_url": "2025-02-18-103352.007910Screenshot3-12-202415640www.pioneeredge.in.jpeg",
+          "created": "2025-02-18T16:03:52.022299",
+          "is_organization": true,
+          "approval_status": "approved",
+          "state": "active"
+        },
+        "owner_org": "3f39763d-6037-4bf0-9017-23c7078a73e5",
+        "private": false,
+        "state": "active",
+        "title": "Rainfall (Telemetry - Hourly), Uttarakhand",
+        "type": "dataset",
+        "url": "",
+        "version": "",
+        "extras": [
+          {
+            "key": "Citations",
+            "value": "-"
+          },
+          {
+            "key": "Data Access Control",
+            "value": "Public"
+          },
+          {
+            "key": "Data Error Handling",
+            "value": "-"
+          },
+          {
+            "key": "Data Format",
+            "value": "CSV, API"
+          },
+          {
+            "key": "Data Processing History",
+            "value": "-"
+          },
+          {
+            "key": "Data Quality Rating",
+            "value": "-"
+          },
+          {
+            "key": "Data Security Measures",
+            "value": "-"
+          },
+          {
+            "key": "Data Validation Method",
+            "value": "-"
+          },
+          {
+            "key": "Data Versioning",
+            "value": "v1"
+          },
+          {
+            "key": "Dataset Code",
+            "value": "WCL00027"
+          },
+          {
+            "key": "Dataset Type",
+            "value": "Time series"
+          },
+          {
+            "key": "Frequency",
+            "value": "Hourly"
+          },
+          {
+            "key": "Keywords",
+            "value": "Rainfall, Rainfall Time Series,  Rainfall Statistics, Rainfall Analysis , Rainfall and Climate "
+          },
+          {
+            "key": "LGD Compliance",
+            "value": ""
+          },
+          {
+            "key": "Location ",
+            "value": "yes"
+          },
+          {
+            "key": "Mode of Acquisition",
+            "value": "Telemetry "
+          },
+          {
+            "key": "Related Datasets",
+            "value": "-"
+          },
+          {
+            "key": "Unit",
+            "value": "mm"
+          },
+          {
+            "key": "Version",
+            "value": "v1"
+          }
+        ],
+        "groups": [
+          {
+            "description": "Data describing long-term weather conditions such as precipitation, drought conditions, or evaporation data.",
+            "display_name": "Climate",
+            "id": "2730f91c-86d1-44b7-afb2-0fcd29430a5a",
+            "image_display_url": "https://nwdp.nwic.gov.in/uploads/group/2025-02-24-113032.358245Climate.png",
+            "name": "climate",
+            "title": "Climate"
+          }
+        ],
+        "resources": [
+          {
+            "cache_last_updated": null,
+            "cache_url": null,
+            "ckan_url": "http://172.16.1.177:5000",
+            "created": "2025-03-06T11:11:51.494552",
+            "datastore_active": true,
+            "datastore_contains_all_records_of_source_file": true,
+            "description": "The dataset \"Rainfall Uttarakhand(1991 - 2020) Telemetry Hourly\" provides Telemetry recorded Hourly Rainfall data measurements for various locations in Uttarakhand, collected by the Uttarakhand from 1991 to 2020. It provides detailed precipitation measurements, typically recorded in millimeters (mm). This dataset is valuable for meteorological studies, water resource management, agriculture, and climate change analysis.\r\n",
+            "format": "CSV",
+            "hash": "41acca770e3711dc0744ce79cdc034da",
+            "id": "89c87736-d23c-45e7-b4a6-a9ab8c0c4ac8",
+            "ignore_hash": false,
+            "last_modified": "2025-03-06T11:11:51.248380",
+            "metadata_modified": "2025-03-07T09:22:44.888575",
+            "mimetype": "text/csv",
+            "mimetype_inner": null,
+            "name": "Rainfall Uttarakhand (1991 - 2020) Telemetry Hourly",
+            "original_url": "http://172.16.1.177:5000/dataset/00f9007e-9b5a-4ce0-87e0-cee4ccd1a8e5/resource/89c87736-d23c-45e7-b4a6-a9ab8c0c4ac8/download/rainfall_tel_hr_uttarakhand_uk_1991_2020.csv",
+            "package_id": "00f9007e-9b5a-4ce0-87e0-cee4ccd1a8e5",
+            "position": 0,
+            "resource_id": "89c87736-d23c-45e7-b4a6-a9ab8c0c4ac8",
+            "resource_type": null,
+            "set_url_type": false,
+            "size": 682,
+            "state": "active",
+            "task_created": "2025-03-06 11:11:52.488666",
+            "url": "https://nwdp.nwic.gov.in/dataset/00f9007e-9b5a-4ce0-87e0-cee4ccd1a8e5/resource/89c87736-d23c-45e7-b4a6-a9ab8c0c4ac8/download/rainfall_tel_hr_uttarakhand_uk_1991_2020.csv",
+            "url_type": "upload"
+          },
+          {
+            "cache_last_updated": null,
+            "cache_url": null,
+            "created": "2025-03-06T11:12:20.300241",
+            "datastore_active": true,
+            "datastore_contains_all_records_of_source_file": false,
+            "description": null,
+            "format": "CSV",
+            "hash": "7423df1acc3e70087fe3c145818b7d8a",
+            "id": "86de3d1c-bda8-4397-be5d-610d107baee0",
+            "last_modified": "2026-01-24T23:35:29.808873",
+            "metadata_modified": "2026-02-02T16:26:51.787475",
+            "mimetype": "text/csv",
+            "mimetype_inner": null,
+            "name": "Rainfall Uttarakhand Uttarakhand (2021 - 2025) Telemetry Hourly",
+            "package_id": "00f9007e-9b5a-4ce0-87e0-cee4ccd1a8e5",
+            "position": 1,
+            "resource_type": null,
+            "size": 4574124,
+            "state": "active",
+            "url": "https://nwdp.nwic.gov.in/dataset/00f9007e-9b5a-4ce0-87e0-cee4ccd1a8e5/resource/86de3d1c-bda8-4397-be5d-610d107baee0/download/rainfall_tel_hr_uttarakhand_uk_2021_2025.csv",
+            "url_type": "upload"
+          },
+          {
+            "cache_last_updated": null,
+            "cache_url": null,
+            "ckan_url": "https://nwdp.nwic.gov.in",
+            "created": "2026-02-02T16:26:51.925244",
+            "datastore_active": true,
+            "datastore_contains_all_records_of_source_file": true,
+            "description": null,
+            "format": "CSV",
+            "hash": "8d31b81939cb96e8cc529abecf7a7561",
+            "id": "8b406187-0fee-40b9-8cd9-a249e0ce1903",
+            "ignore_hash": false,
+            "last_modified": "2026-10-24T00:25:36.901669",
+            "metadata_modified": "2026-10-24T03:37:43.175044",
+            "mimetype": "text/csv",
+            "mimetype_inner": null,
+            "name": "Rainfall Uttarakhand Uttarakhand (2026 - 2030) Telemetry Hourly",
+            "original_url": "https://nwdp.nwic.gov.in/dataset/00f9007e-9b5a-4ce0-87e0-cee4ccd1a8e5/resource/8b406187-0fee-40b9-8cd9-a249e0ce1903/download/rainfall_tel_hr_uttarakhand_uk_2026_2030.csv",
+            "package_id": "00f9007e-9b5a-4ce0-87e0-cee4ccd1a8e5",
+            "position": 2,
+            "resource_id": "8b406187-0fee-40b9-8cd9-a249e0ce1903",
+            "resource_type": null,
+            "set_url_type": false,
+            "size": 1357906,
+            "state": "active",
+            "task_created": "2026-10-24 00:25:37.259200",
+            "url": "https://nwdp.nwic.gov.in/dataset/00f9007e-9b5a-4ce0-87e0-cee4ccd1a8e5/resource/8b406187-0fee-40b9-8cd9-a249e0ce1903/download/rainfall_tel_hr_uttarakhand_uk_2026_2030.csv",
+            "url_type": "upload"
+          }
+        ],
+        "tags": [
+          {
+            "display_name": "Annual Precipitation",
+            "id": "3db81227-662c-4e9a-ab0d-a87e5169822d",
+            "name": "Annual Precipitation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Annual Precipitation Trends",
+            "id": "65c4d05f-7f02-4a33-831d-6d12739cbbd1",
+            "name": "Annual Precipitation Trends",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Annual Rainfall Climatology",
+            "id": "60d77136-d297-40ab-b063-2a0b61a764bd",
+            "name": "Annual Rainfall Climatology",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Average Rainfall",
+            "id": "c4849689-e808-41a9-9cd0-4322bcbedea8",
+            "name": "Average Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Cumulative Precipitation",
+            "id": "187160d2-e12e-40c9-bada-20af32ddffbf",
+            "name": "Cumulative Precipitation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Cumulative Rainfall",
+            "id": "2d67061d-1e3a-4eb0-b122-7690b198f1d3",
+            "name": "Cumulative Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Daily Precipitation Measurements",
+            "id": "a8e5628d-0fc3-4e8e-be08-640b6a201553",
+            "name": "Daily Precipitation Measurements",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Daily Rainfall s",
+            "id": "832ba448-8659-4867-8457-828903298c3d",
+            "name": "Daily Rainfall s",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Extreme Rainfall Event",
+            "id": "03b2e4ac-19df-4345-b714-143d223bcd7a",
+            "name": "Extreme Rainfall Event",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Flooding and Rainfall",
+            "id": "b2122f0f-974c-4646-9fb7-091a0957f072",
+            "name": "Flooding and Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Geospatial Rainfall",
+            "id": "4962a693-d87a-4b80-a3b4-7a77bed02f0f",
+            "name": "Geospatial Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Historical Precipitation Extremes",
+            "id": "dfe98d8b-7533-4555-b425-188f57204ca7",
+            "name": "Historical Precipitation Extremes",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Historical Precipitation Time Series",
+            "id": "54fc0e8c-bd97-4ed8-9d1b-8caca44b3476",
+            "name": "Historical Precipitation Time Series",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Historical Rainfall",
+            "id": "0938f013-f218-4f7d-aafb-3b9f20fd64f0",
+            "name": "Historical Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Hourly Precipitation",
+            "id": "c2b27aa6-2e02-4022-849e-1152d4abf91d",
+            "name": "Hourly Precipitation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Hourly Rainfall",
+            "id": "251c7a51-b822-40bd-9810-28fb5a03f997",
+            "name": "Hourly Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Long-term Precipitation Trends",
+            "id": "fd0d7188-2bbc-4af0-acc4-6c5dbf984f6c",
+            "name": "Long-term Precipitation Trends",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Monthly Precipitation Patterns",
+            "id": "763da65b-d0d5-413c-9732-3471e8fa12e8",
+            "name": "Monthly Precipitation Patterns",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Monthly Rainfall",
+            "id": "c2c1362e-8049-4a5c-ab98-478c82aa46a9",
+            "name": "Monthly Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Monthly Rainfall Deviation",
+            "id": "a77cc8cc-d657-43e4-a4b6-b37679041576",
+            "name": "Monthly Rainfall Deviation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Monthly Rainfall Statistics",
+            "id": "d28ab3b3-aac9-4965-90af-0a8f35e0eadc",
+            "name": "Monthly Rainfall Statistics",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation",
+            "id": "2c43f788-7e8c-4468-be22-899f73d316f0",
+            "name": "Precipitation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Duration",
+            "id": "9c875a94-a638-4cae-a380-762db944d686",
+            "name": "Precipitation Duration",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Extremes",
+            "id": "dd65691d-2a1b-4eae-b422-c86fadfffd80",
+            "name": "Precipitation Extremes",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Frequency Analysis",
+            "id": "bbf03006-9c05-4961-b881-6c817731ad48",
+            "name": "Precipitation Frequency Analysis",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Index",
+            "id": "b5ed7ad2-8c55-4d54-8cc1-4c3f784a045d",
+            "name": "Precipitation Index",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Intensity",
+            "id": "cca369de-9b9b-41b7-afe9-ef9a0e52e2e6",
+            "name": "Precipitation Intensity",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Intensity and Duration",
+            "id": "8b3f5190-5319-4e56-b974-805ce00429e7",
+            "name": "Precipitation Intensity and Duration",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Mapping",
+            "id": "5c950820-27bf-46d2-af80-663bccd00770",
+            "name": "Precipitation Mapping",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Models and Predictions",
+            "id": "64361224-415b-4c5f-a4f0-bbc1d2539e5f",
+            "name": "Precipitation Models and Predictions",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Patterns",
+            "id": "2e8777c3-5e6b-41da-bbf2-0eac833adbba",
+            "name": "Precipitation Patterns",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation Rate",
+            "id": "46047150-23c7-4b70-a802-82569a8426a7",
+            "name": "Precipitation Rate",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation and Evaporation",
+            "id": "769fbf2b-6027-45d3-8bef-e20c0d60c21b",
+            "name": "Precipitation and Evaporation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Precipitation and Water Availability",
+            "id": "f22a93c4-97da-4776-a6cf-147ed905bf6e",
+            "name": "Precipitation and Water Availability",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Radar Rainfall",
+            "id": "87d47b1e-8baf-4bb7-91e2-1022031cc16b",
+            "name": "Radar Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Radar and Satellite Rainfall",
+            "id": "94bdaef8-c4e2-4354-8a98-7bb7ec5d6ca8",
+            "name": "Radar and Satellite Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Radar-based Rainfall",
+            "id": "bb434e56-e7b5-4153-b118-472275e93da5",
+            "name": "Radar-based Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rain Gauge",
+            "id": "b0987444-5779-4fff-8cab-0815e882a0d4",
+            "name": "Rain Gauge",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rain Gauge Stations",
+            "id": "d098136b-33a4-49a1-bb1a-d6e8ecd81322",
+            "name": "Rain Gauge Stations",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall",
+            "id": "df147130-05a2-4ff0-9bd8-38125a7cdb72",
+            "name": "Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Accumulation",
+            "id": "82b762ed-0d2f-4b04-b35e-84f2547d5aa8",
+            "name": "Rainfall Accumulation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Accumulation Time Series",
+            "id": "f3420e38-0c7a-456c-a11c-1b19100c7762",
+            "name": "Rainfall Accumulation Time Series",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Analysis",
+            "id": "fe587d56-50d8-41b2-b82b-0891824ffa7a",
+            "name": "Rainfall Analysis",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Anomaly",
+            "id": "39965328-4bf4-4ee0-9559-8a328140d246",
+            "name": "Rainfall Anomaly",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Climatology",
+            "id": "04209424-38b6-4d41-9b95-c9f9832c83a2",
+            "name": "Rainfall Climatology",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Climatology by Location",
+            "id": "b5170db6-c9f0-4d79-baaa-4f5bc3f37198",
+            "name": "Rainfall Climatology by Location",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Climatology s",
+            "id": "1421f761-8983-42fe-8a32-ca02c9bec306",
+            "name": "Rainfall Climatology s",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Depth",
+            "id": "06654270-bd7b-4030-ba54-27eb9e45b33b",
+            "name": "Rainfall Depth",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Depth and Intensity",
+            "id": "e8e54c22-911b-48c5-be12-2311d2ae1696",
+            "name": "Rainfall Depth and Intensity",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Distribution",
+            "id": "73265b11-614f-4032-be71-2e156b8d2fdb",
+            "name": "Rainfall Distribution",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Distribution and Anomalies",
+            "id": "b071cebe-7583-4400-a40a-4ad9f7b84abf",
+            "name": "Rainfall Distribution and Anomalies",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Distribution and Intensity",
+            "id": "baf90bb2-5725-4ef9-a079-42da759ecad0",
+            "name": "Rainfall Distribution and Intensity",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Distribution by Region",
+            "id": "8d28d692-e855-43bf-a51c-1a3b81ceff9a",
+            "name": "Rainfall Distribution by Region",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Duration and Intensity",
+            "id": "b0b6973b-fdc9-4935-97b3-e4121084ae39",
+            "name": "Rainfall Duration and Intensity",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Estimation",
+            "id": "13e99ff3-abf7-4664-b3b4-f1ff6e9cf9a4",
+            "name": "Rainfall Estimation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Event",
+            "id": "32704f37-2185-410f-83bd-ba80cf493d05",
+            "name": "Rainfall Event",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Events and Impact",
+            "id": "4d617f7e-171e-45a9-ab34-b557c85dbfa6",
+            "name": "Rainfall Events and Impact",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Forecasting",
+            "id": "94ed39f7-cf3d-4c15-9733-8301254d760f",
+            "name": "Rainfall Forecasting",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Frequency",
+            "id": "4bdc0cef-fd79-425c-b558-5d80db05702e",
+            "name": "Rainfall Frequency",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Impact on Crop Yields",
+            "id": "1eba4130-c756-4c07-832c-f17b0b8942fb",
+            "name": "Rainfall Impact on Crop Yields",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Intensity",
+            "id": "bbb648f6-560d-46a9-9ddc-02d4085f8e1e",
+            "name": "Rainfall Intensity",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Measurement",
+            "id": "8c762d50-bbbc-40d7-a2c4-1ac2e56d373e",
+            "name": "Rainfall Measurement",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Monitoring",
+            "id": "14ff1654-a0ab-456f-979c-f520fecaf225",
+            "name": "Rainfall Monitoring",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Monitoring Systems",
+            "id": "b53ee76b-1961-4608-9638-a491c77329df",
+            "name": "Rainfall Monitoring Systems",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Patterns and Trends",
+            "id": "0c3c4d44-6809-434f-9fe4-f35cf671379c",
+            "name": "Rainfall Patterns and Trends",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Seasonality",
+            "id": "22c27c79-0aad-4733-b7ba-c98a5f73ccc6",
+            "name": "Rainfall Seasonality",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Stations",
+            "id": "2d22d408-d4e3-4220-8c6d-28bb582147c6",
+            "name": "Rainfall Stations",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Statistics",
+            "id": "b9fa26a9-e45b-4530-a31e-31ab0eb13c98",
+            "name": "Rainfall Statistics",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Time Series",
+            "id": "a6b926c0-e1f1-4721-bf8a-721ca370797a",
+            "name": "Rainfall Time Series",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Trends",
+            "id": "d3cdf876-c6d6-4ef9-8889-689ae6f0c777",
+            "name": "Rainfall Trends",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Variability",
+            "id": "34fc5b4b-34bc-49f0-b1f2-e0e49c279df1",
+            "name": "Rainfall Variability",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall Variability and Trends",
+            "id": "094b6331-6d29-44cb-b3f7-29b33a44adcf",
+            "name": "Rainfall Variability and Trends",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and Climate",
+            "id": "d7416fe8-7529-471f-bda4-e099400a17d1",
+            "name": "Rainfall and Climate",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and Climate Change",
+            "id": "d0212239-c905-4192-81c9-da87a38a98ba",
+            "name": "Rainfall and Climate Change",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and Evapotranspiration",
+            "id": "35338eac-5b2e-4af3-bf86-71bf90365719",
+            "name": "Rainfall and Evapotranspiration",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and Groundwater Recharge",
+            "id": "b4177910-dfcd-4a6f-9155-93c782db075a",
+            "name": "Rainfall and Groundwater Recharge",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and River Discharge",
+            "id": "d2924543-56c6-470d-beff-8de0ca924025",
+            "name": "Rainfall and River Discharge",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and River Flow",
+            "id": "d80249d1-1c27-4289-b25f-d26d8f40cc23",
+            "name": "Rainfall and River Flow",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and Soil Erosion",
+            "id": "cc367bbd-662a-4532-82e5-f5e8cd325806",
+            "name": "Rainfall and Soil Erosion",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and Soil Moisture",
+            "id": "f1607f44-10ae-426c-aacb-0cd6b13f7dc1",
+            "name": "Rainfall and Soil Moisture",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and Storm",
+            "id": "3bef2ff1-dd26-4c0c-b3fa-129b555b0046",
+            "name": "Rainfall and Storm",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall and Weather",
+            "id": "f1890983-1e25-44d2-a6f0-205aac0ca5b5",
+            "name": "Rainfall and Weather",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall for Agriculture",
+            "id": "513e8bc9-ce92-4870-a3da-fa976e6388ec",
+            "name": "Rainfall for Agriculture",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall for Flood Prediction",
+            "id": "39f1501a-322e-400a-bbe1-bb7ee0417d41",
+            "name": "Rainfall for Flood Prediction",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall for Hydrological Models",
+            "id": "946b9393-9a51-445c-a2cf-f973fd731d82",
+            "name": "Rainfall for Hydrological Models",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall for Water Resource Management",
+            "id": "3be882b4-4aa7-4af5-bc2a-5c348f50450b",
+            "name": "Rainfall for Water Resource Management",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall in Different Regions",
+            "id": "3ddbce3d-f2e1-42d8-83c5-0063545e4f80",
+            "name": "Rainfall in Different Regions",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall in Watershed Areas",
+            "id": "c1eae06b-87f4-4583-bfe5-66c8b1b4088a",
+            "name": "Rainfall in Watershed Areas",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Rainfall s",
+            "id": "f84e3bb8-2acb-4593-85dc-1babc0f8ff37",
+            "name": "Rainfall s",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Real-time Precipitation Measurement",
+            "id": "a6e28d88-0b47-4637-a33d-84034f6b06cd",
+            "name": "Real-time Precipitation Measurement",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Real-time Precipitation Monitoring",
+            "id": "dc1f28ec-a612-4eb3-9313-a4708fed0d07",
+            "name": "Real-time Precipitation Monitoring",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Real-time Rainfall",
+            "id": "0352d23c-5d64-4686-865e-62f742c3991e",
+            "name": "Real-time Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Regional Rainfall",
+            "id": "6ddcd952-d6d0-41b2-ad36-dc6399f9ec64",
+            "name": "Regional Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Seasonal Rainfall",
+            "id": "41c90031-fcb8-474a-9e8f-4d72c7066db2",
+            "name": "Seasonal Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Storm Event Precipitation",
+            "id": "cec46934-97b2-4f40-a4de-eb24c12a6b58",
+            "name": "Storm Event Precipitation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Storm Rainfall",
+            "id": "ba739af2-dd65-4620-9365-bdf96c4c0e60",
+            "name": "Storm Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Stormwater and Rainfall",
+            "id": "d6704fc3-7b31-41fd-9eed-e733b091f98c",
+            "name": "Stormwater and Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Weather Radar Rainfall",
+            "id": "50304b76-5bab-4d79-bb90-3a81e3cde942",
+            "name": "Weather Radar Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Weather Station Precipitation",
+            "id": "0cb9c48f-98db-47c1-9143-563361c1c49d",
+            "name": "Weather Station Precipitation",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Weather Station Rainfall",
+            "id": "d244db34-2a61-4906-8613-7d4fecaa232a",
+            "name": "Weather Station Rainfall",
+            "state": "active",
+            "vocabulary_id": null
+          },
+          {
+            "display_name": "Weather-related Rainfall Patterns",
+            "id": "74d3cfe2-1426-4fa4-af9a-8dbcbc1f207f",
+            "name": "Weather-related Rainfall Patterns",
+            "state": "active",
+            "vocabulary_id": null
+          }
+        ],
+        "relationships_as_subject": [],
+        "relationships_as_object": []
+      }
+    ],
+    "sort": "score desc, metadata_modified desc",
+    "search_facets": {}
+  }
+}

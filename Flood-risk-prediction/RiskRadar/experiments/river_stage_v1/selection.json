@@ -1,0 +1,2191 @@
+{
+  "selected": {
+    "name": "xgboost_1_w1",
+    "type": "ml",
+    "learner": "xgboost",
+    "config": {
+      "n_estimators": 400,
+      "max_depth": 4,
+      "learning_rate": 0.04,
+      "min_child_weight": 5,
+      "reg_lambda": 20
+    },
+    "high_water_weight": 1.0,
+    "artifact_sha256": "0b6c3ce7724dc82d3d17da9959deade00c9887f3d896a2d299b32465165b6d69",
+    "validation": {
+      "n": 453,
+      "mae": 0.1888209385039508,
+      "rmse": 0.44575907599443815,
+      "r2_relative_to_station_warning": 0.977356039751003,
+      "macro_station_mae": 0.18923986926637917,
+      "warning_period_mae": 0.2942176292035697,
+      "macro_warning_period_mae": 0.2942176292035697,
+      "warning_period_n": 10,
+      "per_station": {
+        "kurundwad": {
+          "n": 149,
+          "mae": 0.252498414393065,
+          "rmse": 0.6472539225678191,
+          "r2": 0.9722464643959947,
+          "warning_period_mae": 0.2942176292035697,
+          "warning_period_n": 10
+        },
+        "narsingpur": {
+          "n": 152,
+          "mae": 0.20474358054882838,
+          "rmse": 0.3971868577977133,
+          "r2": 0.6800159350176899,
+          "warning_period_mae": null,
+          "warning_period_n": 0
+        },
+        "takli": {
+          "n": 152,
+          "mae": 0.11047761285724421,
+          "rmse": 0.1541272006053407,
+          "r2": 0.9522305787414026,
+          "warning_period_mae": null,
+          "warning_period_n": 0
+        }
+      },
+      "warning": {
+        "positive": 10,
+        "tp": 10,
+        "fp": 1,
+        "fn": 0,
+        "tn": 442,
+        "precision": 0.9090909090909091,
+        "recall": 1.0,
+        "f1": 0.9523809523809523
+      },
+      "danger": {
+        "positive": 7,
+        "tp": 7,
+        "fp": 0,
+        "fn": 0,
+        "tn": 446,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "danger_onset": {
+        "positive": 2,
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "tn": 446,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "selection_score": 0.24172874923497445
+    }
+  },
+  "best_ml": {
+    "name": "xgboost_1_w1",
+    "type": "ml",
+    "learner": "xgboost",
+    "config": {
+      "n_estimators": 400,
+      "max_depth": 4,
+      "learning_rate": 0.04,
+      "min_child_weight": 5,
+      "reg_lambda": 20
+    },
+    "high_water_weight": 1.0,
+    "artifact_sha256": "0b6c3ce7724dc82d3d17da9959deade00c9887f3d896a2d299b32465165b6d69",
+    "validation": {
+      "n": 453,
+      "mae": 0.1888209385039508,
+      "rmse": 0.44575907599443815,
+      "r2_relative_to_station_warning": 0.977356039751003,
+      "macro_station_mae": 0.18923986926637917,
+      "warning_period_mae": 0.2942176292035697,
+      "macro_warning_period_mae": 0.2942176292035697,
+      "warning_period_n": 10,
+      "per_station": {
+        "kurundwad": {
+          "n": 149,
+          "mae": 0.252498414393065,
+          "rmse": 0.6472539225678191,
+          "r2": 0.9722464643959947,
+          "warning_period_mae": 0.2942176292035697,
+          "warning_period_n": 10
+        },
+        "narsingpur": {
+          "n": 152,
+          "mae": 0.20474358054882838,
+          "rmse": 0.3971868577977133,
+          "r2": 0.6800159350176899,
+          "warning_period_mae": null,
+          "warning_period_n": 0
+        },
+        "takli": {
+          "n": 152,
+          "mae": 0.11047761285724421,
+          "rmse": 0.1541272006053407,
+          "r2": 0.9522305787414026,
+          "warning_period_mae": null,
+          "warning_period_n": 0
+        }
+      },
+      "warning": {
+        "positive": 10,
+        "tp": 10,
+        "fp": 1,
+        "fn": 0,
+        "tn": 442,
+        "precision": 0.9090909090909091,
+        "recall": 1.0,
+        "f1": 0.9523809523809523
+      },
+      "danger": {
+        "positive": 7,
+        "tp": 7,
+        "fp": 0,
+        "fn": 0,
+        "tn": 446,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "danger_onset": {
+        "positive": 2,
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "tn": 446,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "selection_score": 0.24172874923497445
+    }
+  },
+  "best_baseline": {
+    "name": "positive_6h_trend_damped_12h",
+    "type": "baseline",
+    "validation": {
+      "n": 453,
+      "mae": 0.13916114790286654,
+      "rmse": 0.5032429051994296,
+      "r2_relative_to_station_warning": 0.9711392696931276,
+      "macro_station_mae": 0.13986739079241403,
+      "warning_period_mae": 0.732000000000005,
+      "macro_warning_period_mae": 0.732000000000005,
+      "warning_period_n": 10,
+      "per_station": {
+        "kurundwad": {
+          "n": 149,
+          "mae": 0.24651006711408494,
+          "rmse": 0.7888395180484576,
+          "r2": 0.958776367954849,
+          "warning_period_mae": 0.732000000000005,
+          "warning_period_n": 10
+        },
+        "narsingpur": {
+          "n": 152,
+          "mae": 0.10677631578947193,
+          "rmse": 0.3514397080881054,
+          "r2": 0.7494812302878362,
+          "warning_period_mae": null,
+          "warning_period_n": 0
+        },
+        "takli": {
+          "n": 152,
+          "mae": 0.06631578947368523,
+          "rmse": 0.14582794476260255,
+          "r2": 0.957236532894647,
+          "warning_period_mae": null,
+          "warning_period_n": 0
+        }
+      },
+      "warning": {
+        "positive": 10,
+        "tp": 10,
+        "fp": 1,
+        "fn": 0,
+        "tn": 442,
+        "precision": 0.9090909090909091,
+        "recall": 1.0,
+        "f1": 0.9523809523809523
+      },
+      "danger": {
+        "positive": 7,
+        "tp": 6,
+        "fp": 1,
+        "fn": 1,
+        "tn": 445,
+        "precision": 0.8571428571428571,
+        "recall": 0.8571428571428571,
+        "f1": 0.8571428571428571
+      },
+      "danger_onset": {
+        "positive": 2,
+        "tp": 1,
+        "fp": 1,
+        "fn": 1,
+        "tn": 445,
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5
+      },
+      "selection_score": 0.4359336953962095
+    }
+  },
+  "candidates": [
+    {
+      "name": "persistence",
+      "type": "baseline",
+      "validation": {
+        "n": 453,
+        "mae": 0.150331125827815,
+        "rmse": 0.5503073594324148,
+        "r2_relative_to_station_warning": 0.9654885953075176,
+        "macro_station_mae": 0.1512190921935716,
+        "warning_period_mae": 0.8659999999999968,
+        "macro_warning_period_mae": 0.8659999999999968,
+        "warning_period_n": 10,
+        "per_station": {
+          "kurundwad": {
+            "n": 149,
+            "mae": 0.28530201342281875,
+            "rmse": 0.8788258640532067,
+            "r2": 0.9488348096092714,
+            "warning_period_mae": 0.8659999999999968,
+            "warning_period_n": 10
+          },
+          "narsingpur": {
+            "n": 152,
+            "mae": 0.10111842105263123,
+            "rmse": 0.34682583221948377,
+            "r2": 0.7560159223552729,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          },
+          "takli": {
+            "n": 152,
+            "mae": 0.06723684210526483,
+            "rmse": 0.15861240410775665,
+            "r2": 0.9494098817563212,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          }
+        },
+        "warning": {
+          "positive": 10,
+          "tp": 9,
+          "fp": 1,
+          "fn": 1,
+          "tn": 442,
+          "precision": 0.9,
+          "recall": 0.9,
+          "f1": 0.9
+        },
+        "danger": {
+          "positive": 7,
+          "tp": 5,
+          "fp": 0,
+          "fn": 2,
+          "tn": 446,
+          "precision": 1.0,
+          "recall": 0.7142857142857143,
+          "f1": 0.8333333333333334
+        },
+        "danger_onset": {
+          "positive": 2,
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "tn": 446,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "selection_score": 0.5086095460967842
+      }
+    },
+    {
+      "name": "positive_6h_trend_damped_12h",
+      "type": "baseline",
+      "validation": {
+        "n": 453,
+        "mae": 0.13916114790286654,
+        "rmse": 0.5032429051994296,
+        "r2_relative_to_station_warning": 0.9711392696931276,
+        "macro_station_mae": 0.13986739079241403,
+        "warning_period_mae": 0.732000000000005,
+        "macro_warning_period_mae": 0.732000000000005,
+        "warning_period_n": 10,
+        "per_station": {
+          "kurundwad": {
+            "n": 149,
+            "mae": 0.24651006711408494,
+            "rmse": 0.7888395180484576,
+            "r2": 0.958776367954849,
+            "warning_period_mae": 0.732000000000005,
+            "warning_period_n": 10
+          },
+          "narsingpur": {
+            "n": 152,
+            "mae": 0.10677631578947193,
+            "rmse": 0.3514397080881054,
+            "r2": 0.7494812302878362,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          },
+          "takli": {
+            "n": 152,
+            "mae": 0.06631578947368523,
+            "rmse": 0.14582794476260255,
+            "r2": 0.957236532894647,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          }
+        },
+        "warning": {
+          "positive": 10,
+          "tp": 10,
+          "fp": 1,
+          "fn": 0,
+          "tn": 442,
+          "precision": 0.9090909090909091,
+          "recall": 1.0,
+          "f1": 0.9523809523809523
+        },
+        "danger": {
+          "positive": 7,
+          "tp": 6,
+          "fp": 1,
+          "fn": 1,
+          "tn": 445,
+          "precision": 0.8571428571428571,
+          "recall": 0.8571428571428571,
+          "f1": 0.8571428571428571
+        },
+        "danger_onset": {
+          "positive": 2,
+          "tp": 1,
+          "fp": 1,
+          "fn": 1,
+          "tn": 445,
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5
+        },
+        "selection_score": 0.4359336953962095
+      }
+    },
+    {
+      "name": "previous_24h_max",
+      "type": "baseline",
+      "validation": {
+        "n": 453,
+        "mae": 0.2486092715231767,
+        "rmse": 0.6125995886961084,
+        "r2_relative_to_station_warning": 0.957233333833651,
+        "macro_station_mae": 0.250157188272693,
+        "warning_period_mae": 0.9449999999999932,
+        "macro_warning_period_mae": 0.9449999999999932,
+        "warning_period_n": 10,
+        "per_station": {
+          "kurundwad": {
+            "n": 149,
+            "mae": 0.48389261744966,
+            "rmse": 0.9775884587242615,
+            "r2": 0.9366887240389662,
+            "warning_period_mae": 0.9449999999999932,
+            "warning_period_n": 10
+          },
+          "narsingpur": {
+            "n": 152,
+            "mae": 0.15546052631578758,
+            "rmse": 0.3776202318119132,
+            "r2": 0.7107661488897288,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          },
+          "takli": {
+            "n": 152,
+            "mae": 0.11111842105263149,
+            "rmse": 0.19751915296870196,
+            "r2": 0.9215469507853463,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          }
+        },
+        "warning": {
+          "positive": 10,
+          "tp": 9,
+          "fp": 1,
+          "fn": 1,
+          "tn": 442,
+          "precision": 0.9,
+          "recall": 0.9,
+          "f1": 0.9
+        },
+        "danger": {
+          "positive": 7,
+          "tp": 6,
+          "fp": 1,
+          "fn": 1,
+          "tn": 445,
+          "precision": 0.8571428571428571,
+          "recall": 0.8571428571428571,
+          "f1": 0.8571428571428571
+        },
+        "danger_onset": {
+          "positive": 2,
+          "tp": 1,
+          "fp": 1,
+          "fn": 1,
+          "tn": 445,
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5
+        },
+        "selection_score": 0.5975785941363431
+      }
+    },
+    {
+      "name": "ridge_0_w1",
+      "type": "ml",
+      "learner": "ridge",
+      "config": {
+        "alpha": 1.0
+      },
+      "high_water_weight": 1.0,
+      "artifact_sha256": "09e5a862863c26f393520c3b9897323ca70598aa0dea33c20887e3a63a04bdd5",
+      "validation": {
+        "n": 453,
+        "mae": 0.21265482992288134,
+        "rmse": 0.46728129909738536,
+        "r2_relative_to_station_warning": 0.9751166529892044,
+        "macro_station_mae": 0.21326196461895863,
+        "warning_period_mae": 0.3781630355032576,
+        "macro_warning_period_mae": 0.3781630355032576,
+        "warning_period_n": 10,
+        "per_station": {
+          "kurundwad": {
+            "n": 149,
+            "mae": 0.30493930372663025,
+            "rmse": 0.6920355356947083,
+            "r2": 0.9682732397656254,
+            "warning_period_mae": 0.3781630355032576,
+            "warning_period_n": 10
+          },
+          "narsingpur": {
+            "n": 152,
+            "mae": 0.214474435806923,
+            "rmse": 0.3959901230465888,
+            "r2": 0.681941271390344,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          },
+          "takli": {
+            "n": 152,
+            "mae": 0.12037215432332267,
+            "rmse": 0.15645042622390776,
+            "r2": 0.9507796270469027,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          }
+        },
+        "warning": {
+          "positive": 10,
+          "tp": 10,
+          "fp": 1,
+          "fn": 0,
+          "tn": 442,
+          "precision": 0.9090909090909091,
+          "recall": 1.0,
+          "f1": 0.9523809523809523
+        },
+        "danger": {
+          "positive": 7,
+          "tp": 7,
+          "fp": 0,
+          "fn": 0,
+          "tn": 446,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "danger_onset": {
+          "positive": 2,
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "tn": 446,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "selection_score": 0.2957125000611081
+      }
+    },
+    {
+      "name": "ridge_0_w4",
+      "type": "ml",
+      "learner": "ridge",
+      "config": {
+        "alpha": 1.0
+      },
+      "high_water_weight": 4.0,
+      "artifact_sha256": "038ca8c18706aabcc4c8582fb0df8235c488db34b42daf07c83dee9838f4fa31",
+      "validation": {
+        "n": 453,
+        "mae": 0.21990333386560135,
+        "rmse": 0.4740792567179692,
+        "r2_relative_to_station_warning": 0.9743873861861763,
+        "macro_station_mae": 0.22049431074627593,
+        "warning_period_mae": 0.3230833772425967,
+        "macro_warning_period_mae": 0.3230833772425967,
+        "warning_period_n": 10,
+        "per_station": {
+          "kurundwad": {
+            "n": 149,
+            "mae": 0.30973181972813596,
+            "rmse": 0.6924344715376257,
+            "r2": 0.9682366503440119,
+            "warning_period_mae": 0.3230833772425967,
+            "warning_period_n": 10
+          },
+          "narsingpur": {
+            "n": 152,
+            "mae": 0.23311390423573977,
+            "rmse": 0.41833771839956707,
+            "r2": 0.6450291765073743,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          },
+          "takli": {
+            "n": 152,
+            "mae": 0.11863720827495203,
+            "rmse": 0.1575078980949691,
+            "r2": 0.950112002609226,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          }
+        },
+        "warning": {
+          "positive": 10,
+          "tp": 10,
+          "fp": 1,
+          "fn": 0,
+          "tn": 442,
+          "precision": 0.9090909090909091,
+          "recall": 1.0,
+          "f1": 0.9523809523809523
+        },
+        "danger": {
+          "positive": 7,
+          "tp": 7,
+          "fp": 0,
+          "fn": 0,
+          "tn": 446,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "danger_onset": {
+          "positive": 2,
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "tn": 446,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "selection_score": 0.2717888439944363
+      }
+    },
+    {
+      "name": "ridge_1_w1",
+      "type": "ml",
+      "learner": "ridge",
+      "config": {
+        "alpha": 10.0
+      },
+      "high_water_weight": 1.0,
+      "artifact_sha256": "d2b404fd14376926b5d27d2daa29657cba65a1e1e4eff0cabd4bce97c32fc3ea",
+      "validation": {
+        "n": 453,
+        "mae": 0.2140707122758159,
+        "rmse": 0.4662420602994083,
+        "r2_relative_to_station_warning": 0.9752272115906848,
+        "macro_station_mae": 0.2146788084509463,
+        "warning_period_mae": 0.3999522538335555,
+        "macro_warning_period_mae": 0.3999522538335555,
+        "warning_period_n": 10,
+        "per_station": {
+          "kurundwad": {
+            "n": 149,
+            "mae": 0.30650133089563997,
+            "rmse": 0.6936560934562989,
+            "r2": 0.9681244750133101,
+            "warning_period_mae": 0.3999522538335555,
+            "warning_period_n": 10
+          },
+          "narsingpur": {
+            "n": 152,
+            "mae": 0.2167750705797289,
+            "rmse": 0.38982728250363635,
+            "r2": 0.6917642044886478,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          },
+          "takli": {
+            "n": 152,
+            "mae": 0.12076002387747009,
+            "rmse": 0.15565030522482975,
+            "r2": 0.951281786744234,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          }
+        },
+        "warning": {
+          "positive": 10,
+          "tp": 10,
+          "fp": 1,
+          "fn": 0,
+          "tn": 442,
+          "precision": 0.9090909090909091,
+          "recall": 1.0,
+          "f1": 0.9523809523809523
+        },
+        "danger": {
+          "positive": 7,
+          "tp": 7,
+          "fp": 0,
+          "fn": 0,
+          "tn": 446,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "danger_onset": {
+          "positive": 2,
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "tn": 446,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "selection_score": 0.3073155311422509
+      }
+    },
+    {
+      "name": "ridge_1_w4",
+      "type": "ml",
+      "learner": "ridge",
+      "config": {
+        "alpha": 10.0
+      },
+      "high_water_weight": 4.0,
+      "artifact_sha256": "cc7f0755dff37a3b3fe51280a7a6b60c3971af535353655795f6d89abce1509e",
+      "validation": {
+        "n": 453,
+        "mae": 0.22030422926845405,
+        "rmse": 0.47279247462925783,
+        "r2_relative_to_station_warning": 0.9745262369115567,
+        "macro_station_mae": 0.22088840524410422,
+        "warning_period_mae": 0.3388886015660546,
+        "macro_warning_period_mae": 0.3388886015660546,
+        "warning_period_n": 10,
+        "per_station": {
+          "kurundwad": {
+            "n": 149,
+            "mae": 0.3090989775672788,
+            "rmse": 0.6923290459584388,
+            "r2": 0.9682463217706917,
+            "warning_period_mae": 0.3388886015660546,
+            "warning_period_n": 10
+          },
+          "narsingpur": {
+            "n": 152,
+            "mae": 0.2359300555162985,
+            "rmse": 0.4149595774418601,
+            "r2": 0.6507389167475227,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          },
+          "takli": {
+            "n": 152,
+            "mae": 0.11763618264873536,
+            "rmse": 0.15535648288509568,
+            "r2": 0.9514655446698954,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          }
+        },
+        "warning": {
+          "positive": 10,
+          "tp": 10,
+          "fp": 1,
+          "fn": 0,
+          "tn": 442,
+          "precision": 0.9090909090909091,
+          "recall": 1.0,
+          "f1": 0.9523809523809523
+        },
+        "danger": {
+          "positive": 7,
+          "tp": 7,
+          "fp": 0,
+          "fn": 0,
+          "tn": 446,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "danger_onset": {
+          "positive": 2,
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "tn": 446,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "selection_score": 0.2798885034050794
+      }
+    },
+    {
+      "name": "ridge_2_w1",
+      "type": "ml",
+      "learner": "ridge",
+      "config": {
+        "alpha": 100.0
+      },
+      "high_water_weight": 1.0,
+      "artifact_sha256": "9c6ae36edb6afd9ebba183aea91bc3cd614a98c78bfcd3a40e52f73883a44034",
+      "validation": {
+        "n": 453,
+        "mae": 0.2178626277475041,
+        "rmse": 0.46939864173784723,
+        "r2_relative_to_station_warning": 0.9748906395008502,
+        "macro_station_mae": 0.21847453018372184,
+        "warning_period_mae": 0.46879194528193013,
+        "macro_warning_period_mae": 0.46879194528193013,
+        "warning_period_n": 10,
+        "per_station": {
+          "kurundwad": {
+            "n": 149,
+            "mae": 0.3108717980526018,
+            "rmse": 0.7067534053718554,
+            "r2": 0.9669093914301555,
+            "warning_period_mae": 0.46879194528193013,
+            "warning_period_n": 10
+          },
+          "narsingpur": {
+            "n": 152,
+            "mae": 0.22150170739866767,
+            "rmse": 0.37810463424908125,
+            "r2": 0.7100236280570638,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          },
+          "takli": {
+            "n": 152,
+            "mae": 0.12305008509989603,
+            "rmse": 0.1550858001983084,
+            "r2": 0.9516345236739722,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          }
+        },
+        "warning": {
+          "positive": 10,
+          "tp": 10,
+          "fp": 1,
+          "fn": 0,
+          "tn": 442,
+          "precision": 0.9090909090909091,
+          "recall": 1.0,
+          "f1": 0.9523809523809523
+        },
+        "danger": {
+          "positive": 7,
+          "tp": 7,
+          "fp": 1,
+          "fn": 0,
+          "tn": 445,
+          "precision": 0.875,
+          "recall": 1.0,
+          "f1": 0.9333333333333333
+        },
+        "danger_onset": {
+          "positive": 2,
+          "tp": 2,
+          "fp": 1,
+          "fn": 0,
+          "tn": 445,
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1": 0.8
+        },
+        "selection_score": 0.343633237732826
+      }
+    },
+    {
+      "name": "ridge_2_w4",
+      "type": "ml",
+      "learner": "ridge",
+      "config": {
+        "alpha": 100.0
+      },
+      "high_water_weight": 4.0,
+      "artifact_sha256": "dcf5ca9707f8959457f07c483e9d8796b30ba6acda7b58cec58ce90fa055f124",
+      "validation": {
+        "n": 453,
+        "mae": 0.2249266815059591,
+        "rmse": 0.4729505727838385,
+        "r2_relative_to_station_warning": 0.9745091976035776,
+        "macro_station_mae": 0.22552862763472534,
+        "warning_period_mae": 0.42461782713683077,
+        "macro_warning_period_mae": 0.42461782713683077,
+        "warning_period_n": 10,
+        "per_station": {
+          "kurundwad": {
+            "n": 149,
+            "mae": 0.3164224930784279,
+            "rmse": 0.7003188557028908,
+            "r2": 0.9675091873317933,
+            "warning_period_mae": 0.42461782713683077,
+            "warning_period_n": 10
+          },
+          "narsingpur": {
+            "n": 152,
+            "mae": 0.2411639605717689,
+            "rmse": 0.40212495751914157,
+            "r2": 0.67200995134944,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          },
+          "takli": {
+            "n": 152,
+            "mae": 0.11899942925397922,
+            "rmse": 0.15543756226923847,
+            "r2": 0.9514148719134609,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          }
+        },
+        "warning": {
+          "positive": 10,
+          "tp": 10,
+          "fp": 1,
+          "fn": 0,
+          "tn": 442,
+          "precision": 0.9090909090909091,
+          "recall": 1.0,
+          "f1": 0.9523809523809523
+        },
+        "danger": {
+          "positive": 7,
+          "tp": 7,
+          "fp": 1,
+          "fn": 0,
+          "tn": 445,
+          "precision": 0.875,
+          "recall": 1.0,
+          "f1": 0.9333333333333333
+        },
+        "danger_onset": {
+          "positive": 2,
+          "tp": 2,
+          "fp": 1,
+          "fn": 0,
+          "tn": 445,
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1": 0.8
+        },
+        "selection_score": 0.32507322738577804
+      }
+    },
+    {
+      "name": "hist_gradient_boosting_0_w1",
+      "type": "ml",
+      "learner": "hist_gradient_boosting",
+      "config": {
+        "max_iter": 300,
+        "max_leaf_nodes": 15,
+        "min_samples_leaf": 20,
+        "l2_regularization": 10.0
+      },
+      "high_water_weight": 1.0,
+      "artifact_sha256": "404bada3e02dd5b4bf4007c4caf6afc137a80b61fa43dd24b91232069b923eac",
+      "validation": {
+        "n": 453,
+        "mae": 0.20736956948155996,
+        "rmse": 0.4731394860617238,
+        "r2_relative_to_station_warning": 0.9744888296705843,
+        "macro_station_mae": 0.2076884111607514,
+        "warning_period_mae": 0.3488259564407258,
+        "macro_warning_period_mae": 0.3488259564407258,
+        "warning_period_n": 10,
+        "per_station": {
+          "kurundwad": {
+            "n": 149,
+            "mae": 0.25583350471865574,
+            "rmse": 0.6636029800066608,
+            "r2": 0.9708266978463814,
+            "warning_period_mae": 0.3488259564407258,
+            "warning_period_n": 10
+          },
+          "narsingpur": {
+            "n": 152,
+            "mae": 0.24141008511000114,
+            "rmse": 0.44143741649182244,
+            "r2": 0.604745435425265,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          },
+          "takli": {
+            "n": 152,
+            "mae": 0.12582164365359721,
+            "rmse": 0.20154452391831787,
+            "r2": 0.9183166757086937,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          }
+        },
+        "warning": {
+          "positive": 10,
+          "tp": 10,
+          "fp": 1,
+          "fn": 0,
+          "tn": 442,
+          "precision": 0.9090909090909091,
+          "recall": 1.0,
+          "f1": 0.9523809523809523
+        },
+        "danger": {
+          "positive": 7,
+          "tp": 7,
+          "fp": 0,
+          "fn": 0,
+          "tn": 446,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "danger_onset": {
+          "positive": 2,
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "tn": 446,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "selection_score": 0.2782571838007386
+      }
+    },
+    {
+      "name": "hist_gradient_boosting_0_w4",
+      "type": "ml",
+      "learner": "hist_gradient_boosting",
+      "config": {
+        "max_iter": 300,
+        "max_leaf_nodes": 15,
+        "min_samples_leaf": 20,
+        "l2_regularization": 10.0
+      },
+      "high_water_weight": 4.0,
+      "artifact_sha256": "5abf0e88a339421e89853d7e6d686a9f59bafb4698be2fddec0db9dfd901a74a",
+      "validation": {
+        "n": 453,
+        "mae": 0.1944459802232463,
+        "rmse": 0.44710261021979036,
+        "r2_relative_to_station_warning": 0.9772193345882573,
+        "macro_station_mae": 0.19488214464064124,
+        "warning_period_mae": 0.3541531651353921,
+        "macro_warning_period_mae": 0.3541531651353921,
+        "warning_period_n": 10,
+        "per_station": {
+          "kurundwad": {
+            "n": 149,
+            "mae": 0.2607429716672757,
+            "rmse": 0.6405092151360677,
+            "r2": 0.9728218619878056,
+            "warning_period_mae": 0.3541531651353921,
+            "warning_period_n": 10
+          },
+          "narsingpur": {
+            "n": 152,
+            "mae": 0.20531978714169286,
+            "rmse": 0.401677169767898,
+            "r2": 0.6727400137332475,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          },
+          "takli": {
+            "n": 152,
+            "mae": 0.11858367511295516,
+            "rmse": 0.17960317205773846,
+            "r2": 0.9351336584954466,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          }
+        },
+        "warning": {
+          "positive": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "tn": 443,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "danger": {
+          "positive": 7,
+          "tp": 7,
+          "fp": 0,
+          "fn": 0,
+          "tn": 446,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "danger_onset": {
+          "positive": 2,
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "tn": 446,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "selection_score": 0.27451765488801666
+      }
+    },
+    {
+      "name": "hist_gradient_boosting_1_w1",
+      "type": "ml",
+      "learner": "hist_gradient_boosting",
+      "config": {
+        "max_iter": 400,
+        "max_leaf_nodes": 15,
+        "min_samples_leaf": 30,
+        "l2_regularization": 20.0
+      },
+      "high_water_weight": 1.0,
+      "artifact_sha256": "a3556d7cc7869c4dd340f5699b1e5b675404bdea5186ae29ec05378d4f0bfbc7",
+      "validation": {
+        "n": 453,
+        "mae": 0.2142794145147782,
+        "rmse": 0.47709055966544095,
+        "r2_relative_to_station_warning": 0.9740609753978564,
+        "macro_station_mae": 0.21469850739716234,
+        "warning_period_mae": 0.38725642820984374,
+        "macro_warning_period_mae": 0.38725642820984374,
+        "warning_period_n": 10,
+        "per_station": {
+          "kurundwad": {
+            "n": 149,
+            "mae": 0.2779815326371647,
+            "rmse": 0.6750028847021683,
+            "r2": 0.969815763669993,
+            "warning_period_mae": 0.38725642820984374,
+            "warning_period_n": 10
+          },
+          "narsingpur": {
+            "n": 152,
+            "mae": 0.23886138541976534,
+            "rmse": 0.43927540107256263,
+            "r2": 0.6086076083512596,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          },
+          "takli": {
+            "n": 152,
+            "mae": 0.1272526041345569,
+            "rmse": 0.19686213530296007,
+            "r2": 0.9220680072003141,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          }
+        },
+        "warning": {
+          "positive": 10,
+          "tp": 10,
+          "fp": 1,
+          "fn": 0,
+          "tn": 442,
+          "precision": 0.9090909090909091,
+          "recall": 1.0,
+          "f1": 0.9523809523809523
+        },
+        "danger": {
+          "positive": 7,
+          "tp": 7,
+          "fp": 0,
+          "fn": 0,
+          "tn": 446,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "danger_onset": {
+          "positive": 2,
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "tn": 446,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "selection_score": 0.30097746780350304
+      }
+    },
+    {
+      "name": "hist_gradient_boosting_1_w4",
+      "type": "ml",
+      "learner": "hist_gradient_boosting",
+      "config": {
+        "max_iter": 400,
+        "max_leaf_nodes": 15,
+        "min_samples_leaf": 30,
+        "l2_regularization": 20.0
+      },
+      "high_water_weight": 4.0,
+      "artifact_sha256": "ed4cc6406461ea4550646150b6a95eadb85bca64c052aa5ed0dcc2418befa345",
+      "validation": {
+        "n": 453,
+        "mae": 0.2020215448479469,
+        "rmse": 0.45908349016685185,
+        "r2_relative_to_station_warning": 0.9759820827502999,
+        "macro_station_mae": 0.2025186840847992,
+        "warning_period_mae": 0.4105080665323385,
+        "macro_warning_period_mae": 0.4105080665323385,
+        "warning_period_n": 10,
+        "per_station": {
+          "kurundwad": {
+            "n": 149,
+            "mae": 0.2775867088494963,
+            "rmse": 0.6687359850540858,
+            "r2": 0.9703736382273463,
+            "warning_period_mae": 0.4105080665323385,
+            "warning_period_n": 10
+          },
+          "narsingpur": {
+            "n": 152,
+            "mae": 0.21753031578258566,
+            "rmse": 0.40182373570410046,
+            "r2": 0.6725011457030875,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          },
+          "takli": {
+            "n": 152,
+            "mae": 0.11243902762231565,
+            "rmse": 0.16813565998035832,
+            "r2": 0.9431525400036231,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          }
+        },
+        "warning": {
+          "positive": 10,
+          "tp": 10,
+          "fp": 1,
+          "fn": 0,
+          "tn": 442,
+          "precision": 0.9090909090909091,
+          "recall": 1.0,
+          "f1": 0.9523809523809523
+        },
+        "danger": {
+          "positive": 7,
+          "tp": 7,
+          "fp": 1,
+          "fn": 0,
+          "tn": 445,
+          "precision": 0.875,
+          "recall": 1.0,
+          "f1": 0.9333333333333333
+        },
+        "danger_onset": {
+          "positive": 2,
+          "tp": 2,
+          "fp": 1,
+          "fn": 0,
+          "tn": 445,
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1": 0.8
+        },
+        "selection_score": 0.30651337530856887
+      }
+    },
+    {
+      "name": "random_forest_0_w1",
+      "type": "ml",
+      "learner": "random_forest",
+      "config": {
+        "n_estimators": 250,
+        "max_depth": 12,
+        "min_samples_leaf": 3
+      },
+      "high_water_weight": 1.0,
+      "artifact_sha256": "32c81417f6000a3502766f940f761d49464bcd15bafe976483c0e1197ae5a93f",
+      "validation": {
+        "n": 453,
+        "mae": 0.20061777961170288,
+        "rmse": 0.4530495333857897,
+        "r2_relative_to_station_warning": 0.9766092918773536,
+        "macro_station_mae": 0.2010477633723559,
+        "warning_period_mae": 0.5314895226171643,
+        "macro_warning_period_mae": 0.5314895226171643,
+        "warning_period_n": 10,
+        "per_station": {
+          "kurundwad": {
+            "n": 149,
+            "mae": 0.26597531123095924,
+            "rmse": 0.6587704049580315,
+            "r2": 0.9712500498717477,
+            "warning_period_mae": 0.5314895226171643,
+            "warning_period_n": 10
+          },
+          "narsingpur": {
+            "n": 152,
+            "mae": 0.2161362449009868,
+            "rmse": 0.396147035319044,
+            "r2": 0.6816891580019675,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          },
+          "takli": {
+            "n": 152,
+            "mae": 0.12103173398512163,
+            "rmse": 0.1713622470735559,
+            "r2": 0.9409497561100225,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          }
+        },
+        "warning": {
+          "positive": 10,
+          "tp": 10,
+          "fp": 1,
+          "fn": 0,
+          "tn": 442,
+          "precision": 0.9090909090909091,
+          "recall": 1.0,
+          "f1": 0.9523809523809523
+        },
+        "danger": {
+          "positive": 7,
+          "tp": 7,
+          "fp": 1,
+          "fn": 0,
+          "tn": 445,
+          "precision": 0.875,
+          "recall": 1.0,
+          "f1": 0.9333333333333333
+        },
+        "danger_onset": {
+          "positive": 2,
+          "tp": 2,
+          "fp": 1,
+          "fn": 0,
+          "tn": 445,
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1": 0.8
+        },
+        "selection_score": 0.3662686429947601
+      }
+    },
+    {
+      "name": "random_forest_0_w4",
+      "type": "ml",
+      "learner": "random_forest",
+      "config": {
+        "n_estimators": 250,
+        "max_depth": 12,
+        "min_samples_leaf": 3
+      },
+      "high_water_weight": 4.0,
+      "artifact_sha256": "1d7f5b97dff919d639bb2ec81fcdaacee9866be4748e4da598186cc55602b0d0",
+      "validation": {
+        "n": 453,
+        "mae": 0.20592305996032723,
+        "rmse": 0.46085085786162094,
+        "r2_relative_to_station_warning": 0.9757967996786896,
+        "macro_station_mae": 0.20635140280508893,
+        "warning_period_mae": 0.575949635389145,
+        "macro_warning_period_mae": 0.575949635389145,
+        "warning_period_n": 10,
+        "per_station": {
+          "kurundwad": {
+            "n": 149,
+            "mae": 0.2710311723641104,
+            "rmse": 0.6555197573960972,
+            "r2": 0.9715330783116538,
+            "warning_period_mae": 0.575949635389145,
+            "warning_period_n": 10
+          },
+          "narsingpur": {
+            "n": 152,
+            "mae": 0.22735143660284768,
+            "rmse": 0.4284865340566892,
+            "r2": 0.6275971746841426,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          },
+          "takli": {
+            "n": 152,
+            "mae": 0.12067159944830876,
+            "rmse": 0.16772876910513715,
+            "r2": 0.9434273505276365,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          }
+        },
+        "warning": {
+          "positive": 10,
+          "tp": 10,
+          "fp": 1,
+          "fn": 0,
+          "tn": 442,
+          "precision": 0.9090909090909091,
+          "recall": 1.0,
+          "f1": 0.9523809523809523
+        },
+        "danger": {
+          "positive": 7,
+          "tp": 7,
+          "fp": 1,
+          "fn": 0,
+          "tn": 445,
+          "precision": 0.875,
+          "recall": 1.0,
+          "f1": 0.9333333333333333
+        },
+        "danger_onset": {
+          "positive": 2,
+          "tp": 2,
+          "fp": 1,
+          "fn": 0,
+          "tn": 445,
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1": 0.8
+        },
+        "selection_score": 0.39115051909711696
+      }
+    },
+    {
+      "name": "random_forest_1_w1",
+      "type": "ml",
+      "learner": "random_forest",
+      "config": {
+        "n_estimators": 250,
+        "max_depth": 12,
+        "min_samples_leaf": 8
+      },
+      "high_water_weight": 1.0,
+      "artifact_sha256": "8f0d1db64d6f9415be2e504f600d109be7bd1b9dda1eb26a366457b13bdaa02f",
+      "validation": {
+        "n": 453,
+        "mae": 0.1926615115849247,
+        "rmse": 0.43730640853522024,
+        "r2_relative_to_station_warning": 0.9782066658205103,
+        "macro_station_mae": 0.19311049504999475,
+        "warning_period_mae": 0.4765547232298445,
+        "macro_warning_period_mae": 0.4765547232298445,
+        "warning_period_n": 10,
+        "per_station": {
+          "kurundwad": {
+            "n": 149,
+            "mae": 0.2609069982755651,
+            "rmse": 0.6358213663119133,
+            "r2": 0.9732182364885618,
+            "warning_period_mae": 0.4765547232298445,
+            "warning_period_n": 10
+          },
+          "narsingpur": {
+            "n": 152,
+            "mae": 0.19579150644490279,
+            "rmse": 0.38222294733018175,
+            "r2": 0.7036723852551203,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          },
+          "takli": {
+            "n": 152,
+            "mae": 0.12263298042951626,
+            "rmse": 0.16598816458234286,
+            "r2": 0.9445954228972603,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          }
+        },
+        "warning": {
+          "positive": 10,
+          "tp": 10,
+          "fp": 1,
+          "fn": 0,
+          "tn": 442,
+          "precision": 0.9090909090909091,
+          "recall": 1.0,
+          "f1": 0.9523809523809523
+        },
+        "danger": {
+          "positive": 7,
+          "tp": 7,
+          "fp": 1,
+          "fn": 0,
+          "tn": 445,
+          "precision": 0.875,
+          "recall": 1.0,
+          "f1": 0.9333333333333333
+        },
+        "danger_onset": {
+          "positive": 2,
+          "tp": 2,
+          "fp": 1,
+          "fn": 0,
+          "tn": 445,
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1": 0.8
+        },
+        "selection_score": 0.33483260913991963
+      }
+    },
+    {
+      "name": "random_forest_1_w4",
+      "type": "ml",
+      "learner": "random_forest",
+      "config": {
+        "n_estimators": 250,
+        "max_depth": 12,
+        "min_samples_leaf": 8
+      },
+      "high_water_weight": 4.0,
+      "artifact_sha256": "9e4ab9fd882a1074db0deb2c92f5a383d2936a2fde0b76bc358e31d1f234eed8",
+      "validation": {
+        "n": 453,
+        "mae": 0.19486828351514893,
+        "rmse": 0.435983446809775,
+        "r2_relative_to_station_warning": 0.9783383269843497,
+        "macro_station_mae": 0.19531768966503862,
+        "warning_period_mae": 0.4990147341627676,
+        "macro_warning_period_mae": 0.4990147341627676,
+        "warning_period_n": 10,
+        "per_station": {
+          "kurundwad": {
+            "n": 149,
+            "mae": 0.26317801829838267,
+            "rmse": 0.6323871813663143,
+            "r2": 0.9735067613830852,
+            "warning_period_mae": 0.4990147341627676,
+            "warning_period_n": 10
+          },
+          "narsingpur": {
+            "n": 152,
+            "mae": 0.2001232611210097,
+            "rmse": 0.38333777130989016,
+            "r2": 0.7019412756966427,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          },
+          "takli": {
+            "n": 152,
+            "mae": 0.1226517895757235,
+            "rmse": 0.16590576930890133,
+            "r2": 0.9446504140739782,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          }
+        },
+        "warning": {
+          "positive": 10,
+          "tp": 10,
+          "fp": 1,
+          "fn": 0,
+          "tn": 442,
+          "precision": 0.9090909090909091,
+          "recall": 1.0,
+          "f1": 0.9523809523809523
+        },
+        "danger": {
+          "positive": 7,
+          "tp": 7,
+          "fp": 1,
+          "fn": 0,
+          "tn": 445,
+          "precision": 0.875,
+          "recall": 1.0,
+          "f1": 0.9333333333333333
+        },
+        "danger_onset": {
+          "positive": 2,
+          "tp": 2,
+          "fp": 1,
+          "fn": 0,
+          "tn": 445,
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1": 0.8
+        },
+        "selection_score": 0.3471662119139031
+      }
+    },
+    {
+      "name": "extra_trees_0_w1",
+      "type": "ml",
+      "learner": "extra_trees",
+      "config": {
+        "n_estimators": 300,
+        "max_depth": 16,
+        "min_samples_leaf": 3
+      },
+      "high_water_weight": 1.0,
+      "artifact_sha256": "f88033ac73d200b61331fb53c88eb1dcb028dfffe1c248f5fe9e05102e84d19e",
+      "validation": {
+        "n": 453,
+        "mae": 0.20559810844756904,
+        "rmse": 0.47202003603931975,
+        "r2_relative_to_station_warning": 0.9746094059331654,
+        "macro_station_mae": 0.20596872588891313,
+        "warning_period_mae": 0.5911044557672198,
+        "macro_warning_period_mae": 0.5911044557672198,
+        "warning_period_n": 10,
+        "per_station": {
+          "kurundwad": {
+            "n": 149,
+            "mae": 0.2619319595318723,
+            "rmse": 0.6840613799313474,
+            "r2": 0.9690001866357075,
+            "warning_period_mae": 0.5911044557672198,
+            "warning_period_n": 10
+          },
+          "narsingpur": {
+            "n": 152,
+            "mae": 0.23284995084425364,
+            "rmse": 0.41660704502170304,
+            "r2": 0.647960147157914,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          },
+          "takli": {
+            "n": 152,
+            "mae": 0.12312426729061343,
+            "rmse": 0.17817287442913943,
+            "r2": 0.9361626909641163,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          }
+        },
+        "warning": {
+          "positive": 10,
+          "tp": 10,
+          "fp": 1,
+          "fn": 0,
+          "tn": 442,
+          "precision": 0.9090909090909091,
+          "recall": 1.0,
+          "f1": 0.9523809523809523
+        },
+        "danger": {
+          "positive": 7,
+          "tp": 6,
+          "fp": 0,
+          "fn": 1,
+          "tn": 446,
+          "precision": 1.0,
+          "recall": 0.8571428571428571,
+          "f1": 0.9230769230769231
+        },
+        "danger_onset": {
+          "positive": 2,
+          "tp": 1,
+          "fp": 0,
+          "fn": 1,
+          "tn": 446,
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666
+        },
+        "selection_score": 0.3985365908280665
+      }
+    },
+    {
+      "name": "extra_trees_0_w4",
+      "type": "ml",
+      "learner": "extra_trees",
+      "config": {
+        "n_estimators": 300,
+        "max_depth": 16,
+        "min_samples_leaf": 3
+      },
+      "high_water_weight": 4.0,
+      "artifact_sha256": "78aa3e80a0ac1aac17c046321e6e3e08b63b1cd4df183641ba78f15ed8fd996d",
+      "validation": {
+        "n": 453,
+        "mae": 0.20366091630192223,
+        "rmse": 0.4701785003142119,
+        "r2_relative_to_station_warning": 0.9748071368447165,
+        "macro_station_mae": 0.20401550770212792,
+        "warning_period_mae": 0.5534605842864948,
+        "macro_warning_period_mae": 0.5534605842864948,
+        "warning_period_n": 10,
+        "per_station": {
+          "kurundwad": {
+            "n": 149,
+            "mae": 0.2575588091331865,
+            "rmse": 0.6781443636888098,
+            "r2": 0.9695341536180598,
+            "warning_period_mae": 0.5534605842864948,
+            "warning_period_n": 10
+          },
+          "narsingpur": {
+            "n": 152,
+            "mae": 0.23256372966017724,
+            "rmse": 0.4212977084939443,
+            "r2": 0.6399881425442007,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          },
+          "takli": {
+            "n": 152,
+            "mae": 0.12192398431301997,
+            "rmse": 0.17477220360623688,
+            "r2": 0.9385762788864094,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          }
+        },
+        "warning": {
+          "positive": 10,
+          "tp": 10,
+          "fp": 1,
+          "fn": 0,
+          "tn": 442,
+          "precision": 0.9090909090909091,
+          "recall": 1.0,
+          "f1": 0.9523809523809523
+        },
+        "danger": {
+          "positive": 7,
+          "tp": 7,
+          "fp": 2,
+          "fn": 0,
+          "tn": 444,
+          "precision": 0.7777777777777778,
+          "recall": 1.0,
+          "f1": 0.875
+        },
+        "danger_onset": {
+          "positive": 2,
+          "tp": 2,
+          "fp": 2,
+          "fn": 0,
+          "tn": 444,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666
+        },
+        "selection_score": 0.3787380459943114
+      }
+    },
+    {
+      "name": "extra_trees_1_w1",
+      "type": "ml",
+      "learner": "extra_trees",
+      "config": {
+        "n_estimators": 300,
+        "max_depth": 16,
+        "min_samples_leaf": 8
+      },
+      "high_water_weight": 1.0,
+      "artifact_sha256": "70497762633c78b3e0ef7f23a03a60399e5cdd25bfdd5e2a00b74ca44819c4f4",
+      "validation": {
+        "n": 453,
+        "mae": 0.19798692123239245,
+        "rmse": 0.44873131240413205,
+        "r2_relative_to_station_warning": 0.9770530618007947,
+        "macro_station_mae": 0.19834790748076395,
+        "warning_period_mae": 0.5553223559010121,
+        "macro_warning_period_mae": 0.5553223559010121,
+        "warning_period_n": 10,
+        "per_station": {
+          "kurundwad": {
+            "n": 149,
+            "mae": 0.25285683098486483,
+            "rmse": 0.6552605693475108,
+            "r2": 0.9715555851152595,
+            "warning_period_mae": 0.5553223559010121,
+            "warning_period_n": 10
+          },
+          "narsingpur": {
+            "n": 152,
+            "mae": 0.21800306023310567,
+            "rmse": 0.38917351311070497,
+            "r2": 0.6927972063333445,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          },
+          "takli": {
+            "n": 152,
+            "mae": 0.12418383122432138,
+            "rmse": 0.16660451934010906,
+            "r2": 0.9441831974068687,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          }
+        },
+        "warning": {
+          "positive": 10,
+          "tp": 10,
+          "fp": 1,
+          "fn": 0,
+          "tn": 442,
+          "precision": 0.9090909090909091,
+          "recall": 1.0,
+          "f1": 0.9523809523809523
+        },
+        "danger": {
+          "positive": 7,
+          "tp": 6,
+          "fp": 0,
+          "fn": 1,
+          "tn": 446,
+          "precision": 1.0,
+          "recall": 0.8571428571428571,
+          "f1": 0.9230769230769231
+        },
+        "danger_onset": {
+          "positive": 2,
+          "tp": 1,
+          "fp": 0,
+          "fn": 1,
+          "tn": 446,
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666
+        },
+        "selection_score": 0.376835131690888
+      }
+    },
+    {
+      "name": "extra_trees_1_w4",
+      "type": "ml",
+      "learner": "extra_trees",
+      "config": {
+        "n_estimators": 300,
+        "max_depth": 16,
+        "min_samples_leaf": 8
+      },
+      "high_water_weight": 4.0,
+      "artifact_sha256": "75162f5155f1a14c48b5a029bf6120ec59e4f755ad8f24840b740a02e99d89cf",
+      "validation": {
+        "n": 453,
+        "mae": 0.20501124555801487,
+        "rmse": 0.4552349522675538,
+        "r2_relative_to_station_warning": 0.9763830835534096,
+        "macro_station_mae": 0.20538140903236393,
+        "warning_period_mae": 0.5715297491449973,
+        "macro_warning_period_mae": 0.5715297491449973,
+        "warning_period_n": 10,
+        "per_station": {
+          "kurundwad": {
+            "n": 149,
+            "mae": 0.26127609365907295,
+            "rmse": 0.6508370275056625,
+            "r2": 0.9719383346794058,
+            "warning_period_mae": 0.5715297491449973,
+            "warning_period_n": 10
+          },
+          "narsingpur": {
+            "n": 152,
+            "mae": 0.22922648575803575,
+            "rmse": 0.41747883537502933,
+            "r2": 0.6464852510156543,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          },
+          "takli": {
+            "n": 152,
+            "mae": 0.1256416476799831,
+            "rmse": 0.16765809323713526,
+            "r2": 0.9434750165153106,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          }
+        },
+        "warning": {
+          "positive": 10,
+          "tp": 10,
+          "fp": 1,
+          "fn": 0,
+          "tn": 442,
+          "precision": 0.9090909090909091,
+          "recall": 1.0,
+          "f1": 0.9523809523809523
+        },
+        "danger": {
+          "positive": 7,
+          "tp": 7,
+          "fp": 1,
+          "fn": 0,
+          "tn": 445,
+          "precision": 0.875,
+          "recall": 1.0,
+          "f1": 0.9333333333333333
+        },
+        "danger_onset": {
+          "positive": 2,
+          "tp": 2,
+          "fp": 1,
+          "fn": 0,
+          "tn": 445,
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1": 0.8
+        },
+        "selection_score": 0.3884555790886806
+      }
+    },
+    {
+      "name": "xgboost_0_w1",
+      "type": "ml",
+      "learner": "xgboost",
+      "config": {
+        "n_estimators": 300,
+        "max_depth": 3,
+        "learning_rate": 0.04,
+        "min_child_weight": 10,
+        "reg_lambda": 10
+      },
+      "high_water_weight": 1.0,
+      "artifact_sha256": "8d244f983a721853881c2c7e0ea444b0b6fe8f277ba874a8d9c08899d10aaffa",
+      "validation": {
+        "n": 453,
+        "mae": 0.18433668900281086,
+        "rmse": 0.436463942446075,
+        "r2_relative_to_station_warning": 0.9782905541850381,
+        "macro_station_mae": 0.18475520346140406,
+        "warning_period_mae": 0.3889683814197838,
+        "macro_warning_period_mae": 0.3889683814197838,
+        "warning_period_n": 10,
+        "per_station": {
+          "kurundwad": {
+            "n": 149,
+            "mae": 0.24795088670897492,
+            "rmse": 0.6331185012717166,
+            "r2": 0.9734454500966027,
+            "warning_period_mae": 0.3889683814197838,
+            "warning_period_n": 10
+          },
+          "narsingpur": {
+            "n": 152,
+            "mae": 0.19657105527524155,
+            "rmse": 0.39007449394582366,
+            "r2": 0.6913731411632502,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          },
+          "takli": {
+            "n": 152,
+            "mae": 0.10974366839999568,
+            "rmse": 0.15052104432399335,
+            "r2": 0.9544397766494565,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          }
+        },
+        "warning": {
+          "positive": 10,
+          "tp": 10,
+          "fp": 1,
+          "fn": 0,
+          "tn": 442,
+          "precision": 0.9090909090909091,
+          "recall": 1.0,
+          "f1": 0.9523809523809523
+        },
+        "danger": {
+          "positive": 7,
+          "tp": 7,
+          "fp": 1,
+          "fn": 0,
+          "tn": 445,
+          "precision": 0.875,
+          "recall": 1.0,
+          "f1": 0.9333333333333333
+        },
+        "danger_onset": {
+          "positive": 2,
+          "tp": 2,
+          "fp": 1,
+          "fn": 0,
+          "tn": 445,
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1": 0.8
+        },
+        "selection_score": 0.28686179244059395
+      }
+    },
+    {
+      "name": "xgboost_0_w4",
+      "type": "ml",
+      "learner": "xgboost",
+      "config": {
+        "n_estimators": 300,
+        "max_depth": 3,
+        "learning_rate": 0.04,
+        "min_child_weight": 10,
+        "reg_lambda": 10
+      },
+      "high_water_weight": 4.0,
+      "artifact_sha256": "4e3bd0da28c4af8e230f3706042828acc4225ddbd12387da4f0d6aef936f1e8d",
+      "validation": {
+        "n": 453,
+        "mae": 0.19290299954447895,
+        "rmse": 0.4565790697183865,
+        "r2_relative_to_station_warning": 0.9762434160143385,
+        "macro_station_mae": 0.1934153349923197,
+        "warning_period_mae": 0.5952017267644465,
+        "macro_warning_period_mae": 0.5952017267644465,
+        "warning_period_n": 10,
+        "per_station": {
+          "kurundwad": {
+            "n": 149,
+            "mae": 0.27077798761627264,
+            "rmse": 0.6666942068951633,
+            "r2": 0.970554271886393,
+            "warning_period_mae": 0.5952017267644465,
+            "warning_period_n": 10
+          },
+          "narsingpur": {
+            "n": 152,
+            "mae": 0.20231336322074012,
+            "rmse": 0.4008759833813013,
+            "r2": 0.6740442190847732,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          },
+          "takli": {
+            "n": 152,
+            "mae": 0.10715465413994632,
+            "rmse": 0.1576985918278557,
+            "r2": 0.949991131371344,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          }
+        },
+        "warning": {
+          "positive": 10,
+          "tp": 9,
+          "fp": 0,
+          "fn": 1,
+          "tn": 443,
+          "precision": 1.0,
+          "recall": 0.9,
+          "f1": 0.9473684210526315
+        },
+        "danger": {
+          "positive": 7,
+          "tp": 7,
+          "fp": 1,
+          "fn": 0,
+          "tn": 445,
+          "precision": 0.875,
+          "recall": 1.0,
+          "f1": 0.9333333333333333
+        },
+        "danger_onset": {
+          "positive": 2,
+          "tp": 2,
+          "fp": 1,
+          "fn": 0,
+          "tn": 445,
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1": 0.8
+        },
+        "selection_score": 0.3943085308783831
+      }
+    },
+    {
+      "name": "xgboost_1_w1",
+      "type": "ml",
+      "learner": "xgboost",
+      "config": {
+        "n_estimators": 400,
+        "max_depth": 4,
+        "learning_rate": 0.04,
+        "min_child_weight": 5,
+        "reg_lambda": 20
+      },
+      "high_water_weight": 1.0,
+      "artifact_sha256": "0b6c3ce7724dc82d3d17da9959deade00c9887f3d896a2d299b32465165b6d69",
+      "validation": {
+        "n": 453,
+        "mae": 0.1888209385039508,
+        "rmse": 0.44575907599443815,
+        "r2_relative_to_station_warning": 0.977356039751003,
+        "macro_station_mae": 0.18923986926637917,
+        "warning_period_mae": 0.2942176292035697,
+        "macro_warning_period_mae": 0.2942176292035697,
+        "warning_period_n": 10,
+        "per_station": {
+          "kurundwad": {
+            "n": 149,
+            "mae": 0.252498414393065,
+            "rmse": 0.6472539225678191,
+            "r2": 0.9722464643959947,
+            "warning_period_mae": 0.2942176292035697,
+            "warning_period_n": 10
+          },
+          "narsingpur": {
+            "n": 152,
+            "mae": 0.20474358054882838,
+            "rmse": 0.3971868577977133,
+            "r2": 0.6800159350176899,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          },
+          "takli": {
+            "n": 152,
+            "mae": 0.11047761285724421,
+            "rmse": 0.1541272006053407,
+            "r2": 0.9522305787414026,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          }
+        },
+        "warning": {
+          "positive": 10,
+          "tp": 10,
+          "fp": 1,
+          "fn": 0,
+          "tn": 442,
+          "precision": 0.9090909090909091,
+          "recall": 1.0,
+          "f1": 0.9523809523809523
+        },
+        "danger": {
+          "positive": 7,
+          "tp": 7,
+          "fp": 0,
+          "fn": 0,
+          "tn": 446,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "danger_onset": {
+          "positive": 2,
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "tn": 446,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "selection_score": 0.24172874923497445
+      }
+    },
+    {
+      "name": "xgboost_1_w4",
+      "type": "ml",
+      "learner": "xgboost",
+      "config": {
+        "n_estimators": 400,
+        "max_depth": 4,
+        "learning_rate": 0.04,
+        "min_child_weight": 5,
+        "reg_lambda": 20
+      },
+      "high_water_weight": 4.0,
+      "artifact_sha256": "fcac96881170529aec4aad0685eac03cbd46bc0c341bd9ec59420c78d12a4722",
+      "validation": {
+        "n": 453,
+        "mae": 0.18773973135651853,
+        "rmse": 0.43483870617370823,
+        "r2_relative_to_station_warning": 0.9784519296607335,
+        "macro_station_mae": 0.18822299469616197,
+        "warning_period_mae": 0.5739258018191891,
+        "macro_warning_period_mae": 0.5739258018191891,
+        "warning_period_n": 10,
+        "per_station": {
+          "kurundwad": {
+            "n": 149,
+            "mae": 0.2611957589823189,
+            "rmse": 0.6435966391147265,
+            "r2": 0.9725592188649228,
+            "warning_period_mae": 0.5739258018191891,
+            "warning_period_n": 10
+          },
+          "narsingpur": {
+            "n": 152,
+            "mae": 0.19332713916260538,
+            "rmse": 0.36489218342400215,
+            "r2": 0.7299353559517625,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          },
+          "takli": {
+            "n": 152,
+            "mae": 0.11014608594356153,
+            "rmse": 0.15599536910103912,
+            "r2": 0.9510655387944799,
+            "warning_period_mae": null,
+            "warning_period_n": 0
+          }
+        },
+        "warning": {
+          "positive": 10,
+          "tp": 9,
+          "fp": 1,
+          "fn": 1,
+          "tn": 442,
+          "precision": 0.9,
+          "recall": 0.9,
+          "f1": 0.9
+        },
+        "danger": {
+          "positive": 7,
+          "tp": 7,
+          "fp": 0,
+          "fn": 0,
+          "tn": 446,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "danger_onset": {
+          "positive": 2,
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "tn": 446,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "selection_score": 0.38107439825767553
+      }
+    }
+  ],
+  "protocol_sha256": "77b3e076360e90a510f2b347ab60a07fb69aac86bd16335474c2be0e37699f1b",
+  "test_or_calibration_used_for_selection": false,
+  "created_utc": "2026-10-24T17:43:47.845781+00:00"
+}

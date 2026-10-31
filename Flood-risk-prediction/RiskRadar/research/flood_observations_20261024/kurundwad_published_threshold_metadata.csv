@@ -1,0 +1,2 @@
+GaugeID,Warning Level,Danger Level,Station,Latitude,Longitude,River Name/ Tributory/ SubTributory,Basin,State,Start_date,End_date,Level_Entries,Streamflow_Entries,Privacy,Source Catchment Area,Catchment Area,Area variation (%),Reliability
+INDOFLOODS-gauge-678,535.64,537.16,Kurundwad,16.6836,74.6031,Krishna,Krishna,Maharashtra,1972-05-01,2020-05-27,17315,17105,Open,15190.0,14981.12305,1.375095128,Safe

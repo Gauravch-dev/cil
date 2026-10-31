@@ -1,0 +1,247 @@
+{
+  "created_at": "2026-10-25T07:31:47.684460+00:00",
+  "task": "Annual high-discharge susceptibility proxy using original manual-input features",
+  "target": {
+    "column": "source_discharge",
+    "positive_rule": "value > training-row 95th percentile",
+    "percentile": 0.95,
+    "cutoff": 1197.641,
+    "fit_partition": "train"
+  },
+  "source_sha256": "20a844f84f78729cf4361f3f13daa3a79626f67c2e96aeb0f1a3b872bfd1a45a",
+  "original_model_sha256": "aad88a12f4645f3703c996641a15ce40603f6d5a608918fad4f37496d2f89395",
+  "seed": 20261025,
+  "split": "60/20/20 groups; not chronological; no outcome stratification or seed search",
+  "group_definition": "Connected station IDs, exactly shared coordinates or identical raw manual-input profiles",
+  "features": [
+    "precipitation_risk_index",
+    "drainage_risk_index",
+    "annual_mean_temperature",
+    "temperature_seasonality",
+    "annual_precipitation",
+    "curve_number_amcii",
+    "drainage_density",
+    "basin_relief",
+    "ruggedness_number",
+    "infiltration_number",
+    "climate_type",
+    "landcover_type",
+    "soil_type"
+  ],
+  "raw_inputs": [
+    "Annual Mean Temperature",
+    "Temperature Seasonality",
+    "Annual Precipitation",
+    "Curve Number AMCII",
+    "Drainage Density",
+    "Basin Relief",
+    "Ruggedness Number",
+    "Infiltration Number",
+    "Precipitation of Wettest Month",
+    "Precipitation Seasonality",
+    "Drainage Texture",
+    "Climate Type",
+    "Landcover Type",
+    "Soil Type"
+  ],
+  "excluded_inputs": [
+    "discharge",
+    "station",
+    "coordinates",
+    "year",
+    "country"
+  ],
+  "sample_unit": "catchment-year record",
+  "estimand": "generalisation to held-out station/input groups in the supplied archive",
+  "source_previously_analysed": true,
+  "independent_external_validation": false,
+  "preprocessing": "Train-only median imputation, scaling and one-hot categories; unknown categories ignored",
+  "imbalance": "Unweighted and train-class-weighted candidates; no validation/test sampling",
+  "class_weight_rule": "n_train_negative/n_train_positive applied only to positive training rows",
+  "selection_rule": "Maximum validation positive-class F1; tie by average precision, then recall, then name",
+  "threshold_rule": "Maximum validation F1 over unique predicted scores; ties prefer higher threshold",
+  "no_test_tuning": true,
+  "refit_after_selection": false,
+  "test_policy": "Evaluate once after selection.json is frozen",
+  "configs": [
+    {
+      "name": "logistic_plain",
+      "family": "logistic",
+      "weighted": false,
+      "params": {
+        "C": 1.0,
+        "solver": "lbfgs",
+        "max_iter": 2000,
+        "random_state": 20261025
+      }
+    },
+    {
+      "name": "extra_trees_plain",
+      "family": "extra_trees",
+      "weighted": false,
+      "params": {
+        "n_estimators": 400,
+        "max_depth": null,
+        "min_samples_leaf": 5,
+        "max_features": 0.8,
+        "n_jobs": 2,
+        "random_state": 20261025
+      }
+    },
+    {
+      "name": "hist_gradient_plain",
+      "family": "hist_gradient",
+      "weighted": false,
+      "params": {
+        "max_iter": 250,
+        "max_leaf_nodes": 15,
+        "max_depth": null,
+        "learning_rate": 0.05,
+        "l2_regularization": 1.0,
+        "early_stopping": false,
+        "random_state": 20261025
+      }
+    },
+    {
+      "name": "xgb_regularized_plain",
+      "family": "xgboost",
+      "weighted": false,
+      "params": {
+        "n_estimators": 300,
+        "max_depth": 3,
+        "learning_rate": 0.05,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "reg_alpha": 1.0,
+        "reg_lambda": 10.0
+      }
+    },
+    {
+      "name": "xgb_original_shape_plain",
+      "family": "xgboost",
+      "weighted": false,
+      "params": {
+        "n_estimators": 300,
+        "max_depth": 8,
+        "learning_rate": 0.2,
+        "subsample": 1.0,
+        "colsample_bytree": 0.8,
+        "reg_alpha": 1.0,
+        "reg_lambda": 0.1
+      }
+    },
+    {
+      "name": "logistic_weighted",
+      "family": "logistic",
+      "weighted": true,
+      "params": {
+        "C": 1.0,
+        "solver": "lbfgs",
+        "max_iter": 2000,
+        "random_state": 20261025
+      }
+    },
+    {
+      "name": "extra_trees_weighted",
+      "family": "extra_trees",
+      "weighted": true,
+      "params": {
+        "n_estimators": 400,
+        "max_depth": null,
+        "min_samples_leaf": 5,
+        "max_features": 0.8,
+        "n_jobs": 2,
+        "random_state": 20261025
+      }
+    },
+    {
+      "name": "hist_gradient_weighted",
+      "family": "hist_gradient",
+      "weighted": true,
+      "params": {
+        "max_iter": 250,
+        "max_leaf_nodes": 15,
+        "max_depth": null,
+        "learning_rate": 0.05,
+        "l2_regularization": 1.0,
+        "early_stopping": false,
+        "random_state": 20261025
+      }
+    },
+    {
+      "name": "xgb_regularized_weighted",
+      "family": "xgboost",
+      "weighted": true,
+      "params": {
+        "n_estimators": 300,
+        "max_depth": 3,
+        "learning_rate": 0.05,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "reg_alpha": 1.0,
+        "reg_lambda": 10.0
+      }
+    },
+    {
+      "name": "xgb_original_shape_weighted",
+      "family": "xgboost",
+      "weighted": true,
+      "params": {
+        "n_estimators": 300,
+        "max_depth": 8,
+        "learning_rate": 0.2,
+        "subsample": 1.0,
+        "colsample_bytree": 0.8,
+        "reg_alpha": 1.0,
+        "reg_lambda": 0.1
+      }
+    },
+    {
+      "name": "rainfall_only_logistic",
+      "family": "logistic",
+      "weighted": true,
+      "feature_view": "rainfall_only",
+      "params": {
+        "C": 1.0,
+        "solver": "lbfgs",
+        "max_iter": 2000,
+        "random_state": 20261025
+      }
+    }
+  ],
+  "baselines": [
+    "always_other",
+    "training_prevalence_constant",
+    "annual_rainfall_p95_rule"
+  ],
+  "counts_without_test_labels": {
+    "train": {
+      "rows": 27521,
+      "stations": 5822,
+      "groups": 5769
+    },
+    "validation": {
+      "rows": 9299,
+      "stations": 1947,
+      "groups": 1924
+    },
+    "test": {
+      "rows": 9112,
+      "stations": 1941,
+      "groups": 1924
+    }
+  },
+  "split_sha256": {
+    "train": "7d34c3432e861ffee1b128fe3976fa5d7ed55167b6038e67d7f081ea58ca463b",
+    "validation": "4a52f6a0bdfbc8ea9cd1bc87bd9feb45608bec208ada221cd913c10e099ed7fa",
+    "test": "ab7112462d415e633fc5c4c8e659b9a28cf4d80ed4d8ba2432990e20b8bbe790"
+  },
+  "confidence_intervals": "1000 bootstrap resamples of independent station/input groups, fixed selected threshold",
+  "versions": {
+    "python": "3.12.10",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "sklearn": "1.6.1",
+    "xgboost": "3.2.0"
+  }
+}

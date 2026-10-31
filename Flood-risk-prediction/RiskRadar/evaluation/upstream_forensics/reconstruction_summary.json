@@ -1,0 +1,70 @@
+{
+  "dataset_name": "GloFlo kuntla_flooddatabase.csv",
+  "source_sha256": "20a844f84f78729cf4361f3f13daa3a79626f67c2e96aeb0f1a3b872bfd1a45a",
+  "source_rows": 45932,
+  "source_columns": 93,
+  "exact_category_vocabulary_matches": {
+    "climate_type": true,
+    "landcover_type": true,
+    "soil_type": true,
+    "lithology_type": true
+  },
+  "reproduced_high_risk_rows": 2538,
+  "map_order_and_coordinates_match": true,
+  "maximum_map_score_error": 2.498008727647161e-07,
+  "reconstructed_target_rule": "Annual peak discharge > full-source 95th percentile",
+  "threshold_source_units": 1145.1979999999987,
+  "target_is_author_hypothesis_not_verified_flood_label": true,
+  "positive_rows": 2297,
+  "negative_rows": 43635,
+  "inferred_split": {
+    "test_size": 0.2,
+    "random_state": 42,
+    "stratify": "derived target"
+  },
+  "training_rows": 36745,
+  "inferred_holdout_rows": 9187,
+  "reconstructed_report": {
+    "0": {
+      "precision": 0.9888811674774148,
+      "recall": 0.9782309807516041,
+      "f1-score": 0.9835272434051376,
+      "support": 8728.0
+    },
+    "1": {
+      "precision": 0.6564195298372514,
+      "recall": 0.7908496732026143,
+      "f1-score": 0.717391304347826,
+      "support": 459.0
+    },
+    "accuracy": 0.9688690540981822,
+    "macro avg": {
+      "precision": 0.8226503486573331,
+      "recall": 0.8845403269771093,
+      "f1-score": 0.8504592738764818,
+      "support": 9187.0
+    },
+    "weighted avg": {
+      "precision": 0.9722707514899505,
+      "recall": 0.9688690540981822,
+      "f1-score": 0.9702305855160219,
+      "support": 9187.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      8538,
+      190
+    ],
+    [
+      96,
+      363
+    ]
+  ],
+  "reconstructed_validation_logloss": 0.09401994521517999,
+  "stored_best_logloss": 0.0940201010885684,
+  "loss_absolute_difference": 1.558733884049479e-07,
+  "test_rows_with_station_already_in_train": 9029,
+  "training_was_not_performed": true,
+  "original_model_unchanged": true
+}

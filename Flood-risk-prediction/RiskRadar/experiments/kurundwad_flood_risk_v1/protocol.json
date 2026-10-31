@@ -1,0 +1,68 @@
+{
+  "place": "Kurundwad, Kolhapur district, Maharashtra; CWC Krishna gauge",
+  "target": "Measured river level at or above official warning in next 24h; binary flood-stage risk, not district inundation",
+  "warning_m": 535.64,
+  "danger_m": 537.16,
+  "issue_time": "08:00 Asia/Kolkata once per day",
+  "features": [
+    "distance_to_warning_m",
+    "change_6h_m",
+    "change_24h_m",
+    "acceleration_m_per_h",
+    "recent_rain_mm",
+    "rain_available",
+    "month_sin",
+    "month_cos"
+  ],
+  "splits": {
+    "train": {
+      "n": 1039,
+      "positive": 18,
+      "start": "2014-06-02 08:00:00",
+      "end": "2020-11-29 08:00:00",
+      "rain_available": 326
+    },
+    "validation": {
+      "n": 305,
+      "positive": 10,
+      "start": "2021-06-01 08:00:00",
+      "end": "2022-10-31 08:00:00",
+      "rain_available": 115
+    },
+    "test": {
+      "n": 422,
+      "positive": 14,
+      "start": "2023-06-01 08:00:00",
+      "end": "2025-10-30 08:00:00",
+      "rain_available": 180
+    }
+  },
+  "selection": "Maximum validation F1, then recall, then precision. Threshold grid 0.05 to 0.95 step 0.01; ML winner selected before any test inference.",
+  "models": [
+    "balanced Logistic Regression C1",
+    "balanced Decision Tree depth3 leaf3",
+    "balanced Random Forest 200 trees depth5 leaf3"
+  ],
+  "baselines": [
+    "current-stage persistence",
+    "6h positive trend extrapolated for 12h",
+    "always below warning"
+  ],
+  "limits": [
+    "Retrospective follow-up on already inspected source years, not a fresh independent test.",
+    "Rainfall reports are sparse and nonzero-only; absent reports are unknown. Missingness may reflect observation practices.",
+    "Measured warning-stage exceedance is a physical flood-risk proxy, not observed inundation.",
+    "High-water days within a flood are dependent; separately report origins currently below warning.",
+    "No new datasets; this is a new direct classifier, distinct from previous river regression."
+  ],
+  "source_hashes": {
+    "data\\river_stage\\processed\\kurundwad_hourly.csv": "69bf7fc95b07b712e939b9c1390d4de6232871116cbbb4255edab4085aff031f",
+    "research\\flood_observations_20261024\\kurundwad_rain_historical.csv": "bc88c39f09ba6af1af790fc507313cf9746b65b921ac91f6dfae2543d3993999",
+    "research\\flood_observations_20261024\\kurundwad_rain_recent.csv": "1d8f5addd69285f9e30df71dd1d8fcb0dc15b2f0caf8aac47914bae1e7a61fcd"
+  },
+  "split_hashes": {
+    "train": "795f3b42439480e541c0bd148b77ae28118021a1cbb6c1ca1ef181348d657bac",
+    "validation": "f28ec4db15334bddcbb69e9723d521f15abcce270d8f8fd3d4e5dc4212a75eca",
+    "test": "c774dd604894c3d645c852e4580e6a0ca9d8284764594837a5ed8e953dd87a55"
+  }
+}

@@ -1,0 +1,79 @@
+C:\Users\Gaurav Choithramani\Desktop\cil\tools\validate_task9.py:42: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+  forecast = {"origin": str(origin), "target_end": str(origin + pd.Timedelta(hours=1)),
+C:\Users\Gaurav Choithramani\Desktop\cil\tools\validate_task9.py:61: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+  assert pd.Timestamp(high["plan"]["schedule"][0]["Start"]) >= origin + pd.Timedelta(hours=1)
+C:\Users\Gaurav Choithramani\Desktop\cil\tools\validate_task9.py:95: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+  total += job.power_w / 1000 * .25 * rate_at(origin + pd.Timedelta(minutes=15 * slot), scenario)
+C:\Users\Gaurav Choithramani\Desktop\cil\tools\validate_task9.py:98: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+  planned = plan_jobs(jobs, scenario, origin, origin + pd.Timedelta(hours=1), demand_high)
+Building small synthetic model fixtures; no full Task 7 training...
+Executing Task 9 notebook test cell 1
+Executing Task 9 notebook test cell 2
+Executing Task 9 notebook test cell 3
+Executing Task 9 notebook test cell 4
+Executing Task 9 notebook test cell 5
+Ontology classes: 12
+Imported enabled SWRL rules: ['EssentialAppliance_KeepON', 'FlexibleAppliance_Delay']
+Original asserted examples: {'Delay_Action': set(), 'KeepON_Action': set(), 'Refrigerator_1': {'KeepON_Action'}, 'TurnOFF_Action': set(), 'WashingMachine_Test': {'Delay_Action'}}
+Ontology SHA-256: 2ada3ac3ccafb385f087d822ddd6dadd9a16b76bbecffc1c58cddbfa28757320
+Reusing saved Task 7 models: C:\Users\Gaurav Choithramani\Desktop\cil\.task9_validation_7egojd8c\synthetic_task7_fixture
+Extracting frozen LSTM patterns: 40 training / 10 validation examples...
+Fitting ML stage: LSTM + Gradient Boosting
+Fitting ML stage: LSTM + Random Forest
+Task 9 selected ML stage: LSTM + Gradient Boosting
+The hybrid is not assumed to beat the original LSTM or basic neural network; compare the generated metrics.
+Executing Task 9 notebook test cell 6
+task9_test_cell_4:100: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+task9_test_cell_3:334: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+task9_test_cell_3:241: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+task9_test_cell_3:251: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+task9_test_cell_3:252: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+task9_test_cell_3:318: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+task9_test_cell_3:319: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+Executing Task 9 notebook test cell 7
+Executing Task 9 notebook test cell 8
+task9_test_cell_4:100: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+task9_test_cell_3:334: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+task9_test_cell_3:241: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+task9_test_cell_3:251: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+task9_test_cell_3:252: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+task9_test_cell_3:318: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+task9_test_cell_3:319: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+task9_test_cell_7:50: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+task9_test_cell_7:72: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+Saved this scenario: C:\Users\Gaurav Choithramani\Desktop\cil\.task9_validation_7egojd8c\task9_outputs\scenarios\run_20261018T210517_280023Z
+task9_test_cell_4:100: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+task9_test_cell_3:334: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+task9_test_cell_3:241: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+task9_test_cell_3:251: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+task9_test_cell_3:252: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+task9_test_cell_3:318: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+task9_test_cell_3:319: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+task9_test_cell_7:50: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+task9_test_cell_7:72: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+Saved this scenario: C:\Users\Gaurav Choithramani\Desktop\cil\.task9_validation_7egojd8c\task9_outputs\scenarios\run_20261018T210518_256463Z
+task9_test_cell_4:100: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+No new result was produced. Review the message above.
+task9_test_cell_4:100: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+task9_test_cell_4:100: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+task9_test_cell_4:100: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+Reusing cached ML prediction stage: LSTM + Gradient Boosting
+task9_test_cell_4:100: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+{
+  "status": "passed",
+  "fixture_results_are_project_results": false,
+  "full_task7_retraining_performed": false,
+  "checks": [
+    "Notebook structure, exact embedded ontology/source and actual imported SWRL rules",
+    "Imported SWRL executes independently of asserted decisions; essential overrides flexible conflict",
+    "Forecast changes decisions; exact single-interval avoidance; tariff saving equals independent energy calculation",
+    "Comfort/occupancy priority, invalid inputs, infeasibility, bounded search and midnight tariffs",
+    "A* costs match independent exhaustive search across concurrency/forecast scenarios",
+    "Every Task 9 analysis cell and dashboard callback on a synthetic 96-step multitask fixture",
+    "Validation-selected hybrid ML, full-test comparisons, TreeSHAP reconstruction and temporal activations",
+    "Dashboard occupancy/input changes, error messages and saved JSON/CSV reports",
+    "Inference ignores held-out target values and future history rows; frozen LSTM file unchanged",
+    "Repeated setup reuses cached models without ML fitting"
+  ],
+  "synthetic_chart_count": 6
+}

@@ -1,0 +1,28 @@
+{
+  "selected_model": "hist_gradient_plain",
+  "independently_recomputed_test_metrics": {
+    "accuracy": 0.9524802458296752,
+    "precision": 0.3848396501457726,
+    "recall": 0.3728813559322034,
+    "f1": 0.3787661406025825,
+    "roc_auc": 0.9276875831362577,
+    "average_precision": 0.37953757520562825
+  },
+  "station_and_group_overlap_zero": true,
+  "training_only_percentile_verified": true,
+  "training_only_imputation_and_categories_verified": true,
+  "frozen_selection_and_threshold_verified": true,
+  "all_validation_f1_and_thresholds_independently_verified": true,
+  "unmodified_models_and_partitions_verified": true,
+  "original_website_model_unchanged": true,
+  "confusion_matrix": [
+    [
+      8547,
+      211
+    ],
+    [
+      222,
+      132
+    ]
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "manual_historical": {
+    "success": true,
+    "total": 20,
+    "stations": [
+      {
+        "Station": "Arjunwad (Seasonal)",
+        "Latitude": "16.78194444",
+        "Longitude": "74.63222222"
+      },
+      {
+        "Station": "Karad",
+        "Latitude": "17.29361111",
+        "Longitude": "74.19000000"
+      }
+    ]
+  },
+  "manual_recent": {
+    "success": true,
+    "total": 21,
+    "stations": [
+      {
+        "Station": "Arjunwad (Seasonal)",
+        "Latitude": "16.78194444",
+        "Longitude": "74.63222222"
+      }
+    ]
+  },
+  "rain_historical": {
+    "api_total": 820,
+    "rows_retrieved": 820,
+    "unique_timestamps": 624,
+    "duplicate_timestamps": 196,
+    "zeros": 0,
+    "negative": 0,
+    "first_time": "2013-06-06 08:30:00",
+    "last_time": "2020-11-28 08:30:00",
+    "notes": "Sparse observations; absence is not automatically a zero-rainfall day."
+  },
+  "rain_recent": {
+    "api_total": 638,
+    "rows_retrieved": 638,
+    "unique_timestamps": 638,
+    "duplicate_timestamps": 0,
+    "zeros": 0,
+    "negative": 0,
+    "first_time": "2021-02-18 08:30:00",
+    "last_time": "2025-11-01 17:30:00",
+    "notes": "Sparse observations; absence is not automatically a zero-rainfall day."
+  }
+}

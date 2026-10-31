@@ -1,0 +1,6 @@
+{
+  "selected_lstm": "lstm_compact",
+  "selected_overall_on_validation": "lstm_compact",
+  "selection_metric": "validation RMSE in kW after fixed non-negative clipping",
+  "run_mode": "full"
+}

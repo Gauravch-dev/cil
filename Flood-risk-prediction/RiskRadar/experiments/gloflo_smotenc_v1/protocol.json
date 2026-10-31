@@ -1,0 +1,90 @@
+{
+  "task": "High annual peak discharge relative to training-source 95th percentile; not verified flood occurrence",
+  "cutoff": 1129.84,
+  "chronology": {
+    "train": "1900\u20131999",
+    "validation": "2000\u20132005",
+    "test": "2006\u20132015"
+  },
+  "features": [
+    "precipitation_risk_index",
+    "drainage_risk_index",
+    "annual_mean_temperature",
+    "temperature_seasonality",
+    "annual_precipitation",
+    "curve_number_amcii",
+    "drainage_density",
+    "basin_relief",
+    "ruggedness_number",
+    "infiltration_number",
+    "climate_type",
+    "landcover_type",
+    "soil_type"
+  ],
+  "categorical_features": [
+    "climate_type",
+    "landcover_type",
+    "soil_type"
+  ],
+  "seed": 20261024,
+  "sampling_ratios": [
+    0.25,
+    0.5,
+    1.0
+  ],
+  "k_neighbors": [
+    3,
+    5
+  ],
+  "model_configs": [
+    {
+      "n_estimators": 300,
+      "max_depth": 3,
+      "learning_rate": 0.05,
+      "min_child_weight": 10,
+      "reg_lambda": 10,
+      "reg_alpha": 1
+    },
+    {
+      "n_estimators": 500,
+      "max_depth": 4,
+      "learning_rate": 0.05,
+      "min_child_weight": 10,
+      "reg_lambda": 10,
+      "reg_alpha": 1
+    },
+    {
+      "n_estimators": 300,
+      "max_depth": 5,
+      "learning_rate": 0.08,
+      "min_child_weight": 5,
+      "reg_lambda": 5,
+      "reg_alpha": 1
+    }
+  ],
+  "candidate_fits": 18,
+  "positive_class_weight": 1.0,
+  "selection": "Validation positive F1, ties AP then precision; validation-only decision threshold.",
+  "preprocessing": "Train-only numeric medians and scaling for SMOTENC distances; valid categorical modes. Inverse numeric scaling, then original train-fitted one-hot model preprocessing.",
+  "sampling": "SMOTENC synthesises training minority rows only; validation/test remain natural.",
+  "target_limit": "High annual peak discharge, not verified flood occurrence or a lead-time forecast.",
+  "followup_limit": "Same 2006\u20132015 test was already examined in imbalance_v1. This is a follow-up comparison, not fresh independent confirmation. No test metrics are used by this selection stage.",
+  "source_sha256": "20a844f84f78729cf4361f3f13daa3a79626f67c2e96aeb0f1a3b872bfd1a45a",
+  "split_hashes": {
+    "train": "c1096dbdaeebcc31028653d4be38bdc5c111a74f681c4338597f90688f450c48",
+    "validation": "9cc12cb5b25fb59c44c88e49a1d69494262322c005a98cd7067df515f6715f90",
+    "test": "915eae2306d8b99c57d7632d7dd778e2422ec5524d55e3a9b4f8a391093e2fc8"
+  },
+  "previous_protocol_sha256": "4917975aab08af8abc70f6d64161bbee918e5457d6cb0f7700dcfab4e705a9d3",
+  "previous_selection_sha256": "aa00366e0ff38e485f4820d7903f3c734d54a55283d03e21b9e1ca25e8b3cb4b",
+  "previous_results_sha256": "e931cf4f94ae7e15e2993036036e35f2fdd6b75e8761e2ed3ee5586888d4fa7a",
+  "original_model_sha256": "aad88a12f4645f3703c996641a15ce40603f6d5a608918fad4f37496d2f89395",
+  "versions": {
+    "xgboost": "3.2.0",
+    "sklearn": "1.6.1",
+    "pandas": "3.0.6",
+    "numpy": "2.5.4",
+    "imbalanced_learn": "0.14.0"
+  },
+  "created_utc": "2026-10-24T15:45:18.294246+00:00"
+}

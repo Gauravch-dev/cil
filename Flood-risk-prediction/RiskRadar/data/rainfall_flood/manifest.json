@@ -1,0 +1,86 @@
+{
+  "problem_statement": "Rainfall & Flood Risk Analysis Using Historical Weather Data",
+  "observational_unit": "Recorded flood event, not monitored daily flood/non-flood observations",
+  "source_events": 4548,
+  "source_event_classes": {
+    "Flood": 2919,
+    "Severe Flood": 1629
+  },
+  "matched_rainfall_events": 4493,
+  "gauges": 155,
+  "states": 15,
+  "rainfall_source_coverage_excluded": 55,
+  "period": [
+    "1965-07-21T00:00:00",
+    "2019-12-28T00:00:00"
+  ],
+  "model_rows": 4488,
+  "training_rainfall_quartiles": {
+    "T1d": [
+      9.553882565999999,
+      25.892582795,
+      55.9675648325
+    ],
+    "T2d": [
+      20.7433748575,
+      49.791959934999994,
+      98.2690038175
+    ],
+    "T3d": [
+      30.349453857500002,
+      66.871265215,
+      130.3700958
+    ],
+    "T4d": [
+      38.06636067,
+      80.61563893499999,
+      156.75281925
+    ],
+    "T5d": [
+      46.318478607500005,
+      93.16931482,
+      180.320132425
+    ],
+    "T6d": [
+      54.255080775,
+      107.6826596,
+      200.905783675
+    ],
+    "T7d": [
+      61.30955373250001,
+      121.19553565,
+      221.923525375
+    ],
+    "T8d": [
+      68.668226555,
+      134.19582435,
+      241.20979742500003
+    ],
+    "T9d": [
+      74.92082836750001,
+      146.73395345,
+      261.068229375
+    ],
+    "T10d": [
+      82.91053996000001,
+      159.40598454999997,
+      277.28014260000003
+    ]
+  },
+  "inventory_records": 6876,
+  "inventory_invalid_start_dates": 20,
+  "raw_source_sha256": {
+    "floodevents_indofloods.csv": "72cea519d07b5c8cc679a57b16e887f58aaffba2cc162d89a955153a474cacbc",
+    "precipitation_variables_indofloods.csv": "a2615f03e0e71591e336a242c329429f92415ff96e7aea5a75b2ee6fe1ab60b8",
+    "metadata_indofloods.csv": "cbc03f588b164bafcf5482649ffc7379fac875050d8a113a0da010e8827b1a73",
+    "catchment_characteristics_indofloods.csv": "1748b37645c87a9931630fdb14cc8780acbd809dd77529520221c26b173add8f",
+    "India_Flood_Inventory_v3.csv": "ef9ab2cd0db7bf917dcc22c7cb094ec599f5013ef1b96ba525d816f26ff1b108"
+  },
+  "dataset_sha256": "fbbd622c35bef32d6615a763e1e6ae95db35204f6c238f487b68f22b62f64303",
+  "inventory_sha256": "9d7244d8246005fbaab1961c1fa1b3a33e2e870f95c5ec9797c4ed64d248be28",
+  "no_flood_labels_available": false,
+  "unknown_days_relabelled_as_non_flood": false,
+  "label_definition": "Publisher Flood versus Severe Flood; conditional on a recorded flood",
+  "missing_2020_rain_not_interpreted_as_zero": true,
+  "built_utc": "2026-10-24T18:17:36.805685+00:00"
+}

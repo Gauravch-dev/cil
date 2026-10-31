@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "scope": "causal preprocessing tests; full-data compact LSTM and basic MLP training; final matched test evaluation; model reload and artifact exports",
+  "output_directory": "C:\\Users\\Gaurav Choithramani\\Desktop\\cil\\task7_outputs\\full_20261004T223051_253137Z",
+  "full_training_performed": true,
+  "optional_larger_lstm_completed": false,
+  "test_targets": 18889
+}

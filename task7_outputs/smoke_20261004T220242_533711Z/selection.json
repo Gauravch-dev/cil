@@ -1,0 +1,6 @@
+{
+  "selected_lstm": "lstm_stacked",
+  "selected_overall_on_validation": "basic_mlp",
+  "selection_metric": "validation RMSE in kW after fixed non-negative clipping",
+  "run_mode": "smoke"
+}

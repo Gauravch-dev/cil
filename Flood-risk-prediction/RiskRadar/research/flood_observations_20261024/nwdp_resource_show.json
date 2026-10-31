@@ -1,0 +1,27 @@
+{
+  "help": "https://nwdp.nwic.gov.in/api/3/action/help_show?name=resource_show",
+  "success": true,
+  "result": {
+    "cache_last_updated": null,
+    "cache_url": null,
+    "created": "2025-03-05T08:40:18.554514",
+    "datastore_active": true,
+    "datastore_contains_all_records_of_source_file": false,
+    "description": "This dataset contains telemetry recorded hourly river water level measurements for the Krishna River, collected by the Central Water Commission (CWC) from 1991 to 2020. The data is sourced from various stream gauges and river monitoring stations along the Krishna Basin. It includes key parameters such as river stage, water surface elevation, and water height, supporting hydrological studies, flood monitoring, and water resource management.",
+    "format": "CSV",
+    "hash": "7eb2e7d81049b1203ffe4397c4deae49",
+    "id": "9579b739-ccb3-4c5a-b571-e3720cef442d",
+    "last_modified": "2025-03-05T08:40:18.397195",
+    "metadata_modified": "2025-03-06T06:24:13.016587",
+    "mimetype": "text/csv",
+    "mimetype_inner": null,
+    "name": "River Water Level Telemetry Hourly CWC Krishna (1991-2020)",
+    "package_id": "68600163-c5a0-4327-aa1a-fa7157b86cce",
+    "position": 13,
+    "resource_type": null,
+    "size": 69995829,
+    "state": "active",
+    "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/9579b739-ccb3-4c5a-b571-e3720cef442d/download/rwl_tele_hr_cwc_007_1991_2020.csv",
+    "url_type": "upload"
+  }
+}

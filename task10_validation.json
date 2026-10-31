@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "fixture_results_are_project_results": false,
+  "full_task7_retraining_performed": false,
+  "checks": [
+    "Notebook schema/syntax and exact embedded project resources",
+    "Every analysis cell and optional dashboard on a synthetic frozen 96-step multivariate system",
+    "35 end-to-end/error-handling checks plus policy invariance and SHAP reconstruction passed",
+    "Frozen original preprocessors/scalers scored 384 synthetic later-time-range examples without refitting",
+    "Frozen ML/LSTM fingerprints unchanged through evaluation; cached read-only setup blocks fitting",
+    "Reports, model card, deployment guide, presentation notes and audit exports generated",
+    "Absent external measurements are labelled honestly; bad schema and overlapping-time CSVs rejected",
+    "Empty high-demand group, constant targets and insufficient days handled without invented metrics"
+  ],
+  "synthetic_chart_count": 15
+}

@@ -1,0 +1,294 @@
+{
+  "historical": {
+    "resource_id": "7778f459-0e82-4681-9638-5e494c36fd42",
+    "rows": 34704,
+    "first_time": "2012-10-09 19:00:00",
+    "last_time": "2020-12-31 18:00:00",
+    "invalid_times": 0,
+    "invalid_numeric_values": 0,
+    "duplicate_timestamps": 0,
+    "raw_min": 2.4,
+    "raw_max": 1139.455,
+    "diagnostic_envelope_outside": 2823,
+    "raw_danger_exceedance_readings": 160,
+    "diagnostic_plausible_danger_readings": 159,
+    "plausible_above_examples": [
+      {
+        "Station": "KURUNDWAD",
+        "Data Acquisition Time": "05-08-2019 11:00",
+        "River Water Level Manual Hourly (meter)": "537.175",
+        "RL_of_zeroGauge": "519.4550",
+        "Latitude": "16.68444444",
+        "Longitude": "74.60222222"
+      },
+      {
+        "Station": "KURUNDWAD",
+        "Data Acquisition Time": "05-08-2019 12:00",
+        "River Water Level Manual Hourly (meter)": "537.205",
+        "RL_of_zeroGauge": "519.4550",
+        "Latitude": "16.68444444",
+        "Longitude": "74.60222222"
+      },
+      {
+        "Station": "KURUNDWAD",
+        "Data Acquisition Time": "05-08-2019 13:00",
+        "River Water Level Manual Hourly (meter)": "537.235",
+        "RL_of_zeroGauge": "519.4550",
+        "Latitude": "16.68444444",
+        "Longitude": "74.60222222"
+      },
+      {
+        "Station": "KURUNDWAD",
+        "Data Acquisition Time": "05-08-2019 14:00",
+        "River Water Level Manual Hourly (meter)": "537.265",
+        "RL_of_zeroGauge": "519.4550",
+        "Latitude": "16.68444444",
+        "Longitude": "74.60222222"
+      },
+      {
+        "Station": "KURUNDWAD",
+        "Data Acquisition Time": "05-08-2019 15:00",
+        "River Water Level Manual Hourly (meter)": "537.295",
+        "RL_of_zeroGauge": "519.4550",
+        "Latitude": "16.68444444",
+        "Longitude": "74.60222222"
+      }
+    ],
+    "caution": "Provisional diagnostics, not cleaned labels. Check dates, datum, flat lines, gaps and official threshold history.",
+    "yearly_diagnostics": [
+      {
+        "year": 2012,
+        "readings": 53,
+        "max_level": 527.545
+      },
+      {
+        "year": 2013,
+        "readings": 159,
+        "max_level": 533.495
+      },
+      {
+        "year": 2014,
+        "readings": 3837,
+        "max_level": 535.915
+      },
+      {
+        "year": 2015,
+        "readings": 4074,
+        "max_level": 535.915
+      },
+      {
+        "year": 2016,
+        "readings": 4936,
+        "max_level": 535.575
+      },
+      {
+        "year": 2017,
+        "readings": 4879,
+        "max_level": 532.255
+      },
+      {
+        "year": 2018,
+        "readings": 4945,
+        "max_level": 534.675
+      },
+      {
+        "year": 2019,
+        "readings": 4142,
+        "max_level": 541.205
+      },
+      {
+        "year": 2020,
+        "readings": 4856,
+        "max_level": 536.015
+      }
+    ]
+  },
+  "recent": {
+    "resource_id": "7a5386e8-bf7a-43ac-af78-04565db04e79",
+    "rows": 21921,
+    "first_time": "2021-01-01 08:00:00",
+    "last_time": "2025-12-31 18:00:00",
+    "invalid_times": 0,
+    "invalid_numeric_values": 0,
+    "duplicate_timestamps": 0,
+    "raw_min": 521.855,
+    "raw_max": 540.165,
+    "diagnostic_envelope_outside": 0,
+    "raw_danger_exceedance_readings": 214,
+    "diagnostic_plausible_danger_readings": 214,
+    "plausible_above_examples": [
+      {
+        "Station": "KURUNDWAD",
+        "Data Acquisition Time": "24-07-2021 14:00",
+        "River Water Level Manual Hourly (meter)": "537.235",
+        "RL_of_zeroGauge": "519.4550",
+        "Latitude": "16.68444444",
+        "Longitude": "74.60222222"
+      },
+      {
+        "Station": "KURUNDWAD",
+        "Data Acquisition Time": "24-07-2021 15:00",
+        "River Water Level Manual Hourly (meter)": "537.385",
+        "RL_of_zeroGauge": "519.4550",
+        "Latitude": "16.68444444",
+        "Longitude": "74.60222222"
+      },
+      {
+        "Station": "KURUNDWAD",
+        "Data Acquisition Time": "24-07-2021 16:00",
+        "River Water Level Manual Hourly (meter)": "537.535",
+        "RL_of_zeroGauge": "519.4550",
+        "Latitude": "16.68444444",
+        "Longitude": "74.60222222"
+      },
+      {
+        "Station": "KURUNDWAD",
+        "Data Acquisition Time": "24-07-2021 17:00",
+        "River Water Level Manual Hourly (meter)": "537.685",
+        "RL_of_zeroGauge": "519.4550",
+        "Latitude": "16.68444444",
+        "Longitude": "74.60222222"
+      },
+      {
+        "Station": "KURUNDWAD",
+        "Data Acquisition Time": "24-07-2021 18:00",
+        "River Water Level Manual Hourly (meter)": "537.835",
+        "RL_of_zeroGauge": "519.4550",
+        "Latitude": "16.68444444",
+        "Longitude": "74.60222222"
+      }
+    ],
+    "caution": "Provisional diagnostics, not cleaned labels. Check dates, datum, flat lines, gaps and official threshold history.",
+    "yearly_diagnostics": [
+      {
+        "year": 2021,
+        "readings": 4308,
+        "max_level": 540.165
+      },
+      {
+        "year": 2022,
+        "readings": 4540,
+        "max_level": 534.825
+      },
+      {
+        "year": 2023,
+        "readings": 4548,
+        "max_level": 532.545
+      },
+      {
+        "year": 2024,
+        "readings": 4552,
+        "max_level": 537.345
+      },
+      {
+        "year": 2025,
+        "readings": 3973,
+        "max_level": 536.715
+      }
+    ]
+  },
+  "rainfall_historical": {
+    "success": true,
+    "total": 820,
+    "records": [
+      {
+        "_id": 50382,
+        "SlNo": "50382",
+        "Station": "KURUNDWAD",
+        "Agency": "CWC",
+        "State LGD Code": "27",
+        "State": "Maharashtra",
+        "District LGD Code": "480",
+        "District": "Kolhapur",
+        "Tehsil": "SHIROL",
+        "Block": "-",
+        "Village": "-",
+        "River": "Krishna",
+        "Basin": "Krishna",
+        "Tributary": "-",
+        "Subtributary": "-",
+        "SubSubtributary": "-",
+        "Local River": "Krishna",
+        "Latitude": "16.68444444",
+        "Longitude": "74.60222222",
+        "Data Acquisition Time": "06-06-2013 08:30",
+        "Manual Daily Rainfall (mm)": "5.2"
+      },
+      {
+        "_id": 50383,
+        "SlNo": "50383",
+        "Station": "KURUNDWAD",
+        "Agency": "CWC",
+        "State LGD Code": "27",
+        "State": "Maharashtra",
+        "District LGD Code": "480",
+        "District": "Kolhapur",
+        "Tehsil": "SHIROL",
+        "Block": "-",
+        "Village": "-",
+        "River": "Krishna",
+        "Basin": "Krishna",
+        "Tributary": "-",
+        "Subtributary": "-",
+        "SubSubtributary": "-",
+        "Local River": "Krishna",
+        "Latitude": "16.68444444",
+        "Longitude": "74.60222222",
+        "Data Acquisition Time": "06-06-2013 08:30",
+        "Manual Daily Rainfall (mm)": "5.2"
+      }
+    ]
+  },
+  "rainfall_recent": {
+    "success": true,
+    "total": 638,
+    "records": [
+      {
+        "_id": 35753,
+        "SlNo": "35753",
+        "Station": "KURUNDWAD",
+        "Agency": "CWC",
+        "State LGD Code": "27",
+        "State": "Maharashtra",
+        "District LGD Code": "480",
+        "District": "Kolhapur",
+        "Tehsil": "SHIROL",
+        "Block": "-",
+        "Village": "-",
+        "River": "Krishna",
+        "Basin": "Krishna",
+        "Tributary": "-",
+        "Subtributary": "-",
+        "SubSubtributary": "-",
+        "Local River": "Krishna",
+        "Latitude": "16.68444444",
+        "Longitude": "74.60222222",
+        "Data Acquisition Time": "18-02-2021 08:30",
+        "Manual Daily Rainfall (mm)": "1"
+      },
+      {
+        "_id": 35754,
+        "SlNo": "35754",
+        "Station": "KURUNDWAD",
+        "Agency": "CWC",
+        "State LGD Code": "27",
+        "State": "Maharashtra",
+        "District LGD Code": "480",
+        "District": "Kolhapur",
+        "Tehsil": "SHIROL",
+        "Block": "-",
+        "Village": "-",
+        "River": "Krishna",
+        "Basin": "Krishna",
+        "Tributary": "-",
+        "Subtributary": "-",
+        "SubSubtributary": "-",
+        "Local River": "Krishna",
+        "Latitude": "16.68444444",
+        "Longitude": "74.60222222",
+        "Data Acquisition Time": "22-02-2021 17:30",
+        "Manual Daily Rainfall (mm)": "0.6"
+      }
+    ]
+  }
+}

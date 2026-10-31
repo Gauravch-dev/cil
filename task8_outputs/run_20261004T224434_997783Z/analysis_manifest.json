@@ -1,0 +1,23 @@
+{
+  "task7_run": "20261004T223051_253137Z",
+  "training_performed": false,
+  "test_targets": 18889,
+  "global_explanation_examples": 32,
+  "reference_training_target_index": 15416,
+  "reference_predictions_kw": {
+    "LSTM": 1.3425101041793823,
+    "Basic neural network": 0.9893865585327148
+  },
+  "ig_initial_steps": 64,
+  "ig_max_steps": 256,
+  "ig_absolute_tolerance_kw": 0.001,
+  "ig_relative_tolerance": 0.01,
+  "completeness_passed": 66,
+  "completeness_total": 70,
+  "model_sha256": {
+    "LSTM": "6e943430c455d6ce08af019a08708e2b32361b2b0d9be148babbae5d8ac7b86c",
+    "Basic neural network": "71a08becb0584135263b8520bb08c4ff98c0782b2d48f7e733648f53356e190a"
+  },
+  "tensorflow_version": "2.20.0",
+  "numpy_version": "2.5.3"
+}

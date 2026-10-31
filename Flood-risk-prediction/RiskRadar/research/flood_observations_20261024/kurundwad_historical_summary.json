@@ -1,0 +1,58 @@
+{
+  "official_resource_id": "9579b739-ccb3-4c5a-b571-e3720cef442d",
+  "api_total_records": 12113,
+  "downloaded_records": 12113,
+  "complete_retrieval": true,
+  "first_time": "2014-06-01 00:00:00",
+  "last_time": "2020-12-31 11:30:00",
+  "invalid_times": 0,
+  "invalid_numeric_levels": 0,
+  "below_zero_levels": 0,
+  "min_level_raw": 522.395,
+  "max_level_raw": 5224.856,
+  "at_or_above_indofloods_danger_raw": 37,
+  "below_indofloods_danger_raw": 12076,
+  "warning": "RAW source counts only. Datum, outliers, duplicate timestamps, coverage and threshold validity need audit before labels.",
+  "above_threshold_examples_raw": [
+    {
+      "Station": "KURUNDWAD",
+      "Data Acquisition Time": "05-06-2014 19:00",
+      "River Water Level Telemetry Hourly (meter)": "5224.856",
+      "RL_of_zeroGauge": "519.4550",
+      "Latitude": "16.68444444",
+      "Longitude": "74.60222222"
+    },
+    {
+      "Station": "KURUNDWAD",
+      "Data Acquisition Time": "15-06-2014 03:00",
+      "River Water Level Telemetry Hourly (meter)": "716.855",
+      "RL_of_zeroGauge": "519.4550",
+      "Latitude": "16.68444444",
+      "Longitude": "74.60222222"
+    },
+    {
+      "Station": "KURUNDWAD",
+      "Data Acquisition Time": "17-06-2014 09:00",
+      "River Water Level Telemetry Hourly (meter)": "1292.857",
+      "RL_of_zeroGauge": "519.4550",
+      "Latitude": "16.68444444",
+      "Longitude": "74.60222222"
+    },
+    {
+      "Station": "KURUNDWAD",
+      "Data Acquisition Time": "24-06-2014 06:00",
+      "River Water Level Telemetry Hourly (meter)": "1298.855",
+      "RL_of_zeroGauge": "519.4550",
+      "Latitude": "16.68444444",
+      "Longitude": "74.60222222"
+    },
+    {
+      "Station": "KURUNDWAD",
+      "Data Acquisition Time": "26-06-2014 11:00",
+      "River Water Level Telemetry Hourly (meter)": "716.856",
+      "RL_of_zeroGauge": "519.4550",
+      "Latitude": "16.68444444",
+      "Longitude": "74.60222222"
+    }
+  ]
+}

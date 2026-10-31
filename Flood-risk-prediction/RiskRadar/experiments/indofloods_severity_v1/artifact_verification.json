@@ -1,0 +1,11 @@
+{
+  "reload_max_absolute_score_error": {
+    "xgb_static": 2.8614044134123162e-08,
+    "xgb_rainfall": 2.9074096685732798e-08,
+    "logistic_rainfall_baseline": 1.1102230246251565e-16
+  },
+  "frozen_split_hashes_match": true,
+  "selected_model_unchanged_after_test": true,
+  "original_app_model_preserved": true,
+  "comparison_script_compiles": true
+}

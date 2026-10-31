@@ -1,0 +1,118 @@
+{
+  "krishna_historical_maharashtra": {
+    "success": true,
+    "total": 41389,
+    "samples": [
+      {
+        "_id": 180647,
+        "SlNo": "180647",
+        "Station": "KURUNDWAD",
+        "Agency": "CWC",
+        "State LGD Code": "27",
+        "State": "Maharashtra",
+        "District LGD Code": "480",
+        "District": "Kolhapur",
+        "Tehsil": "SHIROL",
+        "Block": "-",
+        "Village": "-",
+        "River": "Krishna",
+        "Basin": "Krishna",
+        "Tributary": "-",
+        "Subtributary": "-",
+        "SubSubtributary": "-",
+        "Local River": "Krishna",
+        "Latitude": "16.68444444",
+        "Longitude": "74.60222222",
+        "Is_DischargeDataAvailable": "Yes",
+        "RL_of_zeroGauge": "519.4550",
+        "MeanSeaLevel": "0",
+        "Data Acquisition Time": "01-06-2014 00:00",
+        "River Water Level Telemetry Hourly (meter)": "524.855"
+      },
+      {
+        "_id": 180648,
+        "SlNo": "180648",
+        "Station": "KURUNDWAD",
+        "Agency": "CWC",
+        "State LGD Code": "27",
+        "State": "Maharashtra",
+        "District LGD Code": "480",
+        "District": "Kolhapur",
+        "Tehsil": "SHIROL",
+        "Block": "-",
+        "Village": "-",
+        "River": "Krishna",
+        "Basin": "Krishna",
+        "Tributary": "-",
+        "Subtributary": "-",
+        "SubSubtributary": "-",
+        "Local River": "Krishna",
+        "Latitude": "16.68444444",
+        "Longitude": "74.60222222",
+        "Is_DischargeDataAvailable": "Yes",
+        "RL_of_zeroGauge": "519.4550",
+        "MeanSeaLevel": "0",
+        "Data Acquisition Time": "01-06-2014 01:00",
+        "River Water Level Telemetry Hourly (meter)": "524.856"
+      }
+    ]
+  },
+  "karad_historical": {
+    "success": true,
+    "total": 0,
+    "samples": []
+  },
+  "kurundwad_historical": {
+    "success": true,
+    "total": 0,
+    "samples": []
+  },
+  "krishna_recent_metadata": {
+    "success": true,
+    "name": "River Water Level CWC Krishna (2021 - 2025) Telemetry Hourly",
+    "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/4ddede56-5e49-4956-bb6f-df3786bf601f/download/rwl_tel_hr_cwc_007_2021_2025.csv",
+    "size": 74000976,
+    "datastore_active": true,
+    "last_modified": "2026-01-24T23:39:32.107639"
+  },
+  "karad_recent": {
+    "success": true,
+    "total": 0,
+    "samples": []
+  },
+  "rainfall_catalog": {
+    "success": true,
+    "datasets": [
+      {
+        "id": "9380580f-9bf0-4708-9773-0cea3cbc595a",
+        "name": "rainfall-daily-imd",
+        "title": "Rainfall Daily IMD"
+      },
+      {
+        "id": "9e9ce8da-2ab4-4d73-a9a7-d46c34f2eae3",
+        "name": "rainfall-telemetry-hourly-upgw",
+        "title": "Rainfall (Telemetry - Hourly), UPGW"
+      },
+      {
+        "id": "2e30862e-7b93-411b-a5ba-6f06576400b6",
+        "name": "rainfall-telemetry-hourly-tripura",
+        "title": "Rainfall (Telemetry - Hourly), Tripura"
+      },
+      {
+        "id": "2f43d9da-02d2-4a61-aef3-cec40f62e63e",
+        "name": "rainfall-telemetry-hourly-cwprs",
+        "title": "Rainfall (Telemetry Hourly), CWPRS"
+      },
+      {
+        "id": "daa5989a-fd11-4ee3-a4ae-5a37aab585d5",
+        "name": "rainfall-manual-daily-mizoram",
+        "title": "Rainfall (Manual - Daily), Mizoram"
+      },
+      {
+        "id": "00f9007e-9b5a-4ce0-87e0-cee4ccd1a8e5",
+        "name": "rainfall-telemetry-hourly-uttarakhand",
+        "title": "Rainfall (Telemetry - Hourly), Uttarakhand"
+      }
+    ]
+  }
+}

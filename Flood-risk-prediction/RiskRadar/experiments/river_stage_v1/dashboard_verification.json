@@ -1,0 +1,114 @@
+{
+  "passed": 27,
+  "failed": 0,
+  "checks": [
+    {
+      "check": "Initial forecast loads without exceptions",
+      "passed": true
+    },
+    {
+      "check": "Only river forecast and rainfall history navigation",
+      "passed": true
+    },
+    {
+      "check": "kurundwad 2023: forecast, chart and export available",
+      "passed": true
+    },
+    {
+      "check": "kurundwad 2024: forecast, chart and export available",
+      "passed": true
+    },
+    {
+      "check": "kurundwad 2025: forecast, chart and export available",
+      "passed": true
+    },
+    {
+      "check": "kurundwad: Rising river preset renders a forecast",
+      "passed": true
+    },
+    {
+      "check": "kurundwad: Highest observed level preset renders a forecast",
+      "passed": true
+    },
+    {
+      "check": "kurundwad: Latest available preset renders a forecast",
+      "passed": true
+    },
+    {
+      "check": "narsingpur 2023: forecast, chart and export available",
+      "passed": true
+    },
+    {
+      "check": "narsingpur 2024: forecast, chart and export available",
+      "passed": true
+    },
+    {
+      "check": "narsingpur 2025: forecast, chart and export available",
+      "passed": true
+    },
+    {
+      "check": "narsingpur: Rising river preset renders a forecast",
+      "passed": true
+    },
+    {
+      "check": "narsingpur: Highest observed level preset renders a forecast",
+      "passed": true
+    },
+    {
+      "check": "narsingpur: Latest available preset renders a forecast",
+      "passed": true
+    },
+    {
+      "check": "takli 2023: forecast, chart and export available",
+      "passed": true
+    },
+    {
+      "check": "takli 2024: forecast, chart and export available",
+      "passed": true
+    },
+    {
+      "check": "takli 2025: forecast, chart and export available",
+      "passed": true
+    },
+    {
+      "check": "takli: Rising river preset renders a forecast",
+      "passed": true
+    },
+    {
+      "check": "takli: Highest observed level preset renders a forecast",
+      "passed": true
+    },
+    {
+      "check": "takli: Latest available preset renders a forecast",
+      "passed": true
+    },
+    {
+      "check": "Recorded-outcome comparison loads",
+      "passed": true
+    },
+    {
+      "check": "Rainfall history loads all three chart views",
+      "passed": true
+    },
+    {
+      "check": "Yearly, monthly and daily tabs retained",
+      "passed": true
+    },
+    {
+      "check": "Rainfall anomaly view works",
+      "passed": true
+    },
+    {
+      "check": "Rainfall period and daily-year controls work",
+      "passed": true
+    },
+    {
+      "check": "Rainfall export retained",
+      "passed": true
+    },
+    {
+      "check": "Return to forecast works after history navigation",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+
+--- Executing cell 1 (1) ---
+Cell completed in 0.0s
+
+--- Executing cell 3 (2) ---
+Run mode: full
+TensorFlow: 2.20.0 | GPUs: []
+Artifacts: C:\Users\Gaurav Choithramani\Desktop\cil\task7_outputs\full_20261004T223051_253137Z
+Cell completed in 6.4s
+
+--- Executing cell 5 (3) ---
+source_url                       https://archive.ics.uci.edu/static/public/235/...
+archive_sha256                   9f84b46ade8a2d8e1286ec4b2b6c2987a45a755c59f263...
+raw_rows                                                                   2075259
+raw_start                                                      2006-12-16 17:24:00
+raw_end                                                        2010-11-26 21:02:00
+missing_or_invalid_power_rows                                                25979
+invalid_timestamps                                                               0
+duplicate_timestamps                                                             0
+Name: Data audit, dtype: object
+Cell completed in 9.6s
+
+--- Executing cell 7 (4) ---
+interval_rows                     138352
+fully_observed_intervals          136551
+forward_filled_input_intervals       113
+unfilled_input_intervals            1688
+dtype: object
+Cell completed in 0.6s
+
+--- Executing cell 9 (5) ---
+        Split  Eligible_samples_full  ...         Last_target First_forecast_origin
+0       train                  94551  ... 2009-09-20 12:45:00   2006-12-23 16:45:00
+1  validation                  19858  ... 2010-04-24 17:00:00   2009-09-20 13:00:00
+2        test                  18889  ... 2010-11-26 21:00:00   2010-04-24 17:15:00
+
+[3 rows x 6 columns]
+Cell completed in 0.1s
+
+--- Executing cell 11 (6) ---
+WARNING:tensorflow:AutoGraph could not transform <function make_dataset.<locals>.gather_batch at 0x000001C094D44CC0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: closure mismatch, requested ('include_targets',), but source function had ()
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+WARNING:tensorflow:AutoGraph could not transform <function make_dataset.<locals>.gather_batch at 0x000001C094D47380> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: closure mismatch, requested ('include_targets',), but source function had ()
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+History batch: (256, 96, 6) | Context batch: (256, 17)
+Cell completed in 0.5s
+
+--- Executing cell 13 (7) ---
+WARNING:tensorflow:AutoGraph could not transform <function make_dataset.<locals>.gather_batch at 0x000001C08109CFE0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: closure mismatch, requested ('include_targets',), but source function had ()
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+Reused completed full-data training: basic_mlp, 17 epochs, best epoch 10.
+Training duration unavailable in the recovered run; original training histories preserved.
+WARNING:tensorflow:AutoGraph could not transform <function make_dataset.<locals>.gather_batch at 0x000001C0810E74C0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: closure mismatch, requested ('include_targets',), but source function had ()
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+Reused completed full-data training: lstm_compact, 17 epochs, best epoch 10.
+Training duration unavailable in the recovered run; original training histories preserved.
+          Model  Kind    MAE_kW  ...  Parameters  Training_seconds  Clipped_fraction
+1  lstm_compact  lstm  0.482630  ...        9249              None               0.0
+0     basic_mlp   mlp  0.495109  ...       40129              None               0.0
+
+[2 rows x 11 columns]
+LSTM selected using validation RMSE: lstm_compact
+Cell completed in 3.9s
+
+--- Executing cell 15 (8) ---
+WARNING:tensorflow:AutoGraph could not transform <function make_dataset.<locals>.gather_batch at 0x000001C087B72A20> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: closure mismatch, requested ('include_targets',), but source function had ()
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+WARNING:tensorflow:AutoGraph could not transform <function make_dataset.<locals>.gather_batch at 0x000001C087B722A0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: closure mismatch, requested ('include_targets',), but source function had ()
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+             Model  ...  Selected_on_validation
+0     lstm_compact  ...                    True
+1        basic_mlp  ...                   False
+2      Persistence  ...                   False
+3   Daily seasonal  ...                   False
+4  Weekly seasonal  ...                   False
+
+[5 rows x 8 columns]
+Overall model selected BEFORE test: lstm_compact
+Cell completed in 3.6s
+
+--- Executing cell 17 (9) ---
+task7.ipynb cell 17:22: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+task7.ipynb cell 17:23: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+                                         Segment  ...      R2
+0                               All test targets  ...  0.3999
+1                               All test targets  ...  0.3896
+2                               All test targets  ... -0.0188
+3                               All test targets  ... -0.3084
+4                               All test targets  ... -0.4046
+5   High demand (above training 90th percentile)  ... -5.7625
+6   High demand (above training 90th percentile)  ... -6.1343
+7   High demand (above training 90th percentile)  ... -7.1622
+8   High demand (above training 90th percentile)  ... -8.7823
+9   High demand (above training 90th percentile)  ... -9.3040
+10                                  Other demand  ...  0.3356
+11                                  Other demand  ...  0.3403
+12                                  Other demand  ... -0.3368
+13                                  Other demand  ... -0.7609
+14                                  Other demand  ... -0.9028
+
+[15 rows x 7 columns]
+High-demand threshold from training: 2.503 kW
+Cell completed in 1.8s
+
+--- Executing cell 19 (10) ---
+Save/reload check passed. Task 8 temporal activation shape: (8, 96, 32)
+Artifact archive: C:\Users\Gaurav Choithramani\Desktop\cil\task7_outputs\full_20261004T223051_253137Z.zip
+In Colab, download this ZIP from the Files sidebar before the runtime expires.
+Cell completed in 5.2s
+
+--- Executing cell 21 (11) ---
+TASK 7 RESULT
+Selected LSTM: lstm_compact
+Test MAE: 0.4269 kW; RMSE: 0.6182 kW; R2: 0.3999
+LSTM beats basic MLP on test RMSE: True
+LSTM beats persistence on test RMSE: True
+Use these comparisons as findings; do not change hyperparameters based on this test set.
+Task 8 handoff saved to: C:\Users\Gaurav Choithramani\Desktop\cil\task7_outputs\full_20261004T223051_253137Z
+Cell completed in 0.0s
+FULL NOTEBOOK EXECUTION COMPLETED: C:\Users\Gaurav Choithramani\Desktop\cil\task7_outputs\full_20261004T223051_253137Z
+Exception ignored in atexit callback: <function shutdown at 0x000001C0AE2ADEE0>
+Traceback (most recent call last):
+  File "C:\Users\Gaurav Choithramani\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\logging\__init__.py", line 2265, in shutdown
+    h.close()
+  File "C:\Users\Gaurav Choithramani\Desktop\cil\.venv-task7\Lib\site-packages\absl\logging\__init__.py", line 1032, in close
+    self.stream.close()
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'Tee' object has no attribute 'close'

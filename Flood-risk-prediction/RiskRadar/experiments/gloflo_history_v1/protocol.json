@@ -1,0 +1,158 @@
+{
+  "task": "High annual peak discharge relative to training-source 95th percentile; not verified flood occurrence",
+  "cutoff": 1129.84,
+  "chronology": {
+    "train": "1900\u20131999",
+    "validation": "2000\u20132005",
+    "test": "2006\u20132015"
+  },
+  "static_features": [
+    "precipitation_risk_index",
+    "drainage_risk_index",
+    "annual_mean_temperature",
+    "temperature_seasonality",
+    "annual_precipitation",
+    "curve_number_amcii",
+    "drainage_density",
+    "basin_relief",
+    "ruggedness_number",
+    "infiltration_number",
+    "climate_type",
+    "landcover_type",
+    "soil_type",
+    "drainage_area",
+    "basin_length",
+    "sinuosity_index",
+    "stream_order",
+    "basin_perimeter",
+    "elongation_ratio",
+    "drainage_texture",
+    "precipitation_wettest_month",
+    "precipitation_driest_month",
+    "precipitation_seasonality",
+    "lithology_type"
+  ],
+  "history_features": [
+    "history_count",
+    "history_age_years",
+    "history_last_ratio",
+    "history_mean_ratio",
+    "history_median_ratio",
+    "history_std_ratio",
+    "history_max_ratio",
+    "history_last3_mean_ratio",
+    "history_exceedance_rate",
+    "history_log_mean_ratio"
+  ],
+  "configs": {
+    "hist_gradient_boosting": [
+      {
+        "max_iter": 300,
+        "max_leaf_nodes": 15,
+        "weight": "none"
+      },
+      {
+        "max_iter": 400,
+        "max_leaf_nodes": 31,
+        "weight": "sqrt"
+      }
+    ],
+    "random_forest": [
+      {
+        "n_estimators": 200,
+        "max_leaf_nodes": 512,
+        "min_samples_leaf": 5,
+        "weight": "none"
+      },
+      {
+        "n_estimators": 300,
+        "max_leaf_nodes": 1024,
+        "min_samples_leaf": 2,
+        "weight": "sqrt"
+      }
+    ],
+    "logistic_regression": [
+      {
+        "C": 0.1,
+        "weight": "none"
+      },
+      {
+        "C": 1.0,
+        "weight": "sqrt"
+      }
+    ]
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "train_end": 1959,
+      "validation_start": 1960,
+      "validation_end": 1979,
+      "cutoff": 1147.9394999999981,
+      "train_rows": 6134,
+      "validation_rows": 4253,
+      "train_stations": 2461,
+      "validation_stations": 2190,
+      "positive_train": 307,
+      "positive_validation": 162
+    },
+    {
+      "fold": 1,
+      "train_end": 1979,
+      "validation_start": 1980,
+      "validation_end": 1989,
+      "cutoff": 1118.52,
+      "train_rows": 14798,
+      "validation_rows": 2427,
+      "train_stations": 4886,
+      "validation_stations": 1646,
+      "positive_train": 738,
+      "positive_validation": 105
+    },
+    {
+      "fold": 2,
+      "train_end": 1989,
+      "validation_start": 1990,
+      "validation_end": 1999,
+      "cutoff": 1096.7755,
+      "train_rows": 19336,
+      "validation_rows": 2627,
+      "train_stations": 5678,
+      "validation_stations": 1699,
+      "positive_train": 967,
+      "positive_validation": 174
+    }
+  ],
+  "seed": 20261024,
+  "source_sha256": "20a844f84f78729cf4361f3f13daa3a79626f67c2e96aeb0f1a3b872bfd1a45a",
+  "original_model_sha256": "aad88a12f4645f3703c996641a15ce40603f6d5a608918fad4f37496d2f89395",
+  "source_split_hashes": {
+    "train": "41256c39ad353b0834fdde7573146ce24c79938dff79a0708b1d8b93542f04f7",
+    "validation": "d942fdb1ae01381f32845a5aea518ff3747a521dccbcc1c9aae82d0e9b8ff7d0",
+    "test": "501cf8fe9c769330547ef84176feb17155f133e478d2c4473030864f0a758be7"
+  },
+  "protected": {
+    "experiments\\gloflo_station_features_v1\\protocol.json": "02232a2275d169e438f10ecba1fb79dc6493f8c0b7f151a02ea487f8632b6311",
+    "experiments\\gloflo_station_features_v1\\selection.json": "10effb36fd7703ab5ae4067caaa216cece345542700f8cf72a61cf12397b06d3",
+    "experiments\\gloflo_station_features_v1\\final_results.json": "ef6a06adad5057f409ca0bcae31767d7a195c15484b83a68bcf4603fb157a87d",
+    "experiments\\gloflo_learners_v1\\selection.json": "dc0cdd3517cf7094326843a6aa518c61698007ab7cb9a995f5c8131e7267bfdb",
+    "experiments\\gloflo_learners_v1\\final_results.json": "fd28ff648bb657b9e06cb14f92efaef8ffd61d0cb5d3cbf8f29f34c3e022a044"
+  },
+  "history_rule": "Same station, strictly earlier years from an explicit fit-reference only. Same-year values are excluded; no current discharge/unit discharge as predictor. Final outer validation/test both reference training through 1999 only. No updating from validation/test outcomes, even earlier ones.",
+  "routing": "History count >=1: history expert. Count zero: static expert. All cases remain evaluated.",
+  "fold_rule": "Use original three forward windows and exclude hashed station group i from fold fitting. Validate ALL stations in the later window: report history and no-history routes separately. Held-out stations have no history references. Fold cutoff fits fold training only.",
+  "selection": "Per route: prefer achieving precision>=0.60, recall>=0.75 and FPR<=0.03 in pooled OOF. Otherwise retain precision/FPR guards where feasible, maximise F1 and disclose recall failure. Model ties use AP. No model/threshold selection from outer validation/test.",
+  "threshold": "Thresholds from route-specific pooled forward OOF scores, rounded to 12 decimals. Require >=20 predicted positives for a stable precision guard. No fallback to unconstrained F2 if the guard fails: retain FPR cap, maximise F1, report failure.",
+  "candidate_count": 10,
+  "cv_fits": 30,
+  "final_pipelines": 5,
+  "limits": "Previously examined data: exploratory follow-up, not new independent confirmation. Historical annual flows are retrospective covariates, not daily weather. Final history is stale by design (pre-2000 snapshot). High annual discharge is not verified flood occurrence or an operational warning.",
+  "versions": {
+    "xgboost": "3.2.0",
+    "sklearn": "1.6.1",
+    "pandas": "3.0.6",
+    "numpy": "2.5.4",
+    "catboost": "1.2.10"
+  },
+  "created_utc": "2026-10-24T16:53:52.000468+00:00"
+}

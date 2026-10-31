@@ -1,0 +1,105 @@
+test_future_changes_cannot_change_issue_inputs (test_city_flood.CityFloodTests.test_future_changes_cannot_change_issue_inputs) ... ok
+test_future_peak_defines_label_without_becoming_input (test_city_flood.CityFloodTests.test_future_peak_defines_label_without_becoming_input) ... ok
+test_incomplete_future_is_not_a_negative_example (test_city_flood.CityFloodTests.test_incomplete_future_is_not_a_negative_example) ... ok
+test_invalid_manual_inputs_rejected (test_city_flood.CityFloodTests.test_invalid_manual_inputs_rejected) ... ok
+test_measured_zero_rain_is_distinct_from_missing (test_city_flood.CityFloodTests.test_measured_zero_rain_is_distinct_from_missing) ... ok
+test_rain_published_after_issue_cannot_enter_features (test_city_flood.CityFloodTests.test_rain_published_after_issue_cannot_enter_features) ... ok
+test_stale_rain_is_unknown (test_city_flood.CityFloodTests.test_stale_rain_is_unknown) ... ok
+test_unknown_rain_does_not_become_zero (test_city_flood.CityFloodTests.test_unknown_rain_does_not_become_zero) ... ok
+test_unsupported_observation_datum_not_accepted (test_city_flood.CityFloodTests.test_unsupported_observation_datum_not_accepted) ... ok
+test_current_and_future_outcome_changes_cannot_change_features (test_discharge_history.HistoryLeakageTests.test_current_and_future_outcome_changes_cannot_change_features) ... ok
+test_future_rows_in_reference_are_ignored (test_discharge_history.HistoryLeakageTests.test_future_rows_in_reference_are_ignored) ... ok
+test_query_outcomes_are_never_used (test_discharge_history.HistoryLeakageTests.test_query_outcomes_are_never_used) ... ok
+test_same_year_records_are_excluded (test_discharge_history.HistoryLeakageTests.test_same_year_records_are_excluded) ... ok
+test_unknown_target_year_cannot_access_entire_history (test_discharge_history.HistoryLeakageTests.test_unknown_target_year_cannot_access_entire_history) ... ok
+test_unseen_station_has_missing_flow_not_zero_flow (test_discharge_history.HistoryLeakageTests.test_unseen_station_has_missing_flow_not_zero_flow) ... ok
+test_bootstrap_keeps_station_year_records_as_clusters (test_grouped_evaluation.GroupedEvaluationTests.test_bootstrap_keeps_station_year_records_as_clusters) ... ok
+test_outcome_changes_do_not_change_group_or_split (test_grouped_evaluation.GroupedEvaluationTests.test_outcome_changes_do_not_change_group_or_split) ... ok
+test_preprocessing_does_not_learn_holdout_medians_or_categories (test_grouped_evaluation.GroupedEvaluationTests.test_preprocessing_does_not_learn_holdout_medians_or_categories) ... D:\ADS_MINI\Flood-risk-prediction-system\RiskRadar\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:451: OptimizeWarning: Unknown solver options: iprint
+  opt_res = optimize.minimize(
+ok
+test_repeated_test_access_is_rejected_before_data_read (test_grouped_evaluation.GroupedEvaluationTests.test_repeated_test_access_is_rejected_before_data_read) ... ok
+test_report_uses_consistent_positive_class_and_all_four_confusion_counts (test_grouped_evaluation.GroupedEvaluationTests.test_report_uses_consistent_positive_class_and_all_four_confusion_counts) ... ok
+test_station_aliases_and_identical_profiles_cannot_cross_partitions (test_grouped_evaluation.GroupedEvaluationTests.test_station_aliases_and_identical_profiles_cannot_cross_partitions) ... ok
+test_threshold_ties_prefer_stricter_value (test_grouped_evaluation.GroupedEvaluationTests.test_threshold_ties_prefer_stricter_value) ... ok
+test_annual_monthly_and_daily_totals_agree (test_historical_data.HistoricalDataTests.test_annual_monthly_and_daily_totals_agree) ... ok
+test_cached_history_works_offline (test_historical_data.HistoricalDataTests.test_cached_history_works_offline) ... ok
+test_duplicate_dates_are_rejected (test_historical_data.HistoricalDataTests.test_duplicate_dates_are_rejected) ... ok
+test_missing_dates_are_reindexed_as_missing (test_historical_data.HistoricalDataTests.test_missing_dates_are_reindexed_as_missing) ... ok
+test_missing_day_invalidates_period_without_zero_filling (test_historical_data.HistoricalDataTests.test_missing_day_invalidates_period_without_zero_filling) ... ok
+test_negative_and_non_numeric_rain_remain_missing (test_historical_data.HistoricalDataTests.test_negative_and_non_numeric_rain_remain_missing) ... ok
+test_saved_real_archive_is_complete_and_dated (test_historical_data.HistoricalDataTests.test_saved_real_archive_is_complete_and_dated) ... ok
+test_source_catalog_and_audit (test_historical_data.HistoricalDataTests.test_source_catalog_and_audit) ... ok
+test_units_and_lengths_are_validated (test_historical_data.HistoricalDataTests.test_units_and_lengths_are_validated) ... ok
+test_unknown_station_cannot_become_a_path (test_historical_data.HistoricalDataTests.test_unknown_station_cannot_become_a_path) ... ok
+test_daily_rainfall_is_past_only_and_reconstructs_all_cumulative_windows (test_rainfall_flood.RainfallFloodTests.test_daily_rainfall_is_past_only_and_reconstructs_all_cumulative_windows) ... ok
+test_empty_rainfall_group_is_unknown_not_zero_risk (test_rainfall_flood.RainfallFloodTests.test_empty_rainfall_group_is_unknown_not_zero_risk) ... ok
+test_missing_rain_is_not_a_dry_day (test_rainfall_flood.RainfallFloodTests.test_missing_rain_is_not_a_dry_day) ... ok
+test_models_cannot_read_peak_outcome_or_event_label (test_rainfall_flood.RainfallFloodTests.test_models_cannot_read_peak_outcome_or_event_label) ... ok
+test_multistate_inventory_is_not_duplicated_in_total (test_rainfall_flood.RainfallFloodTests.test_multistate_inventory_is_not_duplicated_in_total) ... ok
+test_non_monotone_cumulative_rain_is_rejected (test_rainfall_flood.RainfallFloodTests.test_non_monotone_cumulative_rain_is_rejected) ... ok
+test_time_filter_uses_event_onset_and_retains_real_labels (test_rainfall_flood.RainfallFloodTests.test_time_filter_uses_event_onset_and_retains_real_labels) ... ok
+test_training_events_are_not_shown_as_heldout_estimates (test_rainfall_flood.RainfallFloodTests.test_training_events_are_not_shown_as_heldout_estimates) ... ok
+test_unknown_inventory_state_is_not_invented (test_rainfall_flood.RainfallFloodTests.test_unknown_inventory_state_is_not_invented) ... ok
+test_default_anomaly_baseline_excludes_later_values (test_rainfall_risk.RainfallRiskTests.test_default_anomaly_baseline_excludes_later_values) ... ok
+test_fourteen_day_window_is_required (test_rainfall_risk.RainfallRiskTests.test_fourteen_day_window_is_required) ... ok
+test_future_rain_does_not_change_earlier_features (test_rainfall_risk.RainfallRiskTests.test_future_rain_does_not_change_earlier_features) ... ok
+test_missing_month_is_not_a_normal_month (test_rainfall_risk.RainfallRiskTests.test_missing_month_is_not_a_normal_month) ... ok
+test_missing_rain_is_not_imputed_as_dry (test_rainfall_risk.RainfallRiskTests.test_missing_rain_is_not_imputed_as_dry) ... ok
+test_negative_or_incomplete_simulations_are_rejected (test_rainfall_risk.RainfallRiskTests.test_negative_or_incomplete_simulations_are_rejected) ... ok
+test_no_wet_baseline_gives_unknown_heavy_threshold (test_rainfall_risk.RainfallRiskTests.test_no_wet_baseline_gives_unknown_heavy_threshold) ... ok
+test_sparse_gauge_is_not_assigned_low_or_high (test_rainfall_risk.RainfallRiskTests.test_sparse_gauge_is_not_assigned_low_or_high) ... ok
+test_target_outcomes_are_not_features (test_rainfall_risk.RainfallRiskTests.test_target_outcomes_are_not_features) ... ok
+test_thresholds_and_dry_day_boundary (test_rainfall_risk.RainfallRiskTests.test_thresholds_and_dry_day_boundary) ... ok
+D:\ADS_MINI\Flood-risk-prediction-system\RiskRadar\api.py:41: PydanticDeprecatedSince20: Using extra keyword arguments on `Field` is deprecated and will be removed. Use `json_schema_extra` instead. (Extra keys: 'example'). Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.14/migration/
+  annual_precipitation: float = Field(..., example=1200.0, description="mm/year")
+D:\ADS_MINI\Flood-risk-prediction-system\RiskRadar\api.py:42: PydanticDeprecatedSince20: Using extra keyword arguments on `Field` is deprecated and will be removed. Use `json_schema_extra` instead. (Extra keys: 'example'). Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.14/migration/
+  precipitation_of_wettest_month: float = Field(..., example=300.0, description="mm")
+D:\ADS_MINI\Flood-risk-prediction-system\RiskRadar\api.py:43: PydanticDeprecatedSince20: Using extra keyword arguments on `Field` is deprecated and will be removed. Use `json_schema_extra` instead. (Extra keys: 'example'). Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.14/migration/
+  precipitation_seasonality: float = Field(..., example=50.0, description="CV %")
+D:\ADS_MINI\Flood-risk-prediction-system\RiskRadar\api.py:44: PydanticDeprecatedSince20: Using extra keyword arguments on `Field` is deprecated and will be removed. Use `json_schema_extra` instead. (Extra keys: 'example'). Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.14/migration/
+  drainage_density: float = Field(..., example=2.5, description="km/km�")
+D:\ADS_MINI\Flood-risk-prediction-system\RiskRadar\api.py:45: PydanticDeprecatedSince20: Using extra keyword arguments on `Field` is deprecated and will be removed. Use `json_schema_extra` instead. (Extra keys: 'example'). Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.14/migration/
+  drainage_texture: float = Field(..., example=10.0)
+D:\ADS_MINI\Flood-risk-prediction-system\RiskRadar\api.py:46: PydanticDeprecatedSince20: Using extra keyword arguments on `Field` is deprecated and will be removed. Use `json_schema_extra` instead. (Extra keys: 'example'). Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.14/migration/
+  basin_relief: float = Field(..., example=500.0, description="meters")
+D:\ADS_MINI\Flood-risk-prediction-system\RiskRadar\api.py:47: PydanticDeprecatedSince20: Using extra keyword arguments on `Field` is deprecated and will be removed. Use `json_schema_extra` instead. (Extra keys: 'example'). Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.14/migration/
+  annual_mean_temperature: float = Field(..., example=20.0, description="�C")
+D:\ADS_MINI\Flood-risk-prediction-system\RiskRadar\api.py:48: PydanticDeprecatedSince20: Using extra keyword arguments on `Field` is deprecated and will be removed. Use `json_schema_extra` instead. (Extra keys: 'example'). Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.14/migration/
+  temperature_seasonality: float = Field(..., example=500.0)
+D:\ADS_MINI\Flood-risk-prediction-system\RiskRadar\api.py:49: PydanticDeprecatedSince20: Using extra keyword arguments on `Field` is deprecated and will be removed. Use `json_schema_extra` instead. (Extra keys: 'example'). Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.14/migration/
+  curve_number_amcii: float = Field(..., example=70.0)
+D:\ADS_MINI\Flood-risk-prediction-system\RiskRadar\api.py:50: PydanticDeprecatedSince20: Using extra keyword arguments on `Field` is deprecated and will be removed. Use `json_schema_extra` instead. (Extra keys: 'example'). Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.14/migration/
+  ruggedness_number: float = Field(..., example=0.5)
+D:\ADS_MINI\Flood-risk-prediction-system\RiskRadar\api.py:51: PydanticDeprecatedSince20: Using extra keyword arguments on `Field` is deprecated and will be removed. Use `json_schema_extra` instead. (Extra keys: 'example'). Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.14/migration/
+  infiltration_number: float = Field(..., example=5.0)
+D:\ADS_MINI\Flood-risk-prediction-system\RiskRadar\api.py:52: PydanticDeprecatedSince20: Using extra keyword arguments on `Field` is deprecated and will be removed. Use `json_schema_extra` instead. (Extra keys: 'example'). Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.14/migration/
+  climate_type: int = Field(..., example=2, description="Encoded climate type (0-5)")
+D:\ADS_MINI\Flood-risk-prediction-system\RiskRadar\api.py:53: PydanticDeprecatedSince20: Using extra keyword arguments on `Field` is deprecated and will be removed. Use `json_schema_extra` instead. (Extra keys: 'example'). Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.14/migration/
+  landcover_type: int = Field(..., example=1, description="Encoded landcover (0-5)")
+D:\ADS_MINI\Flood-risk-prediction-system\RiskRadar\api.py:54: PydanticDeprecatedSince20: Using extra keyword arguments on `Field` is deprecated and will be removed. Use `json_schema_extra` instead. (Extra keys: 'example'). Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.14/migration/
+  soil_type: int = Field(..., example=3, description="Encoded soil type (0-5)")
+test_dry_and_fractional_conditions_are_supported (test_riskradar_predictor.RiskRadarPredictorTests.test_dry_and_fractional_conditions_are_supported) ... ok
+test_features_and_scores_match_independent_original_api (test_riskradar_predictor.RiskRadarPredictorTests.test_features_and_scores_match_independent_original_api) ... ok
+test_invalid_category_codes_are_rejected (test_riskradar_predictor.RiskRadarPredictorTests.test_invalid_category_codes_are_rejected) ... ok
+test_negative_rain_and_terrain_are_rejected (test_riskradar_predictor.RiskRadarPredictorTests.test_negative_rain_and_terrain_are_rejected) ... ok
+test_no_arbitrary_3000_mm_or_100_percent_input_cap (test_riskradar_predictor.RiskRadarPredictorTests.test_no_arbitrary_3000_mm_or_100_percent_input_cap) ... ok
+test_nonfinite_and_missing_values_are_rejected (test_riskradar_predictor.RiskRadarPredictorTests.test_nonfinite_and_missing_values_are_rejected) ... ok
+test_original_example_outputs_preserved (test_riskradar_predictor.RiskRadarPredictorTests.test_original_example_outputs_preserved) ... ok
+test_original_risk_band_boundaries (test_riskradar_predictor.RiskRadarPredictorTests.test_original_risk_band_boundaries) ... ok
+test_rainfall_period_consistency_is_checked (test_riskradar_predictor.RiskRadarPredictorTests.test_rainfall_period_consistency_is_checked) ... ok
+test_runoff_and_temperature_units_are_checked (test_riskradar_predictor.RiskRadarPredictorTests.test_runoff_and_temperature_units_are_checked) ... ok
+test_source_encoder_vocabulary_is_fully_available (test_riskradar_predictor.RiskRadarPredictorTests.test_source_encoder_vocabulary_is_fully_available) ... ok
+test_conflicting_same_timestamp_values_are_not_averaged (test_river_forecast.RiverForecastTests.test_conflicting_same_timestamp_values_are_not_averaged) ... ok
+test_feature_list_excludes_label_sources (test_river_forecast.RiverForecastTests.test_feature_list_excludes_label_sources) ... ok
+test_future_mutations_do_not_change_features (test_river_forecast.RiverForecastTests.test_future_mutations_do_not_change_features) ... ok
+test_later_reading_in_same_hour_cannot_enter_earlier_features (test_river_forecast.RiverForecastTests.test_later_reading_in_same_hour_cannot_enter_earlier_features) ... ok
+test_long_stale_readings_do_not_become_valid_history (test_river_forecast.RiverForecastTests.test_long_stale_readings_do_not_become_valid_history) ... ok
+test_missing_future_reading_is_unknown_not_interpolated_label (test_river_forecast.RiverForecastTests.test_missing_future_reading_is_unknown_not_interpolated_label) ... ok
+test_official_threshold_boundaries (test_river_forecast.RiverForecastTests.test_official_threshold_boundaries) ... ok
+test_target_excludes_current_and_includes_next_24_hours (test_river_forecast.RiverForecastTests.test_target_excludes_current_and_includes_next_24_hours) ... ok
+
+----------------------------------------------------------------------
+Ran 70 tests in 5.791s
+
+OK

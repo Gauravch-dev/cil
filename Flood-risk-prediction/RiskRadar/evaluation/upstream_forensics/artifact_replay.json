@@ -1,0 +1,61 @@
+{
+  "encoder_vocabulary_exact_match": {
+    "climate_type": true,
+    "landcover_type": true,
+    "soil_type": true,
+    "lithology_type": true
+  },
+  "raw_rows": 45932,
+  "map_rows": 2538,
+  "map_unique_coordinates": 468,
+  "variants": {
+    "median": {
+      "coordinates_matched": 2538,
+      "maximum_score_error": 2.498008727647161e-07,
+      "mean_score_error": 2.5650640835696295e-08,
+      "scores_match_within_1e_6": 2538,
+      "predicted_above_0_7": 2538,
+      "predicted_above_0_5": 2859,
+      "predicted_above_0_9": 2106,
+      "map_same_order_as_above_0_7": true
+    },
+    "zero": {
+      "coordinates_matched": 2538,
+      "maximum_score_error": 0.9963094368458887,
+      "mean_score_error": 0.0011776963795806434,
+      "scores_match_within_1e_6": 2535,
+      "predicted_above_0_7": 2535,
+      "predicted_above_0_5": 2856,
+      "predicted_above_0_9": 2103,
+      "map_same_order_as_above_0_7": false
+    },
+    "native_missing": {
+      "coordinates_matched": 2538,
+      "maximum_score_error": 0.310224533243866,
+      "mean_score_error": 0.0003667213162212786,
+      "scores_match_within_1e_6": 2535,
+      "predicted_above_0_7": 2535,
+      "predicted_above_0_5": 2859,
+      "predicted_above_0_9": 2103,
+      "map_same_order_as_above_0_7": false
+    }
+  },
+  "hypothesis_agreement_not_accuracy": {
+    "annual_rain_gt_1000": {
+      "agreement": 0.5302403553078464,
+      "positive_rows": 23540
+    },
+    "curve_number_gt_80": {
+      "agreement": 0.7903857876861448,
+      "positive_rows": 7559
+    },
+    "peak_discharge_gt_1000": {
+      "agreement": 0.9761168684141774,
+      "positive_rows": 2874
+    },
+    "rain_gt_1000_and_CN_gt_80": {
+      "agreement": 0.8555255595227728,
+      "positive_rows": 4407
+    }
+  }
+}

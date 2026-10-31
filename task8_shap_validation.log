@@ -1,0 +1,66 @@
+Loading notebook and explanation dependencies...
+Running synthetic validation cell 2/9...
+Task 7 run: SYNTHETIC_VALIDATION_ONLY_NOT_PROJECT_RESULTS | Selected LSTM: lstm_final_peak_gate
+Verified 6 reloaded predictions per neural model; no training performed.
+High-demand threshold from training: 1.600 kW
+Output folder: C:\Users\Gaurav Choithramani\Desktop\cil\.task8_shap_validation_q7kg84vh\task8_shap_outputs\run_20261012T011118_414940Z
+Running synthetic validation cell 3/9...
+Running synthetic validation cell 4/9...
+SHAP: 4 examples per model, 3 training references.
+Running synthetic validation cell 5/9...
+Calculating SHAP for LSTM...
+LSTM: 4/4 sums within tolerance; 1.1 seconds.
+Calculating SHAP for Basic neural network...
+Basic neural network: 4/4 sums within tolerance; 0.1 seconds.
+Running synthetic validation cell 6/9...
+Running synthetic validation cell 7/9...
+Running synthetic validation cell 8/9...
+Running synthetic validation cell 9/9...
+# Task 8 � SHAP interpretation and model comparison
+
+Task 7 run: SYNTHETIC_VALIDATION_ONLY_NOT_PROJECT_RESULTS. Selected LSTM: lstm_final_peak_gate.
+No model training, tuning or weight changes were performed.
+
+## Performance
+Full-test LSTM RMSE is 0.5315 kW; basic neural network RMSE is 0.7300 kW.
+The LSTM has lower RMSE; relative improvement versus the basic model is 27.19%.
+See performance_comparison.csv for all-test and high-demand MAE, RMSE, R2 and counts.
+
+## Interpretation
+SHAP GradientExplainer explains the clipped power forecast in kW, using the same
+3 training reference examples for both networks. Summary plots
+cover 2 evenly spaced examples from the saved test pool.
+Diagnostic cases are chosen separately and do not bias summary averages.
+LSTM activations show temporal internal responses; dense activations show the
+basic network's responses. Activations are not contribution scores or attention.
+
+0 of 8 SHAP reconstructions remain outside the stated
+tolerance. Any flagged local explanation requires caution; residuals are not
+hidden or assigned to a feature. Reconstruction checks alone do not validate an
+explanation's causal meaning, stability or behavior away from these examples.
+
+Both models support feature/time attribution. The LSTM additionally supplies
+temporal hidden-state visualizations. Neither model is declared inherently more
+interpretable based solely on accuracy, activation intensity or reconstruction.
+Prominent sampled groups and explanation costs appear in interpretability_comparison.csv.
+
+## Limits
+Expected-gradients SHAP estimates depend on the background and Monte Carlo draws.
+Correlated inputs and interpolated, potentially unrealistic household states limit
+interpretation. The sample is small, temporal, and from one household dataset;
+these are model explanations, not causal appliance-control recommendations.
+Results explain the selected Task 7 model, which need not be the peak-gated candidate.
+
+Task 8 charts, explanation arrays, checks, tables and report: C:\Users\Gaurav Choithramani\Desktop\cil\.task8_shap_validation_q7kg84vh\task8_shap_outputs\run_20261012T011118_414940Z
+Downloadable archive: C:\Users\Gaurav Choithramani\Desktop\cil\.task8_shap_validation_q7kg84vh\task8_shap_outputs\run_20261012T011118_414940Z.zip
+Testing SHAP against existing trained single-output LSTM and basic NN...
+{
+  "fixture_results_are_project_results": false,
+  "checks": [
+    "All notebook analysis cells, multitask output, ZIP handling, SHAP, activations, reports",
+    "SHAP runtime on saved task7_lstm.keras; no retraining",
+    "SHAP runtime on saved task7_basic_mlp.keras; no retraining"
+  ],
+  "synthetic_chart_count": 16,
+  "status": "passed"
+}

@@ -1,0 +1,47 @@
+{
+  "kurundwad": {
+    "raw_rows": 56625,
+    "invalid_time": 0,
+    "non_numeric": 0,
+    "duplicate_rows": 0,
+    "conflicting_timestamps": 0,
+    "wide_bound_or_missing": 2823,
+    "gross_rate_jumps": 2,
+    "stale_after_72h": 0,
+    "accepted": 53800,
+    "candidate_origins": 4383,
+    "insufficient_history": 2533,
+    "incomplete_future": 2604,
+    "eligible_origins": 1714
+  },
+  "narsingpur": {
+    "raw_rows": 45748,
+    "invalid_time": 0,
+    "non_numeric": 0,
+    "duplicate_rows": 0,
+    "conflicting_timestamps": 0,
+    "wide_bound_or_missing": 691,
+    "gross_rate_jumps": 2,
+    "stale_after_72h": 3405,
+    "accepted": 41650,
+    "candidate_origins": 3867,
+    "insufficient_history": 2437,
+    "incomplete_future": 2492,
+    "eligible_origins": 1264
+  },
+  "takli": {
+    "raw_rows": 59310,
+    "invalid_time": 0,
+    "non_numeric": 0,
+    "duplicate_rows": 2486,
+    "conflicting_timestamps": 791,
+    "wide_bound_or_missing": 1058,
+    "gross_rate_jumps": 0,
+    "stale_after_72h": 3,
+    "accepted": 55763,
+    "candidate_origins": 4383,
+    "insufficient_history": 2647,
+    "incomplete_future": 2850,
+    "eligible_origins": 1463
+  }
+}

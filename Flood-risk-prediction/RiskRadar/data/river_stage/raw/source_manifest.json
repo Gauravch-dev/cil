@@ -1,0 +1,91 @@
+{
+  "source": "CWC / National Water Data Portal, NWIC",
+  "endpoint": "https://nwdp.nwic.gov.in/api/3/action/datastore_search",
+  "retrieved_utc": "2026-10-24T17:32:44.702761+00:00",
+  "resources": [
+    {
+      "station": "kurundwad",
+      "name": "KURUNDWAD",
+      "period": "historical",
+      "resource_id": "7778f459-0e82-4681-9638-5e494c36fd42",
+      "rows": 34704,
+      "file": "kurundwad_historical.csv",
+      "sha256": "965f0872697257fad62fb6e923916dfea567aa2e058445a2b540b4a0eedfc058",
+      "latitude": 16.68444444,
+      "longitude": 74.60222222,
+      "zero_gauge_rl_values": [
+        519.455
+      ]
+    },
+    {
+      "station": "kurundwad",
+      "name": "KURUNDWAD",
+      "period": "recent",
+      "resource_id": "7a5386e8-bf7a-43ac-af78-04565db04e79",
+      "rows": 21921,
+      "file": "kurundwad_recent.csv",
+      "sha256": "f2da2826690a3e596cfe4f2995a1924cf9acabd7c842919d76d3ea5f42c9c0e6",
+      "latitude": 16.68444444,
+      "longitude": 74.60222222,
+      "zero_gauge_rl_values": [
+        519.455
+      ]
+    },
+    {
+      "station": "narsingpur",
+      "name": "Narsingpur",
+      "period": "historical",
+      "resource_id": "7778f459-0e82-4681-9638-5e494c36fd42",
+      "rows": 23457,
+      "file": "narsingpur_historical.csv",
+      "sha256": "441278ca5f7ff8e0c73f948daea0a27d49ebd5ad0107c48c99547e53371bf0b2",
+      "latitude": 17.97138889,
+      "longitude": 75.13916667,
+      "zero_gauge_rl_values": [
+        446.0
+      ]
+    },
+    {
+      "station": "narsingpur",
+      "name": "Narsingpur",
+      "period": "recent",
+      "resource_id": "7a5386e8-bf7a-43ac-af78-04565db04e79",
+      "rows": 22291,
+      "file": "narsingpur_recent.csv",
+      "sha256": "0871d3cb572fec483a10c8ded5187c540589180685a88b753a6d0e5e27d93e20",
+      "latitude": 17.97138889,
+      "longitude": 75.13916667,
+      "zero_gauge_rl_values": [
+        446.0
+      ]
+    },
+    {
+      "station": "takli",
+      "name": "Takli",
+      "period": "historical",
+      "resource_id": "7778f459-0e82-4681-9638-5e494c36fd42",
+      "rows": 36958,
+      "file": "takli_historical.csv",
+      "sha256": "0b27d358b1ecb2f7e37151cbbb373a0e4aba21afa70b625440767c1b189f1c1d",
+      "latitude": 17.41416667,
+      "longitude": 75.84777778,
+      "zero_gauge_rl_values": [
+        408.0
+      ]
+    },
+    {
+      "station": "takli",
+      "name": "Takli",
+      "period": "recent",
+      "resource_id": "7a5386e8-bf7a-43ac-af78-04565db04e79",
+      "rows": 22352,
+      "file": "takli_recent.csv",
+      "sha256": "4fbd367fcd89fa717d07588ba1874baa2c29d88be06c5956d6acc22d9423ff25",
+      "latitude": 17.41416667,
+      "longitude": 75.84777778,
+      "zero_gauge_rl_values": [
+        408.0
+      ]
+    }
+  ]
+}

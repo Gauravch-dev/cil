@@ -1,0 +1,292 @@
+
+--- Executing cell 1 (1) ---
+Cell completed in 0.0s
+
+--- Executing cell 3 (2) ---
+Run mode: full
+TensorFlow: 2.20.0 | GPUs: []
+Artifacts: C:\Users\Gaurav Choithramani\Desktop\cil\task7_outputs\full_20261004T220408_123740Z
+Cell completed in 4.2s
+
+--- Executing cell 5 (3) ---
+source_url                       https://archive.ics.uci.edu/static/public/235/...
+archive_sha256                   9f84b46ade8a2d8e1286ec4b2b6c2987a45a755c59f263...
+raw_rows                                                                   2075259
+raw_start                                                      2006-12-16 17:24:00
+raw_end                                                        2010-11-26 21:02:00
+missing_or_invalid_power_rows                                                25979
+invalid_timestamps                                                               0
+duplicate_timestamps                                                             0
+Name: Data audit, dtype: object
+Cell completed in 4.6s
+
+--- Executing cell 7 (4) ---
+interval_rows                     138352
+fully_observed_intervals          136551
+forward_filled_input_intervals       113
+unfilled_input_intervals            1688
+dtype: object
+Cell completed in 0.3s
+
+--- Executing cell 9 (5) ---
+        Split  Eligible_samples_full  ...         Last_target First_forecast_origin
+0       train                  94551  ... 2009-09-20 12:45:00   2006-12-23 16:45:00
+1  validation                  19858  ... 2010-04-24 17:00:00   2009-09-20 13:00:00
+2        test                  18889  ... 2010-11-26 21:00:00   2010-04-24 17:15:00
+
+[3 rows x 6 columns]
+Cell completed in 0.1s
+
+--- Executing cell 11 (6) ---
+WARNING:tensorflow:AutoGraph could not transform <function make_dataset.<locals>.gather_batch at 0x00000288CB258B80> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: closure mismatch, requested ('include_targets',), but source function had ()
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+WARNING:tensorflow:AutoGraph could not transform <function make_dataset.<locals>.gather_batch at 0x00000288C34C6980> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: closure mismatch, requested ('include_targets',), but source function had ()
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+History batch: (256, 96, 6) | Context batch: (256, 17)
+Cell completed in 0.2s
+
+--- Executing cell 13 (7) ---
+WARNING:tensorflow:From C:\Users\Gaurav Choithramani\Desktop\cil\.venv-task7\Lib\site-packages\keras\src\backend\common\global_state.py:82: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+Model: "basic_mlp"
+┌─────────────────────┬───────────────────┬────────────┬───────────────────┐
+│ Layer (type)        │ Output Shape      │    Param # │ Connected to      │
+├─────────────────────┼───────────────────┼────────────┼───────────────────┤
+│ history             │ (None, 96, 6)     │          0 │ -                 │
+│ (InputLayer)        │                   │            │                   │
+├─────────────────────┼───────────────────┼────────────┼───────────────────┤
+│ flatten_history     │ (None, 576)       │          0 │ history[0][0]     │
+│ (Flatten)           │                   │            │                   │
+├─────────────────────┼───────────────────┼────────────┼───────────────────┤
+│ context             │ (None, 17)        │          0 │ -                 │
+│ (InputLayer)        │                   │            │                   │
+├─────────────────────┼───────────────────┼────────────┼───────────────────┤
+│ history_and_context │ (None, 593)       │          0 │ flatten_history[… │
+│ (Concatenate)       │                   │            │ context[0][0]     │
+├─────────────────────┼───────────────────┼────────────┼───────────────────┤
+│ dense_features      │ (None, 64)        │     38,016 │ history_and_cont… │
+│ (Dense)             │                   │            │                   │
+├─────────────────────┼───────────────────┼────────────┼───────────────────┤
+│ dropout (Dropout)   │ (None, 64)        │          0 │ dense_features[0… │
+├─────────────────────┼───────────────────┼────────────┼───────────────────┤
+│ dense (Dense)       │ (None, 32)        │      2,080 │ dropout[0][0]     │
+├─────────────────────┼───────────────────┼────────────┼───────────────────┤
+│ forecast_scaled     │ (None, 1)         │         33 │ dense[0][0]       │
+│ (Dense)             │                   │            │                   │
+└─────────────────────┴───────────────────┴────────────┴───────────────────┘
+ Total params: 40,129 (156.75 KB)
+ Trainable params: 40,129 (156.75 KB)
+ Non-trainable params: 0 (0.00 B)
+C:\Users\Gaurav Choithramani\Desktop\cil\.venv-task7\Lib\site-packages\keras\src\trainers\epoch_iterator.py:74: UserWarning: `shuffle=True` was passed, but will be ignored since the data `x` was provided as a tf.data.Dataset. The Dataset is expected to already be shuffled (via `.shuffle(buffer_size)`).
+  self.data_adapter = data_adapters.get_data_adapter(
+Epoch 1/50
+370/370 - 2s - 4ms/step - loss: 0.6024 - mae: 0.5351 - mse: 0.5868 - val_loss: 0.5315 - val_mae: 0.4959 - val_mse: 0.5162 - learning_rate: 0.0010
+Epoch 2/50
+370/370 - 1s - 3ms/step - loss: 0.5507 - mae: 0.5009 - mse: 0.5357 - val_loss: 0.5192 - val_mae: 0.4933 - val_mse: 0.5045 - learning_rate: 0.0010
+Epoch 3/50
+370/370 - 1s - 3ms/step - loss: 0.5404 - mae: 0.4940 - mse: 0.5259 - val_loss: 0.5301 - val_mae: 0.5055 - val_mse: 0.5159 - learning_rate: 0.0010
+Epoch 4/50
+370/370 - 1s - 3ms/step - loss: 0.5316 - mae: 0.4884 - mse: 0.5176 - val_loss: 0.5275 - val_mae: 0.4878 - val_mse: 0.5137 - learning_rate: 0.0010
+Epoch 5/50
+
+Epoch 5: ReduceLROnPlateau reducing learning rate to 0.0005000000237487257.
+370/370 - 1s - 3ms/step - loss: 0.5261 - mae: 0.4850 - mse: 0.5124 - val_loss: 0.5215 - val_mae: 0.4850 - val_mse: 0.5081 - learning_rate: 0.0010
+Epoch 6/50
+370/370 - 1s - 3ms/step - loss: 0.5154 - mae: 0.4780 - mse: 0.5022 - val_loss: 0.5131 - val_mae: 0.4848 - val_mse: 0.5000 - learning_rate: 5.0000e-04
+Epoch 7/50
+370/370 - 1s - 2ms/step - loss: 0.5109 - mae: 0.4755 - mse: 0.4978 - val_loss: 0.5228 - val_mae: 0.4903 - val_mse: 0.5099 - learning_rate: 5.0000e-04
+Epoch 8/50
+370/370 - 1s - 2ms/step - loss: 0.5101 - mae: 0.4744 - mse: 0.4973 - val_loss: 0.5136 - val_mae: 0.4827 - val_mse: 0.5009 - learning_rate: 5.0000e-04
+Epoch 9/50
+370/370 - 1s - 2ms/step - loss: 0.5060 - mae: 0.4720 - mse: 0.4934 - val_loss: 0.5110 - val_mae: 0.4828 - val_mse: 0.4985 - learning_rate: 5.0000e-04
+Epoch 10/50
+370/370 - 1s - 2ms/step - loss: 0.5048 - mae: 0.4718 - mse: 0.4924 - val_loss: 0.5057 - val_mae: 0.4843 - val_mse: 0.4934 - learning_rate: 5.0000e-04
+Epoch 11/50
+370/370 - 1s - 2ms/step - loss: 0.5025 - mae: 0.4709 - mse: 0.4903 - val_loss: 0.5184 - val_mae: 0.4877 - val_mse: 0.5063 - learning_rate: 5.0000e-04
+Epoch 12/50
+370/370 - 1s - 2ms/step - loss: 0.4994 - mae: 0.4692 - mse: 0.4873 - val_loss: 0.5242 - val_mae: 0.4944 - val_mse: 0.5122 - learning_rate: 5.0000e-04
+Epoch 13/50
+
+Epoch 13: ReduceLROnPlateau reducing learning rate to 0.0002500000118743628.
+370/370 - 1s - 2ms/step - loss: 0.4996 - mae: 0.4688 - mse: 0.4876 - val_loss: 0.5117 - val_mae: 0.4811 - val_mse: 0.4998 - learning_rate: 5.0000e-04
+Epoch 14/50
+370/370 - 1s - 2ms/step - loss: 0.4950 - mae: 0.4664 - mse: 0.4831 - val_loss: 0.5100 - val_mae: 0.4823 - val_mse: 0.4982 - learning_rate: 2.5000e-04
+Epoch 15/50
+370/370 - 1s - 2ms/step - loss: 0.4928 - mae: 0.4645 - mse: 0.4810 - val_loss: 0.5107 - val_mae: 0.4839 - val_mse: 0.4990 - learning_rate: 2.5000e-04
+Epoch 16/50
+
+Epoch 16: ReduceLROnPlateau reducing learning rate to 0.0001250000059371814.
+370/370 - 1s - 2ms/step - loss: 0.4921 - mae: 0.4647 - mse: 0.4803 - val_loss: 0.5105 - val_mae: 0.4869 - val_mse: 0.4988 - learning_rate: 2.5000e-04
+Epoch 17/50
+370/370 - 1s - 2ms/step - loss: 0.4889 - mae: 0.4624 - mse: 0.4772 - val_loss: 0.5122 - val_mae: 0.4864 - val_mse: 0.5005 - learning_rate: 1.2500e-04
+Epoch 17: early stopping
+Restoring model weights from the end of the best epoch: 10.
+WARNING:tensorflow:AutoGraph could not transform <function make_dataset.<locals>.gather_batch at 0x00000288C946FF60> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: closure mismatch, requested ('include_targets',), but source function had ()
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+Model: "lstm_compact"
+┌─────────────────────┬───────────────────┬────────────┬───────────────────┐
+│ Layer (type)        │ Output Shape      │    Param # │ Connected to      │
+├─────────────────────┼───────────────────┼────────────┼───────────────────┤
+│ history             │ (None, 96, 6)     │          0 │ -                 │
+│ (InputLayer)        │                   │            │                   │
+├─────────────────────┼───────────────────┼────────────┼───────────────────┤
+│ lstm_temporal_feat… │ (None, 96, 32)    │      4,992 │ history[0][0]     │
+│ (LSTM)              │                   │            │                   │
+├─────────────────────┼───────────────────┼────────────┼───────────────────┤
+│ sequence_dropout    │ (None, 96, 32)    │          0 │ lstm_temporal_fe… │
+│ (Dropout)           │                   │            │                   │
+├─────────────────────┼───────────────────┼────────────┼───────────────────┤
+│ lstm_summary (LSTM) │ (None, 16)        │      3,136 │ sequence_dropout… │
+├─────────────────────┼───────────────────┼────────────┼───────────────────┤
+│ summary_dropout     │ (None, 16)        │          0 │ lstm_summary[0][… │
+│ (Dropout)           │                   │            │                   │
+├─────────────────────┼───────────────────┼────────────┼───────────────────┤
+│ context             │ (None, 17)        │          0 │ -                 │
+│ (InputLayer)        │                   │            │                   │
+├─────────────────────┼───────────────────┼────────────┼───────────────────┤
+│ history_and_context │ (None, 33)        │          0 │ summary_dropout[… │
+│ (Concatenate)       │                   │            │ context[0][0]     │
+├─────────────────────┼───────────────────┼────────────┼───────────────────┤
+│ dense_features      │ (None, 32)        │      1,088 │ history_and_cont… │
+│ (Dense)             │                   │            │                   │
+├─────────────────────┼───────────────────┼────────────┼───────────────────┤
+│ forecast_scaled     │ (None, 1)         │         33 │ dense_features[0… │
+│ (Dense)             │                   │            │                   │
+└─────────────────────┴───────────────────┴────────────┴───────────────────┘
+ Total params: 9,249 (36.13 KB)
+ Trainable params: 9,249 (36.13 KB)
+ Non-trainable params: 0 (0.00 B)
+C:\Users\Gaurav Choithramani\Desktop\cil\.venv-task7\Lib\site-packages\keras\src\trainers\epoch_iterator.py:74: UserWarning: `shuffle=True` was passed, but will be ignored since the data `x` was provided as a tf.data.Dataset. The Dataset is expected to already be shuffled (via `.shuffle(buffer_size)`).
+  self.data_adapter = data_adapters.get_data_adapter(
+Epoch 1/50
+370/370 - 21s - 56ms/step - loss: 0.5983 - mae: 0.5378 - mse: 0.5974 - val_loss: 0.5091 - val_mae: 0.5046 - val_mse: 0.5082 - learning_rate: 0.0010
+Epoch 2/50
+370/370 - 19s - 50ms/step - loss: 0.5254 - mae: 0.4898 - mse: 0.5245 - val_loss: 0.4916 - val_mae: 0.4830 - val_mse: 0.4907 - learning_rate: 0.0010
+Epoch 3/50
+370/370 - 19s - 51ms/step - loss: 0.5129 - mae: 0.4797 - mse: 0.5119 - val_loss: 0.4854 - val_mae: 0.4748 - val_mse: 0.4845 - learning_rate: 0.0010
+Epoch 4/50
+370/370 - 19s - 51ms/step - loss: 0.5057 - mae: 0.4746 - mse: 0.5047 - val_loss: 0.4855 - val_mae: 0.4714 - val_mse: 0.4845 - learning_rate: 0.0010
+Epoch 5/50
+370/370 - 18s - 50ms/step - loss: 0.5017 - mae: 0.4716 - mse: 0.5007 - val_loss: 0.4862 - val_mae: 0.4809 - val_mse: 0.4851 - learning_rate: 0.0010
+Epoch 6/50
+370/370 - 19s - 50ms/step - loss: 0.4960 - mae: 0.4692 - mse: 0.4949 - val_loss: 0.4819 - val_mae: 0.4738 - val_mse: 0.4809 - learning_rate: 0.0010
+Epoch 7/50
+370/370 - 19s - 50ms/step - loss: 0.4949 - mae: 0.4677 - mse: 0.4939 - val_loss: 0.4813 - val_mae: 0.4689 - val_mse: 0.4802 - learning_rate: 0.0010
+Epoch 8/50
+370/370 - 19s - 51ms/step - loss: 0.4920 - mae: 0.4662 - mse: 0.4909 - val_loss: 0.4844 - val_mae: 0.4765 - val_mse: 0.4832 - learning_rate: 0.0010
+Epoch 9/50
+370/370 - 19s - 51ms/step - loss: 0.4890 - mae: 0.4649 - mse: 0.4878 - val_loss: 0.4821 - val_mae: 0.4672 - val_mse: 0.4809 - learning_rate: 0.0010
+Epoch 10/50
+370/370 - 18s - 50ms/step - loss: 0.4876 - mae: 0.4633 - mse: 0.4864 - val_loss: 0.4785 - val_mae: 0.4721 - val_mse: 0.4773 - learning_rate: 0.0010
+Epoch 11/50
+370/370 - 19s - 52ms/step - loss: 0.4859 - mae: 0.4624 - mse: 0.4847 - val_loss: 0.4831 - val_mae: 0.4741 - val_mse: 0.4819 - learning_rate: 0.0010
+Epoch 12/50
+370/370 - 19s - 52ms/step - loss: 0.4832 - mae: 0.4605 - mse: 0.4820 - val_loss: 0.4801 - val_mae: 0.4714 - val_mse: 0.4789 - learning_rate: 0.0010
+Epoch 13/50
+
+Epoch 13: ReduceLROnPlateau reducing learning rate to 0.0005000000237487257.
+370/370 - 19s - 52ms/step - loss: 0.4826 - mae: 0.4608 - mse: 0.4814 - val_loss: 0.4814 - val_mae: 0.4694 - val_mse: 0.4801 - learning_rate: 0.0010
+Epoch 14/50
+370/370 - 19s - 50ms/step - loss: 0.4788 - mae: 0.4577 - mse: 0.4776 - val_loss: 0.4809 - val_mae: 0.4707 - val_mse: 0.4796 - learning_rate: 5.0000e-04
+Epoch 15/50
+370/370 - 20s - 55ms/step - loss: 0.4776 - mae: 0.4573 - mse: 0.4764 - val_loss: 0.4789 - val_mae: 0.4754 - val_mse: 0.4776 - learning_rate: 5.0000e-04
+Epoch 16/50
+
+Epoch 16: ReduceLROnPlateau reducing learning rate to 0.0002500000118743628.
+370/370 - 22s - 61ms/step - loss: 0.4758 - mae: 0.4567 - mse: 0.4745 - val_loss: 0.4788 - val_mae: 0.4680 - val_mse: 0.4775 - learning_rate: 5.0000e-04
+Epoch 17/50
+370/370 - 19s - 50ms/step - loss: 0.4748 - mae: 0.4552 - mse: 0.4735 - val_loss: 0.4791 - val_mae: 0.4706 - val_mse: 0.4778 - learning_rate: 2.5000e-04
+Epoch 17: early stopping
+Restoring model weights from the end of the best epoch: 10.
+WARNING:tensorflow:AutoGraph could not transform <function make_dataset.<locals>.gather_batch at 0x00000288D62D2F20> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: closure mismatch, requested ('include_targets',), but source function had ()
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+Model: "lstm_stacked"
+┌─────────────────────┬───────────────────┬────────────┬───────────────────┐
+│ Layer (type)        │ Output Shape      │    Param # │ Connected to      │
+├─────────────────────┼───────────────────┼────────────┼───────────────────┤
+│ history             │ (None, 96, 6)     │          0 │ -                 │
+│ (InputLayer)        │                   │            │                   │
+├─────────────────────┼───────────────────┼────────────┼───────────────────┤
+│ lstm_temporal_feat… │ (None, 96, 64)    │     18,176 │ history[0][0]     │
+│ (LSTM)              │                   │            │                   │
+├─────────────────────┼───────────────────┼────────────┼───────────────────┤
+│ sequence_dropout    │ (None, 96, 64)    │          0 │ lstm_temporal_fe… │
+│ (Dropout)           │                   │            │                   │
+├─────────────────────┼───────────────────┼────────────┼───────────────────┤
+│ lstm_summary (LSTM) │ (None, 32)        │     12,416 │ sequence_dropout… │
+├─────────────────────┼───────────────────┼────────────┼───────────────────┤
+│ summary_dropout     │ (None, 32)        │          0 │ lstm_summary[0][… │
+│ (Dropout)           │                   │            │                   │
+├─────────────────────┼───────────────────┼────────────┼───────────────────┤
+│ context             │ (None, 17)        │          0 │ -                 │
+│ (InputLayer)        │                   │            │                   │
+├─────────────────────┼───────────────────┼────────────┼───────────────────┤
+│ history_and_context │ (None, 49)        │          0 │ summary_dropout[… │
+│ (Concatenate)       │                   │            │ context[0][0]     │
+├─────────────────────┼───────────────────┼────────────┼───────────────────┤
+│ dense_features      │ (None, 32)        │      1,600 │ history_and_cont… │
+│ (Dense)             │                   │            │                   │
+├─────────────────────┼───────────────────┼────────────┼───────────────────┤
+│ forecast_scaled     │ (None, 1)         │         33 │ dense_features[0… │
+│ (Dense)             │                   │            │                   │
+└─────────────────────┴───────────────────┴────────────┴───────────────────┘
+ Total params: 32,225 (125.88 KB)
+ Trainable params: 32,225 (125.88 KB)
+ Non-trainable params: 0 (0.00 B)
+C:\Users\Gaurav Choithramani\Desktop\cil\.venv-task7\Lib\site-packages\keras\src\trainers\epoch_iterator.py:74: UserWarning: `shuffle=True` was passed, but will be ignored since the data `x` was provided as a tf.data.Dataset. The Dataset is expected to already be shuffled (via `.shuffle(buffer_size)`).
+  self.data_adapter = data_adapters.get_data_adapter(
+Epoch 1/50
+370/370 - 56s - 152ms/step - loss: 0.6051 - mae: 0.5403 - mse: 0.5922 - val_loss: 0.5148 - val_mae: 0.4987 - val_mse: 0.5024 - learning_rate: 5.0000e-04
+Epoch 2/50
+370/370 - 55s - 150ms/step - loss: 0.5389 - mae: 0.4947 - mse: 0.5271 - val_loss: 0.5075 - val_mae: 0.4820 - val_mse: 0.4962 - learning_rate: 5.0000e-04
+Epoch 3/50
+370/370 - 62s - 168ms/step - loss: 0.5256 - mae: 0.4836 - mse: 0.5147 - val_loss: 0.5022 - val_mae: 0.4783 - val_mse: 0.4917 - learning_rate: 5.0000e-04
+Epoch 4/50
+370/370 - 58s - 158ms/step - loss: 0.5178 - mae: 0.4781 - mse: 0.5076 - val_loss: 0.4948 - val_mae: 0.4711 - val_mse: 0.4850 - learning_rate: 5.0000e-04
+Epoch 5/50
+370/370 - 62s - 167ms/step - loss: 0.5127 - mae: 0.4747 - mse: 0.5032 - val_loss: 0.4954 - val_mae: 0.4753 - val_mse: 0.4862 - learning_rate: 5.0000e-04
+Epoch 6/50
+370/370 - 61s - 166ms/step - loss: 0.5088 - mae: 0.4723 - mse: 0.4998 - val_loss: 0.4970 - val_mae: 0.4786 - val_mse: 0.4883 - learning_rate: 5.0000e-04
+Epoch 7/50
+
+Epoch 7: ReduceLROnPlateau reducing learning rate to 0.0002500000118743628.
+370/370 - 62s - 166ms/step - loss: 0.5046 - mae: 0.4696 - mse: 0.4961 - val_loss: 0.4937 - val_mae: 0.4713 - val_mse: 0.4854 - learning_rate: 5.0000e-04
+Epoch 8/50
+370/370 - 44s - 118ms/step - loss: 0.5017 - mae: 0.4678 - mse: 0.4935 - val_loss: 0.4910 - val_mae: 0.4710 - val_mse: 0.4829 - learning_rate: 2.5000e-04
+Epoch 9/50
+370/370 - 39s - 105ms/step - loss: 0.4983 - mae: 0.4657 - mse: 0.4902 - val_loss: 0.4883 - val_mae: 0.4673 - val_mse: 0.4803 - learning_rate: 2.5000e-04
+Epoch 10/50
+370/370 - 50s - 136ms/step - loss: 0.4967 - mae: 0.4648 - mse: 0.4887 - val_loss: 0.4884 - val_mae: 0.4704 - val_mse: 0.4805 - learning_rate: 2.5000e-04
+Epoch 11/50
+370/370 - 62s - 167ms/step - loss: 0.4959 - mae: 0.4646 - mse: 0.4880 - val_loss: 0.4887 - val_mae: 0.4691 - val_mse: 0.4809 - learning_rate: 2.5000e-04
+Epoch 12/50
+370/370 - 46s - 126ms/step - loss: 0.4940 - mae: 0.4633 - mse: 0.4863 - val_loss: 0.4861 - val_mae: 0.4651 - val_mse: 0.4785 - learning_rate: 2.5000e-04
+Epoch 13/50
+370/370 - 58s - 158ms/step - loss: 0.4922 - mae: 0.4620 - mse: 0.4846 - val_loss: 0.4902 - val_mae: 0.4718 - val_mse: 0.4826 - learning_rate: 2.5000e-04
+Epoch 14/50
+370/370 - 57s - 155ms/step - loss: 0.4912 - mae: 0.4617 - mse: 0.4836 - val_loss: 0.4847 - val_mae: 0.4636 - val_mse: 0.4772 - learning_rate: 2.5000e-04
+Epoch 15/50
+370/370 - 42s - 113ms/step - loss: 0.4897 - mae: 0.4610 - mse: 0.4822 - val_loss: 0.4868 - val_mae: 0.4654 - val_mse: 0.4794 - learning_rate: 2.5000e-04
+Epoch 16/50
+370/370 - 63s - 170ms/step - loss: 0.4890 - mae: 0.4608 - mse: 0.4816 - val_loss: 0.4859 - val_mae: 0.4661 - val_mse: 0.4785 - learning_rate: 2.5000e-04
+Epoch 17/50
+
+Epoch 17: ReduceLROnPlateau reducing learning rate to 0.0001250000059371814.
+370/370 - 58s - 158ms/step - loss: 0.4869 - mae: 0.4595 - mse: 0.4796 - val_loss: 0.4854 - val_mae: 0.4688 - val_mse: 0.4781 - learning_rate: 2.5000e-04
+Epoch 18/50
+370/370 - 57s - 155ms/step - loss: 0.4871 - mae: 0.4597 - mse: 0.4799 - val_loss: 0.4864 - val_mae: 0.4653 - val_mse: 0.4791 - learning_rate: 1.2500e-04
+Epoch 19/50
+370/370 - 62s - 167ms/step - loss: 0.4847 - mae: 0.4579 - mse: 0.4774 - val_loss: 0.4857 - val_mae: 0.4681 - val_mse: 0.4785 - learning_rate: 1.2500e-04
+Epoch 20/50
+
+Epoch 20: ReduceLROnPlateau reducing learning rate to 6.25000029685907e-05.
+370/370 - 42s - 114ms/step - loss: 0.4835 - mae: 0.4577 - mse: 0.4763 - val_loss: 0.4853 - val_mae: 0.4638 - val_mse: 0.4781 - learning_rate: 1.2500e-04
+Epoch 21/50

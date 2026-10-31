@@ -1,0 +1,9 @@
+{
+  "pipelines_verified": 9,
+  "cv_candidates_verified": 18,
+  "station_time_folds_verified": 3,
+  "outcome_features_excluded": true,
+  "train_only_medians_verified": true,
+  "largest_saved_score_difference": 0.0,
+  "previous_studies_and_app_preserved": true
+}

@@ -1,0 +1,46 @@
+{
+  "smotenc": {
+    "strategy": "smotenc",
+    "sampling_ratio": 0.5,
+    "k_neighbors": 3,
+    "class_weight": 1.0,
+    "config": {
+      "n_estimators": 300,
+      "max_depth": 5,
+      "learning_rate": 0.08,
+      "min_child_weight": 5,
+      "reg_lambda": 5,
+      "reg_alpha": 1
+    },
+    "fitted_rows": 52987,
+    "fitted_positive_rows": 17662,
+    "synthetic_rows": 15803,
+    "validation": {
+      "n": 3387,
+      "class_1": 162,
+      "threshold": 0.797928512096405,
+      "precision": 0.7642857142857142,
+      "recall": 0.6604938271604939,
+      "f1": 0.7086092715231788,
+      "f2": 0.6789340101522843,
+      "macro_f1": 0.8475061190743212,
+      "accuracy": 0.974018305284913,
+      "balanced_accuracy": 0.8251306345104795,
+      "pr_auc_ap": 0.733979437544014,
+      "roc_auc": 0.9634855010048808,
+      "brier": 0.04059623477716558,
+      "mcc": 0.6971160661450513,
+      "tn": 3192,
+      "fp": 33,
+      "fn": 55,
+      "tp": 107,
+      "false_positive_rate": 0.010232558139534883
+    },
+    "artifact_sha256": "e95d3670acf8530e132d4eeafd8bd4adade24e80c60946d6385a36c8ffd59430"
+  },
+  "candidate_fits": 18,
+  "validation_winner_including_previous": "balanced_oversampling_weight2",
+  "protocol_sha256": "db86bceffeee7c60429e75999c6fc82fd137130ebb5a505b7f49c47999b42673",
+  "test_used_for_selection": false,
+  "selected_utc": "2026-10-24T15:46:14.884238+00:00"
+}

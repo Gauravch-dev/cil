@@ -1,0 +1,69 @@
+{
+  "task": "High annual peak discharge relative to training-source 95th percentile; not verified flood occurrence",
+  "cutoff": 1129.84,
+  "label_definition": "source_peak_discharge > cutoff",
+  "cutoff_fit_on": "train only; differs from original reconstructed full-source percentile",
+  "chronology": {
+    "train": "1900\u20131999",
+    "validation": "2000\u20132005",
+    "test": "2006\u20132015"
+  },
+  "source_sha256": "20a844f84f78729cf4361f3f13daa3a79626f67c2e96aeb0f1a3b872bfd1a45a",
+  "original_model_sha256": "aad88a12f4645f3703c996641a15ce40603f6d5a608918fad4f37496d2f89395",
+  "features": [
+    "precipitation_risk_index",
+    "drainage_risk_index",
+    "annual_mean_temperature",
+    "temperature_seasonality",
+    "annual_precipitation",
+    "curve_number_amcii",
+    "drainage_density",
+    "basin_relief",
+    "ruggedness_number",
+    "infiltration_number",
+    "climate_type",
+    "landcover_type",
+    "soil_type"
+  ],
+  "categorical_features": [
+    "climate_type",
+    "landcover_type",
+    "soil_type"
+  ],
+  "seed": 20261024,
+  "preprocessing": "Numeric median and one-hot category vocabulary fitted exclusively on training rows.",
+  "imbalance": "Only training arrays may be reweighted, oversampled or undersampled. Validation and test retain source distributions.",
+  "selection": "Maximise validation class-1 F1 with validation-optimised threshold; ties use average precision, then precision. Includes no-treatment baseline.",
+  "strategies": [
+    "untreated",
+    "class_weight",
+    "random_oversampling",
+    "random_undersampling",
+    "balanced_oversampling_weight2"
+  ],
+  "smote_note": "Random oversampling repeats real training rows. No synthetic fractional soil/climate categories or new packages are introduced.",
+  "split_hashes": {
+    "train": "c1096dbdaeebcc31028653d4be38bdc5c111a74f681c4338597f90688f450c48",
+    "validation": "9cc12cb5b25fb59c44c88e49a1d69494262322c005a98cd7067df515f6715f90",
+    "test": "915eae2306d8b99c57d7632d7dd778e2422ec5524d55e3a9b4f8a391093e2fc8"
+  },
+  "row_counts": {
+    "train": 37184,
+    "test": 5339,
+    "validation": 3387,
+    "excluded_invalid_year": 22
+  },
+  "training_class_counts": {
+    "0": 35325,
+    "1": 1859
+  },
+  "independence_limit": "GloFlo was previously inspected for source/model reconstruction. Test is held out for fitting/selection in this new protocol, not pristine external data.",
+  "static_feature_limit": "Static modern catchment/climate proxies are not historically issued forecasts; station overlap is reported and unseen-station transfer is not assumed.",
+  "created_utc": "2026-10-24T15:34:54.034297+00:00",
+  "versions": {
+    "xgboost": "3.2.0",
+    "sklearn": "1.6.1",
+    "pandas": "3.0.6",
+    "numpy": "2.5.4"
+  }
+}

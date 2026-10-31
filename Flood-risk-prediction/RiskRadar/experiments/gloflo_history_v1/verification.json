@@ -1,0 +1,9 @@
+{
+  "pipelines_verified": 5,
+  "cv_candidates_verified": 10,
+  "earlier_year_provenance_verified": true,
+  "validation_and_test_outcomes_never_used_as_features": true,
+  "unseen_station_history_absent": true,
+  "largest_score_replay_difference": 0.0,
+  "previous_studies_and_app_unchanged": true
+}

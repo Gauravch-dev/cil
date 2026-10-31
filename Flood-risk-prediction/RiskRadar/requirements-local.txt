@@ -1,0 +1,6 @@
+-r requirements.txt
+# Versions recorded in the supplied model and encoder artifacts.
+xgboost==3.2.0
+scikit-learn==1.6.1
+# Retain the verified local chart stack; the dashboard uses MapLibre maps.
+plotly>=6,<7

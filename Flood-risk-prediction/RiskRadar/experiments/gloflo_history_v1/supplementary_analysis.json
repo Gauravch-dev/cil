@@ -1,0 +1,16 @@
+{
+  "paired_station_bootstrap_f1_difference_95ci": {
+    "previous_precision_model": [
+      -0.009121751508067662,
+      0.05825574985680559
+    ],
+    "previous_recall_model": [
+      0.14525067983647763,
+      0.24184129739005808
+    ]
+  },
+  "historical_mean_baseline_f1": 0.8111888111888111,
+  "learned_history_model_f1": 0.7992831541218638,
+  "baseline_outperforms_learned_history_f1": true,
+  "bundle_without_current_outcome_replay": "passed"
+}

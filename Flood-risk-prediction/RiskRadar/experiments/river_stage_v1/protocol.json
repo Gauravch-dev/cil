@@ -1,0 +1,171 @@
+{
+  "title": "Maharashtra River-Level Forecast and Flood-Stage Warning",
+  "target": "Maximum valid observed river level over (issue time, issue time +24h], metres; predict change from current.",
+  "issue_time": "08:00 IST once per day; 24 hourly future bins must have actual observations.",
+  "features": [
+    "station",
+    "current_relative_warning",
+    "warning_danger_gap",
+    "month_sin",
+    "month_cos",
+    "day_sin",
+    "day_cos",
+    "change_1h",
+    "change_3h",
+    "change_6h",
+    "change_12h",
+    "change_24h",
+    "change_48h",
+    "change_72h",
+    "mean_change_6h",
+    "max_change_6h",
+    "min_change_6h",
+    "std_6h",
+    "mean_change_24h",
+    "max_change_24h",
+    "min_change_24h",
+    "std_24h",
+    "mean_change_72h",
+    "max_change_72h",
+    "min_change_72h",
+    "std_72h",
+    "rise_6h",
+    "rise_24h",
+    "acceleration_6h_vs_24h"
+  ],
+  "stations": {
+    "kurundwad": {
+      "name": "Kurundwad",
+      "district": "Kolhapur",
+      "river": "Krishna",
+      "warning": 535.64,
+      "danger": 537.16,
+      "zero": 519.455,
+      "highest": 541.35
+    },
+    "narsingpur": {
+      "name": "Narsingpur",
+      "district": "Solapur",
+      "river": "Bhima",
+      "warning": 458.403,
+      "danger": 459.033,
+      "zero": 446.0,
+      "highest": 462.393
+    },
+    "takli": {
+      "name": "Takli",
+      "district": "Solapur",
+      "river": "Bhima",
+      "warning": 419.0,
+      "danger": 420.5,
+      "zero": 408.0,
+      "highest": 424.5
+    }
+  },
+  "seed": 20261024,
+  "configs": {
+    "ridge": [
+      {
+        "alpha": 1.0
+      },
+      {
+        "alpha": 10.0
+      },
+      {
+        "alpha": 100.0
+      }
+    ],
+    "hist_gradient_boosting": [
+      {
+        "max_iter": 300,
+        "max_leaf_nodes": 15,
+        "min_samples_leaf": 20,
+        "l2_regularization": 10.0
+      },
+      {
+        "max_iter": 400,
+        "max_leaf_nodes": 15,
+        "min_samples_leaf": 30,
+        "l2_regularization": 20.0
+      }
+    ],
+    "random_forest": [
+      {
+        "n_estimators": 250,
+        "max_depth": 12,
+        "min_samples_leaf": 3
+      },
+      {
+        "n_estimators": 250,
+        "max_depth": 12,
+        "min_samples_leaf": 8
+      }
+    ],
+    "extra_trees": [
+      {
+        "n_estimators": 300,
+        "max_depth": 16,
+        "min_samples_leaf": 3
+      },
+      {
+        "n_estimators": 300,
+        "max_depth": 16,
+        "min_samples_leaf": 8
+      }
+    ],
+    "xgboost": [
+      {
+        "n_estimators": 300,
+        "max_depth": 3,
+        "learning_rate": 0.04,
+        "min_child_weight": 10,
+        "reg_lambda": 10
+      },
+      {
+        "n_estimators": 400,
+        "max_depth": 4,
+        "learning_rate": 0.04,
+        "min_child_weight": 5,
+        "reg_lambda": 20
+      }
+    ]
+  },
+  "training_weights": [
+    1.0,
+    4.0
+  ],
+  "splits": {
+    "train": "2014\u20132020",
+    "validation": "2021",
+    "calibration": "2022",
+    "test": "2023\u20132025"
+  },
+  "selection": "Minimum validation score: 0.5 macro-station MAE overall +0.5 macro-station MAE on target peaks at/above official warning. Ties overall MAE then fewer training-weight changes. Baselines participate in selection. Test/calibration never choose the predictor.",
+  "calibration": "90% nominal empirical absolute-residual range, from separate 2022 calibration rows per station. No exchangeability or guaranteed future coverage claim; report test coverage.",
+  "baselines": [
+    "persistence",
+    "positive_6h_trend_damped_12h",
+    "previous_24h_max"
+  ],
+  "quality": "Fixed wide bounds [zero gauge RL-10, danger+30]m; unresolved conflicting duplicates missing; >10m/hour accepted-history jumps missing; unchanged run >72h stale from that point forward. No decimal/datum repairs. Features forward-fill at most2h; >=65 actually observed past72 hourly bins; future label bins never filled. Quality rules do not use model scores or future values.",
+  "source_manifest_sha256": "3323d5d84ec3fbb3dd793b078d0907e9542fcf7e9f506aed0e9f804ad2aaeb0f",
+  "split_hashes": {
+    "train": "77fbaa216268530761e9bf7f66b3340a9adaf8d945c4f78a8f96fa16e67a0cbe",
+    "validation": "7a46d5d1d75b37a2ae0be783cdd42069701e8ca649609b4b47224979f6fb2c9e",
+    "calibration": "c7673c581382955cc239a5d55829a837be81404db62801087bc91761a37a2d8c",
+    "test": "855d7ac713748037b868d1497f222b285ca250201d590b0368e9b3abdcc48bc2"
+  },
+  "hourly_hashes": {
+    "kurundwad": "69bf7fc95b07b712e939b9c1390d4de6232871116cbbb4255edab4085aff031f",
+    "narsingpur": "19fa22670d0670c0d8b5afe554ce56b53238e640b4c575f4fd007b8ca9dc7f45",
+    "takli": "115b5ddfaa6a40383a64789df2f1261334dcb316b7fcc67045edb1c7a6550f32"
+  },
+  "original_model_sha256": "aad88a12f4645f3703c996641a15ce40603f6d5a608918fad4f37496d2f89395",
+  "limits": "Historical replay, not live alerts. Source records were inspected in feasibility research. Contiguous hourly flood records are not independent floods. Only three known gauges. Archive corrections/availability may differ from what was issued in real time. Official threshold datum/history assumed consistent for selected series; source QC cannot prove every value. No rainfall predictor: co-located gauge rain is sparse/nonzero-only; it is not filled with zeros. Availability favours high-frequency observation seasons; excluded/missing windows are not normal labels.",
+  "versions": {
+    "sklearn": "1.6.1",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6"
+  },
+  "created_utc": "2026-10-24T17:42:18.363765+00:00"
+}

@@ -1,0 +1,250 @@
+{
+  "target": "Severe Flood=1, Flood=0; conditional on an observed flood event",
+  "not_a_target": "Flood versus no flood; future daily/weekly occurrence is not measurable here",
+  "original_task_compatibility": {
+    "exact_dataset": false,
+    "original_schema": [
+      "precipitation_risk_index",
+      "drainage_risk_index",
+      "annual_mean_temperature",
+      "temperature_seasonality",
+      "annual_precipitation",
+      "curve_number_amcii",
+      "drainage_density",
+      "basin_relief",
+      "ruggedness_number",
+      "infiltration_number",
+      "climate_type",
+      "landcover_type",
+      "soil_type"
+    ],
+    "missing_required_input": "curve_number_amcii; source class vocabulary and feature definitions also differ",
+    "reason": "No non-flood observations; do not reinterpret class Flood as a no-flood negative."
+  },
+  "comparison": {
+    "xgb_static": "Static catchment, climate, location and common seasonal inputs",
+    "xgb_rainfall": "Same inputs plus antecedent 1\u201310-day rainfall and derived rainfall indicators"
+  },
+  "split": {
+    "train": "events starting and ending before 2010",
+    "validation": "onset 2010\u20132014, end before 2015",
+    "test": "onset 2015\u20132019, end before 2020"
+  },
+  "coverage_exclusion": "All 2020 events excluded before fitting: EM-Earth version 1 ends in 2019; 54/55 source 2020 events have T10d=0.",
+  "coverage_source": "https://journals.ametsoc.org/view/journals/bams/103/4/BAMS-D-21-0106.1.xml",
+  "selection": "Highest validation average precision (PR-AUC/AP), then F1. Decision threshold maximises validation F1, with F2 as first tie-breaker.",
+  "preprocessing": "Numeric median and category vocabulary fitted on train only. Natural validation/test distributions.",
+  "imbalance": "Candidate scale_pos_weight values 1 and training negative/positive ratio; no validation/test resampling.",
+  "static_vintage_limitation": "Modern static catchment/climate summaries are retrospective proxies, not a reconstruction of covariates issued in each historical year. Anthropogenic vintage fields excluded.",
+  "occurrence_limitation": "Rows are sampled conditional on floods and aligned to their known onset. This is retrospective severity estimation, not a deployable flood-occurrence warning.",
+  "features": {
+    "xgb_static": [
+      "Drainage Area",
+      "Catchment Relief",
+      "Stream Order",
+      "Drainage Density",
+      "Drainage Texture",
+      "Catchment Length",
+      "Maximal Flow Length",
+      "Sinuosity Index",
+      "Form Factor",
+      "Relief Ratio",
+      "Ruggedness Number",
+      "Infiltration Number",
+      "Annual Mean Temperature",
+      "Temperature Seasonality",
+      "Annual Precipitation",
+      "Precipitation of Wettest Month",
+      "Precipitation Seasonality",
+      "Latitude",
+      "Longitude",
+      "KoppenGeiger Climate Type",
+      "Land cover",
+      "Soil type",
+      "lithology type",
+      "month_sin",
+      "month_cos"
+    ],
+    "xgb_rainfall": [
+      "Drainage Area",
+      "Catchment Relief",
+      "Stream Order",
+      "Drainage Density",
+      "Drainage Texture",
+      "Catchment Length",
+      "Maximal Flow Length",
+      "Sinuosity Index",
+      "Form Factor",
+      "Relief Ratio",
+      "Ruggedness Number",
+      "Infiltration Number",
+      "Annual Mean Temperature",
+      "Temperature Seasonality",
+      "Annual Precipitation",
+      "Precipitation of Wettest Month",
+      "Precipitation Seasonality",
+      "Latitude",
+      "Longitude",
+      "KoppenGeiger Climate Type",
+      "Land cover",
+      "Soil type",
+      "lithology type",
+      "month_sin",
+      "month_cos",
+      "T1d",
+      "T2d",
+      "T3d",
+      "T4d",
+      "T5d",
+      "T6d",
+      "T7d",
+      "T8d",
+      "T9d",
+      "T10d",
+      "rain_max_10d",
+      "rain_std_10d",
+      "rainy_days_10d",
+      "recent_3d_share"
+    ],
+    "logistic_rainfall_baseline": [
+      "T1d",
+      "T2d",
+      "T3d",
+      "T4d",
+      "T5d",
+      "T6d",
+      "T7d",
+      "T8d",
+      "T9d",
+      "T10d",
+      "month_sin",
+      "month_cos"
+    ]
+  },
+  "seed": 20261024,
+  "created_utc": "2026-10-24T14:59:35.221410+00:00",
+  "source_manifest": {
+    "floodevents_indofloods.csv": {
+      "md5": "729f3f857e4d4dce33fbe8b67c492172",
+      "sha256": "72cea519d07b5c8cc679a57b16e887f58aaffba2cc162d89a955153a474cacbc",
+      "bytes": 469728
+    },
+    "precipitation_variables_indofloods.csv": {
+      "md5": "dfd1491d22fff46e6086eebda8f758c9",
+      "sha256": "a2615f03e0e71591e336a242c329429f92415ff96e7aea5a75b2ee6fe1ab60b8",
+      "bytes": 677548
+    },
+    "metadata_indofloods.csv": {
+      "md5": "8228295ef7133fb46c92dd7ff0066c14",
+      "sha256": "cbc03f588b164bafcf5482649ffc7379fac875050d8a113a0da010e8827b1a73",
+      "bytes": 40058
+    },
+    "catchment_characteristics_indofloods.csv": {
+      "md5": "480e5f8604f1232b69b73ec25dd74a18",
+      "sha256": "1748b37645c87a9931630fdb14cc8780acbd809dd77529520221c26b173add8f",
+      "bytes": 146653
+    },
+    "variables_description_indofloods.pdf": {
+      "md5": "d8cf91fe8731922d7195bfb3394d0e2f",
+      "sha256": "0b057c6a9aa89a6ad17293d3e33ded871dceb18a19311d7f75428a651fbde09d",
+      "bytes": 185357
+    },
+    "catchments_shapefiles_indofloods.zip": {
+      "md5": "87021353b066248023a62e492d766839",
+      "sha256": "97352a8d42ca99b3237da8591b74fb96de43429917cf6a59241726185c644677",
+      "bytes": 664787
+    }
+  },
+  "extra_inventory": {
+    "India_Flood_Inventory_v3.csv": {
+      "rows": 6876,
+      "columns": [
+        "Unnamed: 0",
+        "UEI",
+        "Start Date",
+        "End Date",
+        "Duration(Days)",
+        "Main Cause",
+        "Location",
+        "Districts",
+        "State",
+        "Latitude",
+        "Longitude",
+        "Severity",
+        "Area Affected",
+        "Human fatality",
+        "Human injured",
+        "Human Displaced",
+        "Animal Fatality",
+        "Description of Casualties/injured",
+        "Extent of damage ",
+        "Event Source",
+        "Event Souce ID",
+        "District_LGD_Codes",
+        "State_Codes"
+      ],
+      "sha256": "ef9ab2cd0db7bf917dcc22c7cb094ec599f5013ef1b96ba525d816f26ff1b108"
+    },
+    "District_FloodedArea.csv": {
+      "rows": 732,
+      "columns": [
+        "Dist_Name",
+        "Percent_Flooded_Area",
+        "Parmanent_Water",
+        "Corrected_Percent_Flooded_Area"
+      ],
+      "sha256": "738d5edf8a29c70de520b3b7b8e148eb7eed2ce89bbd9f0ecacd3cbc17b07610"
+    },
+    "District_FloodImpact.csv": {
+      "rows": 732,
+      "columns": [
+        "Dist_Name",
+        "Human_fatality",
+        "Human_injured",
+        "Population",
+        "Mean_Flood_Duration"
+      ],
+      "sha256": "0cc7381e8153cdd34e287540e64947e4cd2e5ff46d2461581e7b6c041b3655fb"
+    },
+    "DFSI.csv": {
+      "rows": 744,
+      "columns": [
+        "Unnamed: 0",
+        "State_Name",
+        "DFSI"
+      ],
+      "sha256": "25cb6ad0ad7b8b681ece2c99dcc6030de1debf2569f5e8e8a47a4144d90a8cac"
+    }
+  },
+  "inventory_use": "Historical context only. DFSI, fatalities, affected area and whole-period impacts are excluded as predictor leakage risks; no verified non-event panel supplied.",
+  "split_file_sha256": {
+    "train": "b7c188394df4ec95c613325a5182476ce28b7d96dde127b556bd0229303adf09",
+    "validation": "d1922bd6d6d61f4ff84d3c6e286fac11c29d04d2fb077b91b5eb4622882d7108",
+    "test": "96f03731e78dec0c0263ec135f8edbb757f9e2c803c77821b1ae12a5da1fc2ac"
+  },
+  "split_counts": {
+    "train": 3250,
+    "test": 625,
+    "validation": 613,
+    "excluded_rainfall_source_after_2019": 55,
+    "excluded_event_crosses_period_boundary": 5
+  },
+  "raw_class_counts": {
+    "Flood": 2919,
+    "Severe Flood": 1629
+  },
+  "raw_events": 4548,
+  "gauges": 155,
+  "maharashtra_events": 817,
+  "maharashtra_gauges": 29,
+  "source_peak_discharge_available": 3993,
+  "threshold_boundary_equal_severe": 20,
+  "unchanged_application_model_sha256": "aad88a12f4645f3703c996641a15ce40603f6d5a608918fad4f37496d2f89395",
+  "versions": {
+    "python": "3.12.10",
+    "xgboost": "3.2.0",
+    "sklearn": "1.6.1",
+    "pandas": "3.0.6",
+    "numpy": "2.5.4"
+  }
+}

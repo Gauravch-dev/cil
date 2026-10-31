@@ -1,0 +1,6 @@
+Dimension,LSTM,Basic neural network
+Computation,Recurrent processing across 96 time steps,Flattened input through dense layers
+Internal visualization,Time-by-unit activation maps,Dense-unit activation vectors
+Input explanations,Integrated Gradients for history and context,"Same method, reference, and examples"
+Main caution,Hidden-state colors are not attention or causes,Simpler computation does not make neurons semantic rules
+Shared limits,Reference-dependent; correlated inputs share credit,Reference-dependent; correlated inputs share credit

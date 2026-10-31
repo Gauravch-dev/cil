@@ -1,0 +1,139 @@
+Case,Model,Input_group,Signed_attribution_kW
+Good forecast,LSTM,History: power scaled,-0.06278388947248459
+Good forecast,LSTM,History: observed,0.0
+Good forecast,LSTM,History: hour sin,-0.6737747192382812
+Good forecast,LSTM,History: hour cos,-0.14531002938747406
+Good forecast,LSTM,History: dow sin,0.36653465032577515
+Good forecast,LSTM,History: dow cos,-0.2801872789859772
+Good forecast,LSTM,latest kw,0.008252657949924469
+Good forecast,LSTM,one hour before origin kw,0.0037159379571676254
+Good forecast,LSTM,two hours before origin kw,-0.06755565851926804
+Good forecast,LSTM,target slot previous day kw,-0.02065056376159191
+Good forecast,LSTM,target slot previous week kw,-0.024932023137807846
+Good forecast,LSTM,mean previous hour kw,0.13687564432621002
+Good forecast,LSTM,mean previous 4hours kw,0.015779873356223106
+Good forecast,LSTM,mean previous day kw,0.010858007706701756
+Good forecast,LSTM,std previous day kw,-0.044776804745197296
+Good forecast,LSTM,observed fraction previous day,-0.0
+Good forecast,LSTM,target hour sin,0.19170576333999634
+Good forecast,LSTM,target hour cos,-0.4267672300338745
+Good forecast,LSTM,target dow sin,0.09844706207513809
+Good forecast,LSTM,target dow cos,-0.08149626851081848
+Good forecast,LSTM,target month sin,0.0
+Good forecast,LSTM,target month cos,0.0
+Good forecast,LSTM,target weekend,0.07994455099105835
+Good forecast,Basic neural network,History: power scaled,-0.05462832376360893
+Good forecast,Basic neural network,History: observed,0.0
+Good forecast,Basic neural network,History: hour sin,-0.505167543888092
+Good forecast,Basic neural network,History: hour cos,-0.35796022415161133
+Good forecast,Basic neural network,History: dow sin,0.11205198615789413
+Good forecast,Basic neural network,History: dow cos,0.42680221796035767
+Good forecast,Basic neural network,latest kw,0.0018058731220662594
+Good forecast,Basic neural network,one hour before origin kw,-0.017776532098650932
+Good forecast,Basic neural network,two hours before origin kw,0.011840940453112125
+Good forecast,Basic neural network,target slot previous day kw,-0.01827104389667511
+Good forecast,Basic neural network,target slot previous week kw,-0.043651893734931946
+Good forecast,Basic neural network,mean previous hour kw,0.0126791475340724
+Good forecast,Basic neural network,mean previous 4hours kw,-0.0012380548287183046
+Good forecast,Basic neural network,mean previous day kw,0.0006442005978897214
+Good forecast,Basic neural network,std previous day kw,0.0114504499360919
+Good forecast,Basic neural network,observed fraction previous day,0.0
+Good forecast,Basic neural network,target hour sin,0.010916643775999546
+Good forecast,Basic neural network,target hour cos,-0.039752766489982605
+Good forecast,Basic neural network,target dow sin,-0.01365820411592722
+Good forecast,Basic neural network,target dow cos,0.004370272625237703
+Good forecast,Basic neural network,target month sin,0.0
+Good forecast,Basic neural network,target month cos,-0.0
+Good forecast,Basic neural network,target weekend,0.022065339609980583
+Typical error,LSTM,History: power scaled,-0.005553041584789753
+Typical error,LSTM,History: observed,0.0
+Typical error,LSTM,History: hour sin,-0.8433412313461304
+Typical error,LSTM,History: hour cos,-0.0990075096487999
+Typical error,LSTM,History: dow sin,0.22104953229427338
+Typical error,LSTM,History: dow cos,0.10970183461904526
+Typical error,LSTM,latest kw,0.01112405862659216
+Typical error,LSTM,one hour before origin kw,0.0033220553305000067
+Typical error,LSTM,two hours before origin kw,-0.006627416238188744
+Typical error,LSTM,target slot previous day kw,-0.05408233031630516
+Typical error,LSTM,target slot previous week kw,-0.05854831263422966
+Typical error,LSTM,mean previous hour kw,-0.007131277117878199
+Typical error,LSTM,mean previous 4hours kw,-0.0001792945695342496
+Typical error,LSTM,mean previous day kw,0.09883103519678116
+Typical error,LSTM,std previous day kw,-0.029242848977446556
+Typical error,LSTM,observed fraction previous day,-0.0
+Typical error,LSTM,target hour sin,0.2747839391231537
+Typical error,LSTM,target hour cos,-0.3757936656475067
+Typical error,LSTM,target dow sin,-0.0
+Typical error,LSTM,target dow cos,-0.0
+Typical error,LSTM,target month sin,-0.08896514773368835
+Typical error,LSTM,target month cos,-0.027465734630823135
+Typical error,LSTM,target weekend,-0.0
+Typical error,Basic neural network,History: power scaled,-0.04474608972668648
+Typical error,Basic neural network,History: observed,0.0
+Typical error,Basic neural network,History: hour sin,-0.2686212658882141
+Typical error,Basic neural network,History: hour cos,-0.19818167388439178
+Typical error,Basic neural network,History: dow sin,0.022165197879076004
+Typical error,Basic neural network,History: dow cos,0.041883423924446106
+Typical error,Basic neural network,latest kw,0.0035267516504973173
+Typical error,Basic neural network,one hour before origin kw,0.0002172281383536756
+Typical error,Basic neural network,two hours before origin kw,0.0006546395597979426
+Typical error,Basic neural network,target slot previous day kw,-0.011789493262767792
+Typical error,Basic neural network,target slot previous week kw,-0.04704933241009712
+Typical error,Basic neural network,mean previous hour kw,-0.0010203953133895993
+Typical error,Basic neural network,mean previous 4hours kw,1.7619306163396686e-05
+Typical error,Basic neural network,mean previous day kw,-0.00245945667847991
+Typical error,Basic neural network,std previous day kw,0.0008794229943305254
+Typical error,Basic neural network,observed fraction previous day,0.0
+Typical error,Basic neural network,target hour sin,0.005532948300242424
+Typical error,Basic neural network,target hour cos,-0.01659911870956421
+Typical error,Basic neural network,target dow sin,-0.0
+Typical error,Basic neural network,target dow cos,-0.0
+Typical error,Basic neural network,target month sin,-0.01149089727550745
+Typical error,Basic neural network,target month cos,-0.0073857177048921585
+Typical error,Basic neural network,target weekend,0.0
+Missed high demand,LSTM,History: power scaled,-0.13451990485191345
+Missed high demand,LSTM,History: observed,0.0
+Missed high demand,LSTM,History: hour sin,-0.061736173927783966
+Missed high demand,LSTM,History: hour cos,0.16369830071926117
+Missed high demand,LSTM,History: dow sin,0.11403349786996841
+Missed high demand,LSTM,History: dow cos,-0.06959472596645355
+Missed high demand,LSTM,latest kw,0.39078426361083984
+Missed high demand,LSTM,one hour before origin kw,0.09393633902072906
+Missed high demand,LSTM,two hours before origin kw,-0.048121385276317596
+Missed high demand,LSTM,target slot previous day kw,-0.01473031472414732
+Missed high demand,LSTM,target slot previous week kw,-0.08138256520032883
+Missed high demand,LSTM,mean previous hour kw,0.504578173160553
+Missed high demand,LSTM,mean previous 4hours kw,0.007776264101266861
+Missed high demand,LSTM,mean previous day kw,-0.0061915721744298935
+Missed high demand,LSTM,std previous day kw,-0.0072842808440327644
+Missed high demand,LSTM,observed fraction previous day,-0.0
+Missed high demand,LSTM,target hour sin,-0.1111871674656868
+Missed high demand,LSTM,target hour cos,-7.792470569256693e-05
+Missed high demand,LSTM,target dow sin,0.055630266666412354
+Missed high demand,LSTM,target dow cos,-0.07421290129423141
+Missed high demand,LSTM,target month sin,-0.029845478013157845
+Missed high demand,LSTM,target month cos,0.17539551854133606
+Missed high demand,LSTM,target weekend,-0.07707548141479492
+Missed high demand,Basic neural network,History: power scaled,0.12867729365825653
+Missed high demand,Basic neural network,History: observed,0.0
+Missed high demand,Basic neural network,History: hour sin,0.08146008849143982
+Missed high demand,Basic neural network,History: hour cos,0.14006748795509338
+Missed high demand,Basic neural network,History: dow sin,0.0034029902890324593
+Missed high demand,Basic neural network,History: dow cos,0.1543681025505066
+Missed high demand,Basic neural network,latest kw,0.15240873396396637
+Missed high demand,Basic neural network,one hour before origin kw,0.00611493457108736
+Missed high demand,Basic neural network,two hours before origin kw,0.01014264952391386
+Missed high demand,Basic neural network,target slot previous day kw,-0.009109937585890293
+Missed high demand,Basic neural network,target slot previous week kw,-0.05093728378415108
+Missed high demand,Basic neural network,mean previous hour kw,0.07962559163570404
+Missed high demand,Basic neural network,mean previous 4hours kw,0.034710414707660675
+Missed high demand,Basic neural network,mean previous day kw,0.00020436638442333788
+Missed high demand,Basic neural network,std previous day kw,0.0011075909715145826
+Missed high demand,Basic neural network,observed fraction previous day,0.0
+Missed high demand,Basic neural network,target hour sin,0.003871563356369734
+Missed high demand,Basic neural network,target hour cos,0.005694769788533449
+Missed high demand,Basic neural network,target dow sin,-0.004801658447831869
+Missed high demand,Basic neural network,target dow cos,0.0033367902506142855
+Missed high demand,Basic neural network,target month sin,0.045838695019483566
+Missed high demand,Basic neural network,target month cos,0.0431947186589241
+Missed high demand,Basic neural network,target weekend,-0.02022620476782322

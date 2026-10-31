@@ -1,0 +1,118 @@
+
+--- Executing cell 1 (1) ---
+Cell completed in 0.0s
+
+--- Executing cell 3 (2) ---
+Loaded trained models; no training will run.
+Saved explanation examples: 256 | Training reference examples: 128
+Outputs: C:\Users\Gaurav Choithramani\Desktop\cil\task8_outputs\run_20261004T224434_997783Z
+Cell completed in 4.0s
+
+--- Executing cell 5 (3) ---
+task8.ipynb cell 5:8: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+                      MAE_kW  RMSE_kW      R2  Test_samples  Parameters
+Model                                                                  
+LSTM                  0.4269   0.6182  0.3999         18889        9249
+Basic neural network  0.4407   0.6235  0.3896         18889       40129
+Persistence           0.5143   0.8055 -0.0188         18889           0
+Daily seasonal        0.6070   0.9129 -0.3084         18889           0
+Weekly seasonal       0.6425   0.9458 -0.4046         18889           0
+LSTM RMSE improvement versus basic network: 0.84%.
+All 256 reloaded-model example predictions match the saved Task 7 forecasts.
+Cell completed in 0.8s
+
+--- Executing cell 7 (4) ---
+                 Case  Example_position  ... Basic_kW  LSTM_absolute_error_kW
+0       Good forecast                12  ...   0.5514                  0.0019
+1       Typical error               126  ...   0.4570                  0.2525
+2  Missed high demand               204  ...   1.8013                  2.5202
+
+[3 rows x 7 columns]
+Cell completed in 0.5s
+
+--- Executing cell 9 (5) ---
+Cell completed in 0.8s
+
+--- Executing cell 11 (6) ---
+Reference training target index: 15416
+WARNING:tensorflow:AutoGraph could not transform <function make_gradient_function.<locals>.gradients at 0x0000013D736B4360> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: expected exactly one node, got [<gast.gast.Expr object at 0x0000013D6E572250>, <gast.gast.Import object at 0x0000013D73701850>, <gast.gast.Import object at 0x0000013D736E3950>, <gast.gast.Import object at 0x0000013D7373F710>, <gast.gast.Import object at 0x0000013D7373F5D0>, <gast.gast.Import object at 0x0000013D7373F450>, <gast.gast.Import object at 0x0000013D7373F2D0>, <gast.gast.Import object at 0x0000013D7373F150>, <gast.gast.Import object at 0x0000013D7373EFD0>, <gast.gast.ImportFrom object at 0x0000013D7373EE90>, <gast.gast.Expr object at 0x0000013D73158350>, <gast.gast.Expr object at 0x0000013D6D4292D0>, <gast.gast.Import object at 0x0000013D7373E4D0>, <gast.gast.Import object at 0x0000013D7373E390>, <gast.gast.Assign object at 0x0000013D73694A50>, <gast.gast.Assign object at 0x0000013D7373D9D0>, <gast.gast.Expr object at 0x0000013D7373D690>, <gast.gast.Expr object at 0x0000013D7373D2D0>, <gast.gast.Assign object at 0x0000013D7373F850>, <gast.gast.Expr object at 0x0000013D7373FC10>, <gast.gast.Assign object at 0x0000013D72B64850>, <gast.gast.Assign object at 0x0000013D73758550>, <gast.gast.Assign object at 0x0000013D73135010>, <gast.gast.Assign object at 0x0000013D7373C810>, <gast.gast.ClassDef object at 0x0000013D73760ED0>]
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+LSTM : explained 35 examples.
+WARNING:tensorflow:AutoGraph could not transform <function make_gradient_function.<locals>.gradients at 0x0000013D73AAA840> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: expected exactly one node, got [<gast.gast.Expr object at 0x0000013D73726CD0>, <gast.gast.Import object at 0x0000013D7511E350>, <gast.gast.Import object at 0x0000013D7511E210>, <gast.gast.Import object at 0x0000013D7511E090>, <gast.gast.Import object at 0x0000013D7511DF10>, <gast.gast.Import object at 0x0000013D7511DD50>, <gast.gast.Import object at 0x0000013D7511DB90>, <gast.gast.Import object at 0x0000013D7511DA50>, <gast.gast.Import object at 0x0000013D7511D8D0>, <gast.gast.ImportFrom object at 0x0000013D7511D7D0>, <gast.gast.Expr object at 0x0000013D75059750>, <gast.gast.Expr object at 0x0000013D73B410D0>, <gast.gast.Import object at 0x0000013D7511CB50>, <gast.gast.Import object at 0x0000013D7511CA50>, <gast.gast.Assign object at 0x0000013D7511C090>, <gast.gast.Assign object at 0x0000013D75134290>, <gast.gast.Expr object at 0x0000013D75058790>, <gast.gast.Expr object at 0x0000013D75134B50>, <gast.gast.Assign object at 0x0000013D751351D0>, <gast.gast.Expr object at 0x0000013D75135590>, <gast.gast.Assign object at 0x0000013D7373F350>, <gast.gast.Assign object at 0x0000013D7373DA90>, <gast.gast.Assign object at 0x0000013D73B7DC90>, <gast.gast.Assign object at 0x0000013D75059450>, <gast.gast.ClassDef object at 0x0000013D7513BF50>]
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+Basic neural network : explained 35 examples.
+                      Checks  Passed  Max_residual_kW
+Model                                                
+Basic neural network      35      31         0.016264
+LSTM                      35      35         0.012803
+Some IG approximations did not meet tolerance. Inspect ig_completeness_checks.csv; interpret small contributions cautiously.
+Cell completed in 2.3s
+
+--- Executing cell 13 (7) ---
+Cell completed in 0.4s
+
+--- Executing cell 15 (8) ---
+Cell completed in 1.0s
+
+--- Executing cell 17 (9) ---
+                                         Segment  ...      R2
+0                               All test targets  ...  0.3999
+1                               All test targets  ...  0.3896
+5   High demand (above training 90th percentile)  ... -5.7625
+6   High demand (above training 90th percentile)  ... -6.1343
+10                                  Other demand  ...  0.3356
+11                                  Other demand  ...  0.3403
+
+[6 rows x 7 columns]
+                Dimension  ...                               Basic neural network
+0             Computation  ...               Flattened input through dense layers
+1  Internal visualization  ...                      Dense-unit activation vectors
+2      Input explanations  ...               Same method, reference, and examples
+3            Main caution  ...  Simpler computation does not make neurons sema...
+4           Shared limits  ...  Reference-dependent; correlated inputs share c...
+
+[5 rows x 3 columns]
+# Task 8 results
+
+No models were retrained or tuned in this task.
+
+Performance uses all 18,889 test targets. Input attribution summaries use 32 evenly spaced examples.
+
+| Model | MAE (kW) | RMSE (kW) | R2 | Parameters |
+|---|---:|---:|---:|---:|
+| LSTM | 0.4269 | 0.6182 | 0.3999 | 9,249 |
+| Basic neural network | 0.4407 | 0.6235 | 0.3896 | 40,129 |
+
+The LSTM reduces RMSE by 0.84% versus the basic model. This is a small observed gain; statistical significance was not tested.
+Its R2 remains modest, and sudden peaks are difficult to forecast.
+
+## What the explanations show
+
+Temporal LSTM activations and dense-layer activations were visualized for a good forecast, a typical error, and a missed high-demand case.
+Integrated Gradients explains changes from one real training reference, not absolute causes of household consumption.
+- Largest attribution-magnitude groups for LSTM: History: hour cos, History: hour sin, History: dow sin.
+- Largest attribution-magnitude groups for Basic neural network: History: power scaled, History: dow cos, History: hour cos.
+
+These are reference-dependent sample summaries. History channels aggregate 96 values, so their totals are not directly comparable to one scalar context feature.
+The direct history-power time chart omits the additional attribution assigned to correlated lag and rolling-summary features.
+Both models need post-hoc explanations. Fewer LSTM parameters do not remove the complexity of recurrent processing.
+
+## Verification
+
+All 256 reloaded-model example predictions matched the saved forecasts.
+Integrated Gradients completeness checks passed: 66/70; maximum absolute residual 0.016264 kW.
+Completeness checks numerical consistency, not causal truth or clinical/safety reliability.
+
+## Files
+
+PNG figures, CSV tables, activation arrays, attribution arrays, and the analysis manifest accompany this report.
+
+Method reference: [TensorFlow Integrated Gradients](https://www.tensorflow.org/tutorials/interpretability/integrated_gradients).
+
+Task 8 complete. Results ZIP: C:\Users\Gaurav Choithramani\Desktop\cil\task8_outputs\run_20261004T224434_997783Z.zip
+Cell completed in 0.2s
+FULL NOTEBOOK EXECUTION COMPLETED: task8_outputs\run_20261004T224434_997783Z

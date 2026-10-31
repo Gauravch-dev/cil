@@ -1,0 +1,24 @@
+{
+  "manual_inference_replayed_all_test_rows": 422,
+  "matches": true,
+  "bundle_sha256": "119d3aec111e9fae081200edb74ae12a7aacd5b67289064117d448503009583a",
+  "selection_sha256": "b060e0bcd580e2858634a7bf637ee5fc73a6c0854502c7dafa2317825c8f6892",
+  "test_predictions_sha256": "0865bebc5f6d7154101d1313bde7a56f7f3b61592d94403ac32a4815f3265f97",
+  "raw_cwc_reconstruction_matches": true,
+  "all_source_labels_verified": 1766,
+  "current_and_lagged_levels_only": true,
+  "future_windows_complete": true,
+  "chronological_boundaries_purged": true,
+  "target": "Official warning-stage exceedance in next 24h",
+  "raw_quality_audit": {
+    "raw_rows": 56625,
+    "invalid_time": 0,
+    "non_numeric": 0,
+    "duplicate_rows": 0,
+    "conflicting_timestamps": 0,
+    "wide_bound_or_missing": 2823,
+    "gross_rate_jumps": 2,
+    "stale_after_72h": 0,
+    "accepted": 53800
+  }
+}

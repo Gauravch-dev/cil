@@ -1,0 +1,12 @@
+{
+  "artifact_and_source_checks": "passed",
+  "matched_event_rows": 4493,
+  "heldout_events_replayed": 625,
+  "model_score_replays": 1250,
+  "maximum_score_difference": 2.9074096685732798e-08,
+  "outcome_mutation_runtime_checks": 3,
+  "verified_non_flood_examples": 0,
+  "non_flood_examples_invented": 0,
+  "model_selection_changed": false,
+  "new_independent_test_claimed": false
+}

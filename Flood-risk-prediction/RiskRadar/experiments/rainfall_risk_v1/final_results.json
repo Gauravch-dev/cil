@@ -1,0 +1,389 @@
+{
+  "selected_name": "persistence",
+  "selected_kind": "baseline",
+  "test_metrics": {
+    "logistic_1": {
+      "n": 2189,
+      "counts": [
+        2069,
+        57,
+        63
+      ],
+      "macro_f1": 0.40542254770442687,
+      "accuracy": 0.8254910918227502,
+      "high_precision": 0.17424242424242425,
+      "high_recall": 0.36507936507936506,
+      "high_f1": 0.2358974358974359,
+      "high_f2": 0.2994791666666667,
+      "high_average_precision": 0.1873719492017391,
+      "high_roc_auc": 0.905456255879586,
+      "confusion_matrix_low_medium_high": [
+        [
+          1774,
+          208,
+          87
+        ],
+        [
+          25,
+          10,
+          22
+        ],
+        [
+          17,
+          23,
+          23
+        ]
+      ],
+      "cutoffs": {
+        "high": 0.5,
+        "medium": 0.4
+      }
+    },
+    "logistic_01": {
+      "n": 2189,
+      "counts": [
+        2069,
+        57,
+        63
+      ],
+      "macro_f1": 0.42118682700078053,
+      "accuracy": 0.8405664687071722,
+      "high_precision": 0.1885245901639344,
+      "high_recall": 0.36507936507936506,
+      "high_f1": 0.24864864864864866,
+      "high_f2": 0.3074866310160428,
+      "high_average_precision": 0.1864382978148018,
+      "high_roc_auc": 0.9068897549612507,
+      "confusion_matrix_low_medium_high": [
+        [
+          1804,
+          186,
+          79
+        ],
+        [
+          24,
+          13,
+          20
+        ],
+        [
+          16,
+          24,
+          23
+        ]
+      ],
+      "cutoffs": {
+        "high": 0.5,
+        "medium": 0.4
+      }
+    },
+    "extra_trees_10": {
+      "n": 2189,
+      "counts": [
+        2069,
+        57,
+        63
+      ],
+      "macro_f1": 0.4743402276222087,
+      "accuracy": 0.8702603928734582,
+      "high_precision": 0.3181818181818182,
+      "high_recall": 0.3333333333333333,
+      "high_f1": 0.32558139534883723,
+      "high_f2": 0.330188679245283,
+      "high_average_precision": 0.21707278275791572,
+      "high_roc_auc": 0.9022084845226895,
+      "confusion_matrix_low_medium_high": [
+        [
+          1862,
+          169,
+          38
+        ],
+        [
+          28,
+          22,
+          7
+        ],
+        [
+          16,
+          26,
+          21
+        ]
+      ],
+      "cutoffs": {
+        "high": 0.5,
+        "medium": 0.4
+      }
+    },
+    "extra_trees_30": {
+      "n": 2189,
+      "counts": [
+        2069,
+        57,
+        63
+      ],
+      "macro_f1": 0.4681249768698647,
+      "accuracy": 0.8492462311557789,
+      "high_precision": 0.2911392405063291,
+      "high_recall": 0.36507936507936506,
+      "high_f1": 0.323943661971831,
+      "high_f2": 0.3474320241691843,
+      "high_average_precision": 0.23004716933348907,
+      "high_roc_auc": 0.8979975809702997,
+      "confusion_matrix_low_medium_high": [
+        [
+          1811,
+          213,
+          45
+        ],
+        [
+          21,
+          25,
+          11
+        ],
+        [
+          12,
+          28,
+          23
+        ]
+      ],
+      "cutoffs": {
+        "high": 0.5,
+        "medium": 0.4
+      }
+    },
+    "hist_gradient_15": {
+      "n": 2189,
+      "counts": [
+        2069,
+        57,
+        63
+      ],
+      "macro_f1": 0.4232805476223465,
+      "accuracy": 0.9186843307446323,
+      "high_precision": 0.22641509433962265,
+      "high_recall": 0.19047619047619047,
+      "high_f1": 0.20689655172413793,
+      "high_f2": 0.19672131147540983,
+      "high_average_precision": 0.17811283307376757,
+      "high_roc_auc": 0.8875449834998284,
+      "confusion_matrix_low_medium_high": [
+        [
+          1993,
+          45,
+          31
+        ],
+        [
+          41,
+          6,
+          10
+        ],
+        [
+          40,
+          11,
+          12
+        ]
+      ],
+      "cutoffs": {
+        "high": 0.5,
+        "medium": 0.5
+      }
+    },
+    "hist_gradient_31": {
+      "n": 2189,
+      "counts": [
+        2069,
+        57,
+        63
+      ],
+      "macro_f1": 0.42966419460087285,
+      "accuracy": 0.9072635906806761,
+      "high_precision": 0.21052631578947367,
+      "high_recall": 0.25396825396825395,
+      "high_f1": 0.2302158273381295,
+      "high_f2": 0.24390243902439024,
+      "high_average_precision": 0.20756179652088994,
+      "high_roc_auc": 0.8845137302333914,
+      "confusion_matrix_low_medium_high": [
+        [
+          1963,
+          61,
+          45
+        ],
+        [
+          35,
+          7,
+          15
+        ],
+        [
+          34,
+          13,
+          16
+        ]
+      ],
+      "cutoffs": {
+        "high": 0.4,
+        "medium": 0.4
+      }
+    },
+    "persistence": {
+      "n": 2189,
+      "counts": [
+        2069,
+        57,
+        63
+      ],
+      "macro_f1": 0.43410577892020746,
+      "accuracy": 0.9191411603471905,
+      "high_precision": 0.2698412698412698,
+      "high_recall": 0.2698412698412698,
+      "high_f1": 0.2698412698412698,
+      "high_f2": 0.2698412698412698,
+      "high_average_precision": 0.09382847262722831,
+      "high_roc_auc": 0.6241021965386969,
+      "confusion_matrix_low_medium_high": [
+        [
+          1991,
+          41,
+          37
+        ],
+        [
+          44,
+          4,
+          9
+        ],
+        [
+          34,
+          12,
+          17
+        ]
+      ],
+      "cutoffs": {
+        "high": 0.05,
+        "medium": 0.05
+      }
+    },
+    "seasonal": {
+      "n": 2189,
+      "counts": [
+        2069,
+        57,
+        63
+      ],
+      "macro_f1": 0.3776454545209548,
+      "accuracy": 0.8953860210141618,
+      "high_precision": 0.0,
+      "high_recall": 0.0,
+      "high_f1": 0.0,
+      "high_f2": 0.0,
+      "high_average_precision": 0.14307675129037592,
+      "high_roc_auc": 0.8866154489390613,
+      "confusion_matrix_low_medium_high": [
+        [
+          1938,
+          131,
+          0
+        ],
+        [
+          35,
+          22,
+          0
+        ],
+        [
+          30,
+          33,
+          0
+        ]
+      ],
+      "cutoffs": {
+        "high": 0.2,
+        "medium": 0.1
+      }
+    },
+    "always_low": {
+      "n": 2189,
+      "counts": [
+        2069,
+        57,
+        63
+      ],
+      "macro_f1": 0.3239392516048223,
+      "accuracy": 0.9451804476930105,
+      "high_precision": 0.0,
+      "high_recall": 0.0,
+      "high_f1": 0.0,
+      "high_f2": 0.0,
+      "high_average_precision": 0.028780264961169484,
+      "high_roc_auc": 0.5,
+      "confusion_matrix_low_medium_high": [
+        [
+          2069,
+          0,
+          0
+        ],
+        [
+          57,
+          0,
+          0
+        ],
+        [
+          63,
+          0,
+          0
+        ]
+      ],
+      "cutoffs": {
+        "high": 0.05,
+        "medium": 0.05
+      }
+    }
+  },
+  "selection_sha256": "8196845a75545b933c26960559e7cb612f039208cb046c22d0238de7c160ce64",
+  "bundle_sha256": "957b4e419ef27a92a5581d00519f8a9de172145d04b9e874960c8cc5386f6a54",
+  "thresholds": {
+    "medium": 70.4,
+    "high": 103.14999999999999
+  },
+  "rows": {
+    "train": 5828,
+    "validation": 1458,
+    "test": 2189
+  },
+  "selected_test": {
+    "n": 2189,
+    "counts": [
+      2069,
+      57,
+      63
+    ],
+    "macro_f1": 0.43410577892020746,
+    "accuracy": 0.9191411603471905,
+    "high_precision": 0.2698412698412698,
+    "high_recall": 0.2698412698412698,
+    "high_f1": 0.2698412698412698,
+    "high_f2": 0.2698412698412698,
+    "high_average_precision": 0.09382847262722831,
+    "high_roc_auc": 0.6241021965386969,
+    "confusion_matrix_low_medium_high": [
+      [
+        1991,
+        41,
+        37
+      ],
+      [
+        44,
+        4,
+        9
+      ],
+      [
+        34,
+        12,
+        17
+      ]
+    ],
+    "cutoffs": {
+      "high": 0.05,
+      "medium": 0.05
+    }
+  },
+  "new_flood_occurrence_metrics_claimed": false,
+  "evaluated_utc": "2026-10-25T03:54:38.922288+00:00"
+}

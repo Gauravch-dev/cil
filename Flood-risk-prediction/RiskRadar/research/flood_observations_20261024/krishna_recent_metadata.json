@@ -1,0 +1,27 @@
+{
+  "help": "https://nwdp.nwic.gov.in/api/3/action/help_show?name=resource_show",
+  "success": true,
+  "result": {
+    "cache_last_updated": null,
+    "cache_url": null,
+    "created": "2025-03-05T08:40:51.851519",
+    "datastore_active": true,
+    "datastore_contains_all_records_of_source_file": false,
+    "description": null,
+    "format": "CSV",
+    "hash": "86d3b995c6aeada689b70239afe7c0fd",
+    "id": "4ddede56-5e49-4956-bb6f-df3786bf601f",
+    "last_modified": "2026-01-24T23:39:32.107639",
+    "metadata_modified": "2026-01-24T23:39:34.330367",
+    "mimetype": "text/csv",
+    "mimetype_inner": null,
+    "name": "River Water Level CWC Krishna (2021 - 2025) Telemetry Hourly",
+    "package_id": "68600163-c5a0-4327-aa1a-fa7157b86cce",
+    "position": 14,
+    "resource_type": null,
+    "size": 74000976,
+    "state": "active",
+    "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/4ddede56-5e49-4956-bb6f-df3786bf601f/download/rwl_tel_hr_cwc_007_2021_2025.csv",
+    "url_type": "upload"
+  }
+}

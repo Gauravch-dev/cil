@@ -1,0 +1,82 @@
+{
+  "selected_model": "logistic",
+  "threshold": 0.95,
+  "candidates": [
+    {
+      "name": "logistic",
+      "validation": {
+        "n": 305,
+        "positive": 10,
+        "accuracy": 0.9901639344262295,
+        "precision": 0.7692307692307693,
+        "recall": 1.0,
+        "f1": 0.8695652173913043,
+        "average_precision": 0.9430122655122654,
+        "roc_auc": 0.9983050847457627,
+        "confusion_matrix": [
+          [
+            292,
+            3
+          ],
+          [
+            0,
+            10
+          ]
+        ],
+        "threshold": 0.95,
+        "meets_75_percent_all": true
+      }
+    },
+    {
+      "name": "decision_tree",
+      "validation": {
+        "n": 305,
+        "positive": 10,
+        "accuracy": 0.9737704918032787,
+        "precision": 0.5833333333333334,
+        "recall": 0.7,
+        "f1": 0.6363636363636364,
+        "average_precision": 0.4181693989071038,
+        "roc_auc": 0.8415254237288136,
+        "confusion_matrix": [
+          [
+            290,
+            5
+          ],
+          [
+            3,
+            7
+          ]
+        ],
+        "threshold": 0.5,
+        "meets_75_percent_all": false
+      }
+    },
+    {
+      "name": "random_forest",
+      "validation": {
+        "n": 305,
+        "positive": 10,
+        "accuracy": 0.980327868852459,
+        "precision": 0.625,
+        "recall": 1.0,
+        "f1": 0.7692307692307693,
+        "average_precision": 0.7250557775557774,
+        "roc_auc": 0.9905084745762712,
+        "confusion_matrix": [
+          [
+            289,
+            6
+          ],
+          [
+            0,
+            10
+          ]
+        ],
+        "threshold": 0.33,
+        "meets_75_percent_all": false
+      }
+    }
+  ],
+  "test_used_for_selection": false
+}

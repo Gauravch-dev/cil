@@ -1,0 +1,188 @@
+{
+  "task": "High annual peak discharge relative to training-source 95th percentile; not verified flood occurrence",
+  "cutoff": 1129.84,
+  "chronology": {
+    "train": "1900\u20131999",
+    "validation": "2000\u20132005",
+    "test": "2006\u20132015"
+  },
+  "source_sha256": "20a844f84f78729cf4361f3f13daa3a79626f67c2e96aeb0f1a3b872bfd1a45a",
+  "split_hashes": {
+    "train": "c1096dbdaeebcc31028653d4be38bdc5c111a74f681c4338597f90688f450c48",
+    "validation": "9cc12cb5b25fb59c44c88e49a1d69494262322c005a98cd7067df515f6715f90",
+    "test": "915eae2306d8b99c57d7632d7dd778e2422ec5524d55e3a9b4f8a391093e2fc8"
+  },
+  "original_model_sha256": "aad88a12f4645f3703c996641a15ce40603f6d5a608918fad4f37496d2f89395",
+  "versions": {
+    "xgboost": "3.2.0",
+    "sklearn": "1.6.1",
+    "pandas": "3.0.6",
+    "numpy": "2.5.4",
+    "imbalanced_learn": "0.14.0"
+  },
+  "static_feature_limit": "Static modern catchment/climate proxies are not historically issued forecasts; station overlap is reported and unseen-station transfer is not assumed.",
+  "features": [
+    "precipitation_risk_index",
+    "drainage_risk_index",
+    "annual_mean_temperature",
+    "temperature_seasonality",
+    "annual_precipitation",
+    "curve_number_amcii",
+    "drainage_density",
+    "basin_relief",
+    "ruggedness_number",
+    "infiltration_number",
+    "climate_type",
+    "landcover_type",
+    "soil_type"
+  ],
+  "categorical_features": [
+    "climate_type",
+    "landcover_type",
+    "soil_type"
+  ],
+  "seed": 20261024,
+  "samplers": [
+    "untreated",
+    "class_weight",
+    "random_oversampling",
+    "random_undersampling",
+    "smotenc",
+    "smotenc_tomek",
+    "smotenc_enn"
+  ],
+  "configs": {
+    "logistic_regression": [
+      {
+        "C": 0.1
+      },
+      {
+        "C": 1.0
+      }
+    ],
+    "random_forest": [
+      {
+        "n_estimators": 200,
+        "max_depth": 14,
+        "min_samples_leaf": 5,
+        "max_leaf_nodes": 512
+      },
+      {
+        "n_estimators": 300,
+        "max_depth": null,
+        "min_samples_leaf": 2,
+        "max_leaf_nodes": 1024
+      }
+    ],
+    "extra_trees": [
+      {
+        "n_estimators": 200,
+        "max_depth": 16,
+        "min_samples_leaf": 3,
+        "max_leaf_nodes": 512
+      },
+      {
+        "n_estimators": 300,
+        "max_depth": null,
+        "min_samples_leaf": 2,
+        "max_leaf_nodes": 1024
+      }
+    ],
+    "hist_gradient_boosting": [
+      {
+        "max_iter": 300,
+        "max_leaf_nodes": 15,
+        "min_samples_leaf": 30,
+        "l2_regularization": 10.0
+      },
+      {
+        "max_iter": 400,
+        "max_leaf_nodes": 31,
+        "min_samples_leaf": 20,
+        "l2_regularization": 5.0
+      }
+    ],
+    "xgboost": [
+      {
+        "n_estimators": 500,
+        "max_depth": 4,
+        "learning_rate": 0.05,
+        "min_child_weight": 10,
+        "reg_lambda": 10,
+        "reg_alpha": 1
+      },
+      {
+        "n_estimators": 300,
+        "max_depth": 5,
+        "learning_rate": 0.08,
+        "min_child_weight": 5,
+        "reg_lambda": 5,
+        "reg_alpha": 1
+      }
+    ],
+    "balanced_random_forest": [
+      {
+        "n_estimators": 200,
+        "max_depth": 16,
+        "min_samples_leaf": 3,
+        "sampling_strategy": 0.5
+      },
+      {
+        "n_estimators": 300,
+        "max_depth": null,
+        "min_samples_leaf": 2,
+        "sampling_strategy": 1.0
+      }
+    ],
+    "balanced_bagging": [
+      {
+        "n_estimators": 80,
+        "depth": 8,
+        "leaf": 5,
+        "sampling_strategy": 0.5
+      },
+      {
+        "n_estimators": 120,
+        "depth": 12,
+        "leaf": 3,
+        "sampling_strategy": 1.0
+      }
+    ],
+    "easy_ensemble": [
+      {
+        "n_estimators": 10,
+        "boosting_rounds": 50,
+        "learning_rate": 0.5,
+        "sampling_strategy": 0.5
+      },
+      {
+        "n_estimators": 20,
+        "boosting_rounds": 80,
+        "learning_rate": 0.3,
+        "sampling_strategy": 1.0
+      }
+    ]
+  },
+  "candidate_fits": 76,
+  "preprocessing": "Numeric medians/standardisation and category vocabulary fitted on original training rows only. All learners use the same scaled numeric plus one-hot representation.",
+  "sampling_settings": {
+    "random_oversampling_ratio": 1.0,
+    "random_undersampling_ratio": 0.25,
+    "smotenc_ratio": 0.5,
+    "smotenc_k": 3,
+    "cleaning_targets": "majority only",
+    "enn_neighbors": 3,
+    "class_weight": "positive weight sqrt(training neg/pos ratio)"
+  },
+  "selection": "Max validation positive-class F1; ties average precision then precision. Every operating threshold is chosen on validation only. No test selection/refit.",
+  "followup_limit": "The same 2006\u20132015 test and validation periods were examined in prior experiments. This is an exploratory follow-up, not fresh independent confirmation. Broad validation search can overfit validation; no test results are used in selection.",
+  "protected_files": {
+    "experiments\\gloflo_imbalance_v1\\protocol.json": "4917975aab08af8abc70f6d64161bbee918e5457d6cb0f7700dcfab4e705a9d3",
+    "experiments\\gloflo_imbalance_v1\\selection.json": "aa00366e0ff38e485f4820d7903f3c734d54a55283d03e21b9e1ca25e8b3cb4b",
+    "experiments\\gloflo_imbalance_v1\\final_results.json": "e931cf4f94ae7e15e2993036036e35f2fdd6b75e8761e2ed3ee5586888d4fa7a",
+    "experiments\\gloflo_smotenc_v1\\protocol.json": "db86bceffeee7c60429e75999c6fc82fd137130ebb5a505b7f49c47999b42673",
+    "experiments\\gloflo_smotenc_v1\\selection.json": "ea476d8bcfe4b0aebea37c2d81aa289dc542372fbb458ee86bde83d7fc9429a6",
+    "experiments\\gloflo_smotenc_v1\\final_results.json": "09f1a3eac7d639bf52f0bb0cf568e6751beb73f8f2c03ae8ae7548163332c28a"
+  },
+  "created_utc": "2026-10-24T15:53:12.741684+00:00"
+}

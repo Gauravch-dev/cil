@@ -1,0 +1,12 @@
+{
+  "frozen_artifacts": "passed",
+  "source": "Existing near-Mumbai archive only; no additional location data downloaded",
+  "test_rows": 2189,
+  "ml_replayed": "extra_trees_10",
+  "validation_winner": "persistence",
+  "model_output_is_flood_occurrence": false,
+  "classes": "Next-three-day rainfall categories",
+  "future_mutation_runtime_checks": 3,
+  "thresholds_derived_from_train_only": true,
+  "all_saved_test_classes_reproduced": true
+}

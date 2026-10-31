@@ -1,0 +1,105 @@
+{
+  "winner_by_validation": "xgb_static",
+  "families": {
+    "xgb_static": {
+      "family": "xgb_static",
+      "config": {
+        "n_estimators": 450,
+        "max_depth": 2,
+        "learning_rate": 0.04,
+        "min_child_weight": 8,
+        "reg_lambda": 10,
+        "scale_pos_weight": 1.0
+      },
+      "validation": {
+        "n": 613,
+        "severe_events": 227,
+        "threshold": 0.3000000000000001,
+        "accuracy": 0.7194127243066885,
+        "balanced_accuracy": 0.73183675332679,
+        "precision": 0.5919732441471572,
+        "recall": 0.7797356828193832,
+        "f1": 0.6730038022813688,
+        "f2": 0.7332228666114333,
+        "pr_auc_ap": 0.687306208064768,
+        "roc_auc": 0.8001643422884663,
+        "brier": 0.17695268666306194,
+        "mcc": 0.44793855496787677,
+        "tn": 264,
+        "fp": 122,
+        "fn": 50,
+        "tp": 177,
+        "false_severe_rate": 0.3160621761658031,
+        "predicted_severe_events": 299
+      },
+      "artifact_sha256": "2245536098a3921e8d12bdf60a3061e7cb2df5cbc91b4c27008817110797f6d6",
+      "raw_feature_count": 25,
+      "encoded_feature_count": 41
+    },
+    "xgb_rainfall": {
+      "family": "xgb_rainfall",
+      "config": {
+        "n_estimators": 450,
+        "max_depth": 4,
+        "learning_rate": 0.04,
+        "min_child_weight": 8,
+        "reg_lambda": 10,
+        "scale_pos_weight": 1.0
+      },
+      "validation": {
+        "n": 613,
+        "severe_events": 227,
+        "threshold": 0.12500000000000003,
+        "accuracy": 0.5905383360522023,
+        "balanced_accuracy": 0.6549097258679327,
+        "precision": 0.47235023041474655,
+        "recall": 0.9030837004405287,
+        "f1": 0.6202723146747352,
+        "f2": 0.763785394932936,
+        "pr_auc_ap": 0.6587714755099227,
+        "roc_auc": 0.7449498984273355,
+        "brier": 0.198572105959652,
+        "mcc": 0.3290363521628504,
+        "tn": 157,
+        "fp": 229,
+        "fn": 22,
+        "tp": 205,
+        "false_severe_rate": 0.5932642487046632,
+        "predicted_severe_events": 434
+      },
+      "artifact_sha256": "bf0b1ea66c36bfd6d5572097742e3e2eedf65591b443c13b4684523f7daf357e",
+      "raw_feature_count": 39,
+      "encoded_feature_count": 55
+    },
+    "logistic_rainfall_baseline": {
+      "family": "logistic_rainfall_baseline",
+      "validation": {
+        "n": 613,
+        "severe_events": 227,
+        "threshold": 0.25000000000000006,
+        "accuracy": 0.499184339314845,
+        "balanced_accuracy": 0.5905366232224784,
+        "precision": 0.421259842519685,
+        "recall": 0.9427312775330396,
+        "f1": 0.582312925170068,
+        "f2": 0.7556497175141242,
+        "pr_auc_ap": 0.47854664779005096,
+        "roc_auc": 0.6197416174020224,
+        "brier": 0.22368178572085265,
+        "mcc": 0.23207820850940736,
+        "tn": 92,
+        "fp": 294,
+        "fn": 13,
+        "tp": 214,
+        "false_severe_rate": 0.7616580310880829,
+        "predicted_severe_events": 508
+      },
+      "artifact_sha256": "a7c35719e91169a8220eb1b1d702811cb0ac4767bf5b530d02109856da069ea9"
+    }
+  },
+  "training_prevalence": 0.3332307692307692,
+  "selected_at_utc": "2026-10-24T15:00:16.528130+00:00",
+  "test_used_for_selection": false,
+  "protocol_sha256": "1624105031a457ba980db3103fb1fa8f2da38af0b8f08bd0d18bb23684cfbeed",
+  "candidate_fits": 32
+}

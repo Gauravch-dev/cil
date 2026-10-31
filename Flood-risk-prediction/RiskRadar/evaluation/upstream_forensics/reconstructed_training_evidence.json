@@ -1,0 +1,70 @@
+{
+  "candidate_rule": "Annual peak discharge > full-source 95th percentile",
+  "cutoff": 1145.1979999999987,
+  "source_positive": 2297,
+  "source_negative": 43635,
+  "split": {
+    "test_size": 0.2,
+    "random_state": 42,
+    "stratify": "candidate label"
+  },
+  "train_n": 36745,
+  "test_n": 9187,
+  "train_class_counts": {
+    "0": 34907,
+    "1": 1838
+  },
+  "test_class_counts": {
+    "0": 8728,
+    "1": 459
+  },
+  "classification_report": {
+    "0": {
+      "precision": 0.9888811674774148,
+      "recall": 0.9782309807516041,
+      "f1-score": 0.9835272434051376,
+      "support": 8728.0
+    },
+    "1": {
+      "precision": 0.6564195298372514,
+      "recall": 0.7908496732026143,
+      "f1-score": 0.717391304347826,
+      "support": 459.0
+    },
+    "accuracy": 0.9688690540981822,
+    "macro avg": {
+      "precision": 0.8226503486573331,
+      "recall": 0.8845403269771093,
+      "f1-score": 0.8504592738764818,
+      "support": 9187.0
+    },
+    "weighted avg": {
+      "precision": 0.9722707514899505,
+      "recall": 0.9688690540981822,
+      "f1-score": 0.9702305855160219,
+      "support": 9187.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      8538,
+      190
+    ],
+    [
+      96,
+      363
+    ]
+  ],
+  "reconstructed_logloss_from_margins": 0.09401994521517999,
+  "stored_best_validation_logloss": 0.0940201010885684,
+  "logloss_absolute_error": 1.558733884049479e-07,
+  "stored_first_root_cover": 23473.9883,
+  "expected_cover_after_balancing_train_to_34907_per_class_weight2": 23473.986659675364,
+  "root_cover_absolute_error": 0.0016403246372647118,
+  "test_rows_at_training_stations": 9029,
+  "test_stations_seen": 5951,
+  "test_unique_stations": 6016,
+  "roc_auc_on_candidate_labels": 0.9687725278521633,
+  "pr_auc_on_candidate_labels": 0.8295599442189884,
+  "interpretation": "Forensic reconstruction using a label hypothesis and inferred split; not a new independent validation or proof of real flood occurrence."
+}

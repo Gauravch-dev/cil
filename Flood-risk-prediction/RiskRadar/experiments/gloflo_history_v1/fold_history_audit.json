@@ -1,0 +1,35 @@
+[
+  {
+    "fold": 0,
+    "train_end": 1959,
+    "cutoff": 1147.9394999999981,
+    "train_rows": 6134,
+    "validation_rows": 12790,
+    "history_train_rows": 3673,
+    "history_validation_rows": 3916,
+    "no_history_validation_rows": 8874,
+    "held_station_history_zero": true
+  },
+  {
+    "fold": 1,
+    "train_end": 1979,
+    "cutoff": 1118.52,
+    "train_rows": 14798,
+    "validation_rows": 7211,
+    "history_train_rows": 9912,
+    "history_validation_rows": 3469,
+    "no_history_validation_rows": 3742,
+    "held_station_history_zero": true
+  },
+  {
+    "fold": 2,
+    "train_end": 1989,
+    "cutoff": 1096.7755,
+    "train_rows": 19336,
+    "validation_rows": 7932,
+    "history_train_rows": 13658,
+    "history_validation_rows": 4334,
+    "no_history_validation_rows": 3598,
+    "held_station_history_zero": true
+  }
+]

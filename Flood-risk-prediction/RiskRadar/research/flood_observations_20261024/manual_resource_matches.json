@@ -1,0 +1,18 @@
+[
+  {
+    "package": "river-water-level-manual-hourly-cwc-subernarekha",
+    "id": "7a5386e8-bf7a-43ac-af78-04565db04e79",
+    "name": "River Water Level CWC Krishna (2021 - 2025) Manual Hourly",
+    "url": "https://nwdp.nwic.gov.in/dataset/d951a09c-6cf8-470e-be77-e80116f13d34/resource/7a5386e8-bf7a-43ac-af78-04565db04e79/download/rwl_manual_hr_cwc_007_2021_2025.csv",
+    "datastore_active": true,
+    "size": 265124118
+  },
+  {
+    "package": "river-water-level-manual-hourly-cwc-subernarekha",
+    "id": "7778f459-0e82-4681-9638-5e494c36fd42",
+    "name": "River Water Level Manual Hourly CWC Krishna (1991-2020)",
+    "url": "https://nwdp.nwic.gov.in/dataset/d951a09c-6cf8-470e-be77-e80116f13d34/resource/7778f459-0e82-4681-9638-5e494c36fd42/download/rwl_manual_hr_cwc_007_1991_2020.csv",
+    "datastore_active": true,
+    "size": 388687530
+  }
+]
