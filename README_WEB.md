@@ -16,6 +16,7 @@ From the repository root:
 ```powershell
 py -3.12 -m venv .venv-web
 .\.venv-web\Scripts\python.exe -m pip install -r requirements-forecast.txt
+.\.venv-web\Scripts\python.exe -B tools\train_local_hybrid.py
 Set-Location frontend
 npm ci
 npm run build
@@ -58,8 +59,8 @@ No cloud hosting configuration or automatic deployment is added.
 
 | Mode | Behavior |
 | --- | --- |
-| Recorded examples | Reuses authentic saved forecasts, their original dates and matching history. Rules/search run on the submitted household settings. |
-| Uploaded household readings | Executes the bundled frozen older LSTM on validated fresh readings. Requires the forecasting runtime. |
+| Recorded examples | New analyses execute the active evaluated hybrid on matching recorded inputs. Without the prepared head, authentic saved LSTM forecasts remain available. Original dates are preserved. |
+| Uploaded household readings | Executes the active evaluated hybrid, or the bundled frozen older LSTM fallback, on validated fresh readings. Requires the forecasting runtime. |
 | Synthetic sample | Explicit sample inference at the file's original dates; labelled in the result, chart, history and JSON. |
 | Optional newer bridge | Uses a matching externally prepared newer model and hybrid cache, when supplied. Not verified here with real matching artifacts. |
 
@@ -73,7 +74,10 @@ Five saved forecasts must reproduce within `rtol=1e-4, atol=1e-4` before uploade
 forecasting becomes ready. Inference uses frozen weights/scaler transforms only.
 The older model uses active power, observation flags and calendar/daily/weekly
 context. Other electrical columns are checked but are not inputs to this model.
-No matching contribution breakdown is generated for arbitrary uploads. Confidence
+The explicitly prepared classical stage adds a Random Forest regressor after the
+frozen LSTM. See [training and artifact restoration](docs/HYBRID_TRAINING.md).
+New hybrid analyses use TreeSHAP; old saved analyses retain their original model
+and explanation, with separate grouped permutation SHAP available in Guided demo. Confidence
 is explicitly unquantified and accuracy on another household is unestablished.
 
 ## Optional newer forecasting bridge
@@ -101,7 +105,7 @@ interpret synthetic Task 10 validation fixtures as evidence otherwise.
 
 ```powershell
 .\.venv-web\Scripts\python.exe -m pip install -r requirements-web-dev.txt
-.\.venv-web\Scripts\python.exe -B -m pytest tests/test_web_api.py tests/test_readings.py tests/test_local_forecast.py -q --basetemp ../work/pytest-local
+.\.venv-web\Scripts\python.exe -B -m pytest tests/test_web_api.py tests/test_readings.py tests/test_local_forecast.py tests/test_demo_evidence.py tests/test_hybrid_forecast.py -q --basetemp ../work/pytest-local
 Set-Location frontend
 npm run build
 ```
@@ -137,3 +141,27 @@ notebooks, ontology and original trained artifacts remain unchanged.
 | Sample forecast shows January dates | Expected: its readings are synthetic and dated 1–8 January 2026; dates are never changed to look current. |
 | Forecast does not change with occupancy/tariff | Expected: those settings guide rules and scheduling, while the forecast follows meter history. |
 | Savings are zero | The search found no lower-cost feasible schedule under the supplied scenario; savings are not invented. |
+
+## Redesigned frontend
+
+My household provides readings → preferences → plan. Guided demo provides eight
+technical stages with separately editable inputs, ontology/rule evidence, actual
+LSTM activations and computed SHAP. History restores sources and dates unchanged.
+The household preference draft is kept under `current-household-preferences-v2`
+in browser-local storage. Demo edits do not overwrite it. A demonstration is not
+an automated test run; original evaluation scripts remain offline.
+
+Install the updated `requirements-forecast.txt` to include SHAP, then rebuild the
+frontend and restart the API. The first explanation request can take longer while
+Python dependencies load. Later identical model/input explanations reuse a bounded
+in-memory cache. Read `docs/DEMO_GUIDE.md` for an evaluator walkthrough.
+
+## Trained classical stage — 3 November 2026
+
+The compatible older-LSTM hybrid is now trained and connected for new analyses.
+It uses 16 frozen LSTM patterns and 17 context features; validation selected Random
+Forest over Gradient Boosting. TreeSHAP explains the executed 33-feature regressor.
+Old saved standalone forecasts remain unchanged. The newer multivariate experiment
+remains distinct and absent. Earlier statements that the classical stage was
+unavailable describe the pre-training state. See [the training report](docs/HYBRID_TRAINING.md) for actual
+metrics, limits, artifact restoration and the explicit offline preparation command.

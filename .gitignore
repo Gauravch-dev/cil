@@ -11,3 +11,14 @@ __pycache__/
 /.env
 /.env.*
 !/.env.example
+/task9_outputs/local_hybrid/*
+!/task9_outputs/local_hybrid/active.json
+!/task9_outputs/local_hybrid/c36dc5c8927301cc/
+/task9_outputs/local_hybrid/c36dc5c8927301cc/*
+!/task9_outputs/local_hybrid/c36dc5c8927301cc/hybrid_forecaster.joblib
+!/task9_outputs/local_hybrid/c36dc5c8927301cc/training_manifest.json
+!/task9_outputs/local_hybrid/c36dc5c8927301cc/selection.json
+!/task9_outputs/local_hybrid/c36dc5c8927301cc/validation_comparison.csv
+!/task9_outputs/local_hybrid/c36dc5c8927301cc/test_comparison.csv
+!/task9_outputs/local_hybrid/c36dc5c8927301cc/test_predictions.csv
+!/task9_outputs/local_hybrid/c36dc5c8927301cc/verification_inputs.npz

@@ -1,0 +1,18 @@
+{
+  "selected_name": "LSTM + Random Forest",
+  "criterion": "Lowest validation RMSE; test is excluded from selection",
+  "validation": [
+    {
+      "Model": "LSTM + Random Forest",
+      "MAE_kW": 0.4736270448858051,
+      "RMSE_kW": 0.7233141565488445,
+      "R2": 0.47770758233003174
+    },
+    {
+      "Model": "LSTM + Gradient Boosting",
+      "MAE_kW": 0.483584479341993,
+      "RMSE_kW": 0.7260057007697768,
+      "R2": 0.4738133168681209
+    }
+  ]
+}

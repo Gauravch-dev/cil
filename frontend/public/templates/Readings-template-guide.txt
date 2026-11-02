@@ -17,15 +17,15 @@ Sub_metering_3: Wh per minute.
 Filled sample
 SYNTHETIC-electricity-readings-8-days.csv contains 11,520 invented minute readings
 for 1-8 January 2026 in UTC. It demonstrates the format and supports a clearly labelled sample-date forecast.
-Its extra Data_source column marks every row synthetic_sample. Choose Use filled
-sample, then Generate sample forecast. The model uses the original sample dates
+Its extra Data_source column marks every row synthetic_sample. Open Guided demo, choose Filled eight-day sample, select Load sample,
+then Run demonstration. The model uses the original sample dates
 and your household settings guide the rules and schedule. The app blocks this
 file from actual current household forecasting.
 It is not real meter data, an accuracy result or evidence of household savings.
 
 Using your file
-Choose Use my electricity readings, select your CSV and its timezone, and click
-Check my readings. Review coverage, completeness and freshness. A current estimate
+Open My household, select your CSV and its timezone, and click Check readings.
+Continue to household preferences, then Generate my plan. Review coverage, completeness and freshness. A current estimate
 requires actual recent readings and a compatible forecasting service.
 
 The date range limit is eight to 60 days; the file limit is 10 MB. The latest

@@ -38,7 +38,7 @@ No deployment or training route is introduced.
 | 2: reasoning | `task9_core.reason_appliance` and original reasoning notebook | Executes essential, occupancy, comfort, requested-state, priority/running, flexibility and fixed-job rules unchanged; ordered traces remain visible. Earlier standalone experiments remain offline. |
 | 3: search | `task9_core.plan_jobs`, original search notebook | Uses the integrated constrained A* planner with deadlines, durations and concurrency. Earlier BFS/DFS/greedy comparisons remain offline. |
 | 4–6: data and baseline work | Original notebooks and saved power/prepared arrays | Reuses authentic history and preprocessing provenance; training and algorithm-comparison experiments are not customer UI screens. |
-| 7: forecasting | Completed `task7_outputs/full_20261004T223051_253137Z`, `task7_pipeline.py` | Recorded examples use exact saved LSTM values. Upload/sample inference executes the bundled older power-history model with matching preprocessing/scalers. Missing newer multivariate/hybrid artifacts are not claimed present. |
+| 7: forecasting | Completed `task7_outputs/full_20261004T223051_253137Z`, `task7_pipeline.py`, evaluated `task9_outputs/local_hybrid` | New analyses execute frozen older LSTM features plus the validation-selected Random Forest. Old saved results retain their model. Missing newer multivariate experiment remains separate. |
 | 8: explanation | `task8_outputs/run_20261004T224434_997783Z` | Three recorded cases have exact timestamp/run/prediction-matched saved integrated gradients and reconstruction checks. Unmatched cases and arbitrary uploads do not receive invented contributions. Optional newer bridge SHAP is checked for reconstruction when available. |
 | 9: integrated optimizer | `task9_core.py`, original dashboard and pipeline | Household/appliance settings, validation, threshold feedback, rules, scheduling, job-cost comparison, history and exports wrap original behavior. |
 | 10: evaluation | Original Task 10 sources, notebooks and validation files | Retained offline and unchanged. Synthetic validation fixtures are not presented as successful real-data evaluation. New adapter checks are separate. |
@@ -121,8 +121,9 @@ The launcher binds loopback and adds no hosting configuration.
 ## Known limits
 
 - No calibrated forecast confidence percentage or individual prediction interval.
-- Saved prediction contributions cover only three exact recorded histories;
-  arbitrary uploaded forecasts have no verified contribution breakdown.
+- Legacy saved Integrated Gradients cover three exact recorded histories. New
+  hybrid analyses have actual TreeSHAP; Guided demo retains grouped permutation
+  SHAP for matching old standalone predictions.
 - No live meter/utility account connection, appliance switching, authentication,
   multi-user isolation, cloud history or public deployment.
 - No established accuracy on a new user's household, independent current meter
@@ -133,3 +134,33 @@ The launcher binds loopback and adds no hosting configuration.
 See [API contracts](docs/API.md), [setup](README_WEB.md) and the
 [verification record](docs/VERIFICATION.md) for commands and evidence. Existing
 notebooks and task documentation remain the references for original offline work.
+
+## Guided demonstration redesign
+
+The frontend now separates My household (readings, preferences, plan), Guided demo
+(eight inspectable stages), and History. Household drafts persist in browser-local
+storage independently of demo edits. `Studio.tsx` coordinates workflows;
+`workspace.tsx` provides compact forms, `DemoStages.tsx` exposes technical evidence,
+`PlanResult.tsx` presents everyday actions, and `ResultComponents.tsx` retains the
+original accessible chart/schedule views.
+
+`demo_evidence.py` re-executes the matching predictor and verifies prediction identity.
+New hybrid runs expose TreeSHAP on their 33 inputs. For old standalone analyses,
+it computes actual grouped permutation SHAP. Six historical channel groups
+and 17 context groups use eight sampled permutations against the original median
+training reference. The reference, full contributions, reconstruction residual and
+limitations are returned. Actual LSTM activations and authentic saved comparison
+metrics are exposed. The trained compatible Random Forest head is active; the
+separate newer multivariate experiment remains absent. Existing saved Integrated
+Gradients and analyses are not overwritten. Training is an explicit offline tool;
+no website request trains, hosts publicly or controls physical appliances.
+
+## Trained classical stage — 3 November 2026
+
+The compatible older-LSTM hybrid is now trained and connected for new analyses.
+It uses 16 frozen LSTM patterns and 17 context features; validation selected Random
+Forest over Gradient Boosting. TreeSHAP explains the executed 33-feature regressor.
+Old saved standalone forecasts remain unchanged. The newer multivariate experiment
+remains distinct and absent. Earlier statements that the classical stage was
+unavailable describe the pre-training state. See [the training report](docs/HYBRID_TRAINING.md) for actual
+metrics, limits, artifact restoration and the explicit offline preparation command.

@@ -106,6 +106,13 @@ class ForecastSource:
             try:
                 from local_forecast import LocalPowerForecast
                 self.upload_forecaster = LocalPowerForecast(self.folder)
+                from hybrid_forecast import ARTIFACT_ROOT, LocalHybridForecast
+                if (ARTIFACT_ROOT / "active.json").is_file():
+                    try:
+                        self.upload_forecaster = LocalHybridForecast.load_active(self.upload_forecaster)
+                        print("Loaded evaluated local hybrid:", self.upload_forecaster.selected_name, flush=True)
+                    except Exception as error:
+                        print("Local hybrid unavailable; standalone LSTM retained:", error, flush=True)
                 self.issue = None
             except Exception as error:
                 print("Local uploaded-readings forecast unavailable:", error, flush=True)
@@ -134,6 +141,11 @@ class ForecastSource:
         if self.bridge:
             return self.bridge.predict(int(case_id))
         row = self.saved.iloc[int(case_id)]
+        if getattr(self.upload_forecaster, "is_hybrid", False):
+            with np.load(self.folder / "prepared_arrays.npz") as a:
+                target = int(a["test_indices"][int(case_id)])
+                inputs = {"history": a["history_values"][target-99:target-3][None], "context": a["context_values"][target][None]}
+            return self.upload_forecaster.forecast(inputs, row.Forecast_origin, row.Target_interval_end)
         return {"origin": row.Forecast_origin, "target_end": row.Target_interval_end,
             "target_interval_start": str(pd.Timestamp(row.Target_interval_end)-pd.Timedelta(minutes=15)),
             "forecast_kw": float(row.lstm_compact_kW), "threshold_kw": self.manifest["peak_threshold_kw"],
@@ -151,6 +163,11 @@ class ForecastSource:
         else:
             readings = self.power[(self.power.Interval_end <= origin) & (self.power.Interval_end > origin-pd.Timedelta(hours=24))]
             history = [{"time": str(row.Interval_end), "kw": float(row.input_kw) if pd.notna(row.input_kw) else None} for row in readings.itertuples()]
+        if forecast.get("forecaster_sha256") and getattr(self.upload_forecaster, "is_hybrid", False):
+            with np.load(self.folder / "prepared_arrays.npz") as a:
+                target = int(a["test_indices"][int(case_id)])
+                inputs = {"history": a["history_values"][target-99:target-3][None], "context": a["context_values"][target][None]}
+            return self.upload_forecaster.evidence(inputs, history)
         explanation = {"available": False, "reason": "A verified contribution breakdown is not saved for this history. Appliance reasons and rule evidence remain available."}
         if self.bridge:
             try:
@@ -212,11 +229,13 @@ async def local_boundary(request: Request, call_next):
 
 @app.get("/api/bootstrap")
 def bootstrap():
-    return {"mode": "connected_history" if source.bridge else "recorded_forecasts", "cases": source.cases,
+    hybrid = getattr(source.upload_forecaster, "is_hybrid", False)
+    return {"mode": "connected_history" if source.bridge else "hybrid_history" if hybrid else "recorded_forecasts", "cases": source.cases,
         "default_case": next((c["id"] for c in source.cases if c["explanation"]), source.cases[0]["id"]),
         "scenario": asdict(Scenario()), "appliances": [asdict(a) for a in default_appliances()],
-        "integration_gap": source.issue, "ontology": {"classes": len(knowledge.classes), "rules": knowledge.rules},
+        "integration_gap": source.issue, "ontology": {"classes": len(knowledge.classes), "class_names": sorted(knowledge.classes), "rules": knowledge.rules},
         "readings": {**readings_schema(), "service_available": forecast_available(source.upload_forecaster)},
+        "forecasting": {"hybrid_available": bool(hybrid), "model": source.upload_forecaster.selected_name if hybrid else "Standalone LSTM"},
         "capabilities": {"live_meter": False, "hardware_control": False, "confidence": False,
             "forecast": True, "scheduling": True, "rules": True, "history": True,
             "readings_upload": True, "uploaded_forecast": forecast_available(source.upload_forecaster)}}
@@ -319,7 +338,7 @@ def analyze(payload: RunInput):
             result = optimize_decisions(forecast, appliances, Scenario(**payload.scenario.model_dump()), knowledge)
             result.update(evidence)
         result.update(id=uuid.uuid4().hex, created_at=datetime.now(timezone.utc).isoformat(), case_id=payload.case_id or "upload:"+payload.upload_id,
-            source_mode="uploaded_readings" if checked else "connected_history" if source.bridge else "recorded_forecasts")
+            source_mode="uploaded_readings" if checked else "connected_history" if source.bridge else "hybrid_history" if forecast.get("forecaster_sha256") else "recorded_forecasts")
         if checked:
             result.update(upload_id=payload.upload_id, uploaded_readings=checked.report,
                           provenance=("Demonstration forecast generated from synthetic sample readings at their original dates. This is not the user's actual current electricity use. " if payload.sample_forecast else "Forecast generated from user-uploaded minute readings. Authenticity and household generalization are not established by timestamps. ")+"Savings are scheduled-job scenario estimates, not measured bills.")
@@ -351,6 +370,44 @@ def get_run(run_id: str):
     return json.loads(row[0])
 
 
+@app.post("/api/demo/{run_id}/evidence")
+def demo_evidence(run_id: str):
+    """Run real frozen-model diagnostics; leave the saved result unchanged."""
+    result = get_run(run_id)
+    forecaster = source.upload_forecaster
+    if getattr(forecaster, "is_hybrid", False) and not result["forecast"].get("forecaster_sha256"):
+        forecaster = forecaster.base
+    if not getattr(forecaster, "upload_ready", False):
+        raise HTTPException(503, "The bundled model runtime is needed for this demonstration. Existing results remain available.")
+    from demo_evidence import model_evidence
+    try:
+        with LOCK:
+            if result.get("upload_id"):
+                # Explain exact saved inputs even after a current upload becomes
+                # stale. This is historical explanation, never a fresh estimate.
+                filename, zone, content = upload_content(result["upload_id"])
+                report = result["uploaded_readings"]
+                checked_at = datetime.fromisoformat(report["checked_at"])
+                checked = check_csv(content, filename, zone, model_available=True, now=checked_at)
+                if checked.report["sha256"] != report["sha256"]:
+                    raise ValueError("Stored readings do not match the saved analysis.")
+                inputs = forecaster.inputs(checked, sample=bool(result["forecast"].get("is_sample")))
+            else:
+                if result["source_mode"] not in ("recorded_forecasts", "hybrid_history"):
+                    raise ValueError("This model-specific demo requires the bundled power-history source.")
+                index = int(result["case_id"])
+                with np.load(forecaster.folder / "prepared_arrays.npz") as archive:
+                    target = int(archive["test_indices"][index])
+                    inputs = {"history": archive["history_values"][target-4-95:target-4+1][None],
+                              "context": archive["context_values"][target][None]}
+            return model_evidence(forecaster, inputs, result["forecast"])
+    except ValueError as error:
+        raise HTTPException(409, str(error)) from error
+    except Exception as error:
+        print("Demo evidence error:", error, flush=True)
+        raise HTTPException(503, "Model evidence could not be computed. Your forecast and settings are preserved.") from error
+
+
 @app.get("/api/history/{run_id}/export/{kind}")
 def export(run_id: str, kind: str):
     result = get_run(run_id)
@@ -370,7 +427,7 @@ def export(run_id: str, kind: str):
 
 @app.get("/api/health")
 def health():
-    return {"status": "ok", "source": "connected_history" if source.bridge else "recorded_forecasts"}
+    return {"status": "ok", "source": "connected_history" if source.bridge else "hybrid_history" if getattr(source.upload_forecaster, "is_hybrid", False) else "recorded_forecasts"}
 
 
 DIST = ROOT / "frontend" / "dist"

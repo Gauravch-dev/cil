@@ -1,39 +1,61 @@
 # Using Current
 
+## Two clear experiences
+
+**My household** is the everyday workspace. It shows one step at a time:
+readings, preferences, then the plan. Technical model and ontology details are
+kept in Guided demo. Household preference drafts are remembered in this browser;
+demo edits do not overwrite them.
+
+**Guided demo** is for demonstrations and evaluation. Choose recorded history,
+the marked eight-day sample, or a CSV. Enter household values or select a scenario
+preset, then select **Run demonstration**. Inspect these stages with Next/Previous
+or the stage navigation:
+
+1. Set the scene: inputs and editable scenario.
+2. Prepare the data: authentic history, causal preparation and model features.
+3. Make a forecast: active LSTM + Random Forest, architecture, real activation
+   heatmap, validation selection and test comparison. Old analyses keep their original model.
+4. Understand the home: selected appliance, inferred ontology classes and SWRL candidates.
+5. Apply the rules: ordered operational policy and actual fired trace.
+6. Find a schedule: original A* output, explored-state count, constraints and costs.
+7. Explain the forecast: TreeSHAP for the active hybrid (grouped permutation SHAP for old LSTM analyses),
+   signed contributions, reconstruction residual and downloadable model/SHAP evidence.
+8. See the outcome: the forecast, appliance plan, savings and exports together.
+
+The analysis executes once, then the walkthrough inspects its real outputs; it
+is not an animation pretending each stage ran later. Model evidence re-executes
+the frozen model and must match the selected forecast before SHAP is attached.
+SHAP is not a confidence score or proof of causality. Expensive computations may
+take time on the first request. No training occurs during website requests.
+
 ## Set your household values
 
-Open **Household settings**. Set the number of people at home, temperature,
-planning horizon, parallel-job limit and peak/off-peak tariffs. Review each
-appliance's power, duration, priority, requested/running state, flexibility,
-earliest start and deadline. Start/finish limits use 15-minute increments and
-are relative to the selected readings' forecast origin.
-
-Your settings guide protection rules, recommendations, scheduling and estimated
-job costs. The demand forecast comes from electricity readings, so changing a
-tariff or occupancy value alone does not rewrite that forecast. No appliance is
-actually switched by the application.
+In My household, choose **Set household preferences**. Household, Tariffs and
+Appliances tabs organize settings. Enter occupancy, temperature, planning horizon,
+parallel-job limit, rates and appliance power/runtime/priority/timing constraints.
+Start/finish limits use 15-minute increments relative to the readings' origin.
+Preferences guide rules and scheduling; the demand estimate follows meter history.
 
 ## Generate a sample-date forecast
 
-1. Select **Sample templates → Use filled sample**.
-2. Wait for **Ready for a sample forecast**.
-3. Select **Generate sample forecast** below the checks.
-4. Read the forecast, chart, appliance plan and rule explanations on the home page.
+1. Open **Guided demo**.
+2. Choose **Filled eight-day sample** as Electricity source, then **Load sample**.
+3. Review or edit Household, Tariffs and Appliances preferences.
+4. Select **Run demonstration**, then inspect each stage.
 
-The file contains eight days of explicitly synthetic minute readings in UTC.
-It keeps its original January 2026 dates and uses the household settings already
-entered in the app. It is not your actual current household use. The last complete
-interval ends at 00:00 on 9 January, so the forecast is for 00:45–01:00 UTC on
-9 January. The current-reading freshness check does not apply to this separate,
-explicitly requested sample demonstration. Confidence remains unquantified.
+The file contains 11,520 explicitly synthetic minute readings in UTC, dated
+1–8 January 2026. Its target is 00:45–01:00 on 9 January. It keeps its original
+dates and is not actual current household use. The separate sample request does
+not bypass freshness requirements for actual readings.
 
 ## Forecast from actual recent readings
 
-Select **Use my electricity readings**. Download the **Blank CSV template** and
+Open **My household → Add electricity readings**. Download the **Blank CSV template** and
 fill it with an actual meter export: one row per minute, at least eight days of
 history, ending within the last 30 minutes. Choose the timezone used by the file,
 select the CSV and click **Check my readings**. When checks pass and forecasting
-is ready, select **Analyze my energy** (or **Update analysis** for an existing run).
+is ready, continue to preferences and select **Generate my plan**.
 
 | Required column | Unit / format |
 | --- | --- |
@@ -85,3 +107,13 @@ keeps its original inputs, source and dates. Changing settings marks old results
 as stale until you explicitly update them. Download analysis JSON, schedule CSV
 or recommendations from the corresponding analysis. Files and history stay in the
 local workspace; clearing a form selection does not delete stored data.
+
+## Trained classical stage — 3 November 2026
+
+The compatible older-LSTM hybrid is now trained and connected for new analyses.
+It uses 16 frozen LSTM patterns and 17 context features; validation selected Random
+Forest over Gradient Boosting. TreeSHAP explains the executed 33-feature regressor.
+Old saved standalone forecasts remain unchanged. The newer multivariate experiment
+remains distinct and absent. Earlier statements that the classical stage was
+unavailable describe the pre-training state. See [the training report](HYBRID_TRAINING.md) for actual
+metrics, limits, artifact restoration and the explicit offline preparation command.

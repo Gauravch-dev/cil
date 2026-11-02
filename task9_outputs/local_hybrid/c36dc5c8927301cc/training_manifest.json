@@ -1,0 +1,163 @@
+{
+  "status": "evaluated",
+  "schema": 1,
+  "run_id": "local_hybrid_c36dc5c8927301cc",
+  "created_at": "2026-11-02T19:14:27.813801+00:00",
+  "signature": "c36dc5c8927301cc8fb2c640016d2ce86efd01db66c1c3a063223584849d6ab1",
+  "source_fingerprints": {
+    "task7_lstm.keras": "6e943430c455d6ce08af019a08708e2b32361b2b0d9be148babbae5d8ac7b86c",
+    "power_scaler.joblib": "c12ee5e9e029db9fc370bd9bacc99621f4591235ca95905f400bd4eb281c2ef5",
+    "context_scaler.joblib": "71e6ef0e91f0e2fd0fb2828d2e5b6102efcbd73ff0d87882c1b9eaf744efef42",
+    "manifest.json": "131ba1339a17985c525f0221363ee1a5436faa8272941f66cbfd0dc0c6b63b61",
+    "prepared_arrays.npz": "f3500f08110ec4a8f4c4fc44869d034bb9e1f387db000a6d9e2bec92c1b225ba",
+    "preprocessing_source": "e83cfe4959f7ff4c0a3189482c0a4fd4c1250f64e4bd208da1671b7855803281"
+  },
+  "source_run": "20261004T223051_253137Z",
+  "settings": {
+    "schema": 1,
+    "train_cap": 20000,
+    "validation_cap": 5000,
+    "seed": 42,
+    "candidates": {
+      "LSTM + Random Forest": {
+        "n_estimators": 60,
+        "max_depth": 12,
+        "min_samples_leaf": 4,
+        "random_state": 42,
+        "n_jobs": 2
+      },
+      "LSTM + Gradient Boosting": {
+        "n_estimators": 100,
+        "max_depth": 3,
+        "learning_rate": 0.05,
+        "random_state": 42
+      }
+    }
+  },
+  "selected_name": "LSTM + Random Forest",
+  "selected_file": "hybrid_forecaster.joblib",
+  "selected_sha256": "8336084855c06a0232d28404e46dc6780a9c4779e829f97a18abcc57e4ee4dc3",
+  "selection_criterion": "Lowest validation RMSE; no test-based tuning",
+  "validation": [
+    {
+      "Model": "LSTM + Random Forest",
+      "MAE_kW": 0.4736270448858051,
+      "RMSE_kW": 0.7233141565488445,
+      "R2": 0.47770758233003174
+    },
+    {
+      "Model": "LSTM + Gradient Boosting",
+      "MAE_kW": 0.483584479341993,
+      "RMSE_kW": 0.7260057007697768,
+      "R2": 0.4738133168681209
+    }
+  ],
+  "test": [
+    {
+      "Model": "LSTM + Random Forest",
+      "Segment": "All test",
+      "Samples": 18889,
+      "MAE_kW": 0.4315696755444042,
+      "RMSE_kW": 0.6300913108058717,
+      "R2": 0.37663532483940865,
+      "Selected_on_validation": true
+    },
+    {
+      "Model": "LSTM + Gradient Boosting",
+      "Segment": "All test",
+      "Samples": 18889,
+      "MAE_kW": 0.4306784388921132,
+      "RMSE_kW": 0.6267786330174495,
+      "R2": 0.38317272009474146,
+      "Selected_on_validation": false
+    },
+    {
+      "Model": "Standalone LSTM",
+      "Segment": "All test",
+      "Samples": 18889,
+      "MAE_kW": 0.42693410738706555,
+      "RMSE_kW": 0.6182361328181846,
+      "R2": 0.3998718832024042,
+      "Selected_on_validation": false
+    },
+    {
+      "Model": "Basic MLP",
+      "Segment": "All test",
+      "Samples": 18889,
+      "MAE_kW": 0.44073914649789964,
+      "RMSE_kW": 0.6235033358571989,
+      "R2": 0.3896024670806085,
+      "Selected_on_validation": false
+    },
+    {
+      "Model": "Persistence",
+      "Segment": "All test",
+      "Samples": 18889,
+      "MAE_kW": 0.514278179405019,
+      "RMSE_kW": 0.8055197245170661,
+      "R2": -0.018796784370539665,
+      "Selected_on_validation": false
+    },
+    {
+      "Model": "LSTM + Random Forest",
+      "Segment": "High demand",
+      "Samples": 959,
+      "MAE_kW": 1.4450223863567646,
+      "RMSE_kW": 1.6686282728200914,
+      "R2": -5.405286434220716,
+      "Selected_on_validation": true
+    },
+    {
+      "Model": "LSTM + Gradient Boosting",
+      "Segment": "High demand",
+      "Samples": 959,
+      "MAE_kW": 1.4838127961986973,
+      "RMSE_kW": 1.6972367739296952,
+      "R2": -5.626805526498154,
+      "Selected_on_validation": false
+    },
+    {
+      "Model": "Standalone LSTM",
+      "Segment": "High demand",
+      "Samples": 959,
+      "MAE_kW": 1.501624175765595,
+      "RMSE_kW": 1.7145296929449163,
+      "R2": -5.762532749568039,
+      "Selected_on_validation": false
+    },
+    {
+      "Model": "Basic MLP",
+      "Segment": "High demand",
+      "Samples": 959,
+      "MAE_kW": 1.573608157305299,
+      "RMSE_kW": 1.7610312423397987,
+      "R2": -6.13433472282223,
+      "Selected_on_validation": false
+    },
+    {
+      "Model": "Persistence",
+      "Segment": "High demand",
+      "Samples": 959,
+      "MAE_kW": 1.6168871737190622,
+      "RMSE_kW": 1.8836197115143358,
+      "R2": -7.162173324350119,
+      "Selected_on_validation": false
+    }
+  ],
+  "counts": {
+    "train": 20000,
+    "validation": 5000,
+    "test": 18889
+  },
+  "feature_count": 33,
+  "versions": {
+    "python": "3.12.10",
+    "numpy": "2.2.6",
+    "scikit_learn": "1.9.1"
+  },
+  "lstm_retrained": false,
+  "scalers_refitted": false,
+  "source_integrity_verified": true,
+  "training_seconds": 219.10345010001038,
+  "limitations": "New classical prediction heads on the completed older six-channel LSTM. Not the missing newer multivariate experiment. Previously evaluated original test period reused; no independent new household measurements or calibrated confidence."
+}

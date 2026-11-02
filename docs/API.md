@@ -16,6 +16,7 @@ unauthenticated local service, not a public API deployment.
 | POST | `/api/readings?timezone=Asia%2FKolkata` | Validate/persist raw CSV bytes; return report, not a prediction |
 | GET | `/api/readings/{id}` | Recheck a stored file against current clock and service readiness |
 | POST | `/api/analyze` | Forecast/source lookup plus original rules/search; persist a successful result |
+| POST | `/api/demo/{id}/evidence` | Re-execute the matching predictor for a saved run; return inputs, activations and TreeSHAP for hybrid runs (grouped permutation SHAP for old standalone runs); preserve saved analysis |
 | GET | `/api/history` | Latest 100 saved analysis summaries, newest first |
 | GET | `/api/history/{id}` | Full saved analysis |
 | GET | `/api/history/{id}/export/json` | Full analysis JSON attachment |
@@ -98,3 +99,36 @@ filenames are sanitized to metadata and CSV exports neutralize formula prefixes.
 A failed uploaded inference does not substitute a recorded forecast or create a
 successful analysis. No route trains a model, controls appliances or connects a
 utility account. Original full model evaluations remain offline.
+
+## Guided demo evidence
+
+The evidence endpoint requires the bundled forecasting runtime. Recorded inputs
+are reconstructed from matching saved arrays; uploaded inputs are reconstructed
+from the saved file and original check timestamp, so an older analysis can be
+explained without claiming a fresh forecast. File digest/model fingerprint and
+prediction agreement are checked first. Shape metadata, actual LSTM activations,
+saved comparison metrics and current classical-hybrid availability are returned.
+
+For the active hybrid, TreeSHAP explains the executed regressor's 16 learned LSTM
+patterns and 17 context inputs. Contributions reconstruct its raw output before
+clipping; head and source fingerprints must match the saved forecast. Availability,
+validation selection, feature handoff and test metrics come from the evaluated manifest.
+
+For old standalone analyses, permutation SHAP uses six whole-history-channel groups and 17 context groups,
+eight sampled permutations and one original training reference. Base plus all
+contributions must reconstruct the displayed prediction within tolerance; residual
+and verification status are returned. Failure produces an explicit unavailable
+SHAP object rather than substituted contributions. Evidence is cached by model
+and input digest in bounded process memory. It does not rewrite saved Integrated
+Gradients, train models or update the original saved analysis. The browser can
+download this separate model/SHAP evidence as JSON.
+
+## Trained classical stage — 3 November 2026
+
+The compatible older-LSTM hybrid is now trained and connected for new analyses.
+It uses 16 frozen LSTM patterns and 17 context features; validation selected Random
+Forest over Gradient Boosting. TreeSHAP explains the executed 33-feature regressor.
+Old saved standalone forecasts remain unchanged. The newer multivariate experiment
+remains distinct and absent. Earlier statements that the classical stage was
+unavailable describe the pre-training state. See [the training report](HYBRID_TRAINING.md) for actual
+metrics, limits, artifact restoration and the explicit offline preparation command.

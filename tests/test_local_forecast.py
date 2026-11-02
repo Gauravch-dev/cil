@@ -15,7 +15,8 @@ from readings import CheckedReadings, ReadingsError, check_csv, forecast_availab
 
 @pytest.fixture(scope="module")
 def forecaster():
-    model = web.source.upload_forecaster
+    active = web.source.upload_forecaster
+    model = getattr(active, "base", active)
     assert model is not None, "Installed forecasting runtime must connect the real bundled model"
     assert forecast_available(model)
     return model

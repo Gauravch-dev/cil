@@ -2,3 +2,6 @@
 ".venv-task7/Lib/site-packages/clang/native/libclang.dll" filter=lfs diff=lfs merge=lfs -text
 ".venv-task7/Lib/site-packages/llvmlite/binding/llvmlite.dll" filter=lfs diff=lfs merge=lfs -text
 ".venv-task7/Lib/site-packages/tensorflow/python/_pywrap_tensorflow_common.dll" filter=lfs diff=lfs merge=lfs -text
+# Preserve byte fingerprints of the frozen model's original preprocessing inputs.
+/task7_pipeline.py text eol=crlf
+/task7_outputs/full_20261004T223051_253137Z/manifest.json -text
