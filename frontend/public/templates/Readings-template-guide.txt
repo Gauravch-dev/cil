@@ -1,0 +1,33 @@
+CURRENT - ELECTRICITY READINGS TEMPLATES
+
+Blank CSV template
+Use the header-only file for your actual meter readings. Add one row per minute.
+Supply at least eight days of history, ending with a recent complete interval.
+
+Required columns and units
+Datetime: YYYY-MM-DD HH:MM:00, in the timezone selected on the upload form.
+Global_active_power: kW (not cumulative kWh or a monthly total).
+Global_reactive_power: kVAR.
+Voltage: V.
+Global_intensity: A.
+Sub_metering_1: Wh per minute.
+Sub_metering_2: Wh per minute.
+Sub_metering_3: Wh per minute.
+
+Filled sample
+SYNTHETIC-electricity-readings-8-days.csv contains 11,520 invented minute readings
+for 1-8 January 2026 in UTC. It demonstrates the format and supports a clearly labelled sample-date forecast.
+Its extra Data_source column marks every row synthetic_sample. Choose Use filled
+sample, then Generate sample forecast. The model uses the original sample dates
+and your household settings guide the rules and schedule. The app blocks this
+file from actual current household forecasting.
+It is not real meter data, an accuracy result or evidence of household savings.
+
+Using your file
+Choose Use my electricity readings, select your CSV and its timezone, and click
+Check my readings. Review coverage, completeness and freshness. A current estimate
+requires actual recent readings and a compatible forecasting service.
+
+The date range limit is eight to 60 days; the file limit is 10 MB. The latest
+complete interval must end within the last 30 minutes. Leave missing values blank.
+Do not change the sample dates to make invented readings look current.
